@@ -1,0 +1,71 @@
+{
+  "version": "v0.6",
+  "project_slug": "dadou-shangdu",
+  "generated_at": "2026-06-29T13:31:02",
+  "task_count": 77,
+  "priority_counts": {
+    "P0": 31,
+    "P1": 45,
+    "P2": 1
+  },
+  "category_counts": {
+    "OCR 地名复核": 8,
+    "路线连续性复核": 8,
+    "GPX 连接规则复核": 9,
+    "坐标复核": 15,
+    "书中证据复核": 33,
+    "页面表述复核": 4
+  },
+  "route_status_context": {
+    "segments": 15,
+    "walkable_blocks": 8,
+    "do_not_connect_in_gpx_segments": [
+      "seg-003",
+      "seg-008",
+      "seg-010",
+      "seg-011",
+      "seg-013",
+      "seg-014",
+      "seg-015"
+    ],
+    "waypoint_only_segments": [
+      "seg-003",
+      "seg-008",
+      "seg-010",
+      "seg-011",
+      "seg-013",
+      "seg-014",
+      "seg-015"
+    ],
+    "gpx_track_segments": [
+      "seg-001",
+      "seg-002",
+      "seg-004",
+      "seg-005",
+      "seg-006",
+      "seg-007",
+      "seg-009",
+      "seg-012"
+    ],
+    "needs_field_check_segments": [
+      "seg-003",
+      "seg-008",
+      "seg-010",
+      "seg-011",
+      "seg-013",
+      "seg-014",
+      "seg-015"
+    ]
+  },
+  "old_manual_review_checklist_rows": 380,
+  "v05_manual_review_tasks_rows": 0,
+  "rules": [
+    "本轮只生成报告和清单，不修改 route_segments.json。",
+    "不修改公开数据、web、坐标或书中出处。"
+  ],
+  "outputs": {
+    "dashboard": "projects/dadou-shangdu/reports/manual_review_dashboard_v0.6.md",
+    "tasks_csv": "projects/dadou-shangdu/reports/manual_review_tasks_v0.6.csv",
+    "summary_json": "projects/dadou-shangdu/reports/manual_review_summary_v0.6.json"
+  }
+}

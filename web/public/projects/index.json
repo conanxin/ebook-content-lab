@@ -12,6 +12,18 @@
       "repository_url": "https://github.com/conanxin/ebook-content-lab",
       "site_url": "https://conanxin.github.io/ebook-content-lab/",
       "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/dadou-shangdu"
+    },
+    {
+      "slug": "second-reading-guide",
+      "title": "第二本电子书阅读导读",
+      "book_title": "待定书名",
+      "project_type": "reading-guide",
+      "status": "draft",
+      "public_path": "/projects/second-reading-guide/",
+      "project_json": "/projects/second-reading-guide/project.json",
+      "repository_url": "https://github.com/conanxin/ebook-content-lab",
+      "site_url": "https://conanxin.github.io/ebook-content-lab/",
+      "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/second-reading-guide"
     }
   ]
 }

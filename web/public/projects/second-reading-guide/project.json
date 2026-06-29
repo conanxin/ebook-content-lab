@@ -1,0 +1,37 @@
+{
+  "slug": "second-reading-guide",
+  "title": "第二本电子书阅读导读",
+  "book_title": "待定书名",
+  "source_type": "scanned_pdf",
+  "project_type": "reading-guide",
+  "status": "draft",
+  "visibility": {
+    "private_source_kept_in": "projects/second-reading-guide/private/",
+    "public_artifacts_kept_in": "projects/second-reading-guide/public/",
+    "web_public_path": "/projects/second-reading-guide/"
+  },
+  "public_files": [],
+  "quality_summary": {
+    "ocr": "unknown",
+    "content_extraction": "unknown",
+    "evidence_audit": "unknown",
+    "validation": "unknown",
+    "manual_review_required": true
+  },
+  "route_stats": {},
+  "review_status": {
+    "status": "not_started",
+    "notes": "新项目草稿，尚未完成 OCR、抽取、审计和人工复核。"
+  },
+  "generated_at": "2026-06-29T09:02:19+00:00",
+  "repository_url": "https://github.com/conanxin/ebook-content-lab",
+  "site_url": "https://conanxin.github.io/ebook-content-lab/",
+  "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/second-reading-guide",
+  "book": {
+    "title": "待定书名",
+    "author": null,
+    "source_type": "unknown",
+    "language": "unknown"
+  },
+  "quality": "unknown"
+}
