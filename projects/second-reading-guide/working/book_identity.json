@@ -1,0 +1,262 @@
+{
+  "generated_at": "2026-06-29T12:14:42+00:00",
+  "project_slug": "second-reading-guide",
+  "identity_status": "identified",
+  "sources": {
+    "pdf": null,
+    "book_md": "/mnt/d/WSL/Codex/projects/second-reading-guide/private/book.md",
+    "book_pages_cleaned": null,
+    "ocr_pdf": null,
+    "epub": "/mnt/d/WSL/Codex/projects/second-reading-guide/private/source/book.epub",
+    "epub_sections": "/mnt/d/WSL/Codex/projects/second-reading-guide/private/book_sections.jsonl",
+    "epub_chunks": "/mnt/d/WSL/Codex/projects/second-reading-guide/private/book_chunks.jsonl",
+    "epub_source_summary": "/mnt/d/WSL/Codex/projects/second-reading-guide/working/book_identity_source.json"
+  },
+  "extraction_warning": null,
+  "book": {
+    "title": "旅行人信札",
+    "author": "陈嘉映",
+    "publication_info": null,
+    "publisher": "上海文艺出版社",
+    "publication_date": "2021-12-31T16:00:00+00:00",
+    "isbn": "d3671844-e97c-499e-855a-8753809f0381",
+    "source_type": "epub",
+    "language": "zh-Hans",
+    "is_scanned_likely": "unknown",
+    "total_pages": 31,
+    "evidence": [
+      {
+        "field": "epub_opf",
+        "quote": "title=旅行人信札"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "creator=陈嘉映"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "language=zh"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "publisher=上海文艺出版社"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "date=2021-12-31T16:00:00+00:00"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "identifier=d3671844-e97c-499e-855a-8753809f0381"
+      },
+      {
+        "field": "epub_opf",
+        "quote": "rights=Copyrights as per source stories"
+      }
+    ]
+  },
+  "pdf_inspection": {
+    "path": null,
+    "exists": false,
+    "page_count": null,
+    "sample_embedded_text_chars": null,
+    "is_scanned_likely": "unknown",
+    "inspection_error": null
+  },
+  "ocr_status": {
+    "status": "available",
+    "page_count": null,
+    "needs_review_pages": [],
+    "empty_pages": [],
+    "average_chars_per_page": null,
+    "ocr_pdf_exists": false
+  },
+  "toc": {
+    "toc_page_range": null,
+    "toc_pages": [],
+    "chapter_candidates": [
+      {
+        "title": "titlepage.xhtml",
+        "source": "epub_section",
+        "page": 1
+      },
+      {
+        "title": "旅行人信札",
+        "source": "epub_section",
+        "page": 2
+      },
+      {
+        "title": "版权信息",
+        "source": "epub_section",
+        "page": 3
+      },
+      {
+        "title": "目录",
+        "source": "epub_section",
+        "page": 4
+      },
+      {
+        "title": "前言",
+        "source": "epub_section",
+        "page": 5
+      },
+      {
+        "title": "第1封 3月17日~18日 娘子关→骊山→西安",
+        "source": "epub_section",
+        "page": 6
+      },
+      {
+        "title": "第2封 3月19日~20日 半坡/碑林→成都",
+        "source": "epub_section",
+        "page": 7
+      },
+      {
+        "title": "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山",
+        "source": "epub_section",
+        "page": 8
+      },
+      {
+        "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚",
+        "source": "epub_section",
+        "page": 9
+      },
+      {
+        "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站",
+        "source": "epub_section",
+        "page": 10
+      },
+      {
+        "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪",
+        "source": "epub_section",
+        "page": 11
+      },
+      {
+        "title": "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江",
+        "source": "epub_section",
+        "page": 12
+      },
+      {
+        "title": "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔",
+        "source": "epub_section",
+        "page": 13
+      },
+      {
+        "title": "第9封 4月5日~7日 漓江→阳朔→梧州",
+        "source": "epub_section",
+        "page": 14
+      },
+      {
+        "title": "第10封 4月7日~8日 梧州西江种种",
+        "source": "epub_section",
+        "page": 15
+      },
+      {
+        "title": "第11封 4月8日~9日 肇庆天柱阁",
+        "source": "epub_section",
+        "page": 16
+      },
+      {
+        "title": "第12封 4月9日~11日 广州中山大学/白云山",
+        "source": "epub_section",
+        "page": 17
+      },
+      {
+        "title": "第13封 4月13日~14日 汕头看海",
+        "source": "epub_section",
+        "page": 18
+      },
+      {
+        "title": "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿",
+        "source": "epub_section",
+        "page": 19
+      },
+      {
+        "title": "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺",
+        "source": "epub_section",
+        "page": 20
+      },
+      {
+        "title": "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡",
+        "source": "epub_section",
+        "page": 21
+      },
+      {
+        "title": "第17封 4月23日~25日 温州北雁荡由浅入深",
+        "source": "epub_section",
+        "page": 22
+      },
+      {
+        "title": "第18封 4月28日 朝辞雁荡暮至余杭",
+        "source": "epub_section",
+        "page": 23
+      },
+      {
+        "title": "第19封 4月28日~5月2日 千古如斯的余杭",
+        "source": "epub_section",
+        "page": 24
+      },
+      {
+        "title": "第20封 5月4日~5日 黄山天都峰排云亭",
+        "source": "epub_section",
+        "page": 25
+      },
+      {
+        "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山",
+        "source": "epub_section",
+        "page": 26
+      },
+      {
+        "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑",
+        "source": "epub_section",
+        "page": 27
+      },
+      {
+        "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林",
+        "source": "epub_section",
+        "page": 28
+      },
+      {
+        "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海",
+        "source": "epub_section",
+        "page": 29
+      },
+      {
+        "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京",
+        "source": "epub_section",
+        "page": 30
+      },
+      {
+        "title": "index_split_029.html",
+        "source": "epub_section",
+        "page": 31
+      }
+    ]
+  },
+  "content_type_scores": {
+    "route / travel / walking": 257,
+    "history": 68,
+    "biography": 2,
+    "fiction": 7,
+    "geography": 929,
+    "essay": 7,
+    "technical": 7
+  },
+  "suggested_content_types": [
+    "route / travel / walking",
+    "geography"
+  ],
+  "suggested_project_types": [
+    "route-map",
+    "field-guide",
+    "place-index",
+    "reading-guide",
+    "knowledge-map"
+  ],
+  "epub_summary": {
+    "extraction_status": "ok",
+    "image_count": 2,
+    "chapter_count": 31,
+    "chunk_count": 97,
+    "text_char_count": 93937
+  }
+}

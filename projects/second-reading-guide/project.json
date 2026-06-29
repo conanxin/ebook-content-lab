@@ -34,10 +34,28 @@
   "site_url": "https://conanxin.github.io/ebook-content-lab/",
   "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/second-reading-guide",
   "book": {
-    "title": "待定书名",
-    "author": null,
-    "source_type": "unknown",
-    "language": "unknown"
+    "title": "旅行人信札",
+    "author": "陈嘉映",
+    "publication_info": null,
+    "publisher": "上海文艺出版社",
+    "publication_date": "2021-12-31T16:00:00+00:00",
+    "isbn": "d3671844-e97c-499e-855a-8753809f0381",
+    "source_type": "epub",
+    "language": "zh-Hans",
+    "is_scanned_likely": "unknown",
+    "total_pages": 31
   },
-  "quality": "unknown"
+  "quality": "unknown",
+  "suggested_content_types": [
+    "route / travel / walking",
+    "geography"
+  ],
+  "suggested_project_types": [
+    "route-map",
+    "field-guide",
+    "place-index",
+    "reading-guide",
+    "knowledge-map"
+  ],
+  "identity_status": "identified"
 }

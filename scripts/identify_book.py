@@ -65,6 +65,80 @@ def first_existing(paths: list[Path]) -> Path | None:
     return None
 
 
+def load_jsonl(path: Path | None) -> list[dict[str, Any]]:
+    """Load a JSONL file; return empty list if path missing."""
+    if not path or not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8", errors="replace") as handle:
+        for line_no, line in enumerate(handle, 1):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"Invalid JSONL at {path}:{line_no}: {exc}") from exc
+    return rows
+
+
+def load_epub_artifacts(project_dir: Path) -> dict[str, Any] | None:
+    """Load the EPUB extraction artifacts produced by extract_epub.py.
+
+    Priority:
+      1. private/book_sections.jsonl
+      2. private/book.md
+      3. working/book_identity_source.json (metadata only)
+    Returns None if none of these exist; the caller then falls back to the
+    PDF/OCR path.
+    """
+    private_dir = project_dir / "private"
+    working_dir = project_dir / "working"
+
+    sections_path = private_dir / "book_sections.jsonl"
+    book_md_path = private_dir / "book.md"
+    source_path = working_dir / "book_identity_source.json"
+
+    if not (sections_path.exists() or book_md_path.exists() or source_path.exists()):
+        return None
+
+    sections = load_jsonl(sections_path) if sections_path.exists() else []
+    chunks = load_jsonl(private_dir / "book_chunks.jsonl") if (private_dir / "book_chunks.jsonl").exists() else []
+    source_summary = read_json(source_path) if source_path.exists() else {}
+    book_md_text = book_md_path.read_text(encoding="utf-8", errors="replace") if book_md_path.exists() else ""
+
+    full_text = "\n\n".join(section.get("text", "") for section in sections) or book_md_text
+    section_titles = [section.get("title", "") for section in sections if section.get("title")]
+    chunk_titles = [chunk.get("section_title", "") for chunk in chunks if chunk.get("section_title")]
+    metadata = source_summary.get("metadata", {}) if isinstance(source_summary, dict) else {}
+
+    return {
+        "sections": sections,
+        "chunks": chunks,
+        "book_md_text": book_md_text,
+        "full_text": full_text,
+        "section_titles": section_titles,
+        "chunk_titles": chunk_titles,
+        "source_summary": source_summary,
+        "metadata": metadata,
+        "extraction_status": source_summary.get("extraction_status") if isinstance(source_summary, dict) else None,
+        "image_count": source_summary.get("image_count") if isinstance(source_summary, dict) else None,
+    }
+
+
+def warn_if_epub_needs_extraction(project_dir: Path) -> str | None:
+    """If book.epub exists but no extraction artifacts exist, hint to run extract_epub.py."""
+    private_dir = project_dir / "private"
+    epub_path = private_dir / "source" / "book.epub"
+    has_artifacts = any(
+        (private_dir / name).exists()
+        for name in ("book_sections.jsonl", "book.md", "book_chunks.jsonl")
+    ) or (project_dir / "working" / "book_identity_source.json").exists()
+    if epub_path.exists() and not has_artifacts:
+        return f"EPUB present at {epub_path} but no extraction artifacts found. Run scripts/extract_epub.py first."
+    return None
+
+
 def load_pages(path: Path | None) -> list[dict[str, Any]]:
     if not path or not path.exists():
         return []
@@ -346,6 +420,20 @@ def ocr_status(pages: list[dict[str, Any]], book_md_path: Path | None, ocr_pdf_p
     }
 
 
+def _epub_section(epub_summary: dict[str, Any] | None) -> str:
+    if not epub_summary:
+        return ""
+    return f"""## EPUB Summary
+
+- Extraction status: `{epub_summary.get('extraction_status') or 'unknown'}`
+- Image count: `{epub_summary.get('image_count')}`
+- Chapter count: `{epub_summary.get('chapter_count')}`
+- Chunk count: `{epub_summary.get('chunk_count')}`
+- Text char count: `{epub_summary.get('text_char_count')}`
+
+"""
+
+
 def build_report(identity: dict[str, Any]) -> str:
     book = identity["book"]
     ocr = identity["ocr_status"]
@@ -390,6 +478,12 @@ Project: `{identity['project_slug']}`
 - Book Markdown: `{value(sources.get('book_md'))}`
 - Cleaned pages JSONL: `{value(sources.get('book_pages_cleaned'))}`
 - OCR PDF: `{value(sources.get('ocr_pdf'))}`
+- EPUB: `{value(sources.get('epub'))}`
+- EPUB sections JSONL: `{value(sources.get('epub_sections'))}`
+- EPUB chunks JSONL: `{value(sources.get('epub_chunks'))}`
+- EPUB source summary: `{value(sources.get('epub_source_summary'))}`
+
+{f'''> ⚠️ {identity['extraction_warning']}''' if identity.get('extraction_warning') else ''}
 
 ## Identified Book
 
@@ -442,6 +536,8 @@ Suggested project types:
 
 {chr(10).join(f'- {item}' for item in identity.get('suggested_project_types', []))}
 
+{_epub_section(identity.get('epub_summary'))}
+
 ## Notes
 
 - This report uses only local project files and does not perform external web search.
@@ -459,22 +555,109 @@ def identify(project_dir: Path, output_path: Path) -> dict[str, Any]:
 
     project_data = read_json(project_json_path)
     private_dir = project_dir / "private"
-    pdf_path = first_existing([private_dir / "source" / "book.pdf", root / "source" / "book.pdf"])
-    book_md_path = first_existing([private_dir / "book.md", root / "data" / "book.md"])
-    pages_path = first_existing([private_dir / "book_pages.cleaned.jsonl", root / "data" / "book_pages.cleaned.jsonl"])
-    ocr_pdf_path = first_existing([private_dir / "ocr" / "book_ocr.pdf", root / "data" / "ocr" / "book_ocr.pdf"])
+
+    epub_artifacts = load_epub_artifacts(project_dir)
+    extraction_warning = warn_if_epub_needs_extraction(project_dir)
+
+    # dadou-shangdu (PDF/OCR) projects have their artefacts in the global data/
+    # directory; second-reading-guide (EPUB) is self-contained in private/.
+    # Only fall back to global data/ when this project has no EPUB and no
+    # project-private artefacts, to avoid cross-project contamination.
+    is_legacy_pdf_project = (
+        not epub_artifacts
+        and not (private_dir / "book.md").exists()
+        and not (private_dir / "book_pages.cleaned.jsonl").exists()
+    )
+
+    pdf_path = first_existing([private_dir / "source" / "book.pdf"])
+    if is_legacy_pdf_project:
+        # dadou-shangdu legacy: its PDF lives at <repo>/source/book.pdf.
+        pdf_path = first_existing([private_dir / "source" / "book.pdf", root / "source" / "book.pdf"])
+    book_md_path = first_existing([private_dir / "book.md"])
+    pages_path = first_existing([private_dir / "book_pages.cleaned.jsonl"])
+    ocr_pdf_path = first_existing([private_dir / "ocr" / "book_ocr.pdf"])
+    epub_path = first_existing([private_dir / "source" / "book.epub"])
+
+    if is_legacy_pdf_project:
+        book_md_path = first_existing([private_dir / "book.md", root / "data" / "book.md"])
+        pages_path = first_existing([private_dir / "book_pages.cleaned.jsonl", root / "data" / "book_pages.cleaned.jsonl"])
+        ocr_pdf_path = first_existing([private_dir / "ocr" / "book_ocr.pdf", root / "data" / "ocr" / "book_ocr.pdf"])
 
     pages = load_pages(pages_path)
     book_md_text = book_md_path.read_text(encoding="utf-8", errors="replace") if book_md_path and book_md_path.exists() else ""
     page_text = "\n".join(page.get("text", "") for page in pages)
-    full_text = book_md_text or page_text
-    first_text = "\n".join(page.get("text", "") for page in pages[:20]) if pages else full_text[:30_000]
+    epub_full_text = epub_artifacts.get("full_text", "") if epub_artifacts else ""
+    full_text = epub_full_text or book_md_text or page_text
+    first_text = (
+        "\n".join(page.get("text", "") for page in pages[:20])
+        if pages
+        else (epub_full_text[:30_000] if epub_full_text else (book_md_text[:30_000] if book_md_text else ""))
+    )
 
     pdf_info = inspect_pdf(pdf_path)
-    identity_fields = extract_identity(first_text, project_data)
-    language = detect_language(full_text)
+    identity_fields: dict[str, Any]
+    if epub_artifacts and epub_artifacts.get("metadata"):
+        # EPUB projects: trust the EPUB OPF metadata. extract_identity's heuristics
+        # are tuned for PDF/OCR front-matter and can latch onto chapter titles.
+        epub_meta = epub_artifacts["metadata"]
+        identity_fields = {
+            "title": epub_meta.get("title") or None,
+            "author": epub_meta.get("creator") or None,
+            "publication_info": epub_meta.get("description") or None,
+            "publisher": epub_meta.get("publisher") or None,
+            "publication_date": epub_meta.get("date") or None,
+            "isbn": epub_meta.get("identifier") or None,
+            "evidence": [
+                {"field": "epub_opf", "quote": f"{key}={value}"}
+                for key, value in epub_meta.items()
+                if value
+            ],
+        }
+    else:
+        identity_fields = extract_identity(first_text, project_data)
+        # If extract_identity fell back to a short, non-book-like title (e.g. a
+        # section heading), and the OPF metadata does NOT agree, prefer
+        # whatever the project.json already has.
+        if identity_fields.get("title") and len(identity_fields["title"]) <= 8:
+            fallback_title = project_data.get("book_title") or project_data.get("title")
+            if fallback_title and fallback_title not in identity_fields["title"]:
+                identity_fields["title"] = fallback_title
+        # Cross-fill from OPF metadata if available (defensive, even if not EPUB).
+        if epub_artifacts:
+            metadata = epub_artifacts.get("metadata", {}) or {}
+            for key, mapped in {
+                "title": "title",
+                "creator": "author",
+                "language": "language",
+                "publisher": "publisher",
+                "date": "publication_date",
+                "identifier": "isbn",
+                "description": "publication_info",
+            }.items():
+                value = metadata.get(key)
+                if value and not identity_fields.get(mapped):
+                    identity_fields[mapped] = value
+    language = detect_language(full_text) if full_text else "unknown"
+
     ocr = ocr_status(pages, book_md_path, ocr_pdf_path)
     toc = detect_toc_and_chapters(pages)
+    if epub_artifacts and epub_artifacts.get("sections"):
+        # Build TOC candidates from EPUB sections so we don't depend on PDF/OCR
+        # heuristics. The first section can be a cover/titlepage with empty text;
+        # skip blank titles.
+        toc = {
+            "toc_page_range": None,
+            "toc_pages": [],
+            "chapter_candidates": [
+                {
+                    "title": section.get("title") or f"sec-{index + 1:03d}",
+                    "source": "epub_section",
+                    "page": index + 1,
+                }
+                for index, section in enumerate(epub_artifacts["sections"])
+                if (section.get("title") or "").strip()
+            ][:80],
+        }
     content_scores = score_content_types(full_text)
     content_types = suggest_content_types(content_scores)
     project_types = suggest_project_types(content_types)
@@ -483,6 +666,11 @@ def identify(project_dir: Path, output_path: Path) -> dict[str, Any]:
     source_type = project_data.get("source_type") or "unknown"
     if pdf_info.get("is_scanned_likely") is True:
         source_type = "scanned_pdf"
+    elif epub_artifacts and epub_path and epub_path.exists():
+        # EPUB takes precedence when it is the actual source.
+        source_type = "epub"
+        if epub_artifacts.get("extraction_status") == "ok" and not total_pages:
+            total_pages = len(epub_artifacts.get("sections", []))
 
     book = {
         "title": identity_fields.get("title"),
@@ -514,7 +702,12 @@ def identify(project_dir: Path, output_path: Path) -> dict[str, Any]:
             "book_md": str(book_md_path) if book_md_path else None,
             "book_pages_cleaned": str(pages_path) if pages_path else None,
             "ocr_pdf": str(ocr_pdf_path) if ocr_pdf_path else None,
+            "epub": str(epub_path) if epub_path else None,
+            "epub_sections": str(private_dir / "book_sections.jsonl") if (private_dir / "book_sections.jsonl").exists() else None,
+            "epub_chunks": str(private_dir / "book_chunks.jsonl") if (private_dir / "book_chunks.jsonl").exists() else None,
+            "epub_source_summary": str(project_dir / "working" / "book_identity_source.json") if (project_dir / "working" / "book_identity_source.json").exists() else None,
         },
+        "extraction_warning": extraction_warning,
         "book": book,
         "pdf_inspection": pdf_info,
         "ocr_status": ocr,
@@ -522,6 +715,17 @@ def identify(project_dir: Path, output_path: Path) -> dict[str, Any]:
         "content_type_scores": content_scores,
         "suggested_content_types": content_types,
         "suggested_project_types": project_types,
+        "epub_summary": {
+            "extraction_status": epub_artifacts.get("extraction_status") if epub_artifacts else None,
+            "image_count": epub_artifacts.get("image_count") if epub_artifacts else None,
+            "chapter_count": len(epub_artifacts.get("sections", [])) if epub_artifacts else 0,
+            "chunk_count": len(epub_artifacts.get("chunks", [])) if epub_artifacts else 0,
+            "text_char_count": sum(
+                len(section.get("text", "")) for section in (epub_artifacts.get("sections", []) if epub_artifacts else [])
+            ),
+        }
+        if epub_artifacts
+        else None,
     }
 
     working_json_path = project_dir / "working" / "book_identity.json"

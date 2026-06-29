@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-06-29T12:10:23+00:00",
+  "epub_path": "/mnt/d/WSL/Codex/projects/second-reading-guide/private/source/book.epub",
+  "file_size_bytes": 343251,
+  "mimetype": "application/epub+zip",
+  "container_xml_present": true,
+  "opf_path": "content.opf",
+  "nav_xhtml_present": false,
+  "toc_ncx_present": true,
+  "toc_entry_count": 29,
+  "image_count": 2,
+  "metadata": {
+    "title": "旅行人信札",
+    "creator": "陈嘉映",
+    "language": "zh",
+    "publisher": "上海文艺出版社",
+    "date": "2021-12-31T16:00:00+00:00",
+    "identifier": "d3671844-e97c-499e-855a-8753809f0381",
+    "description": null,
+    "rights": "Copyrights as per source stories"
+  },
+  "chapter_titles": [
+    {
+      "section_id": "sec-001",
+      "title": "titlepage.xhtml",
+      "href": "titlepage.xhtml"
+    },
+    {
+      "section_id": "sec-002",
+      "title": "旅行人信札",
+      "href": "index_split_000.html"
+    },
+    {
+      "section_id": "sec-003",
+      "title": "版权信息",
+      "href": "index_split_001.html"
+    },
+    {
+      "section_id": "sec-004",
+      "title": "目录",
+      "href": "index_split_002.html"
+    },
+    {
+      "section_id": "sec-005",
+      "title": "前言",
+      "href": "index_split_003.html"
+    },
+    {
+      "section_id": "sec-006",
+      "title": "第1封 3月17日~18日 娘子关→骊山→西安",
+      "href": "index_split_004.html"
+    },
+    {
+      "section_id": "sec-007",
+      "title": "第2封 3月19日~20日 半坡/碑林→成都",
+      "href": "index_split_005.html"
+    },
+    {
+      "section_id": "sec-008",
+      "title": "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山",
+      "href": "index_split_006.html"
+    },
+    {
+      "section_id": "sec-009",
+      "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚",
+      "href": "index_split_007.html"
+    },
+    {
+      "section_id": "sec-010",
+      "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站",
+      "href": "index_split_008.html"
+    },
+    {
+      "section_id": "sec-011",
+      "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪",
+      "href": "index_split_009.html"
+    },
+    {
+      "section_id": "sec-012",
+      "title": "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江",
+      "href": "index_split_010.html"
+    },
+    {
+      "section_id": "sec-013",
+      "title": "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔",
+      "href": "index_split_011.html"
+    },
+    {
+      "section_id": "sec-014",
+      "title": "第9封 4月5日~7日 漓江→阳朔→梧州",
+      "href": "index_split_012.html"
+    },
+    {
+      "section_id": "sec-015",
+      "title": "第10封 4月7日~8日 梧州西江种种",
+      "href": "index_split_013.html"
+    },
+    {
+      "section_id": "sec-016",
+      "title": "第11封 4月8日~9日 肇庆天柱阁",
+      "href": "index_split_014.html"
+    },
+    {
+      "section_id": "sec-017",
+      "title": "第12封 4月9日~11日 广州中山大学/白云山",
+      "href": "index_split_015.html"
+    },
+    {
+      "section_id": "sec-018",
+      "title": "第13封 4月13日~14日 汕头看海",
+      "href": "index_split_016.html"
+    },
+    {
+      "section_id": "sec-019",
+      "title": "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿",
+      "href": "index_split_017.html"
+    },
+    {
+      "section_id": "sec-020",
+      "title": "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺",
+      "href": "index_split_018.html"
+    },
+    {
+      "section_id": "sec-021",
+      "title": "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡",
+      "href": "index_split_019.html"
+    },
+    {
+      "section_id": "sec-022",
+      "title": "第17封 4月23日~25日 温州北雁荡由浅入深",
+      "href": "index_split_020.html"
+    },
+    {
+      "section_id": "sec-023",
+      "title": "第18封 4月28日 朝辞雁荡暮至余杭",
+      "href": "index_split_021.html"
+    },
+    {
+      "section_id": "sec-024",
+      "title": "第19封 4月28日~5月2日 千古如斯的余杭",
+      "href": "index_split_022.html"
+    },
+    {
+      "section_id": "sec-025",
+      "title": "第20封 5月4日~5日 黄山天都峰排云亭",
+      "href": "index_split_023.html"
+    },
+    {
+      "section_id": "sec-026",
+      "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山",
+      "href": "index_split_024.html"
+    },
+    {
+      "section_id": "sec-027",
+      "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑",
+      "href": "index_split_025.html"
+    },
+    {
+      "section_id": "sec-028",
+      "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林",
+      "href": "index_split_026.html"
+    },
+    {
+      "section_id": "sec-029",
+      "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海",
+      "href": "index_split_027.html"
+    },
+    {
+      "section_id": "sec-030",
+      "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京",
+      "href": "index_split_028.html"
+    },
+    {
+      "section_id": "sec-031",
+      "title": "index_split_029.html",
+      "href": "index_split_029.html"
+    }
+  ],
+  "section_count": 31,
+  "chunk_count": 97,
+  "text_char_count": 93937,
+  "extraction_status": "ok",
+  "identity_status": "identified",
+  "findings": [
+    {
+      "severity": "info",
+      "message": "toc.ncx found with 29 entries."
+    },
+    {
+      "severity": "info",
+      "message": "book.md written (274708 bytes)."
+    },
+    {
+      "severity": "info",
+      "message": "book_sections.jsonl written (31 sections)."
+    },
+    {
+      "severity": "info",
+      "message": "book_chunks.jsonl written (97 chunks)."
+    }
+  ]
+}
