@@ -420,7 +420,10 @@ def main() -> int:
 
     report_path = root / "data" / "public_release_report.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.write_text(render_report(findings, len(projects)), encoding="utf-8")
+    # Write in binary mode with explicit UTF-8 encoding so the line endings
+    # are stable across invocation environments (PowerShell on Windows
+    # triggers CRLF when text mode is used, breaking `git status`).
+    report_path.write_bytes(render_report(findings, len(projects)).encode("utf-8"))
 
     errors = [finding for finding in findings if finding.severity == "error"]
     warnings = [finding for finding in findings if finding.severity == "warning"]
