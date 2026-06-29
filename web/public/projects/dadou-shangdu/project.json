@@ -101,5 +101,8 @@
     ],
     "notes": "存在历史地名、OCR、路线断点和现代路况复核需求。"
   },
-  "generated_at": "2026-06-29T10:40:45"
+  "generated_at": "2026-06-29T10:40:45",
+  "repository_url": "https://github.com/conanxin/ebook-content-lab",
+  "site_url": "https://conanxin.github.io/ebook-content-lab/",
+  "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/dadou-shangdu"
 }

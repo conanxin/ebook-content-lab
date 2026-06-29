@@ -12,6 +12,7 @@ data/review_pack/pages/
 # local build/cache
 web/dist/
 web/node_modules/
+/web/_nm_stale_*/
 __pycache__/
 *.pyc
 .venv/

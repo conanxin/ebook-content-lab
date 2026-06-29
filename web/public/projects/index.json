@@ -8,7 +8,10 @@
       "project_type": "route-map",
       "status": "v0.4-local-accepted-needs-manual-review",
       "public_path": "/projects/dadou-shangdu/",
-      "project_json": "/projects/dadou-shangdu/project.json"
+      "project_json": "/projects/dadou-shangdu/project.json",
+      "repository_url": "https://github.com/conanxin/ebook-content-lab",
+      "site_url": "https://conanxin.github.io/ebook-content-lab/",
+      "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/dadou-shangdu"
     }
   ]
 }

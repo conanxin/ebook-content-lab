@@ -127,5 +127,8 @@
     "timeline",
     "knowledge-map"
   ],
-  "identity_status": "identified"
+  "identity_status": "identified",
+  "repository_url": "https://github.com/conanxin/ebook-content-lab",
+  "site_url": "https://conanxin.github.io/ebook-content-lab/",
+  "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/dadou-shangdu"
 }
