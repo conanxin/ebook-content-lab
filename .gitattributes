@@ -1,0 +1,28 @@
+# Force LF line endings for all text files to prevent CRLF/LF noise.
+# Keep list narrow on purpose: this file's job is to lock LF for tracked
+# text, not to govern merge behavior or diff drivers.
+
+# Default: treat as text and normalize to LF on commit.
+*               text=auto eol=lf
+
+# Documents we know are text and must stay LF.
+*.md            text eol=lf
+*.txt           text eol=lf
+*.json          text eol=lf
+*.csv           text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.tsv           text eol=lf
+
+# Source code: lock LF.
+*.py            text eol=lf
+*.js           text eol=lf
+*.ts           text eol=lf
+*.jsx          text eol=lf
+*.tsx          text eol=lf
+*.css          text eol=lf
+*.html         text eol=lf
+*.sh           text eol=lf
+*.ps1          text eol=lf
+*.bat          text eol=lf
+*.cmd          text eol=lf
