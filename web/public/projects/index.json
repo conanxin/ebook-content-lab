@@ -1,0 +1,14 @@
+{
+  "repository": "ebook-content-lab",
+  "projects": [
+    {
+      "slug": "dadou-shangdu",
+      "title": "《从大都到上都》徒步路线图解",
+      "book_title": "从大都到上都：在古道上重新发现中国",
+      "project_type": "route-map",
+      "status": "v0.4-local-accepted-needs-manual-review",
+      "public_path": "/projects/dadou-shangdu/",
+      "project_json": "/projects/dadou-shangdu/project.json"
+    }
+  ]
+}

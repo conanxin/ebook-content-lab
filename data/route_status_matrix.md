@@ -1,0 +1,93 @@
+# ?????????
+
+??????????????????????? `route_segments.json`?GeoJSON?GPX ??????
+
+## ???
+
+- `data/route_segments.json`
+- `data/route_walkable_blocks.json`
+- `data/route_continuity_report.md`
+- `data/gpx_export_report.md`
+- `data/validation_report.md`
+
+## ??
+
+- segments: 15
+- route_walkable_blocks: 8 (walk-block-001, walk-block-002, walk-block-003, walk-block-004, walk-block-005, walk-block-006, walk-block-007, walk-block-008)
+- GPX waypoints: 99
+- GPX continuous track segments: 8
+- validation errors: 0
+- validation warnings: 0
+- do_not_connect_in_gpx=true: 7 (seg-003, seg-008, seg-010, seg-011, seg-013, seg-014, seg-015)
+- enters GPX track: 8 (seg-001, seg-002, seg-004, seg-005, seg-006, seg-007, seg-009, seg-012)
+- waypoint only: 7 (seg-003, seg-008, seg-010, seg-011, seg-013, seg-014, seg-015)
+
+## ????
+
+### movement_type
+
+- walked: 7
+- vehicle: 0
+- mixed: 8
+- inferred: 0
+- unclear: 0
+
+### continuity_status
+
+- continuous: 6
+- gap_before: 4
+- gap_after: 4
+- isolated: 1
+- unclear: 0
+
+### walkability_status
+
+- book_walkable: 8
+- partially_walkable: 7
+- not_walkable_as_written: 0
+- needs_review: 0
+
+### modern_followability
+
+- likely_followable: 0
+- approximate_only: 8
+- not_enough_information: 0
+- needs_field_check: 7
+
+## ??????
+
+???????????????? `seg-009` ???
+
+- `movement_type=mixed` ? 8 ??? `do_not_connect_in_gpx=true` ?? 7 ??`seg-009` ? mixed??????????/???????????????????????? `do_not_connect_in_gpx=true`????? GPX ????????????????????????????
+- `movement_type=walked` ? 7 ??? `walkability_status=book_walkable` ? 8 ???????? `seg-009`????? walked??? mixed??????? GPX track ???????????????????? `book_walkable`?
+- `route_walkable_blocks` ? 8 ? block?? `movement_type=walked` ?? 7 ??? 8 ? block ?? `seg-009`???? walkable block ?????????? movement_type=walked???????? do_not_connect_in_gpx ?????? GPX track ????
+- ??????????`continuity_status=gap_before` ???????? GPX track??? `seg-004` ? `seg-009`?????????????????????????????? track?
+
+## ?????
+
+- ?????GPX ?????route_walkable_blocks ? validation_report ?????????????????
+
+## ????
+
+| id | title | start ? end | movement_type | continuity_status | walkability_status | modern_followability | do_not_connect_in_gpx | walkable block | GPX track | waypoint only | gap_notes ?? |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| seg-001 | 健德门到皂甲屯 | 健德门 ? 皂甲屯 | walked | continuous | book_walkable | approximate_only | false | walk-block-001 | yes | no | 书中显示第一日行走结束后另有乘车南返；本段 GPX 只表达健德门至皂甲屯的步行段，不连接乘车路线。 |
+| seg-002 | 昌平到居庸关 | 昌平镇 ? 居庸关 | walked | continuous | book_walkable | approximate_only | false | walk-block-002 | yes | no | ? |
+| seg-003 | 居庸关到延庆 | 居庸关 ? 延庆旧县镇 | mixed | gap_after | partially_walkable | needs_field_check | true | ? | no | yes | 第98页及复核备注显示当天行走未连续到延庆旧县镇，后续存在乘车返回/休整信息。?书中存在乘车/断点复核说明，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-004 | 延庆旧县镇到白河堡水库 | 延庆旧县镇 ? 白河堡水库 | walked | gap_before | book_walkable | approximate_only | false | walk-block-003 | yes | no | 本段从旧县镇开始步行；与上一段之间存在已在 seg-003 标记的断点。 |
+| seg-005 | 白河堡水库到长伸地村 | 白河堡水库 ? 长伸地村 | walked | continuous | book_walkable | approximate_only | false | walk-block-004 | yes | no | 部分中途地名曾因 OCR 和标题页证据不足被移入复核说明；GPX 仅按已保留正文证据和坐标生成参考线。 |
+| seg-006 | 长伸地村到龙门所镇 | 长伸地村 ? 龙门所镇 | walked | continuous | book_walkable | approximate_only | false | walk-block-005 | yes | no | ? |
+| seg-007 | 龙门所到白草镇 | 龙门所 ? 白草镇 | walked | continuous | book_walkable | approximate_only | false | walk-block-006 | yes | no | ? |
+| seg-008 | 白草镇到老掌沟 | 白草镇 ? 老掌沟 | mixed | gap_after | partially_walkable | needs_field_check | true | ? | no | yes | 第207页及复核备注显示进入老掌沟后联系车辆接应，步行终点与住宿点之间存在非步行接续。?书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-009 | 老掌沟到小厂镇 | 老掌沟 ? 小厂镇 | mixed | gap_before | book_walkable | approximate_only | false | walk-block-007 | yes | no | 本段包含补走前一日未完成路段；接送车路线不得计入步行路线。?本段 GPX 只表达书中可支持的补走和随后步行部分。 |
+| seg-010 | 小厂镇到五花草甸 | 小厂镇 ? 五花草甸 | mixed | gap_after | partially_walkable | needs_field_check | true | ? | no | yes | 第260页及复核备注显示近五花草甸后搭车离开，不能画成完整步行到沽源。?书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-011 | 五花草甸到沽源 | 五花草甸 ? 沽源县城 | mixed | gap_before | partially_walkable | needs_field_check | true | ? | no | yes | 第265页及复核备注显示本段先乘出租车到梳妆楼和五花草甸，再补走五花草甸至沽源。?书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-012 | 沽源到塞北管理区 | 沽源县城 ? 塞北管理区 | walked | continuous | book_walkable | approximate_only | false | walk-block-008 | yes | no | ? |
+| seg-013 | 塞北管理区到黑城子 | 塞北管理区 ? 黑城子镇 | mixed | gap_after | partially_walkable | needs_field_check | true | ? | no | yes | 第318页及复核备注显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。?书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-014 | 黑城子到四郎城 | 黑城子 ? 四郎城 | mixed | isolated | partially_walkable | needs_field_check | true | ? | no | yes | 第324页及复核备注显示本段先坐出租车到补走点，路线连续性需人工确认。?书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+| seg-015 | 四郎城到上都遗址 | 四郎城 ? 元上都遗址 | mixed | gap_before | partially_walkable | needs_field_check | true | ? | no | yes | 第344页及复核备注显示坐车过上都音高勒大桥后，从桥北开始最后一日步行。?书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。?该段只导出 waypoint，不作为连续 GPX track。 |
+
+## seg-009 ??
+
+- ??: movement_type=mixed, walkability_status=book_walkable, do_not_connect_in_gpx=false, block=walk-block-007?
+- ???????????????? mixed???? GPX track????? book_walkable???? mixed ??????/??????book_walkable ??? track ???????????????

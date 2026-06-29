@@ -1,0 +1,105 @@
+{
+  "slug": "dadou-shangdu",
+  "title": "《从大都到上都》徒步路线图解",
+  "book_title": "从大都到上都：在古道上重新发现中国",
+  "source_type": "scanned_pdf",
+  "project_type": "route-map",
+  "status": "v0.4-local-accepted-needs-manual-review",
+  "visibility": {
+    "private_source_kept_in": "projects/dadou-shangdu/private/",
+    "public_artifacts_kept_in": "projects/dadou-shangdu/public/",
+    "web_public_path": "/projects/dadou-shangdu/"
+  },
+  "public_files": [
+    "project.json",
+    "route_segments.json",
+    "route.geojson",
+    "route_places.geojson",
+    "route.gpx",
+    "route_walkable_blocks.json",
+    "field_guide.md"
+  ],
+  "quality_summary": {
+    "ocr_total_pages": 360,
+    "ocr_success_pages": 332,
+    "ocr_empty_pages": 28,
+    "ocr_short_text_pages": 31,
+    "ocr_suspect_pages": 59,
+    "evidence_audit": {
+      "pass": 15,
+      "warning": 0,
+      "fail": 0
+    },
+    "validation": {
+      "errors": 0,
+      "warnings": 0
+    },
+    "manual_review_required": true
+  },
+  "route_stats": {
+    "segments": 15,
+    "walkable_blocks": 8,
+    "movement_type": {
+      "walked": 7,
+      "mixed": 8
+    },
+    "continuity_status": {
+      "continuous": 6,
+      "gap_after": 4,
+      "gap_before": 4,
+      "isolated": 1
+    },
+    "walkability_status": {
+      "book_walkable": 8,
+      "partially_walkable": 7
+    },
+    "modern_followability": {
+      "approximate_only": 8,
+      "needs_field_check": 7
+    },
+    "gpx_waypoints": 99,
+    "gpx_track_segments": 8,
+    "do_not_connect_in_gpx_segments": [
+      "seg-003",
+      "seg-008",
+      "seg-010",
+      "seg-011",
+      "seg-013",
+      "seg-014",
+      "seg-015"
+    ]
+  },
+  "review_status": {
+    "status": "manual_review_pending",
+    "review_pack": "projects/dadou-shangdu/review_pack/index.html",
+    "field_guide": "projects/dadou-shangdu/public/field_guide.md",
+    "key_review_pages": [
+      30,
+      54,
+      76,
+      98,
+      100,
+      122,
+      148,
+      172,
+      192,
+      207,
+      216,
+      220,
+      240,
+      260,
+      262,
+      265,
+      280,
+      302,
+      318,
+      322,
+      324,
+      342,
+      344,
+      353
+    ],
+    "notes": "存在历史地名、OCR、路线断点和现代路况复核需求。"
+  },
+  "generated_at": "2026-06-29T10:40:45"
+}

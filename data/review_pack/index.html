@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>《从大都到上都》路线人工复核包</title>
+  <style>
+    :root { color-scheme: light; --ink:#202124; --muted:#68707a; --line:#d8dee8; --soft:#f6f8fb; --flag:#fff0d6; --bad:#ffe2df; --blue:#e8f1ff; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif; color:var(--ink); background:#fff; }
+    header.top { position:sticky; top:0; z-index:5; background:#ffffffee; backdrop-filter:blur(8px); border-bottom:1px solid var(--line); padding:14px 22px; }
+    h1 { margin:0 0 8px; font-size:22px; }
+    h2 { margin:0; font-size:20px; }
+    h3 { margin:18px 0 8px; font-size:15px; }
+    h4 { margin:0 0 8px; font-size:14px; }
+    nav { display:flex; gap:8px; flex-wrap:wrap; }
+    nav a { color:#245b7a; text-decoration:none; border:1px solid var(--line); padding:4px 8px; border-radius:6px; font-size:13px; }
+    main { padding:20px; max-width:1440px; margin:0 auto; }
+    .segment { border:1px solid var(--line); border-radius:8px; padding:18px; margin:0 0 22px; background:#fff; }
+    .start-end { margin:6px 0 10px; color:var(--muted); }
+    .badges { display:flex; flex-wrap:wrap; gap:8px; }
+    .badge { display:inline-flex; gap:6px; align-items:center; padding:4px 8px; border-radius:999px; border:1px solid var(--line); background:var(--soft); font-size:12px; }
+    .badge.flag, .flag { background:var(--flag); border-color:#e0a943; }
+    .layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr); gap:18px; align-items:start; }
+    .fields { display:grid; grid-template-columns:1fr; gap:8px; }
+    .field { border:1px solid var(--line); border-radius:6px; padding:8px 10px; background:#fff; }
+    .field dt { font-weight:700; font-size:12px; color:#3c4858; }
+    .field dd { margin:4px 0 0; line-height:1.55; }
+    .points { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:8px; padding:0; list-style:none; }
+    .point { border:1px solid var(--line); border-radius:6px; padding:8px; }
+    .point small { display:block; color:var(--muted); margin-top:4px; }
+    .approximate { background:var(--flag); }
+    .ref { border-left:4px solid #3b7891; background:var(--blue); padding:10px; margin:0 0 10px; }
+    .chapter-ref { border-left-color:#a06b15; background:var(--flag); }
+    .ref q { display:block; margin:6px 0; }
+    .ref p { margin:0; color:#374151; }
+    .ocr-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
+    .ocr-page { border:1px solid var(--line); border-radius:8px; padding:10px; background:#fff; }
+    .ocr-page.focus { background:var(--flag); border-color:#e0a943; }
+    .ocr-page p { line-height:1.55; max-height:220px; overflow:auto; white-space:pre-wrap; }
+    .ocr-page img { width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:4px; margin-top:8px; }
+    .muted { color:var(--muted); font-weight:400; }
+    @media (max-width:900px) { .layout { grid-template-columns:1fr; } main { padding:12px; } header.top { position:static; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <h1>《从大都到上都》路线人工复核包</h1>
+    <p class="muted">生成时间：2026-06-29T09:45:06。重点复核页：30, 54, 76, 100, 122, 148, 172, 192, 216, 240, 262, 280, 302, 322, 342。</p>
+    <nav><a href="#seg-001">seg-001</a><a href="#seg-002">seg-002</a><a href="#seg-003">seg-003</a><a href="#seg-004">seg-004</a><a href="#seg-005">seg-005</a><a href="#seg-006">seg-006</a><a href="#seg-007">seg-007</a><a href="#seg-008">seg-008</a><a href="#seg-009">seg-009</a><a href="#seg-010">seg-010</a><a href="#seg-011">seg-011</a><a href="#seg-012">seg-012</a><a href="#seg-013">seg-013</a><a href="#seg-014">seg-014</a><a href="#seg-015">seg-015</a></nav>
+  </header>
+  <main>
+    
+    <section class="segment" id="seg-001">
+      <header>
+        <h2>seg-001 · 健德门到皂甲屯</h2>
+        <p class="start-end">健德门 → 皂甲屯</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>小月河；清河；广济桥；皇后店；南沙河水库；南玉河村；北玉河村</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从大都北侧健德门出发，先沿小月河、清河一带北行，经皇后店、南沙河和南玉河，至皂甲屯一带完成第一日步行。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>健德门出发，沿小月河东岸北行。；经清河、皇后店方向继续北行。；从南玉河村向西到皂甲屯，再沿甲屯路至北玉河、沙阳路。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>北京北郊河道、村镇和平原道路。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>小月河沿线、友谊路、皇后店路、甲屯路、沙阳路等现代道路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>小月河、清河、南沙河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>村民提示附近有餐馆，作者找到餐馆后吃了一碗拉面。</dd></div>
+            <div class="field flag"><dt>lodging</dt><dd>书中未明示；第52页显示之后乘出租车南返。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>暑热、城市和郊区道路交通。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 健德门<small>approximate / manual approximate Yuan Dadu Jiandemen area</small></li><li class="point approximate"><b>途经 1</b> 小月河<small>approximate / manual modern river corridor approximation</small></li><li class="point approximate"><b>途经 2</b> 清河<small>approximate / manual modern place/river approximation</small></li><li class="point approximate"><b>途经 3</b> 广济桥<small>approximate / manual historic bridge area approximation</small></li><li class="point approximate"><b>途经 4</b> 皇后店<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 5</b> 南沙河水库<small>approximate / manual modern river crossing approximation</small></li><li class="point approximate"><b>途经 6</b> 南玉河村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 7</b> 北玉河村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>终点</b> 皂甲屯<small>approximate / manual modern village approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>书中显示第一日行走结束后另有乘车南返；本段 GPX 只表达健德门至皂甲屯的步行段，不连接乘车路线。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；resupply: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第30页标题图 OCR 将地名连在一起，需回看 PDF 核对标题页地名排布。</li><li>第52页显示行走计划结束后乘出租车南行，不应把乘车路线画入步行线。</li><li>[evidence_audit] unsupported_claim: resupply: 第45页提到村民提示餐馆并在餐馆吃拉面</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 30</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 34 页</b><q>我从健德门出发，沿着小月河东岸北行</q><p>正文说明实际出发点和初始方向。</p></div><div class="ref route-ref"><b>第 52 页</b><q>沿甲屯路东北行，到北玉河村，就到了繁忙喧嚣的沙阳路</q><p>正文说明皂甲屯后至北玉河、沙阳路，第一日行走计划完成。</p></div><div class="ref route-ref"><b>第 45 页</b><q>找到村民所说的餐馆，点了一碗拉面</q><p>支持本段途中补给：村民提示餐馆，作者在餐馆吃拉面。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 30 页</b><q>从健德门到皂甲屯</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 30 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>千里滦京第一程 从健德门到皂甲屯 南玉河村 皂甲屯 南 沙河水库 沙 河 皇后店 清 河 月 河 健德门</p><a href="pages/page_030.png"><img src="pages/page_030.png" alt="第 30 页扫描图"></a></article><article class="ocr-page"><h4>第 34 页 OCR 文本片段</h4><p>间隙，云雾消散，从八达岭俯视大都，应 该不是纯粹出于想象。《析津志》也记载从龙虎台可以清晰地望见大都：“至龙虎台，高眺都城宫苑，若在眉睫。”如今，即使没有遍地高楼的遮挡，即使从较近的清河向南望，也不会看见“若在眉睫”的都城宫苑。六点四十分，我从健德门出发，沿着小月河东岸北行。小月河以 东百十米，就是八达岭高速。我在健德门附近的牡丹园小区住过很多年，从我家窗户可以清楚地看到北土城，但直到最近制定行走路线时，才 意识到小月河之名与北土城本无关联。市政改造把残存的元大都护城 河（俗称土城沟）与小月河连接起来，统称为小月河。小月河自健德 门北流进人清河，是北京城北唯一一条自南向北流的河。为什么叫小 月河呢？清人李光庭《乡言解颐》卷二有</p><a href="pages/page_034.png"><img src="pages/page_034.png" alt="第 34 页扫描图"></a></article><article class="ocr-page"><h4>第 45 页 OCR 文本片段</h4><p>天的一个村民走过来，指着楼群北边对我说：别介，那边有餐馆呢。显 然，他是远远注意到我在路边吃干粮，专门过来提示我的。我谢了他，起身背上包沿友谊路向北，再向西拐上丰润路，绕到这个新居民区的 西北侧，找到村民所说的餐馆，点了一碗拉面。走了近五个小时、差 不多二十公里之后，在凉爽的室内安坐下来，吃这么惬意的一顿午饭，真是享受，就像汗流渎背的登山途中忽然来了一阵清风。午饭后再上路，回到友谊路向北，再左转到皇后店路向西。友谊 路的西侧有一条新修的大渠，是向北直通到南沙河去的。东侧，越过 京新高速（G7），可以看到一片高大建筑，楼顶有大字招牌“北京大学 国际医院”，想起不久前听人说过，在昌平有</p><a href="pages/page_045.png"><img src="pages/page_045.png" alt="第 45 页扫描图"></a></article><article class="ocr-page"><h4>第 52 页 OCR 文本片段</h4><p>沿甲屯路东北行，到北玉河村，就到了繁忙喧嚣的沙阳路，也就 完成了今天的行走计划。于是沿沙阳路东行，打算走到沙河镇。时当 下午三点半，距我早晨从健德门桥下出发，已经九个小时了。地图上 显示我走了三十二公里，实际上可能更多。一想到今天不必再走，疲 惫立即和汗水一起遍布全身。过了G7的立交桥不到两百米处，路边白 杨树下停着一辆出租车，司机主动问我要不要车。我说，好啊，就上 了车。在G7上快速南行时，看路西我刚刚走</p><a href="pages/page_052.png"><img src="pages/page_052.png" alt="第 52 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-002">
+      <header>
+        <h2>seg-002 · 昌平到居庸关</h2>
+        <p class="start-end">昌平镇 → 居庸关</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>旧县村；龙虎台村；南口村；居庸关云台</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从昌平一带出发，经旧县村、龙虎台村、南口，进入居庸关方向；作者强调旧县、龙虎台与元代两都道路的关系。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从昌平出发，先到旧县村。；旧县村沿街北行到小学，西行离村后转农场路北行。；前往龙虎台村，再向南口、居庸关方向。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>昌平北部村镇、山前道路，逐步接近关沟。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>旧县村街道、农场路及通往龙虎台、南口、居庸关的道路。</dd></div>
+            <div class="field flag"><dt>water_sources</dt><dd>书中未明示。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>第60页提到在小店买水。</dd></div>
+            <div class="field flag"><dt>lodging</dt><dd>书中未明示。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>背包明显变重；晴空湛蓝，又一个高亢的暑天；遇狗阻路后绕道。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 昌平镇<small>approximate / manual modern town center</small></li><li class="point approximate"><b>途经 1</b> 旧县村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 2</b> 龙虎台村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 3</b> 南口村<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 4</b> 居庸关云台<small>approximate / manual historic site approximation</small></li><li class="point"><b>终点</b> 居庸关<small>verified / manual modern scenic/historic site</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <p class="muted">无</p>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第54页标题页 OCR 出现“哈旧县”等噪声，已按正文改为旧县村，需回看 PDF 第54页。</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 暑热、背包变重、路上犬只绕行</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 54</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 60 页</b><q>沿街北行到小学，西行离开旧县村</q><p>正文说明旧县村内外行走方向。</p></div><div class="ref route-ref"><b>第 64 页</b><q>龙虎台村就在古代的龙虎台上</q><p>正文确认途经龙虎台村及其历史位置。</p></div><div class="ref route-ref"><b>第 56 页</b><q>背包明显变重了。晴空湛蓝，又一个高亢的暑天</q><p>支持背包变重和暑热背景。</p></div><div class="ref route-ref"><b>第 58 页</b><q>既然它不让我走，我只好绕道了</q><p>支持路上因犬只阻路而绕行。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 54 页</b><q>从昌平到居庸关</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 54 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>龙虎台前暑气深 从昌平到居庸关 居庸关云台 南口村 龙虎台村 哈 旧县 昌平镇</p><a href="pages/page_054.png"><img src="pages/page_054.png" alt="第 54 页扫描图"></a></article><article class="ocr-page"><h4>第 56 页 OCR 文本片段</h4><p>6月25日，还是六点半出发。因为不像第一天晚间可以回家，所 以得带上电脑、洗漱用具、换洗衣服和几本书，背包明显变重了。晴 空湛蓝，又一个高亢的暑天。坐城铁13号线，到西二旗转昌平线。大 概是周六一大早的缘故，乘客并不多，13号线上见到好些人打瞌睡。离我不远，一对中年男女在靠近车门的地方激烈地争论，江浙口音，忽然那女的手掌一扬，“啪”地打在男人的脸上。连闭眼瞌睡的乘客都 惊醒了，瞪大眼晴看他们。那男人背过身去，不仅没有回打，似乎一 句话也没有说。等着看热闹的只好又闭上眼晴。从五道口到昌平，一 共只用了半个小时。元代的昌平县治并不在今昌平镇，而在今昌平镇西四公里的旧县 村，古称白浮图城。明正统十四年（1449），明英宗于土木堡（今怀来 县境内）被瓦刺俘虏，留守京师的皇弟朱祁钰称帝，改元景泰，是为 景泰帝。景泰元年（1450）调整京师防务体系，在昌平县以东兴筑永 安城，两年后成为昌平县治。从此这个狭小地带就有了两座包砖的城池，但两城并</p><a href="pages/page_056.png"><img src="pages/page_056.png" alt="第 56 页扫描图"></a></article><article class="ocr-page"><h4>第 58 页 OCR 文本片段</h4><p>似乎生怕控制不住狗。既然它不让我走，我只好绕道了。走路碰上藏，也算是新事物吧。照说我对昌平的这一带是比较熟悉的。二十多年前刚留校担任新 生班主任时，我在北大昌平校区（昌平园）生活过一年，而旧县村就 在昌平园附近，原京张公路的南侧。那时我常在园区周围及十三陵陵 区走动，对附近村庄和道路有一定了解，但仅止于京张公路以北，没 有到过旧县村。这次为走元代路做准备时，才意识到旧县的意义。虽然没有看到元代皇帝在昌平县</p><a href="pages/page_058.png"><img src="pages/page_058.png" alt="第 58 页扫描图"></a></article><article class="ocr-page"><h4>第 60 页 OCR 文本片段</h4><p> 上的大喇叭猛然响了起来：“通知，通知，今天晚上七点半，全体党员 到文化园学习。”重复两遍，最后是：“通知完毕，通知完毕。”广播声 穿透所有的庭院、门窗和房间，似乎看得见那个女播音员严肃坚定、冷若冰霜的样子，使我一瞬间发生了时空错乱的晕眩。沿街北行到小学，西行离开旧县村，越过无水的河道，走到豪华别墅区“北京湾”的北 侧马路上，在农场路转而北行，前往下一站一—龙虎台村。“每次旅行都是朝圣”，这是旅行作家DonGeorge的话，他还以此 为题写过一篇文章。他这样总结：“旅行是收集全球拼图板片的一种方 式，由此我们能更好地理解拼图整体；旅行是使世界变得神圣的朝圣行 为，无论我们是在哪里、是怎样走上这条路。”并非某个神圣的目的地 </p><a href="pages/page_060.png"><img src="pages/page_060.png" alt="第 60 页扫描图"></a></article><article class="ocr-page"><h4>第 64 页 OCR 文本片段</h4><p>。那几个司机对我很有兴趣，围过来聊天。“天热呀。”“是啊。”“居 庸关可远啊，还是坐车吧。”“不用，很快就到了。”“小心中暑啊。”“嗯 不怕。”“去居庸关一路上山，越来越难走了。”“是啊。”“从北京走过来？多远啊！”“才走了两天，不远。” 龙虎台村就在古代的龙虎台上。元帝北巡，例以龙虎台捺钵为正 式的告别大都之地，必在此留驻，留守官员也是远送至此。杨允孚的 诗说：“大臣奏罢行程记，万岁声传龙虎台。”在这里，北巡路线和日程 才正式报告给皇帝。从上都返回时，到龙虎台钵，就算是真正回到 了“冬营盘”，要在此大宴一番，有时甚至欢宴连日。大都重要官员前 来龙虎台迎驾，许多诗文都与此有关。《析津志》说：“至龙虎台，高眺 都城宫苑，</p><a href="pages/page_064.png"><img src="pages/page_064.png" alt="第 64 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-003">
+      <header>
+        <h2>seg-003 · 居庸关到延庆</h2>
+        <p class="start-end">居庸关 → 延庆旧县镇</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_after</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>弹琴峡；水关长城；八达岭关城；岔道城；小泥河村；大泥河村；大榆树镇</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从居庸关云台附近出发，沿关沟北上，经水关长城、八达岭、岔道城，再取山边小路经小泥河、大泥河到大榆树方向；书中在大榆树前后结束当天行走并坐车返回。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从居庸关出发沿关沟北上。；水关长城以上离开谷底河道，改在公路边行走。；过八达岭至岔道城，午后从西门外小路经小泥河、大泥河向大榆树镇。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>关沟峡谷、长城关口、山边小路、村庄农田。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>关沟公路、岔道城西门外沙土路、山边小路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>谷底河道、水关一带。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>岔道城客栈午饭。</dd></div>
+            <div class="field flag"><dt>lodging</dt><dd>书中未明示</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>连续上山、来车避让、甲沟炎和水泡。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point"><b>起点</b> 居庸关<small>verified / manual modern scenic/historic site</small></li><li class="point approximate"><b>途经 1</b> 弹琴峡<small>approximate / manual gorge area approximation</small></li><li class="point approximate"><b>途经 2</b> 水关长城<small>approximate / manual modern scenic site approximation</small></li><li class="point"><b>途经 3</b> 八达岭关城<small>verified / manual modern scenic/historic site</small></li><li class="point approximate"><b>途经 4</b> 岔道城<small>approximate / manual historic village approximation</small></li><li class="point approximate"><b>途经 5</b> 小泥河村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 6</b> 大泥河村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 7</b> 大榆树镇<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>终点</b> 延庆旧县镇<small>approximate / manual modern town approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第98页及复核备注显示当天行走未连续到延庆旧县镇，后续存在乘车返回/休整信息。</li><li>书中存在乘车/断点复核说明，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；lodging: cleared_to_unspecified; 未找到能直接支持“无本段步行住宿”的正面证据；保留为复核说明。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第76页标题页 OCR 将“八达岭关城”识别为“达岭关城”，已据正文第88页校正。</li><li>第98页显示步行未连续到延庆旧县镇，居庸关到延庆之间存在需要人工确认的断点。</li><li>[evidence_audit] unsupported_claim: lodging: 无本段步行住宿</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 76</li><li>证据不足，待人工复核：lodging 原内容：无本段步行住宿；作者坐车返回居庸关/中关村休整。</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 88 页</b><q>从水关长城向上，就没有谷底河道可行了</q><p>正文说明关沟内道路变化和水关长城之后的行走方式。</p></div><div class="ref route-ref"><b>第 96 页</b><q>从岔道城经小泥河村、大泥河村，以大榆树镇为今日的目的地</q><p>正文明确岔道城后的实际取路。</p></div><div class="ref route-ref"><b>第 98 页</b><q>离大榆树镇还有二十几分钟的路程。我决定就到这里</q><p>正文显示当天实际步行在大榆树镇前结束，后续有乘车。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 76 页</b><q>从居庸关到延庆</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 76 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>居庸关外看长城 从居庸关到延庆 大榆村镇 大泥河村 岔道城 达岭关城 水关长城 弹琴峡 居肃关云台</p><a href="pages/page_076.png"><img src="pages/page_076.png" alt="第 76 页扫描图"></a></article><article class="ocr-page"><h4>第 88 页 OCR 文本片段</h4><p>些朝圣者的生活形态还使巴兹尼把他们自已的汽车拉力赛也升华成了 一场朝圣之行。京张铁路开通后，商旅锐减，关沟经济萧条，当地人 士试图发展旅游重振经济，把古来名胜编联成“关沟七十二景”，各取 雅名，这就是今日“关沟七十二景”的前身。从石佛寺往北，谷地渐渐开朗，距离山顶越来越近。我们偶在树 荫下歇息，会有成群的蚊子在身边飞舞，制造某种恐怖气氛。好在很 快就走到水关长城，眼前游客花花绿绿一片。从水关长城向上，就没 有谷底河道可行了，只好在公路上靠边走，小心地避让一切对面和背 后的来车。再走一个多小时，中午一点半，到达八达岭。这里就是元 代居庸关的北口。我们走过那些出售“好汉证书”的商店，穿过乱糟 糟拥挤着要购买“好汉证书”的游客人群，走向八达岭关门。胡助有 诗句“过者但知今北口，居人不识古长城”，那时古长城的遗迹已黯淡 沉灭，明长城的建立还有待时日。在中国文学传统中，长城被视为暴政与边荒的象征，孟姜女哭倒 的岂止是一段土城而已。可是一百</p><a href="pages/page_088.png"><img src="pages/page_088.png" alt="第 88 页扫描图"></a></article><article class="ocr-page"><h4>第 96 页 OCR 文本片段</h4><p>告别岔道城，我们沿西门外向北的路走上一座小山，那里有一条 不能通车的沙土路直指小泥河村。从地形分析，元代攀路应该是在稍 西一些向北，基本上就是沿今日的西新路，在簸箕营折人今八达岭路，再往北就到了延庆（元代的龙庆州）。我不想与汽车拥挤在一起，特意 选择山边的小路，从岔道城经小泥河村、大泥河村，以大榆树镇为今 日的目的地。这个略微偏离路的线路穿行于玉米地和山林间，除了 偶尔遇到几个村民，再没有别人出现，更听不到汽车声了。右手边是 静默的燕山，从任何角度都能看到散布在山脊上的长城墩台。微风吹拂，凉爽宜人。只有路侧草丛和树林里的虫声，提示着这是夏天。我的同伴潘隽有比我丰富得多的户外经验，身轻体健，一拔腿就 走到我前面去了。我读过的徒步指南一类的书上说，多人一起行走，每人要找到自已的速度和节奏，不可追人，亦不可等人，如此才能持久。我们就是这样各走各的，但每过一小时她会停下来等我一下，因此才 没有走出我的视线之外。聊天中，她经常提到中欧和戈</p><a href="pages/page_096.png"><img src="pages/page_096.png" alt="第 96 页扫描图"></a></article><article class="ocr-page"><h4>第 98 页 OCR 文本片段</h4><p>马上要下大雨的样子。离大榆树镇还有二十几分钟的路程。我决定就 到这里，结束第三天的行程。于是向村头老乡打听有谁开出租车送我 们到居庸关，老乡立即掏出手机拨通了一个号码。几分钟后，开始有 零星雨点的时候，一个小伙子开着轰轰响的小车赶过来了。车过八达 岭，雨意全无，阴云都隔在山北了。回到居庸关停车场，游客正在散去，我们还有时间做几组拉伸，才开着潘隽的车南返。再过一小时多一点，天还大亮，就回到中关村了。我接下来有差不多两天的休息时间。此前的十多天里，王抒正在 中欧多国进行他的“启蒙之旅”，从微信里可以看到他和他的同伴们在 德国、捷克等地非常有趣的旅行。他定于6月27日返回北京，然后和 我一起完成从延庆到正蓝旗的全部行程。我们计划28日夜赶到延庆，29日从延庆出发，所以留给他休息的时间只有一天。我呢，根据这三 天的试探，要做一些新的准备，特别是要解决脚趾头甲沟炎的问题。虽说走了三天微微有些疲累，但比起三天之前，信心大大提高，这才 真的是</p><a href="pages/page_098.png"><img src="pages/page_098.png" alt="第 98 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-004">
+      <header>
+        <h2>seg-004 · 延庆旧县镇到白河堡水库</h2>
+        <p class="start-end">延庆旧县镇 → 白河堡水库</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge flag"><b>continuity</b>gap_before</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>车坊；黑峪口村；盘云岭；燕山天池宾馆</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>吃完早饭，作者一行告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库；经车坊、黑峪口、盘云岭山口，沿昌赤路和水库边道路到白河堡水库。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>由延庆旧县镇向车坊、黑峪口方向。；从车坊向北沿昌赤路缓坡上升。；过黑峪口、盘云岭后到达白河堡水库边。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>黑谷山道、水库山地、山口。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>昌赤路/S212、水库边道路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>白河堡水库。</dd></div>
+            <div class="field flag"><dt>resupply</dt><dd>书中未明示。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>水库库区管理所的燕山天池宾馆。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>山路爬升、黑谷十八盘、暑热后转高地气候。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 延庆旧县镇<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 1</b> 车坊<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 2</b> 黑峪口村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 3</b> 盘云岭<small>approximate / manual mountain pass approximation</small></li><li class="point approximate"><b>途经 4</b> 燕山天池宾馆<small>approximate / manual lodging area approximation near Baihepu Reservoir</small></li><li class="point approximate"><b>终点</b> 白河堡水库<small>approximate / manual reservoir approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>本段从旧县镇开始步行；与上一段之间存在已在 seg-003 标记的断点。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；route_summary: 标题引用移出后补充正文证据并收紧表达。；lodging: 标题引用移出后补充正文证据并收紧表达。；p104 quote updated；p114 quote updated</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>本段部分细节来自标题页和相邻正文，仍需回看第100-114页确认完整日程。</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 100</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 104 页</b><q>今昌赤路（即212省道）从车坊向北，一路缓坡上升</q><p>正文说明车坊至黑峪口方向和道路。</p></div><div class="ref route-ref"><b>第 114 页</b><q>沿昌赤路（S212）在水库边走半小时之后</q><p>正文说明到达白河堡水库后的水库边道路。</p></div><div class="ref route-ref"><b>第 102 页</b><q>吃完早饭，我们告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库</q><p>支持本段从延庆/旧县镇开始走向白河堡水库。</p></div><div class="ref route-ref"><b>第 111 页</b><q>盘云岭山口是由地质学上所说的盘云岭断层形成的</q><p>支持本段经过盘云岭山口。</p></div><div class="ref route-ref"><b>第 115 页</b><q>找到水库库区管理所的燕山天池宾馆</q><p>支持本段住宿地点。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 100 页</b><q>从延庆旧县镇到白河堡水库</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 100 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>黑谷深深十八盘 从延庆旧县镇到白河堡水库 燕山天池宾馆 白河堡水库 车坊 延庆旧县镇</p><a href="pages/page_100.png"><img src="pages/page_100.png" alt="第 100 页扫描图"></a></article><article class="ocr-page"><h4>第 102 页 OCR 文本片段</h4><p>被手机闹铃叫醒时，我正在做一个有关故乡的梦。睁眼看陌生的 房间，床边堆着的蓝黑色背包，以及小桌上摊开的昨夜人睡前所读的书，才完全清醒过来。这是6月29日早上六点，在延庆的一家宾馆。昨夜 我们一行四人在五道口集合，开车来到延庆，在这家宾馆住下，约定 六点半大堂见。除了王抒和我，我的同事郭润涛教授和潘隽的同事刘 冰也加人这一天的行程。我收拾停当下到大堂时，他们都已经等在那 里了。夜里下过小雨，街边苦楝树瘦长的树叶油光发亮，空气里满是 湿意。于是到隔壁的小吃店吃早饭，豆浆油条煮鸡蛋，再买一袋馒头 准备在路上吃。吃完早饭，我们告别延庆，坐出租车前往旧县镇，从 那里开始走去白河堡水库。旧县镇就是元代的缙山县城所在。元仁宗爱育黎拔力八达 （Ayurbarwada，1285-1320）出生于本县，当上皇帝后就把缙山县升 级为龙庆州。周伯琦在《扈从集》里记他所参与的1352年6月那次北巡，车驾大队并没有进入缙山县（正如此前没有进入昌平县），而是</p><a href="pages/page_102.png"><img src="pages/page_102.png" alt="第 102 页扫描图"></a></article><article class="ocr-page"><h4>第 104 页 OCR 文本片段</h4><p>方城，据此，明代黑峪口有堡子，这个堡子是长城防卫体系的 一部分。黑峪口是川平原与北部山地（即所谓黑谷）的连接点，是 所谓“寇冲”，驻军筑城都是可以理解的。不过根据明代史料，黑峪口 曾设过巡检司，后来移到别处去了，这个小方城也可能是巡检司城。今昌赤路（即212省道）从车坊向北，一路缓坡上升，走一个小时，就到黑峪口村，也就要开始爬山了。周伯琦的诗句“车坊尚平地，近</p><a href="pages/page_104.png"><img src="pages/page_104.png" alt="第 104 页扫描图"></a></article><article class="ocr-page"><h4>第 111 页 OCR 文本片段</h4><p>前寒武纪雾迷山组白云岩。雾迷山组得名于蓟县雾迷山，主要是燧石 条带白云岩。由于岩性坚脆，由中生代的燕山运动与新生代的岩溶作 用共同塑造为喀斯特地貌，容易形成悬崖绝壁。京北许多风景区壁立 如削的峡谷，都是出于这种地质条件。当然如三香峰这般惊艳壮观且 贴近公路的并不多见。离这里不远，延庆境内还有国家地质公园，展 示的就是同样的地貌和地质景观。从三香峰再走二十分钟，就到了公路最高处的盘云岭山口，大概 也是古代十八盘结束的地方。盘云岭山口是由地质学上所说的盘云岭 断层形成的，山口路旁有观景台和一座绿瓦红柱的凉亭，旁边立有大石，石上刻着“燕山天池”四个红漆大字。从观景台下望，白河堡水库温 润闪亮的水面直扑眼帘，那也就是所谓“燕山天池”。称白河堡水库为 “天池”，大概因为它是北京地区海拔最高（560米）、水量第五大的水库。它环抱于四周绿色的群山之中，覆盖在洁净如洗的蓝天之下，水面在 蓝绿两种颜色之间变幻不定，静谧而温柔。我们在凉亭休息了十来</p><a href="pages/page_111.png"><img src="pages/page_111.png" alt="第 111 页扫描图"></a></article><article class="ocr-page"><h4>第 114 页 OCR 文本片段</h4><p>白河堡水库一角 沿昌赤路（S212）在水库边走半小时之后，回过头看南 边高高的盘云岭山口。山脉在这里断裂下陷，形成一个 深深的马鞍，成为这一带过山道路的必然选择，黑谷道 因此才能出现。</p><a href="pages/page_114.png"><img src="pages/page_114.png" alt="第 114 页扫描图"></a></article><article class="ocr-page"><h4>第 115 页 OCR 文本片段</h4><p>无光，似乎涂上了一层墨色。很显然会有一场大雨，我们必须赶在大 雨到来之前找到住处。偏偏在这时候，许多令人吃惊的景色出现了。除了左手水面的色 彩不停变幻以外，右手山巅巨大的悬崖把山林切分成多个楼层，既秀丽，又雄壮。在一个大转弯处，水库一侧伸出一条巨臂般的长，崖壁如削，切割出一道水湾，猛然看去颇有海洋的气象。我们忍不住停下来一边 赞叹，一边拍照。对面高山的山腰以上都已没入云雾之中，而山腰以 下直至水库的部分，却特别清晰，像是被水洗过一样。头顶清脆的雷声 越来越密，越来越近，而且开始有雨点飘下来。中午两点过几分，我们 终于上了大坝。在大坝上向东侧的坝下望去，从前的白河河谷，如今满 是农田和房舍，坝下大片的果树林也说明已经很久没有泄过洪了。这时风突然大了起来，雨点也沉重了许多，头发和脸很快就全湿 了。我们加快脚步，过大坝再走六七分钟，就见到石壁上的白色大字“燕 山天池会议中心”。依照箭头所指，找到水库库区管理所的燕山天池宾 馆。整整一栋</p><a href="pages/page_115.png"><img src="pages/page_115.png" alt="第 115 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-005">
+      <header>
+        <h2>seg-005 · 白河堡水库到长伸地村</h2>
+        <p class="start-end">白河堡水库 → 长伸地村</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>白河河谷；骆驼山；郑家窑村；镇虏楼</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从白河堡水库一带沿白河河谷行走，上午到达骆驼山村；从骆驼山村离开滦赤路，向北转入 X405 县级公路蒋京线，最终到长伸地村附近。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>沿白河河谷前行。；上午到达骆驼山村后，向北折入 X405 县级公路蒋京线。；到长伸地村口后右转过河上山至住宿处。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>白河河谷、山谷、边堡遗址地带。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>河谷道路、新铺水泥路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>白河河谷。</dd></div>
+            <div class="field flag"><dt>resupply</dt><dd>书中未明示。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>贾先生家客房。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>村庄小，无招待所；住宿需事先联系。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 白河堡水库<small>approximate / manual reservoir approximation</small></li><li class="point approximate"><b>途经 1</b> 白河河谷<small>approximate / manual river valley approximation</small></li><li class="point approximate"><b>途经 2</b> 骆驼山<small>approximate / manual village/mountain area approximation</small></li><li class="point approximate"><b>途经 3</b> 郑家窑村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 4</b> 镇虏楼<small>approximate / manual historic tower near Changshendi approximation</small></li><li class="point approximate"><b>终点</b> 长伸地村<small>approximate / manual modern village approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>部分中途地名曾因 OCR 和标题页证据不足被移入复核说明；GPX 仅按已保留正文证据和坐标生成参考线。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；route_summary: 标题引用移出后补充正文证据并收紧表达。；walking_directions: 标题引用移出后补充正文证据并收紧表达。；water_sources: 标题引用移出后补充正文证据并收紧表达。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第122页标题图 OCR 将“长伸地村”识别为“长博地村”，已按正文第143页校正。</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 122</li><li>证据不足，待人工复核：seg-005 原 route_summary / walking_directions 中的“郑家窑、镇虏楼”未在正文事实页形成足够支撑，本轮仅从摘要和方向中移除，地点候选仍需回看 PDF。</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 143 页</b><q>靠近长伸地村的村口时，还不到下午三点</q><p>正文说明到达长伸地村口的时间和住宿安排。</p></div><div class="ref route-ref"><b>第 143 页</b><q>右转过河，沿一条新铺的水泥路上山</q><p>正文说明长伸地村口后的具体走法。</p></div><div class="ref route-ref"><b>第 125 页</b><q>公路紧贴在白河河谷的北岸</q><p>支持本段沿白河河谷行走。</p></div><div class="ref route-ref"><b>第 126 页</b><q>上午十点，到达骆驼山村</q><p>支持本段到达骆驼山村。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 122 页</b><q>从白河堡水库到长伸地村</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 122 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>无限青山锁大边 从白河堡水库到长伸地村 镇虏楼 长博地村 郑家窑村 骆驼山 白河河谷</p><a href="pages/page_122.png"><img src="pages/page_122.png" alt="第 122 页扫描图"></a></article><article class="ocr-page"><h4>第 125 页 OCR 文本片段</h4><p>辆小汽车驶过，经过我身边时突然停下，车里几 个人好奇地看看我，又一言不发地快速开走了。大约过了二十几分钟，王抒回来了，手举墨镜，笑意吟吟。如果这次没能找回，可就是我几 天之内丢失的第二个墨镜了，前一个是在关沟的乱石滩和芦苇丛觅路 时丢掉的。公路紧贴在白河河谷的北岸，越来越开阔的河谷都已开辟成了种 植玉米的农田，白河在农田间豌蜓盘旋。前一天的降雨使河水湍急而 浑浊，水面漂浮着的塑料袋远远望去很像是随波上下的鹭鸟。河对岸 陡峭的山峦时时露出巨大的黄白色岩壁，在山玻上低矮的松树林和灌 木丛的映衬下十分雄壮。这条路间隔很久才会见到一辆汽车，山谷静谧，风清天凉，如此行走真是十分享受。在我们的右手，因修公路而劈开 山坡露出的岩石</p><a href="pages/page_125.png"><img src="pages/page_125.png" alt="第 125 页扫描图"></a></article><article class="ocr-page"><h4>第 126 页 OCR 文本片段</h4><p>制，来到宣府长城地带，正式 归附明朝，明朝把他们安置在滴水崖及靖胡堡一带放牧。也就是说，在投奔明朝之后，从白河堡水库到赤城县后城镇这一带的白河河谷，就成了车部蒙古人的放牧区。那时的河谷肯定和现在不一样，但两边 的山林与峭壁，应该是差不多的。上午十点，到达骆驼山村。之所以叫骆驼山，是因为村南有一片 石山，虽不甚高大，形状却绝似几头骆驼列队而行，任何人看一眼都 会印象深刻。元初耶律楚材之子耶律铸（1221一1285）有《过骆驼山》 诗二首，第一首的第一句就是“天作奇峰象驼”，驼，即骆驼。耶 律铸曾经跟随忽必烈路经此地，第二首诗云“昔驾朱轮白囊驼”，就 是说自己当年多次乘坐白骆驼所驾的朱轮大车经行此处。耶律铸相信，那时这</p><a href="pages/page_126.png"><img src="pages/page_126.png" alt="第 126 页扫描图"></a></article><article class="ocr-page"><h4>第 143 页 OCR 文本片段</h4><p>靠近长伸地村的村口时，还不到下午三点，但算起来已经走了八个多 小时了，潜伏着的疲劳感开始浮出水面。村子太小，没有可提供住宿 的招待所或旅馆。我们事先已通过朋友联系村委会，找到在这里承包 山地开发果林的贾先生，据说只有他家备有合适的客房。到村口之后 我们给他打电话，按他的指示，不进村子，右转过河，沿一条新铺的 水泥路上山。远远看见高大的门楼，以及东山的山麓台地上绿树环绕 的房院，那就是贾先生的大</p><a href="pages/page_143.png"><img src="pages/page_143.png" alt="第 143 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-006">
+      <header>
+        <h2>seg-006 · 长伸地村到龙门所镇</h2>
+        <p class="start-end">长伸地村 → 龙门所镇</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>巡检司村；不堡子村；红沙梁；小堡村</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从长伸地村出发，经巡检司村、红沙梁一带下山，穿过河谷和国道，进入龙门所镇。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>早饭后从长伸地村住宿处出发。；尽量走路边老路或人行道，经过巡检司村。；从红沙梁一路下山，经小堡村一带，转入国道后到龙门所镇。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>山口、河谷、边堡与墩台地带。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>修路路段、老路、人行道、国道京环线（G112）。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>白河支流与河谷。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>巡检司村流动售货车；转入国道后有加油站和餐馆。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>龙门所镇小旅馆，每人十五元。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>修路尘土飞扬、烈日、疲劳；王抒脚上打了水泡。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 长伸地村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 1</b> 巡检司村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 2</b> 不堡子村<small>approximate / manual OCR-normalized village approximation</small></li><li class="point approximate"><b>途经 3</b> 红沙梁<small>approximate / manual pass/ridge approximation</small></li><li class="point approximate"><b>途经 4</b> 小堡村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>终点</b> 龙门所镇<small>approximate / manual modern town approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <p class="muted">无</p>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；roads_or_paths: supported_with_new_book_ref; 已按书中证据清理。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>“不堡子村”疑似 OCR 或地名需回看第148页标题图。</li><li>[evidence_audit] unsupported_claim: roads_or_paths: 修路路段、老路、人行道、国道京环线/G112</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 修路扬尘、烈日、疲劳、水泡</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 148</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 150 页</b><q>看看表正好是六点半，背起背包</q><p>正文说明本日出发时间。</p></div><div class="ref route-ref"><b>第 160 页</b><q>从红沙梁一路下山</q><p>正文说明红沙梁之后的下山路线。</p></div><div class="ref route-ref"><b>第 167 页</b><q>进人龙门所镇正好是下午四点</q><p>正文说明到达龙门所镇。</p></div><div class="ref route-ref"><b>第 151 页</b><q>我们尽量走路边的老路或人行道</q><p>支持本段修路环境下走老路或人行道。</p></div><div class="ref route-ref"><b>第 161 页</b><q>汇入国道京环线（G112）</q><p>支持本段道路进入国道京环线/G112。</p></div><div class="ref route-ref"><b>第 154 页</b><q>大卡车奔忙来去，拖曳着尘土飞扬的长龙</q><p>支持修路车辆扬尘。</p></div><div class="ref route-ref"><b>第 155 页</b><q>他的脚第一天就打了水泡</q><p>支持脚部水泡风险。</p></div><div class="ref route-ref"><b>第 160 页</b><q>顶着烈日再走一个小时</q><p>支持烈日和疲劳背景。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 148 页</b><q>从长伸地村到龙门所镇</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 148 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>边关何处龙门所 从长伸地村到龙门所镇 龙门所 巡检司村 不堡子村 长伸地村</p><a href="pages/page_148.png"><img src="pages/page_148.png" alt="第 148 页扫描图"></a></article><article class="ocr-page"><h4>第 150 页 OCR 文本片段</h4><p>面西山反射过来的晨光照亮 了院子和附近的树林。刚收拾好背包，贾先生就来叫我们吃饭。早饭 是他岳母做的手擀面，新面有一种香而呛人的味道，很久没有大清早 吃这样的面条了，连吃三碗才打住。饭后跟贾先生道谢，拿出二百元 钱塞给他，被他板着脸拒绝了。看看表正好是六点半，背起背包，和 贾先生一家告别。藏安卧狗房，似乎懒得看我们一眼。从院门口的 斜坡向外望，整个山谷被对比强烈的明暗两色一分为二，河道以西洒 满阳光，我们这边还在东山暗影的保护中，西山上的镇虏楼洋溢着介 乎金银两色之间的亮光。贾先生送我们到靠近大门处，指着谷地里的 村庄说，村里有古庙，去看看吧。因为要赶路，我们并没有进村去。听说村里还有古戏台，大概街 巷布局也是旧的，可惜</p><a href="pages/page_150.png"><img src="pages/page_150.png" alt="第 150 页扫描图"></a></article><article class="ocr-page"><h4>第 151 页 OCR 文本片段</h4><p>，一小 时后在东坡村外，我们又遇到一个几乎一模一样的小庙。和昨天不同，长伸地村以北的修路工程似乎正在实施中，虽然还 没到上班时间，路上堆放的各类工具却预言了即将开始的喧闹以及漫 天尘土。天上也没有那么多云朵了，蓝澄澄的天空宣示着阳光的灼热。我们尽量走路边的老路或人行道，爬上爬下，绕东绕西，大大增加了 里程。一般的沙土路走走也还行，最不妙的是修桥洞的地方都挖开一 条大沟，真正“断交”了，只能往远处绕行才得通过。不过每天早晨 出发后的头两三个小时，都是我们一天中体力最好的时候，所以这也 不算是多么难受。相反，在施工车辆轰响之前，在阳光变得如炙烤般 令人畏惧之前，走在有清风流动的山谷里，看蝴蝶在眼前飘摇而过，听路边灌木和草丛中</p><a href="pages/page_151.png"><img src="pages/page_151.png" alt="第 151 页扫描图"></a></article><article class="ocr-page"><h4>第 154 页 OCR 文本片段</h4><p>我们走回坡下，沿着公路边的院落 向西。那些院子明显有生气得多，乱叫一气的小狗也多了起来。左转 走回公路之前，我看到一家院子里有好几棵樱桃树，结满了鲜红的樱桃。从巡检司村开始，修路的人员车辆都上班了，这意味着每走一会儿 就得穿过一截施工路段。大卡车奔忙来去，拖曳着尘土飞扬的长龙。我把一个毛巾挂在背包的肩带上，随时拿来捂住口鼻。阳光越来越强，一路上都陪着我们的风却无影无踪了。脸上微微有些汗，尘土立即沾 上去，形成一层能感觉得到的薄膜。更糟糕的是，随着我们在这个山 谷越走越高，两侧的山地渐渐低伏下去，不再有那巍峨峻峭的山峰和 崖壁了一—其实我也分不清，是景色变得平庸了呢，还是自己更加专 注于眼前的尘土、酷热与种种不适，而对自然景观不再</p><a href="pages/page_154.png"><img src="pages/page_154.png" alt="第 154 页扫描图"></a></article><article class="ocr-page"><h4>第 155 页 OCR 文本片段</h4><p>王抒可能有更严重的问题。他的脚第一天就打了水泡，每走一步 都会有刺痛感，特别是停一停再走的时候。所以他宁可一走起来就不停，连续迈步，让伤口周围的神经受到持续压迫而变得麻木。脚上打过水 泡的人，应该都有类似的体验。虽然他较为年轻，身体也好，没有参 加头三天从北京到延庆这一段，但他此前一直在德国、奥地利和捷克 旅行，十七八天时间，每天开车、走路，回北京休息不足一天就参加 这一程，身体未能得到适当的调整。他在</p><a href="pages/page_155.png"><img src="pages/page_155.png" alt="第 155 页扫描图"></a></article><article class="ocr-page"><h4>第 160 页 OCR 文本片段</h4><p>领袖，仍然活动于塞内河谷间，主要在我们这两天所走过的白河堡至 龙门所一带。从红沙梁一路下山，我们离开了有墨绿色松林和清凉微风的山坡，在河谷南岸的台地上，以及修路卡车扬起的尘土中，顶着烈日再走一 个小时，到了小堡村一带。公路离村庄很远，看得见河对岸已经崩塌的 堡子和快要崩塌的墩台。几天来第一次，我觉得双腿乏力，不得不坐 在路边粗大的水泥管子上休息一下。这时已经快十二点了，饥饿感相 当强烈，而阳光的暴晒又成倍地放大了疲劳。从地图上看，我们还得 再走一</p><a href="pages/page_160.png"><img src="pages/page_160.png" alt="第 160 页扫描图"></a></article><article class="ocr-page"><h4>第 161 页 OCR 文本片段</h4><p>前在土耳其东部农村见过的巨型圆白菜来，只能算是微型品种，那种 圆白菜比过去常见的塘瓷洗脸盆还大一圈，极为壮观。快一点时，我们走了两天的蒋京线（X405）终于到头了，汇入国 道京环线（G112）。发源于红沙梁的自东向西流的小河，在此汇入自北 向南流的白河支流。这意味着灰尘漫天的路段结束了，但也意味着我 们接下来要与各种汽车共享公路了。转入国道，折而向北，再走几分钟，路边就有一片房屋，是加油站和餐馆，似乎还有旅馆。餐馆里四张桌子，只有靠墙的一桌坐着一个男子在喝酒。开餐馆的似是一对母女，妈妈 在厨房忙碌，女儿招呼客人，两人都身穿浅绿色的围裙，围裙上画有 联通的广告。厨房门口挂了半截的帘子，帘子上有张家口产的白酒广 告，从帘下看厨房里面，妈妈正站在木桌前用菜刀切葱花。女儿看起 来二十出头，清秀而利索。我们放下背包，到院子对过上厕所，然后 到院子里打水洗手洗脸。薄膜般贴在脸上的灰尘一洗而去，有种浮出 水面的轻松感。我们先点了两瓶冰啤酒，再</p><a href="pages/page_161.png"><img src="pages/page_161.png" alt="第 161 页扫描图"></a></article><article class="ocr-page"><h4>第 167 页 OCR 文本片段</h4><p>一辆黑驴拉的板车，车上装着两袋化肥，赶车人侧身坐在车首，上身 是污黄的白衬衣，头上扣着大草帽。与我们擦身而过时，他的眼晴藏 在帽檐的暗影里，我却分明感觉到他深深地凝视。进人龙门所镇正好是下午四点，从早晨六点半出发到现在，不算 在巡检司村休息和拐上国道后吃饭，我们走了整整八个小时。进镇后 第一件事是找旅馆，东问西问，竟然一直找不到。看来镇子太小，交 通又方便，需要在这里过夜的旅客是很少的。正在这时候，王抒接到 潘隽的电话。第三天在岔道城时，她就说过要利用下一个周末赶过来，再次加人我们走两天。现在她让人开车送她，已经快到龙门所了，还 说已经联系了一家旅</p><a href="pages/page_167.png"><img src="pages/page_167.png" alt="第 167 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-007">
+      <header>
+        <h2>seg-007 · 龙门所到白草镇</h2>
+        <p class="start-end">龙门所 → 白草镇</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>巴图营大桥；塘子庙；东万口乡</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从龙门所沿 G112 北上，到小东沟林场一带越过白河与黑河分水岭，下山后折向东，经东万口乡，下午到白草镇；书中另写到塘子庙温泉和住宿安排。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从龙门所沿G112向北，越走越高。；到小东沟林场一带过白河与黑河分水岭，下山后折向东。；沿黑河河谷经东万口，至白草镇南G112转向处。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>分水岭、黑河河谷、集镇和国道。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>G112、黑河河谷道路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>黑河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>东万口乡买水和西瓜；白草镇西头餐厅。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>塘子庙一带的“温泉宾馆”。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>本日步数高、脚部水泡、国道交通。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 龙门所<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 1</b> 巴图营大桥<small>approximate / manual bridge area approximation</small></li><li class="point approximate"><b>途经 2</b> 塘子庙<small>approximate / manual hot spring village approximation</small></li><li class="point approximate"><b>途经 3</b> 东万口乡<small>approximate / manual modern township approximation</small></li><li class="point approximate"><b>终点</b> 白草镇<small>approximate / manual modern town approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <p class="muted">无</p>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；route_summary: supported_with_new_book_ref; 已按书中证据清理。；lodging: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第172页标题页 OCR 可能把“塘子庙”识别为“特子庙”，已据正文第174、191页校正。</li><li>[evidence_audit] unsupported_claim: route_summary: 经塘子庙</li><li>[evidence_audit] unsupported_claim: lodging: 塘子庙温泉宾馆一带</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 172</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 175 页</b><q>从龙门所沿G112先是向北，一路越走越高</q><p>正文说明离开龙门所后的路线。</p></div><div class="ref route-ref"><b>第 180 页</b><q>中午十二点，我们走到东万口乡</q><p>正文说明中途集镇与补给。</p></div><div class="ref route-ref"><b>第 189 页</b><q>下午五点整，我们走到白草镇南G112向东转</q><p>正文说明完成本日行程。</p></div><div class="ref route-ref"><b>第 174 页</b><q>塘子庙就是明代地图上的“滚水塘”，以温泉得名</q><p>支持 route_summary 中塘子庙相关描述。</p></div><div class="ref route-ref"><b>第 174 页</b><q>我们住的这家“温泉宾馆”开业不久</q><p>支持本段住宿为塘子庙温泉宾馆。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 172 页</b><q>从龙门所到白草镇</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 172 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>白云依旧照黑河 从龙门所到白草镇 白草镇 东万口乡 特子庙 龙门所 巴图营大桥</p><a href="pages/page_172.png"><img src="pages/page_172.png" alt="第 172 页扫描图"></a></article><article class="ocr-page"><h4>第 174 页 OCR 文本片段</h4><p>塘子庙就是明代地图上的“滚水塘”，以温泉得名。地质学家解释 说，这一带主要是受深断裂控制，加上一级构造的制约，由于断层发育，岩层破碎，地下热水沿张性断层侵入岩脉，露出地表，就形成塘子庙 温泉群。据说，过去共有七十二眼热泉，水温可高达75℃，真当得起“滚 水”之称；现在还有超过四十处泉眼，稍大些的早已被“开发”，其余 也正在被“开发”。在中国，近年来“开发”一词似乎越来越令人生畏，好像任何好资源一旦被开</p><a href="pages/page_174.png"><img src="pages/page_174.png" alt="第 174 页扫描图"></a></article><article class="ocr-page"><h4>第 175 页 OCR 文本片段</h4><p>路爬上一座山，直奔龙门所。昨晚一片 漆黑，除了车前灯光里的路面，什么也没看见。现在终于看得清沿途 风景了。十公里的路程，不到二十分钟就跑完了。回到昨晚吃饭的那 家餐馆前，下车背上背包，看路边一丛鲜艳的罂粟花迎着朝阳轻轻摇曳，开始今天的行程。从龙门所沿G112先是向北，一路越走越高，到小东沟林场就到了 白河与黑河的分水岭，下山之后折而向东，进人黑河滋养的河谷地带。下山时我们没有沿公路旋绕盘山，而是走一条小路径直下山，在长草 与灌木间觅路而行，大大缩短了路程。早晨车少，山谷里有清脆的鸟鸣，墨绿色的松林和浅绿色的灌木丛在远近山坡上画出不规则的格子图案。阳光刺眼，但还不觉得很热，正是一天里最适合走路的时刻。一小时 四十分后，就到了巴图营大桥</p><a href="pages/page_175.png"><img src="pages/page_175.png" alt="第 175 页扫描图"></a></article><article class="ocr-page"><h4>第 180 页 OCR 文本片段</h4><p>，只有几棵白杨树和榆树，孤独地挺出黑瓦红瓦的屋顶之上。天空湛蓝，点缀着几朵白云。远处看得见黑河西岸的青山，阳坡是低矮的灌木和 草丛，只在北坡有一片片的人工林，大概是松树和柏树。黑河在这一 带流量并不大，但河谷开阔，滋润了河谷里的草场和农田。中午十二点，我们走到东万口乡。这是龙门所到白草镇之间最大 的集镇，我们从早上到现在走了近二十公里，差不多是一半路程，正 好休息一下。街两边摆摊的多，逛街买东西的少，显得一派荒寂。进 了一家商店，买几瓶水，一个西瓜。柜台上的年轻女子说：这瓜可不 甜啊。没关系，有水就行。店里空间狭窄，没有地方吃瓜，我们抱着 瓜出来。正午时分，骄阳似火，也不能坐在太阳下吃瓜。沿街走几步，见到街东一个院子，院</p><a href="pages/page_180.png"><img src="pages/page_180.png" alt="第 180 页扫描图"></a></article><article class="ocr-page"><h4>第 189 页 OCR 文本片段</h4><p>下午五点整，我们走到白草镇南G112向东转告别黑河河谷的地 方，完成了今天的行程。在镇子西头找到一家餐厅，外面屋角竖着一 块红漆大字“泰山石正挡”的三角立石。卸去背包，坐下休息，等待 刘未夫妇和郭润涛夫妇的到来。喝水之后各自掏出手机，理头收发信息、查看照片。我在“微信运动”上看今天的步数，吃惊地发现我们三人 的步数差别非常大：王抒走了54326步，潘隽走了47604步，我只走了 43032步。手机根</p><a href="pages/page_189.png"><img src="pages/page_189.png" alt="第 189 页扫描图"></a></article><article class="ocr-page"><h4>第 191 页 OCR 文本片段</h4><p>天要走差不多四十公里，可能是全部行程里最长的一天。郭太太一开 始有点犹豫，说她没走过这么长，担心自己走不下来。我说，我也没 有走过这么长，走不动了到时候再想办法。其实我知道，郭太太身体 很好，一直坚持锻炼，前几年我在海淀一家健身房运动时常常碰到她。可以肯定，如果明天有人走不下来，那一定不会是她。这样就确定下来：明天一早我们坐郭太太的车从塘子庙到白草镇吃早饭，把车停在这家 餐厅的后院，五人一齐出发，到达目的地后找车把他们夫妇和潘隽送 回白草镇，再开车返回北京。饭后我们七人分乘两车，返回塘子庙。天已完全黑了，依稀识得 白天走过的路。本以为开车一眨眼就到，没想到跑了好一阵子。到达 宾馆，老板热情地说，正担心你们呢，咋这么晚了还不回来。刘未非 常幸运地找到一家有中央五台的饭店，开车投店去了。郭润涛夫妇住 进我们这一家接近客满的“温泉宾馆”。服务员热情地介绍怎么使用温 泉水龙头，原来还有许多复杂的机关。不知道他们几个怎么样，我哪 里顾得上</p><a href="pages/page_191.png"><img src="pages/page_191.png" alt="第 191 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-008">
+      <header>
+        <h2>seg-008 · 白草镇到老掌沟</h2>
+        <p class="start-end">白草镇 → 老掌沟</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_after</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>三道川村；禹龙山村；黑龙山村；山神庙村；南沟门</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从白草镇出发，沿黑河东岸 X404 北上，经过三道川、黑龙山、山神庙等地，进入老掌沟；从沟口往沟里走半小时后，请度假村老板开车来接。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从白草镇沿黑河东岸县级公路X404北行。；在黑龙山村休息后继续向西北。；进入老掌沟河谷森林地带，后联系度假村车辆接应。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>黑河上游河谷、森林、山岩、沙石河滩。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>X404、老掌沟河谷路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>黑河及老掌沟河谷多条水流。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>白草镇早餐和午饭；途中自带水食。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>老掌沟度假村客房。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>离老掌沟还有约二十公里，书中判断很难完成；山区可能突降暴雨，路上有越野车队；后段联系度假村车辆接应。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 白草镇<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 1</b> 三道川村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 2</b> 禹龙山村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 3</b> 黑龙山村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 4</b> 山神庙村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 5</b> 南沟门<small>approximate / manual valley entrance approximation</small></li><li class="point approximate"><b>终点</b> 老掌沟<small>approximate / manual valley/scenic area approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第207页及复核备注显示进入老掌沟后联系车辆接应，步行终点与住宿点之间存在非步行接续。</li><li>书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；route_summary: supported_with_new_book_ref; 已按书中证据清理。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第207页显示从老掌沟沟内联系车辆接应，本段步行终点与住宿点之间存在非步行接续，需人工复核。</li><li>[evidence_audit] unsupported_claim: route_summary: 因路程和同行人返程安排，后段由度假村车接走</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 长距离近四十公里计划、天气突变、越野车、后段非连续步行</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 192</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 194 页</b><q>沿黑河东岸的一条县级公路（X404）向北</q><p>正文说明道路和方向。</p></div><div class="ref route-ref"><b>第 205 页</b><q>随着X404左转进人黑龙山村</q><p>正文说明黑龙山村和距离判断。</p></div><div class="ref route-ref"><b>第 207 页</b><q>从沟口往沟里走了半小时后</q><p>正文说明进入老掌沟后因时间安排联系车辆。</p></div><div class="ref route-ref"><b>第 207 页</b><q>请他开车来接我们。他爽快地答应了</q><p>支持本段后段由度假村车辆接应。</p></div><div class="ref route-ref"><b>第 205 页</b><q>离目的地老掌沟还有差不多二十公里，看来很难完成了</q><p>支持本段路程压力。</p></div><div class="ref route-ref"><b>第 205 页</b><q>山区有自己的小气候，也许会突然来一场暴雨</q><p>支持天气突变风险。</p></div><div class="ref route-ref"><b>第 205 页</b><q>一路上已见到好几拨越野车队</q><p>支持越野车相关风险。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 192 页</b><q>从白草镇到老掌沟</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 192 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>水远沟深山复山 从白草镇到老掌沟 老掌沟 南沟门 山神庙村 禹龙山村 三道川村 白草镇</p><a href="pages/page_192.png"><img src="pages/page_192.png" alt="第 192 页扫描图"></a></article><article class="ocr-page"><h4>第 194 页 OCR 文本片段</h4><p>。郭太太把车开上她昨晚 已经熟悉的路上，在渐渐明朗的晨光里驶过黑河河谷，六点二十几分 就回到白草镇西头那家餐厅，把车停进后院。前一晚已经说定，餐厅 给我们准备好了早餐。半小时之内吃完，带上午饭，我们告别G112国 道和尚未完全醒来的白草镇，沿黑河东岸的一条县级公路（X404）向北，朝黑龙山森林公园的方向进发。一行五人，声势自是不同。列队走在公路西侧，五人的衣服色彩 各异，郭太太的橙色冲锋衣尤其鲜亮。可是清晨的公路上既无人也无车，没有谁来看我们。郭润涛换上了专业装备，果然精神抖擞，登山杖敲 击地面的声响清脆有力。偶尔有晨风拂过，带着山林草木的气息。高</p><a href="pages/page_194.png"><img src="pages/page_194.png" alt="第 194 页扫描图"></a></article><article class="ocr-page"><h4>第 205 页 OCR 文本片段</h4><p>条山谷进山，向东可以去燕山山脉的最高峰东猴顶。东猴顶海拔将近 两千三百米，号称“京北第一峰”，峰顶平坦宽广的亚高山草甸，密布 萱草等耐高寒草本植物，夏天在草甸上争奇斗艳的花朵中，就有格外 引引人注目的金莲花。我们没有往森林公园走，而是随着X404左转进人黑龙山村，在村 中一棵大榆树下休息十分钟，喝水吃东西。路北有一道石头堆砌的矮墙，正适合放背包或倚靠歇息。背包一卸下，全身都清爽轻松许多。从白 草镇算起，我们已经走了二十公里。可是离目的地老掌沟还有差不多 二十公里，看来很难完成了。天上浮动着厚厚的云朵，刚才还炙烤大 地的阳光变得断断续续、不那么灼热了。山区有自己的小气候，也许 会突然来一场暴雨。这种想法使我们不敢多歇</p><a href="pages/page_205.png"><img src="pages/page_205.png" alt="第 205 页扫描图"></a></article><article class="ocr-page"><h4>第 207 页 OCR 文本片段</h4><p>奇丽，崖壁之陡峭，景色之壮美，堪称一路所见之最。紧抱在悬崖峭壁之内 的河谷，密布高大的白杨和榆树。被车轮翻开的白沙，和海滩上的沙 子一样细软。不远处数十头花色的奶牛，在河流两侧的青草地上或行 或立，悠闲自得，完全不在意我们这一小群人的人侵。从沟口往沟里走了半小时后，我们不得不承认这样走到目的地时，恐怕就快六点了，而郭润涛夫妇和潘隽还得回到白草镇，开车南返北京。于是打电话给原已联系好的、位于北边沟门村的一家度假村老板，请 他开车来接我们。他爽快地答应了。于是我们卸下背包，在沙地上歇息。说是歇息，大家似乎根本歇不下来，都忙着用手机拍照，一会儿拍牛，一会儿拍人。元代路东道的具体路线，特别是从黑峪十八盘到沙岭这一段，研究者并</p><a href="pages/page_207.png"><img src="pages/page_207.png" alt="第 207 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-009">
+      <header>
+        <h2>seg-009 · 老掌沟到小厂镇</h2>
+        <p class="start-end">老掌沟 → 小厂镇</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_before</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>南沟门；沟门村；前坝村；黄土坑村；雷大道村；三间房村</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>首先要补上昨天没有走完的一段；在南沟口附近下车后开始补走这一段；从沟门往北走十多分钟到分水岭，经前坝村和后坝村一带，下午四点一刻到小厂镇。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>在南沟口附近下车，补走前一日未完成的沟谷路段。；从沟门往北过分水岭。；沿 X404 经前坝、后坝一带，下午到小厂镇。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>沟谷多小河、细沙和车辙；沟门以北为开阔田野，沙岭一带为沙质地貌。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>沟谷车辙、山麓绕行、乡镇道路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>沟谷多条小河，需反复过河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>小厂镇餐馆、宾馆。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>小厂镇宾馆。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>沟谷中需反复过河；细沙和深车辙使行走困难；五公里沟谷实际走了差不多十公里。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 老掌沟<small>approximate / manual valley/scenic area approximation</small></li><li class="point approximate"><b>途经 1</b> 南沟门<small>approximate / manual valley entrance approximation</small></li><li class="point approximate"><b>途经 2</b> 沟门村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 3</b> 前坝村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 4</b> 黄土坑村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 5</b> 雷大道村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 6</b> 三间房村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>终点</b> 小厂镇<small>approximate / manual modern town approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>本段包含补走前一日未完成路段；接送车路线不得计入步行路线。</li><li>本段 GPX 只表达书中可支持的补走和随后步行部分。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。；route_summary: 标题引用移出后补充正文证据并收紧表达。；walking_directions: 标题引用移出后补充正文证据并收紧表达。；terrain: 标题引用移出后补充正文证据并收紧表达。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>本段包含“补走”逻辑，需在页面显式标记不要把接送车路线算作步行路线。</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 反复过河、深车辙、细沙、绕行导致距离增加</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 216</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 220 页</b><q>我们开始补走这一段到处都是牛群的风景区</q><p>正文说明补走前一日未步行路段。</p></div><div class="ref route-ref"><b>第 220 页</b><q>本来只有五公里长的沟谷，我们实际走了差不多十公里</q><p>正文说明沟谷绕行和距离偏差。</p></div><div class="ref route-ref"><b>第 232 页</b><q>小厂镇是南北一条主街</q><p>正文说明到达小厂镇后的街镇形态和补给。</p></div><div class="ref route-ref"><b>第 220 页</b><q>无论怎么走都得反复过河</q><p>支持反复过河风险。</p></div><div class="ref route-ref"><b>第 220 页</b><q>满谷都是细沙，被越野车纵横碾压之后，车辙深陷</q><p>支持细沙和深车辙。</p></div><div class="ref route-ref"><b>第 218 页</b><q>首先要补上昨天没有走完的一段</q><p>支持本段补走前一日未完成路段。</p></div><div class="ref route-ref"><b>第 221 页</b><q>从沟门往北走十多分钟，就到了燕山山脉北支的分水岭</q><p>支持从沟门向北过分水岭。</p></div><div class="ref route-ref"><b>第 222 页</b><q>沙岭至小厂镇地势下降明显</q><p>支持沙岭至小厂镇的地势和路线背景。</p></div><div class="ref route-ref"><b>第 224 页</b><q>X404的路东先后是前坝村和后坝村</q><p>支持经前坝、后坝一带。</p></div><div class="ref route-ref"><b>第 228 页</b><q>下午四点一刻，我们走到X404与S245交叉的地方，终于到小厂镇了</q><p>支持本段到达小厂镇。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 216 页</b><q>从老掌沟到小厂镇</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 216 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>北出沙岭见平川 从老掌沟到小厂镇 小厂镇 三间房村 雷大道村 黄土坑村 前坝村 沟门村 老学沟</p><a href="pages/page_216.png"><img src="pages/page_216.png" alt="第 216 页扫描图"></a></article><article class="ocr-page"><h4>第 218 页 OCR 文本片段</h4><p>六月间制定计划时，考虑在中途休整一天。原来设想的地方就是 老掌沟，因为这里山清水秀，比较凉爽，而往北进人传统的草原地带，再无大片的山林。昨晚住下来后，才知道这里的食宿条件并不适合休整，只有继续往前，当然首先要补上昨天没有走完的一段。早晨电路还没 有修通，餐厅那边人进人出，显得有点乱。我们把一部分行李留在房 间里，背上大大减轻了的背包，去找张书记。昨晚约好，请张书记一 早送我们返回昨天接我们的地方。天已放晴，但仍有灰色的云东一片西一片地飘在头顶。虽不像昨 夜那样冷了，人们还是都穿着外套。在餐厅见到吴经理和张书记，跟 他们打招呼，他们好像早就起床了。不知是不是我多心，我觉得吴经 理在张书</p><a href="pages/page_218.png"><img src="pages/page_218.png" alt="第 218 页扫描图"></a></article><article class="ocr-page"><h4>第 220 页 OCR 文本片段</h4><p>”我说，“别打，千万别打。”也许是我的劝解起了作用，他收了手，把枪放回后备厢，回到车里时还嘟曦道：“山里多着呢。在南沟口附近下车时，已经过了八点。张书记和他挂着山西号牌 的白色切诺基在沟里起伏蹄动，像梅花鹿一样跳跃而去，消失在榆树 林深处。我们开始补走这一段到处都是牛群的风景区，首先是必须寻 找适合行走、不必趟水过河的路径。多条小河在沟谷中东西摇摆，无 论怎么走都得反复过河。有的地方河道较窄，可以一步跨过去，有的地 方河水较浅，垫几个石头就能走过去。但还是有既深且宽的河道，为 了避免脱鞋趟水，我们宁可绕行山麓的石崖。沟内看上去林木浓密，如同森林地带，其实满谷都是细沙，被越野车纵横碾压之后，车辙深陷，每一步都在上下攀爬中。就这样，本</p><a href="pages/page_220.png"><img src="pages/page_220.png" alt="第 220 页扫描图"></a></article><article class="ocr-page"><h4>第 221 页 OCR 文本片段</h4><p>说话。我感谢他帮了这么多忙，要给他钱。他说，不是为了钱，就是想交个朋友。他还真是只收了很少的钱。我们回房 间收拾收拾，把电脑、衣物、书和杂物塞进背包，一背上身，就觉得 非常沉。出来与张书记和吴经理告别，再返回X404，向北，向小厂镇 走去。从沟门往北走十多分钟，就到了燕山山脉北支的分水岭，向南可 见沟谷急剧下沉，谷中林木葱，黑河的上源就由其中的多条溪水构成。向北是微微倾斜的绿色田野，莜麦和土豆地如此开阔，连日来局促在</p><a href="pages/page_221.png"><img src="pages/page_221.png" alt="第 221 页扫描图"></a></article><article class="ocr-page"><h4>第 222 页 OCR 文本片段</h4><p>从沟门分水岭到小厂镇这一段，今日是连绵不断的农田，而在 一百多年前的漫长时期里，应该是河谷地带。从燕山北麓流出的溪水 一路向北，沿途水量渐大，到活源县城附近汇入滦河。这条河就是发 源于冰山梁北麓，东行来到沙岭北坡，向北最终汇人滦河的葫芦河。沙岭至小厂镇地势下降明显，葫芦河河道应该深而且窄。过小厂镇之 后地势平缓，葫芦河盘旋迁曲，形成巨大的沼泽和河谷草原，然后北 流汇人图诺尔，即元代的察罕脑儿。如今小厂镇以南的整个河谷上 游早就开发为农田，从前的葫芦河河道被压缩成一条若有若无的沟渠。这条沟渠自南而北，串联起许多个村庄和乡镇，依稀保存着过去交通 和水道网络的格局。从沟门向北，已无法想象当年溪流清澈、青草茂盛、骏马奔腾的美</p><a href="pages/page_222.png"><img src="pages/page_222.png" alt="第 222 页扫描图"></a></article><article class="ocr-page"><h4>第 224 页 OCR 文本片段</h4><p>一个高地；从北边向南看，比起同一山脉东西两侧的高峰来，沙岭只是 一座低山。我和王抒从沟门村那家度假饭店北行，X404的路东先后是前坝 村和后坝村，这两三公里之间，就是元代沙岭捺钵所在。沟门与前坝 之间的一小片樟子松，是如今这条路上最后的森林，大概在古代也是。我们看见的不是周伯琦眼中的“碧草”，而是纵横如划、齐齐整整的农田，以及农田里绿油油的土豆、玉米等那个时代还不可能出现的庄稼。刚过后坝村，天上就不再有蓝色的空隙，阴云沉沉，要下雨的样子。这条路出奇地安静，几乎没有汽车通行，走了半小时只见到路边停着 一辆拖拉机。也见不到行人，只在经过村庄时远远地看到几个人走动。对于徒步者来说，这真是最理想的路段。甚至连太阳都躲在云层的后面，可以摘下墨镜和帽子，开衣领，让凉风尽可能地吹拂脖颈。如果不 是阴天，路两边稀稀拉拉的白杨实在不足以遮挡阳光。西边远处低缓 的山梁上，一溜高大的风力发电机慢慢转动着叶片，不慌不忙，好像 比我们还有耐心。我们，或者</p><a href="pages/page_224.png"><img src="pages/page_224.png" alt="第 224 页扫描图"></a></article><article class="ocr-page"><h4>第 228 页 OCR 文本片段</h4><p>路上行人、车辆多了起来，还有一辆长途巴士呼呼开过。几分钟后，快到一家加油站时，路东一地里，金灿灿的油菜花格外醒目。七月 里油菜花盛开，我此前只在青海湖一带见到过，可见这里的物候与青 海高原接近，比华北平原晚了差不多两个月。再往前走，路边出现了大片的黄花首。首比油菜花和莜麦更 引起我的兴趣。劳费尔（BertholdLaufer，1874-1934）出版于1911年 的《中国伊朗编》（Sino-lranica）第一部分就写首，是一篇学识充沛 的文字。他特别指出，汉文“首”应该是对费尔干纳语言而不是古 波斯语言中该植物名称的音译。前面引元代王沂写沙岭的诗，有“马 衔青首”之句，说明那时从沙岭向北的路上种植首。不知道元 代蒙古草原南缘人工种植首的规模究竟有多大，但无论大小，毕竞 是一种农业行为。某种意义上，种植首对游牧人来说也是急需的，因为粮食布帛可以从南方运输，首却是当下和普遍的需求品。下午四点一刻，我们走到X404与S245交叉的地</p><a href="pages/page_228.png"><img src="pages/page_228.png" alt="第 228 页扫描图"></a></article><article class="ocr-page"><h4>第 232 页 OCR 文本片段</h4><p>问他累不累，他说比昨天好，和我的感受正相反。我读过的那些写徒 步的书，有纪实的，也有虚构的，都提到长程徒步的某个转折点，有 的人忽然变得强壮起来，有的人忽然泄了气无法继续。我是不是到了 泄气的边缘呢？小厂镇是南北一条主街，外加东西一条横街，我们沿着主街向北，过了一座水泥桥，就是店铺密集的闹市区了。停在路边的一辆卡车上 有三匹枣红马，路边的木桩上拴着高大的黑骡。街上飘浮着一股轻烟 般的兴奋。下午到宾馆时，服务员问我们是不是来赶会的。原来从明 天开始是小厂镇的大集会，有货物交换，也有唱大戏，周围老乡都要 来赶会。没想到这种古老的乡里传统能持续到今天。我们进了一家玻璃窗上写满了饭</p><a href="pages/page_232.png"><img src="pages/page_232.png" alt="第 232 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-010">
+      <header>
+        <h2>seg-010 · 小厂镇到五花草甸</h2>
+        <p class="start-end">小厂镇 → 五花草甸</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_after</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>馒头山村；小南滩村；石柱村；石头城水库；石头城村；牛群头</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从小厂镇北行，不取 S241 主路而沿 X404 和葫芦河西岸走，拜访石头城遗址和牛群头一带，最终到五花草甸附近；因疲劳决定去沽源休整，近五花草甸后搭车离开。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>小厂镇早餐、补水后离开。；不沿S241北行，继续沿X404到镇西侧。；走葫芦河西岸，经石头城水库、石头城遗址和牛群头一带。；到义合成村南、五花草甸附近后拦车去沽源。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>坝上村镇、河谷草滩、水库、古城遗址。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>X404、葫芦河西岸土路，避开S241主路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>葫芦河、石头城水库。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>石柱村商店提供方便面，作者先喝两瓶啤酒。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>当晚到沽源宾馆，非本段步行终点住宿。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>暴热、疲劳、水泡，近五花草甸后发生乘车接续。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 小厂镇<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 1</b> 馒头山村<small>approximate / manual OCR-normalized village approximation</small></li><li class="point approximate"><b>途经 2</b> 小南滩村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 3</b> 石柱村<small>approximate / manual OCR-normalized village approximation</small></li><li class="point approximate"><b>途经 4</b> 石头城水库<small>approximate / manual reservoir approximation</small></li><li class="point approximate"><b>途经 5</b> 石头城村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 6</b> 牛群头<small>approximate / manual historic site area approximation</small></li><li class="point approximate"><b>终点</b> 五花草甸<small>approximate / manual scenic area approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第260页及复核备注显示近五花草甸后搭车离开，不能画成完整步行到沽源。</li><li>书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；resupply: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第240页标题页 OCR 将“馒头山村”“石柱村”等识别不稳，需回看 PDF。</li><li>第260页显示作者未当晚步行进沽源，而是在五花草甸附近搭车，页面不得画成步行线。</li><li>[evidence_audit] unsupported_claim: resupply: 途中小店泡面、啤酒</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 240</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 242 页</b><q>我们没有沿着这条主要公路北行</q><p>正文说明不取S241主路。</p></div><div class="ref route-ref"><b>第 251 页</b><q>从小厂镇走葫芦河西岸向北</q><p>正文说明选择葫芦河西岸的原因。</p></div><div class="ref route-ref"><b>第 260 页</b><q>沿路往北走几百米，到义合成村南，离五花草甸已经不远了</q><p>正文说明在五花草甸附近搭车去沽源休整。</p></div><div class="ref route-ref"><b>第 245 页</b><q>我给你们泡碗方便面吧</q><p>支持石柱村商店提供方便面。</p></div><div class="ref route-ref"><b>第 245 页</b><q>从冰箱里拿出两瓶啤酒，让我们先喝着</q><p>支持途中补给中的啤酒。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 240 页</b><q>从小厂镇到五花草甸</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 240 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>七月杨花满路飞 从小厂镇到五花草甸 五花草甸 牛群 头 石头城村 天存品通址 石头城水库 俗石柱村 小南滩村 慢头山村 小厂镇</p><a href="pages/page_240.png"><img src="pages/page_240.png" alt="第 240 页扫描图"></a></article><article class="ocr-page"><h4>第 242 页 OCR 文本片段</h4><p>）和我在大同听过的北路榔子是有很大区别的。正是那次在“走 西口”的门槛上看晋剧的经历，帮助我理解了包括各种山西榔子在内 的山西文化何以在内蒙有那么广泛的影响。八点差十分，我们告别小厂镇。我们要拜访的元代捺钵牛群头，并不位于241省道上，所以我们没有沿着这条主要公路北行，而是继 续沿着昨天走的X404，到了镇子西侧。路南地里金黄色的油菜花正在 盛开，路两边的白杨树挂满了棉花一样的白絮。走了二十多分钟，王 抒发觉有一包东西，主要是药品，丢在宾馆房间了。打电话过去，宾</p><a href="pages/page_242.png"><img src="pages/page_242.png" alt="第 242 页扫描图"></a></article><article class="ocr-page"><h4>第 245 页 OCR 文本片段</h4><p>见我们这般装束，忙叫我们坐下。知道我们饿得不行，就说，我给你 们泡碗方便面吧。从冰箱里拿出两瓶啤酒，让我们先喝着，转身去烧 水泡面。我看她谈吐不似一般村民，问她是不是当过老师，她笑笑没 有回答。面泡好后，我们把堆在一边的“草原白酒”搬了两箱，起 来当作餐桌，开始享用起泡面来。她拿来两包榨菜，还拿一盒蛋糕给 我们，说，吃吧吃吧，不要钱。外面正是暴热之时，室内却相当凉爽。小黑狗在我们脚边转了一圈，又到门口蹲下，注视着外面寂静无人的 街道。和店主人聊了一阵，她对我们走去正蓝旗的计划将信将疑，一 再说，这么热的天，不行啊。肯定是出于对我们的担心，她收拾了几 样东西送给我们，再一次说不要钱。我没接受她的好意，说背包已经 太重，再装不了别的了。她一听就理解了，说，是呀是呀，千里不梢 书嘛。我还是第一次听到“千里不捎书”这个说法，非常近似我家乡 的“千里不带针”，但显然更有味道。我们坐到两点才起身告辞，刚好有别的顾客进店，店主人跟我们 说了再</p><a href="pages/page_245.png"><img src="pages/page_245.png" alt="第 245 页扫描图"></a></article><article class="ocr-page"><h4>第 251 页 OCR 文本片段</h4><p>1，全不似水库西侧的寂静落寞。东边远 远的是一线青山，几乎每一个山头上都立着一个风力发电机，它们的 白色身影倒映在水面上，像是一根根漂浮的火柴棍。石头城水库是以库北两公里的石头城村命名的，而石头城村又得 名于村南的古城石头城遗址。我们之所以从小厂镇走葫芦河西岸向北，而不是走河东的S241大路，就是为了拜访这个古城遗址。研究者相 信，元代路和驿路上著名的牛群头，便在这一带。元代路北出沙岭，紧磅葫芦河西岸，直到牛群头，与西南来的驿路相合。牛群头既有皇 帝的捺钵，也有驿路的驿站，另外还设有维持治安的巡检司，人口规 模相当大。那时候沽源镇一带还没有形成大型聚落，方圆百十里内最 大的市镇就是牛群头。我们从石柱村到石头城水库走了</p><a href="pages/page_251.png"><img src="pages/page_251.png" alt="第 251 页扫描图"></a></article><article class="ocr-page"><h4>第 260 页 OCR 文本片段</h4><p>原计划今晚走到活源，明天从活源前往塞北管理区。从这里到活源还 有十多公里，照前些天的体力我们能在天黑前赶到。既然决定休整一天，那么今天就不必走到沽源了。我说：“过一会儿我们到五花草甸附近找 辆车去活源，明天再回来补走这一段。新思路一明确，好像忽然多了些力气。走过河谷草滩，到了热闹 的S241上，正在张承高速出入口附近。沿路往北走几百米，到义合成 村南，离五花草甸已经不远了。我们在路边伸手拦车，很快就有一辆 SUV停下，车上三个小伙子，在轰轰响的音乐中吸烟。听说要去活源，就告诉我们，他们只是路过沽源，可以把我们丢在路口。六十块，行 不行？行。背包堆进后备厢，人挤到后座上。十几分钟后，我们已经 站在活源县城南边路口的花坛边了。再拦一辆出租车，司机听我们说 了要去的宾馆，摇摇头道，没多远呀，走走就到了。意思是不必打车。我们坚持用他的车，果然掉个头一拐弯就到了。到达宾馆的时间是六 点十五分。一进房间，放下背包就洗澡。越是疲劳，对洗澡的需</p><a href="pages/page_260.png"><img src="pages/page_260.png" alt="第 260 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-011">
+      <header>
+        <h2>seg-011 · 五花草甸到沽源</h2>
+        <p class="start-end">五花草甸 → 沽源县城</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_before</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>河东村；闪电河水库；梳妆楼</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>休整日以车前往梳妆楼和五花草甸后补走五花草甸至沽源一段，经河东村以北回到公路，进入沽源县城。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从沽源先乘出租车去梳妆楼，再去五花草甸补走。；经闪电河水库、河东村一带。；在沽源镇南离开公路，向北进入县城。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>草甸、湖库、县城郊区、田间土路。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>田间土路、S241、县城道路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>闪电河水库、葫芦河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>沽源县城餐厅和宾馆。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>继续住沽源宾馆。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>本段先乘出租车到梳妆楼，再送到五花草甸；随后从五花草甸一带补走到沽源。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 五花草甸<small>approximate / manual scenic area approximation</small></li><li class="point approximate"><b>途经 1</b> 河东村<small>approximate / manual modern village approximation near Guyuan</small></li><li class="point approximate"><b>途经 2</b> 闪电河水库<small>approximate / manual reservoir approximation</small></li><li class="point approximate"><b>途经 3</b> 梳妆楼<small>approximate / manual historic site approximation</small></li><li class="point approximate"><b>终点</b> 沽源县城<small>approximate / manual modern county center</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第265页及复核备注显示本段先乘出租车到梳妆楼和五花草甸，再补走五花草甸至沽源。</li><li>书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第265页明确先坐出租车到梳妆楼和五花草甸，实际步行补段需人工回看第265-277页确认起点。</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 本段包含车辆回到补走起点，需避免误画乘车路线</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 262</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 265 页</b><q>先把我们送去梳妆楼，在那里等着，再送我们去五花草甸</q><p>正文说明因前一日乘车，次日以车辆回到补走起点。</p></div><div class="ref route-ref"><b>第 277 页</b><q>在沽源镇南的河东村以北，我们走出田间土路</q><p>正文说明回到沽源前的实际行走位置。</p></div><div class="ref route-ref"><b>第 273 页</b><q>上午九点五十分，出租车把我们送到五花草甸</q><p>支持从五花草甸开始补走。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 262 页</b><q>从五花草甸到沽源</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 262 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>梳妆楼下金莲肥 从五花草甸到沽源 沽源县 梳妆楼 闪电河水库 河东村 五花草甸</p><a href="pages/page_262.png"><img src="pages/page_262.png" alt="第 262 页扫描图"></a></article><article class="ocr-page"><h4>第 265 页 OCR 文本片段</h4><p>“你们自己没有车，那是坐啥车来活源的？” “走来的。” “开玩笑呢吧？那得走多久呀。” “不久，十天。” “不信，骗人呢。” 王抒说已经和梳妆楼管理处联系好，他们八点多在管理处大门口等 我们。我们不敢耽搁，八点在宾馆前拦了一辆出租车，和司机说好先把 我们送去梳妆楼，在那里等着，再送我们去五花草甸。梳妆楼在县城 以东七公里外的南沟村，闪电河河谷的西岸。我们八点二十分到达梳 妆楼大门外，管理处的主任等几人很快也到了。他们很热情地带我们 进门，到管理处办公室小坐，简单介绍了情况，然后我们自已去参观。梳妆楼是一座全砖横券无梁结构的建筑，形似一个方块，上端一 个穹隆顶，与宋元时期中原传统建筑风格明显有别。在清代志书中，这个建筑被称为“萧后梳妆楼”，传为辽圣宗之母萧太后住夏梳妆之处。很早就有学者指出楼上的穹隆顶应该是元代的“圆顶殿”，判断是元朝 宫殿一类建筑。这种地表高规格建筑的存在，在相当长时间内让一部 分学者怀疑这里就是元代著名的察罕脑</p><a href="pages/page_265.png"><img src="pages/page_265.png" alt="第 265 页扫描图"></a></article><article class="ocr-page"><h4>第 273 页 OCR 文本片段</h4><p>上午九点五十分，出租车把我们送到五花草甸。五花草甸是口道 营村和义合成村之间公路西侧的葫芦河河谷草滩，因地势平展，河道 迁曲回旋，滋润出一片总面积达四千亩的天然草甸，满是拥挤、蓬勃、平均高度近一米的青草。这些以毛科为主的草类植物，很多都在夏 秋季节开花，花期五颜六色，草甸变成花海。不同的花期色调也会不 同。一个多月前来过的朋友说，他们恰好碰到粉红色的小花草玉梅盛 开，整个草甸像是漂浮在梦一般的粉色</p><a href="pages/page_273.png"><img src="pages/page_273.png" alt="第 273 页扫描图"></a></article><article class="ocr-page"><h4>第 277 页 OCR 文本片段</h4><p>中午十二点半，在沽源镇南的河东村以北，我们走出田间土路，回到崭新的公路上。S241在这里弯出一道美丽的弧线，跨过葫芦河，绕行沽源镇南，在镇西折向西北而去。我们在镇南离开公路，往北进 人县城，在宾馆对面的餐厅草草吃了点东西，就回宾馆休息了。醒来已近下午五点。靠着枕头，拿起笔记本，记上午看梳妆楼的 印象。小腿还有点隐痛，希望能够再撑几天。再撑四天。还有四天，整个行程就要完成了，上都正在一百多公里外的太阳下静静等候。</p><a href="pages/page_277.png"><img src="pages/page_277.png" alt="第 277 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-012">
+      <header>
+        <h2>seg-012 · 沽源到塞北管理区</h2>
+        <p class="start-end">沽源县城 → 塞北管理区</p>
+        <div class="badges"><span class="badge"><b>movement</b>walked</span><span class="badge"><b>continuity</b>continuous</span><span class="badge"><b>walkability</b>book_walkable</span><span class="badge"><b>followability</b>approximate_only</span><span class="badge"><b>do_not_connect</b>False</span><span class="badge"><b>GPX track</b>yes</span><span class="badge"><b>waypoint only</b>no</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>察罕脑儿；小宏城子；水泉淖尔；转佛庙；马神庙村</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从沽源县城北出，经过察罕脑儿/小宏城子遗址、水泉淖尔；从水泉淖尔向东上山到转佛庙村南口，沿 024 县道东北行到马神庙村，再向塞北管理区方元酒店行走。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从沽源酒店沿街北走，右转东行过青年湖大桥。；到小宏城子遗址后沿024县级公路向北，再折向东北。；从水泉淖尔向东上山到转佛庙村南口；沿024县道东北行，半小时后到马神庙村，再向塞北管理区行走。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>草原湖泊、河谷、无树道路、县道。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>青年湖大桥、024县级公路、县道。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>葫芦河、察罕脑儿、水泉淖尔、滦河相关水系。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>小宏城子村供销社买水、食物和啤酒。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>塞北管理区方元酒店。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>高原的暴晒和暑热开始发威；作者越来越畏惧阳光；到方元酒店时两脚打了水泡。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 沽源县城<small>approximate / manual modern county center</small></li><li class="point approximate"><b>途经 1</b> 察罕脑儿<small>approximate / manual historic lake/palace area approximation</small></li><li class="point approximate"><b>途经 2</b> 小宏城子<small>approximate / manual historic site approximation</small></li><li class="point approximate"><b>途经 3</b> 水泉淖尔<small>approximate / manual lake approximation</small></li><li class="point approximate"><b>途经 4</b> 转佛庙<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 5</b> 马神庙村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>终点</b> 塞北管理区<small>approximate / manual modern area approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <p class="muted">无</p>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。；route_summary: 标题引用移出后补充正文证据并收紧表达。；walking_directions: 标题引用移出后补充正文证据并收紧表达。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第280页标题页 OCR 将水泉淖尔、圆图淖尔等地名识别不稳，需回看 PDF 第280页。</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 酷热、强日晒、长距离无行道树</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 280</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 282 页</b><q>我们沿着酒店门前的大街向北走</q><p>正文说明沽源县城内出发方向。</p></div><div class="ref route-ref"><b>第 290 页</b><q>024县级公路贴着小宏城子遗址的西墙向北</q><p>正文说明小宏城子后的道路。</p></div><div class="ref route-ref"><b>第 300 页</b><q>晚七点一刻，我们终于走到赵欣已订好房间的方元酒店</q><p>正文说明到达塞北管理区住宿点。</p></div><div class="ref route-ref"><b>第 285 页</b><q>高原的暴晒和暑热开始发威</q><p>支持本段暴晒和暑热风险。</p></div><div class="ref route-ref"><b>第 286 页</b><q>我越来越畏惧阳光</q><p>支持强日晒对身体状态的影响。</p></div><div class="ref route-ref"><b>第 300 页</b><q>两脚的脚跟和外侧都打了水泡</q><p>支持到达方元酒店时的脚部风险。</p></div><div class="ref route-ref"><b>第 291 页</b><q>从水泉淖尔向东，一路上山，到转佛庙村南口所建的旅游点</q><p>支持经转佛庙村南口。</p></div><div class="ref route-ref"><b>第 298 页</b><q>沿着024县道东北行，一路下山，半小时后走到紧傍滦河的马神庙村</q><p>支持从转佛庙方向沿 024 县道到马神庙村。</p></div><div class="ref route-ref"><b>第 299 页</b><q>从马神庙村向北的公路，是县级公路X402从前的老路</q><p>支持从马神庙村继续向北进入塞北管理区方向。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 280 页</b><q>从沽源到塞北管理区</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 280 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>察罕脑儿草姜萋 从沽源到塞北管理区 塞北管理区 马神庙村 转佛庙村 水泉津尔 份 个宏城村 圆图漳尔 沽源县城</p><a href="pages/page_280.png"><img src="pages/page_280.png" alt="第 280 页扫描图"></a></article><article class="ocr-page"><h4>第 282 页 OCR 文本片段</h4><p>两个鸡蛋。她似 乎已经不怀疑我们在徒步，但对我们要走去正蓝旗还是不大有信心，连连说，太热了，太热了，蓝旗那边可热了。告别酒店时是七点十五分。舒爽的风从街上流过，摇动着新栽的、竹竿一样的白杨树，至少部分地抵消了白灿灿的阳光对一天暴晒的暗 示。我们沿着酒店门前的大街向北走，到桥西路右转向东，走上青年 湖大桥。青年湖是葫芦河在县城这一段筑坝截流而成的小湖，湖水有限，湖区却很大，形成一大片湿地。从桥上向北看，围绕湖水的芦苇丛十 分茂盛，景色不错，但看不到什么水鸟。过了青年湖大桥，到葫芦河 东岸，就是县城的郊区了，破旧的房子和脏乱的街道，甚至比不上我 们沿途所见的普通村子，完全没有了桥西县城的繁华气象。我们沿西</p><a href="pages/page_282.png"><img src="pages/page_282.png" alt="第 282 页扫描图"></a></article><article class="ocr-page"><h4>第 285 页 OCR 文本片段</h4><p>到王老大营子以南，向东离开湖区，穿过一家正在修建的农家乐度假村，来到南北向的024乡级公路上。沿路北行，虽偶尔有汽车开过，总的来说十分安静。路两边的白杨林 遮住了远处的景物，更衬托出我们正走在另一个世界里。太阳不知什 么时候已移到我们头顶，高原的暴晒和暑热开始发威。中午十一点十分，抵达小宏城子村。</p><a href="pages/page_285.png"><img src="pages/page_285.png" alt="第 285 页扫描图"></a></article><article class="ocr-page"><h4>第 286 页 OCR 文本片段</h4><p>西，精神有所恢复。上午只走了三个小时，疲惫 感却和几天前走一整天差不多。坐在塑料小椅子上，腰背不能向后靠，只有把两腿尽量平伸。室内四壁都是货架，不开窗户，大门是唯一的 光源。对比之下，室内有些晦暗，门外的白光却是爆炸般耀眼。十几 天走下来，我越来越畏惧阳光，这是非常出乎意料的，大概因为很久 没有成天暴露在太阳下面。恐惧太阳和暑热的时候，我就会想象冰天 雪地的景象。五六年前，我第一次去王耳其东部的Erzurum时，读过 19世纪英国人RobertCurzon（1810-1873）的《亚美尼亚》（Armenia） 一书，记他自己1842-1843年在Erzurum代表英国参与划定奥斯曼与 波斯边界时的经历。书中对</p><a href="pages/page_286.png"><img src="pages/page_286.png" alt="第 286 页扫描图"></a></article><article class="ocr-page"><h4>第 290 页 OCR 文本片段</h4><p> 的目的地塞北管理区，再打车回来加人我们。我把背包放进汽车后备厢，有种甩包袱的心情。不久我就意识到这个决定是错误的，因为连日行走，背包已成为身体的一部分，没有了背包，走起来不是轻松了，而是不 大自在，似乎身体失去了平衡，找不回正确的节奏了。024县级公路贴着小宏城子遗址的西墙向北，过了遗址区稍稍折 向东北，一公里之后笔直向北，经过五塘坊村的西口，再往前就是水 泉淖尔了。水泉淖尔是一个很大的草原湖，西濒水泉村，东倚一座隆 起显著的丘陵。我们从湖区西南角走到湖边，沿南岸东行。很显然湖 面正在收缩中，湖水退出的地方，留下一圈垃圾。湖中满是绿色的藻类，几乎遮盖了全部的水面。令我非常意外的是，没有看到一只水鸟，马 可·波罗所说的那些珍禽都已成</p><a href="pages/page_290.png"><img src="pages/page_290.png" alt="第 290 页扫描图"></a></article><article class="ocr-page"><h4>第 291 页 OCR 文本片段</h4><p>从水泉淖尔向东，一路上山，到转佛庙村南口所建的旅游点。从 这里俯瞰滦河河谷，可以清楚地看到滦河在宽阔平坦的河谷间急剧摇 摆、左盘右旋，画出不可思议的图案。我们在这里买了几瓶水，坐下休息，等赵欣打车从塞北管理区返回。看看手机，微信上一个朋友发给我一 些截图，都是对前几天《上海书评》上我那篇《走向金莲川》的反响。文章是我六月下旬出发前所写，算是此行的一个缘起，走到老掌沟那 天发出来的。评论中有我熟悉的加州大学洛杉</p><a href="pages/page_291.png"><img src="pages/page_291.png" alt="第 291 页扫描图"></a></article><article class="ocr-page"><h4>第 298 页 OCR 文本片段</h4><p>我那十二年间所有舞台表演作品的另一半。我知道他到场了，他 是我的荣誉嘉宾。可是我绝对没想到他会坐到我对面来。这一刻我心头大震。十二年的人生一瞬间在我心里闪过。对 我来说，他远远不是另一个访客而已。于是乎，仅此一次，我破 了规矩。我把双手放到他的双手上，我们互相注视，在我意识到 之前，我们两人都已热泪奔涌。我们在转佛庙等了不到半小时，赵欣乘一辆破破烂烂的出租车赶 回来了。从这里到塞北管理区有十多公里，大概还得走三小时，于是 我们起身赶路。沿着024县道东北行，一路下山，半小时后走到紧傍 滦河的马神庙村。研究者认定元代明安驿就在这里。“明安”是蒙古语 mingan或minga的音译，意思是“千”，大概是指千户机构所在。这个 千户也就是元代史料所说保卫察罕脑儿行宫的那个千户。驿站与千户 城都应该在今马神庙村一带，村中现存元代城址一座，为民户所挤占，考古工作者无法深度考察。村口路南有新建的厂房，路边电线杆上悬 着一幅广告，潘隽大声读上面</p><a href="pages/page_298.png"><img src="pages/page_298.png" alt="第 298 页扫描图"></a></article><article class="ocr-page"><h4>第 299 页 OCR 文本片段</h4><p>名“滦 河嘴”。从滦河嘴看行宫，直线距离不足两公里，在宫城内外云雾般的 大树簇拥下，宫殿建筑只露出琉璃瓦的脊角，这是那些没资格进宫的 人所能见到的风景。揭斯的诗《还宿滦河嘴望行宫》有句云：“下马 河边市，遥瞻海上宫。水天涵野白，禁树拥云红。从马神庙村向北的公路，是县级公路X402从前的老路，新路在滦 河东岸。我们沿着老路向北走，经过大河湾村和安家营子村，开始上山，逐渐远离河谷。不久老路与新路会合，时而可见大型卡车驶过，都是 运送鲜奶的，路西有好些蓝色屋顶的厂房。我们已经进人塞北管理区 的现代牧场了。塞北管理区是张家口市下辖的县级管理区，过去名为 国营沽源牧场，地处张家口最北境，与内蒙交界。我们走到一个巨大 的火炬形红色雕塑旁，下到路边坐下休息</p><a href="pages/page_299.png"><img src="pages/page_299.png" alt="第 299 页扫描图"></a></article><article class="ocr-page"><h4>第 300 页 OCR 文本片段</h4><p>仿佛外星人的设施。晚七点一刻，我们终于走到赵欣已订好房间的方元酒店，一座宏 伟的建筑，猛一看很像如今各地各级政府新建的豪华欧式大楼，楼前 有空旷气派的水泥广场，到酒店大门要走漫长的水泥台阶。赵欣的宝 马越野车就停在台阶下。从车上取出背包，费劲地走上台阶，进人酒 店办理人住手续。第一次感觉到走这几十级台阶也不那么轻松，两脚 的脚跟和外侧都打了水泡。赵欣解释说，连续走路，人的脚会变大，所以户外运动者在第一周之后应该改穿大一码的</p><a href="pages/page_300.png"><img src="pages/page_300.png" alt="第 300 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-013">
+      <header>
+        <h2>seg-013 · 塞北管理区到黑城子</h2>
+        <p class="start-end">塞北管理区 → 黑城子镇</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_after</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>黄土湾村；河北内蒙古分界线；明安驿；李陵台</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从塞北管理区沿县道402往北，跨过河北与内蒙古分界后进入正蓝旗，沿X502继续北行，经黑土城镇前往李陵台遗址；之后到黑城子镇一带。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>塞北管理区八点出发，沿县道402往北。；沿没有行道树的道路顶着日晒前进。；进入黑土城/黑城子镇后向李陵台遗址方向探访。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>滦河东岸草原、无树县道、盐碱草地、古城遗址。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>县道402、X502一带、土路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>滦河河谷。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>黑城子镇商店。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>正蓝旗上都酒店；黑城子到正蓝旗之间有乘车接续描述。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>酷热、铁丝网、灰尘、长距离无树荫。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 塞北管理区<small>approximate / manual modern area approximation</small></li><li class="point approximate"><b>途经 1</b> 黄土湾村<small>approximate / manual modern village approximation</small></li><li class="point approximate"><b>途经 2</b> 河北内蒙古分界线<small>approximate / manual boundary crossing approximation</small></li><li class="point approximate"><b>途经 3</b> 明安驿<small>approximate / manual historic post station area approximation</small></li><li class="point approximate"><b>途经 4</b> 李陵台<small>approximate / manual historic site approximation</small></li><li class="point approximate"><b>终点</b> 黑城子镇<small>approximate / manual modern town approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第318页及复核备注显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。</li><li>书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；route_summary: rewritten_without_unsupported_part; 原 summary 中“经过明安驿”与本段 book_refs 无法对应；已移入复核备注。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第302页标题页 OCR 出现“河北内装专分累线”等噪声，已按上下文作河北内蒙古分界线处理，需回看。</li><li>第318页显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。</li><li>[evidence_audit] unsupported_claim: route_summary: 经过明安驿</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 302</li><li>证据不足，待人工复核：route_summary 原内容含无法由本段 book_refs 支撑的信息；原内容：从塞北管理区沿县道 402 北行，跨过河北/内蒙古边界后沿滦河东岸继续，经过明安驿、李陵台遗址，到黑城子镇一带。</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 304 页</b><q>八点出发，留下赵欣那辆车停在太阳下</q><p>正文说明出发时间和地点。</p></div><div class="ref route-ref"><b>第 314 页</b><q>地图上显示老黑土城（李陵台）在镇子北边约五公里</q><p>正文说明黑城子与李陵台方向。</p></div><div class="ref route-ref"><b>第 318 页</b><q>从北京健德门桥算起，到今天的李陵台古城为止</q><p>正文把李陵台古城作为十三天累计行程节点。</p></div><div class="ref route-ref"><b>第 305 页</b><q>由此往北再走三公里，十一点三十分，我们到达河北与内蒙的分界点</q><p>支持本段跨过河北与内蒙古分界。</p></div><div class="ref route-ref"><b>第 313 页</b><q>下午两点半，我们走到黑土城镇的南侧</q><p>支持本段到达黑土城镇。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 302 页</b><q>从塞北管理区到黑城子</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 302 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>李陵台上野云低 从塞北管理区到黑城子 李陵台 李陵台遗址 黑城子镇 购电 河北内装专分累线 黄土湾村 赛北营理区</p><a href="pages/page_302.png"><img src="pages/page_302.png" alt="第 302 页扫描图"></a></article><article class="ocr-page"><h4>第 304 页 OCR 文本片段</h4><p>一 早饭后把电脑衣物等留在车里，背包里只放了四瓶矿泉水、两本 书、一本地图和笔记本，谈不上重量。先在赵欣指导下做了一套拉伸，还没开始走路就出了一身汗，如果前些天也能这样认真，身体情况应 该会好一些。八点出发，留下赵欣那辆车停在太阳下，它会和我们一 样全天顶着日头，算是和主人同甘共苦了。走过寂无一人的塞北医院 大门口时，王抒说他前几天发现右大腿外侧肿胀疼痛，后来才明白是 裤兜里装着手机充电器，长时间的摩擦和轻微撞击所致。我也听说过 类似的运动损伤，像是跑马拉松的男性因着装较为宽松，衣服磨破乳头，“血流成河”。长时间单一姿势的身体运动会发生一些出人意料的损伤，比如内裤边缘磨破大腿皮肤，背心</p><a href="pages/page_304.png"><img src="pages/page_304.png" alt="第 304 页扫描图"></a></article><article class="ocr-page"><h4>第 305 页 OCR 文本片段</h4><p>的气温会升高到36℃一38℃，我不禁怀念起前些天的白杨树来。连日 暴露在高温烈日下，加剧疲劳还在其次，最明显的影响是我开始畏惧 阳光，甚至从上都回来后很久，到我写这些文字的时候，不要说走在 骄阳下了，连想着大晴天出门，都不免心悸。公路宽阔，却少有汽车往来，大概因为前面不远就是内蒙地界。快到三牛点村时，公路折向东北，跨过闪电河（滦河）河谷。站在闪 电河一号桥上，看南北两侧的河谷湿地，因河道曲折蛇形而形成的串 珠状水泽，滋润出绿油油的草滩。奇怪的是，水草间几乎没有鸟，完 全看不到马可·波罗以来那么多人描绘过的美好景象。他们当然没有 说谎、没有夸张，只是环境变了。农业化在草原深深扎根，年复一年 比雨水还多的农药浸透大地，鸟类和昆虫的世界早已变成黑暗的炼狱。读蕾切尔·卡逊（RachelCarson）《寂静的春天》（SilentSpring），就知 道农药如何把百鸟的歌唱变成了寂静的长夜。DDT虽成历史，其他农 药仍然飘荡在我们周围。不仅</p><a href="pages/page_305.png"><img src="pages/page_305.png" alt="第 305 页扫描图"></a></article><article class="ocr-page"><h4>第 313 页 OCR 文本片段</h4><p>Sachsenberg城堡。太 阳西沉，散发壮丽的色彩。月亮上升，如一面青铜盾牌。满载谷 物的马车缓缓移动在回家的路上，肩扛粑叉的男男女女成群结队 归向村庄，冷却的轻尘坠落在大平原。我就这样走完剩下的路程，月光映照中踏进Arterm的城门。下午两点半，我们走到黑土城镇的南侧，路东是墨绿色的玉米地，路西是只看得见无边青草的滦河河谷。似乎是为了阻挡畜群，路两边 都密密地拉起铁丝网。从河北进入内蒙并没有显著的地貌变化，不过 人文景观还是颇有不同，比如铁丝网纵横交错，草原分割成无数的碎片，行人必须跟车辆和畜群一样按指定路线移动，文学想象中的草原漫游 已不复可能。我们走在公路西侧路肩与铁丝网之间的土路上，阳光正 在一天中最暴烈的时刻，我</p><a href="pages/page_313.png"><img src="pages/page_313.png" alt="第 313 页扫描图"></a></article><article class="ocr-page"><h4>第 314 页 OCR 文本片段</h4><p>从李陵台回来再喝。一如既往，我们买了一个西瓜在店内吃，店主主 动提供一盆水供我们洗手。问店主去老黑土城怎么走。她指指街对面，从那儿往北，还远着呢。有多远？嗯，十来里地吧。您去过吗？老早前了，没啥看的，啥都没有。地图上显示老黑土城（李陵台）在镇子北边约五公里的地方，我 们横穿街道，沿一条向北的小巷，走到尽头后错误地右转而不是左转，结果走进一片菜地。只好折返向西，遇到盖房子的几个砖瓦工，经他 们指示，才找到地图上那条窄窄的土路。路两边都是铁丝网，一辆小 卡车经过，我们只有紧贴着铁丝网避让卡车，同时饱吸车轮卷起的云 雾般灰尘。三公里之后，下午四点半刚过，面前忽然开阔，铁丝网向 东西弯曲而去，留给我们一片空旷的草地。</p><a href="pages/page_314.png"><img src="pages/page_314.png" alt="第 314 页扫描图"></a></article><article class="ocr-page"><h4>第 318 页 OCR 文本片段</h4><p>黑城子到正蓝旗一段。从塞北管理区到正蓝旗，沿滦河东岸的县级公 路走，全程五十公里，不足一小时就到了。直奔网上推荐的上都酒店，办好入住手续。我在走向自己房间的过程中，心里面开始抱怨走廊过长，要走好一阵。意识到自己在抱怨，才明白已经十分疲劳，连这么一小 段路都不愿走了。洗了澡，换了衣服，大家到酒店西侧的一家蒙餐馆吃饭。这是两 周来最奢侈的一顿，满桌子的鱼肉饭菜，多半还是从没见过的做法。最不可思议的是盛酸奶的桶形容器，外包装是三只连毛带皮的牛蹄子，看起来十分怪异。清水煮鱼配奶疙瘩，烤得焦黑的韭菜饺子，都是我 没见过的。一边享用美食，一边看潘隽拍的照片。照片上没有了酷热、单调和疲乏，只有微小却真实的成就感。其中有一张，我正走在黑城 子小镇南侧的公路里程指示牌下面，牌子上写着“元上都遗址60km”，似乎是在鼓励已成强弩之末的我。从北京健德门桥算起，到今天的李 陵台古城为止，我们已经走了十三天，总里程接近四百公里。不能不 说是一个小小的成绩</p><a href="pages/page_318.png"><img src="pages/page_318.png" alt="第 318 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-014">
+      <header>
+        <h2>seg-014 · 黑城子到四郎城</h2>
+        <p class="start-end">黑城子 → 四郎城</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>isolated</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>滦河东岸沙丘；正蓝旗；上都镇；闪电河</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>从正蓝旗住宿地乘车回到黑城子以东/李陵台平行位置，补走滦河东岸沙丘地貌，再沿公路南行入上都镇，过闪电河大桥到四郎城。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>从黑城子以东X502往正蓝旗方向的沙丘地貌开始补走。；穿越沙丘和铁丝网地带后返回公路。；进入上都镇，沿圣元街东行至四郎城路北上，过闪电河大桥到四郎城。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>沙丘、草场、铁丝网分割的草原、城址。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>X502方向公路、圣元街、四郎城路、闪电河大桥。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>滦河/闪电河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>途中在蒙古包休息；对方提供热水，作者一行吃自带的馒头和面包。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>正蓝旗上都镇酒店。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>沙丘行走吃力、铁丝网、酷热、需标记乘车回补点。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 黑城子<small>approximate / manual modern town approximation</small></li><li class="point approximate"><b>途经 1</b> 滦河东岸沙丘<small>approximate / manual dunes area approximation</small></li><li class="point approximate"><b>途经 2</b> 正蓝旗<small>approximate / manual modern banner seat approximation</small></li><li class="point approximate"><b>途经 3</b> 上都镇<small>approximate / manual modern banner seat approximation</small></li><li class="point approximate"><b>途经 4</b> 闪电河<small>approximate / manual river/area approximation</small></li><li class="point approximate"><b>终点</b> 四郎城<small>approximate / manual historic site approximation</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第324页及复核备注显示本段先坐出租车到补走点，路线连续性需人工确认。</li><li>书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；resupply: supported_with_new_book_ref; 已按书中证据清理。；p332 quote updated</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第322页标题页 OCR 将“滦河东岸沙丘”识别为“梁河东岸沙丘”，已据正文第324页校正。</li><li>第324页明确本段先坐出租车到补走点，路线连续性需人工确认。</li><li>[evidence_audit] unsupported_claim: resupply: 途中蒙古包/牧户处休息、自带午饭和热水</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 322</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 324 页</b><q>我们在大致上与李陵台遗址平行的地方下车</q><p>正文说明本段有乘车回到补走点。</p></div><div class="ref route-ref"><b>第 328 页</b><q>沿山前草场返回公路</q><p>正文说明沙丘段后返回公路。</p></div><div class="ref route-ref"><b>第 332 页</b><q>过了闪电河（上都高勒）大桥，可以看到公路西北隐隐隆起</q><p>正文说明到四郎城前的道路和目标。</p></div><div class="ref route-ref"><b>第 328 页</b><q>于是我们进到院内的一个蒙古包里</q><p>支持途中在蒙古包休息。</p></div><div class="ref route-ref"><b>第 328 页</b><q>我们自己带着午饭，所以就不麻烦他们了，就着水吃起自带的馒头和面包</q><p>支持自带午饭和热水。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 322 页</b><q>从黑城子到四郎城</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page focus"><h4>第 322 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>乌桓城下问白翎 从黑城子到四郎城 正蓝旗 闪 电河 梁河东岸沙丘 黑城子</p><a href="pages/page_322.png"><img src="pages/page_322.png" alt="第 322 页扫描图"></a></article><article class="ocr-page"><h4>第 324 页 OCR 文本片段</h4><p>谷歌卫星地图显示，从黑城子以东的X502往正蓝旗方向，路东 有一片连续的沙丘地貌。我打算今天走一走这些沙丘。早饭后先在酒 店大堂跟着赵欣做拉伸，之后到门前广场靠马路的电线杆旁伸手拦车，很快就招到一辆出租车。昨晚北行时一切都在暗夜里，现在可以看到 公路在滦河东岸，河谷西侧有间断的村庄、厂房和早已荒弃的耕地，东侧则是草原、沙丘和几乎没有植被的山地。我们在大致上与李陵台 遗址平行的地方下车，跨过路东的草地，朝一公里外的沙丘走去。沙 质的草地向河谷缓缓西沉，向东则渐渐升高，直至强烈隆起成为裸露 的沙丘。两三寸高的沙地艾蒿被践踏之后，挥发出一种薄雾般的清香，让我想起十年前在蒙古国中西部的那个夏天。不知名的草开着色彩艳 丽的小花，只是草株低矮、花朵细小。从远处看，绝对想不到这种植 被稀疏的沙地上会有如此繁盛、如此美丽的百花。上沙丘比上同样坡度的土石山丘要难得多，一脚深一脚浅，常常 费了半天劲还在原地踏步。爬上一座不足百米高的沙丘，足以让你累</p><a href="pages/page_324.png"><img src="pages/page_324.png" alt="第 324 页扫描图"></a></article><article class="ocr-page"><h4>第 328 页 OCR 文本片段</h4><p>割成丑陋的碎片。可以想象，这个地区即使还有野生动物，也势必会 被这些铁丝网困死。我们艰难地越过一道道铁丝网，在一长串沙丘里 上上下下，偶有沙窝窝里的花色奶牛们投来迷惑的眼光。这样走了一 个半小时，越来越高的铁丝网迫使我们放弃沙丘之路，沿山前草场返 回公路。靠近公路时，遇见几个牧民在搭建蒙古包，旁边几匹马低头 啃草。一问，才知道他们在发展旅游，只是不大有人从这里经过。草地上有一群绵羊，我和戴军帽穿阿迪达斯运动衣的放羊人聊了 几句，问他为什么这么多铁丝网。他说都分到各家各户了，得管起来呢。他的上衣塞进皮带，露出外裤下面的秋裤。我问他为什么这么热还穿 秋裤，他说早晨出来早，天冷呢。我们回到公路上继续向南走，不一 会儿背后马蹄声响。发展旅游的那个戴牛仔帽的年轻人骑一匹枣 红马超过我们，跟我们招招手，很快就不见了。再走半小时，见公路 西侧一个村庄，一个大院子铁门开，刚才骑马超过我们的小伙子站 在门前，招呼我们进去。这时已是中午十二点半，又</p><a href="pages/page_328.png"><img src="pages/page_328.png" alt="第 328 页扫描图"></a></article><article class="ocr-page"><h4>第 332 页 OCR 文本片段</h4><p>不过不需要熏烤，只利用风吹使肉条脱水，就可以保存较长时间。13 世纪中期出使蒙古的天主教修士鲁不鲁乞（WilliamofRubruck）说：“如 果在夏季有一头牛或一匹马死了，他们就把牛肉或马肉切成细条，挂 在太阳光和风下，这些肉很快就干了，不用盐也没有任何不好的气味。” 据说蒙古骑兵行军时携带风干肉，在马上边走边吃，一点儿也不耽误 工夫。从风干肉向北就进人正蓝旗旗政府所在的上都镇。镇南有一个青铜 骏马雕塑群，恰好与北京健德门附近的青铜马雕塑互相映照。上都镇的 蒙古语名称是敦达浩特，改名上都镇大概是为配合上都遗址的旅游开发。烈日高照，气温高达37℃，街上行人和树木一样稀少，水泥街面和两边 的彩色建筑看上去像是处在蒸煮中。我们沿圣元街东行，一直走到四郎 城路再往北走，过了闪电河（上都高勒）大桥，可以看到公路西北隐隐 隆起的青色城垣，那就是我们今天的目的地四郎城。四郎城，当地人又称侍郎城，据说是因清代某位侍郎镇守此地而 得名。这里是</p><a href="pages/page_332.png"><img src="pages/page_332.png" alt="第 332 页扫描图"></a></article></div>
+    </section>
+    
+
+    <section class="segment" id="seg-015">
+      <header>
+        <h2>seg-015 · 四郎城到上都遗址</h2>
+        <p class="start-end">四郎城 → 元上都遗址</p>
+        <div class="badges"><span class="badge flag"><b>movement</b>mixed</span><span class="badge flag"><b>continuity</b>gap_before</span><span class="badge"><b>walkability</b>partially_walkable</span><span class="badge flag"><b>followability</b>needs_field_check</span><span class="badge flag"><b>do_not_connect</b>True</span><span class="badge"><b>GPX track</b>no</span><span class="badge"><b>waypoint only</b>yes</span><span class="badge"><b>evidence_status</b>warning</span></div>
+      </header>
+      <div class="layout">
+        <div>
+          <h3>路线字段</h3>
+          <dl class="fields">
+            <div class="field"><dt>途经地</dt><dd>上都音高勒大桥；闪电河；明德门</dd></div>
+            <div class="field"><dt>route_summary</dt><dd>最后一日坐车过上都音高勒大桥后，从桥北开始走北岸大堤，避开南岸高速公路，进入元上都遗址并步行到明德门，完成从健德门到明德门的徒步行程。</dd></div>
+            <div class="field"><dt>walking_directions</dt><dd>坐车过上都音高勒大桥，从桥北开始。；选择河谷北岸大堤，而非现代高速公路。；进入上都遗址后不坐电瓶车，步行到明德门。</dd></div>
+            <div class="field"><dt>terrain</dt><dd>滦河/上都河河谷、北岸大堤、草滩、遗址公园。</dd></div>
+            <div class="field"><dt>roads_or_paths</dt><dd>上都音高勒大桥、北岸大堤、遗址内高路。</dd></div>
+            <div class="field"><dt>water_sources</dt><dd>闪电河/上都河/滦河。</dd></div>
+            <div class="field"><dt>resupply</dt><dd>电视台记者送来冰冻矿泉水和西瓜。</dd></div>
+            <div class="field"><dt>lodging</dt><dd>前一晚住正蓝旗上都镇的上都酒店。</dd></div>
+            <div class="field"><dt>risks_or_notes</dt><dd>最后一天天气极热；脚趾和脚后跟多处水泡，脚底疼痛；路上没有树，也没有其他可以遮阴的地方。</dd></div>
+          </dl>
+          <h3>坐标与地名</h3>
+          <ul class="points"><li class="point approximate"><b>起点</b> 四郎城<small>approximate / manual historic site approximation</small></li><li class="point approximate"><b>途经 1</b> 上都音高勒大桥<small>approximate / manual bridge approximation on Shangdu Gol</small></li><li class="point approximate"><b>途经 2</b> 闪电河<small>approximate / manual river/area approximation</small></li><li class="point approximate"><b>途经 3</b> 明德门<small>approximate / manual approximate Shangdu Mingdemen area</small></li><li class="point approximate"><b>终点</b> 元上都遗址<small>approximate / manual approximate Xanadu/Shangdu ruins</small></li></ul>
+          <h3>断点 / GPX 规则</h3>
+          <ul><li>第344页及复核备注显示坐车过上都音高勒大桥后，从桥北开始最后一日步行。</li><li>书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。</li><li>该段只导出 waypoint，不作为连续 GPX track。</li></ul>
+          <h3>confidence / evidence</h3>
+          <dl class="fields">
+            <div class="field"><dt>confidence</dt><dd>needs_review</dd></div>
+            <div class="field"><dt>evidence_status</dt><dd>warning</dd></div>
+            <div class="field"><dt>evidence_notes</dt><dd>已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。；resupply: supported_with_new_book_ref; 已按书中证据清理。；lodging: supported_with_new_book_ref; 已按书中证据清理。；risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。</dd></div>
+          </dl>
+          <h3>review_notes</h3>
+          <ul><li>第344页显示从桥北开始，四郎城到桥北的乘车接续需要在地图上标记。</li><li>[evidence_audit] unsupported_claim: resupply: 电视台记者送冰冻矿泉水和西瓜</li><li>[evidence_audit] unsupported_claim: lodging: 前一晚住正蓝旗上都镇</li><li>[evidence_audit] unsupported_claim: risks_or_notes: 极端暑热、脚底疼痛、无树荫</li><li>[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 342</li></ul>
+        </div>
+        <div>
+          <h3>书中路线证据</h3>
+          <div class="ref route-ref"><b>第 344 页</b><q>从桥北开始最后一天的行程</q><p>正文说明最后一天实际步行起点。</p></div><div class="ref route-ref"><b>第 344 页</b><q>我们选择走北岸，不只是追求与元代的路线更接近</q><p>正文说明选择北岸大堤的理由。</p></div><div class="ref route-ref"><b>第 353 页</b><q>只有走到明德门，才算完成了从大都健德门到上都明德门</q><p>正文说明终点和徒步完成标准。</p></div><div class="ref route-ref"><b>第 348 页</b><q>冰冻的矿泉水和西瓜从未如此充满吸引力</q><p>支持最后一日补给。</p></div><div class="ref route-ref"><b>第 318 页</b><q>直奔网上推荐的上都酒店，办好入住手续</q><p>支持前一晚住宿在正蓝旗上都酒店。</p></div><div class="ref route-ref"><b>第 344 页</b><q>今天会是几年来最热的一天</q><p>支持极端暑热。</p></div><div class="ref route-ref"><b>第 345 页</b><q>发现脚趾头和脚后跟打了好几个水泡</q><p>支持脚部水泡风险。</p></div><div class="ref route-ref"><b>第 346 页</b><q>事实上也没有地方适合休息，没有树，也没有其他可以遮阴的地方</q><p>支持无遮阴风险。</p></div>
+          <h3>章节出处 <span class="muted">不要当路线证据</span></h3>
+          <div class="ref chapter-ref focus"><b>第 342 页</b><q>从四郎城到上都遗址</q><p>章节或段落标题来源</p></div>
+        </div>
+      </div>
+      <h3>OCR 文本片段与原书扫描页</h3>
+      <div class="ocr-grid"><article class="ocr-page"><h4>第 318 页 OCR 文本片段</h4><p>黑城子到正蓝旗一段。从塞北管理区到正蓝旗，沿滦河东岸的县级公 路走，全程五十公里，不足一小时就到了。直奔网上推荐的上都酒店，办好入住手续。我在走向自己房间的过程中，心里面开始抱怨走廊过长，要走好一阵。意识到自己在抱怨，才明白已经十分疲劳，连这么一小 段路都不愿走了。洗了澡，换了衣服，大家到酒店西侧的一家蒙餐馆吃饭。这是两 周来最奢侈的一顿，满桌子的鱼肉饭菜，多半还是从没见过的做法。最不可思议的是盛酸奶的桶形容器，外包装是三只连毛带皮的牛蹄子，看起来十分怪异。清水煮鱼配奶疙瘩，烤得焦黑的韭菜饺</p><a href="pages/page_318.png"><img src="pages/page_318.png" alt="第 318 页扫描图"></a></article><article class="ocr-page focus"><h4>第 342 页 OCR 文本片段 · 重点复核页 · OCR needs_review</h4><p>紫菊金莲绕滦京 从四郎城到上都遗址 元上都遗址 闪电河 上都音高勒大桥</p><a href="pages/page_342.png"><img src="pages/page_342.png" alt="第 342 页扫描图"></a></article><article class="ocr-page"><h4>第 344 页 OCR 文本片段</h4><p>早饭时服务员说，今天会是几年来最热的一天。我们坐出租车过 了上都音高勒（上都河，即闪电河，也就是滦河）大桥，从桥北开始 最后一天的行程。现在从正蓝旗到上都遗址，当然是走河谷以南的高 速公路，不过元代连接桓州城与上都的驿路和路一定都在河北。我 们选择走北岸，不只是追求与元代的路线更接近，也为了避开公路以 求清静。太阳一大早就威势赫赫，河谷宽阔的草滩与细细的溪流，北岸的 城市和南岸的草场田地，都吸收并反射着热辣辣的阳光。我们走在北 大堤上，细沙路面上几乎看不到人车的痕迹，两边路肩长着高高的首 和蒿草，有的向路面倾倚，几乎覆盖了沙土路。大堤斜坡和堤下平 滩上青草茂盛，五颜六色的小花如繁星闪烁。蜜蜂和飞蛾在花草间上 下穿梭，听得见细细的蜂鸣。路上常见死去的蝴蝶，彩色双翅充分地 张开，排着长队的蚂蚁正在它们身上忙忙碌碌。金莲川之名得自金莲花。其实元人说起上都一带的花草时，还有 一种与金莲齐名的紫菊。比如硒贤的诗句“乌桓城下雨初晴，紫菊金</p><a href="pages/page_344.png"><img src="pages/page_344.png" alt="第 344 页扫描图"></a></article><article class="ocr-page"><h4>第 345 页 OCR 文本片段</h4><p>莲漫地生”，虞集的诗句“金莲疑可致，紫菊若为妍”。写上都风光的诗，涂颖有句“海风吹雨度龙沙，满眼金莲紫菊花”，许有壬则有“金莲紫 菊带烟铺，画出龙冈万世图”。钱塘画师潘子华在上都作画，以本地特 有的新鲜题材取胜，多为古人所未见。危素《赠潘子华序》赞扬他在 题材创新上前无古人，“故凡子华之所能者，皆自子华始，非有所蹈袭 摹仿也”。危素所列潘子华创新题材，有“金莲、紫菊、地椒、白翎爵 （雀）、阿蓝”，都是“绝塞之外”的“动植之物”，“皆居庸以南所未尝有”。吴当为潘子华所画花鸟题诗，有句“潘侯妙笔留神都，金莲紫菊谁家无”。可见潘子华画了多幅金莲紫菊，好多人家里都挂了他这个题材的画作，以至于吴当要感概“谁家无”。正如金莲花并不是毛目睡莲科莲属的荷花，紫菊也不是菊科菊 属的菊花。如今滦河上游草原上开蓝花的一年生和多年生草本植物很 多，比如马兰花。不知道元人所说紫菊究竟是什么，对应着今天的哪 种植物？在滦河北岸大堤上所走的近一个小时，是全天</p><a href="pages/page_345.png"><img src="pages/page_345.png" alt="第 345 页扫描图"></a></article><article class="ocr-page"><h4>第 346 页 OCR 文本片段</h4><p>变得沉重又溃烂，似有数十个小针一齐扎进脚底板。停顿的时间越久，启动时疼痛越剧烈、越难以忍受。忍痛走一会儿后，脚下渐渐麻木，痛感似乎下降了、消失了。这使我倾向于加快速度，不肯停步，更不 肯坐下休息。事实上也没有地方适合休息，没有树，也没有其他可以 遮阴的地方。我鼓励自己，疼痛也许是好事，可以提醒你意识到自己 正在做什么。好多天来第一次，我越走越快，竟然和王抒他们拉开了 距离。这种反常也许引起了他们的注意，王抒很快追赶上来，问我感 觉怎么样。再走一会儿，路北一片铁丝网圈起来的牧场内有一群骆驼和马，看起来精神抖擞，似乎根本没有受到暑热影响。路南铁丝网围起来的，是十几个水泥蒙古包，大概是建造中的旅游设施，空无一人。赵欣和 潘隽坚持要进去休息一下，我猜是她们觉得我已过于疲劳，必须休整。我们在一个满是水泥灰的蒙古包里坐下，喝点水，吃点馒头。时当正 午，地面反射的阳光都足以炙灼得人皮肤生疼。一丝风也没有，世界 像是闭锁在一座巨大的玻璃房子里，</p><a href="pages/page_346.png"><img src="pages/page_346.png" alt="第 346 页扫描图"></a></article><article class="ocr-page"><h4>第 348 页 OCR 文本片段</h4><p>像中暑了一样毫无生气。偶尔听得见蚂蚱飞起振动翅膀的声音，还有 不知躲在哪里乱叫的蝉，以及从眼前闪过时叽叽喳喳的喜鹊。王抒接到昨天那位电视台记者的电话，说还想在上都大门外再采 访一下，并且问可以为我们做什么。这时候我们也不客气了，说最好 送一个西瓜来。很快汽车驶来了，冰冻的矿泉水和西瓜从未如此充满 吸引力。我们就坐在烈日下分吃西瓜，甚至顾不得脚下的疼痛了。把 瓜子吐在路边沙地时，看到一队泛红的小蚂蚁不知从哪里冒出来，轻 盈地围着西瓜籽转悠，似乎在探究如何把它们搬回去好好享用。正在“走出伊甸园”的PaulSalopek会不会经过上都呢？我们走在沽源县梳妆楼和五花草甸的那天（7月6日），Salopek走 到了他的第三十七个一百英里里程碑，意味着他已经走了三千六百英 里（五千七百六十公里）。那时他正走在哈萨克斯坦西部，前往孤悬于 草原上、作为苏维埃时代铁路小站而发展起来的小城贝依努（Beyneu）。对于在炎热和孤寂中走了很久很久的他来说</p><a href="pages/page_348.png"><img src="pages/page_348.png" alt="第 348 页扫描图"></a></article><article class="ocr-page"><h4>第 353 页 OCR 文本片段</h4><p>个河谷燃烧。不过这少数的金莲已经足够美丽，足够令人想象元顺帝 的诗句“我的美丽的沙拉塔拉（金莲川）”。从遗址大门内那块大而无当的巨石到明德门，还有很长一段距离，公园向游客提供电瓶车。我们没有坐电瓶车。怎么可以坐车到明德门 呢？只有走到明德门，才算完成了从大都健德门到上都明德门的全部 徒步行程。何况，只有在这长堤般的高路上慢慢走过，东西两侧河谷 的美景才缓缓地、有层次地、毫无保留地展开。我2009年夏天来过 上都，那时还没有这么多的申遗配套工程，遗址还是一片荒草遮盖下 的废墟，河谷草滩上的金莲花给我很深的印象，我因此略略理解了元 人诗文所说“川平野阔，山遮水护”，“万朵金莲次第开”，“花开水面 黄虽小，时有清风起暗香”。现在旅游设</p><a href="pages/page_353.png"><img src="pages/page_353.png" alt="第 353 页扫描图"></a></article></div>
+    </section>
+    
+  </main>
+</body>
+</html>

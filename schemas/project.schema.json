@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ebook-content-lab/project.schema.json",
+  "title": "ebook-content-lab project metadata",
+  "type": "object",
+  "required": ["slug", "title", "book_title", "source_type", "project_type", "status", "public_files"],
+  "properties": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+[a-z0-9-]*$" },
+    "title": { "type": "string" },
+    "book_title": { "type": "string" },
+    "source_type": { "type": "string" },
+    "project_type": { "type": "string" },
+    "status": { "type": "string" },
+    "visibility": { "type": "object" },
+    "public_files": { "type": "array", "items": { "type": "string" } },
+    "quality_summary": { "type": "object" },
+    "route_stats": { "type": "object" },
+    "review_status": { "type": "object" },
+    "generated_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}
+

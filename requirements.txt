@@ -1,0 +1,14 @@
+pymupdf
+pymupdf4llm
+pydantic
+pandas
+python-slugify
+regex
+tqdm
+lxml
+beautifulsoup4
+ocrmypdf
+pytesseract
+pillow
+requests
+rapidocr-onnxruntime

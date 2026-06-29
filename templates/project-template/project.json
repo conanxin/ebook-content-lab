@@ -1,0 +1,27 @@
+{
+  "slug": "__SLUG__",
+  "title": "__TITLE__",
+  "book_title": "__BOOK_TITLE__",
+  "source_type": "scanned_pdf",
+  "project_type": "__PROJECT_TYPE__",
+  "status": "draft",
+  "visibility": {
+    "private_source_kept_in": "projects/__SLUG__/private/",
+    "public_artifacts_kept_in": "projects/__SLUG__/public/",
+    "web_public_path": "/projects/__SLUG__/"
+  },
+  "public_files": [],
+  "quality_summary": {
+    "ocr": "unknown",
+    "content_extraction": "unknown",
+    "evidence_audit": "unknown",
+    "validation": "unknown",
+    "manual_review_required": true
+  },
+  "route_stats": {},
+  "review_status": {
+    "status": "not_started",
+    "notes": "新项目草稿，尚未完成 OCR、抽取、审计和人工复核。"
+  },
+  "generated_at": null
+}

@@ -1,0 +1,714 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.381,
+            39.976
+          ],
+          [
+            116.37,
+            40.008
+          ],
+          [
+            116.34,
+            40.035
+          ],
+          [
+            116.34,
+            40.04
+          ],
+          [
+            116.245,
+            40.115
+          ],
+          [
+            116.256,
+            40.104
+          ],
+          [
+            116.195,
+            40.118
+          ],
+          [
+            116.177,
+            40.143
+          ],
+          [
+            116.186,
+            40.128
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-001",
+        "order": 1,
+        "title": "健德门到皂甲屯",
+        "start_name": "健德门",
+        "end_name": "皂甲屯",
+        "pages": [
+          34,
+          45,
+          52
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从大都北侧健德门出发，先沿小月河、清河一带北行，经皇后店、南沙河和南玉河，至皂甲屯一带完成第一日步行。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": [
+          "书中显示第一日行走结束后另有乘车南返；本段 GPX 只表达健德门至皂甲屯的步行段，不连接乘车路线。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.2312,
+            40.2207
+          ],
+          [
+            116.18,
+            40.252
+          ],
+          [
+            116.153,
+            40.276
+          ],
+          [
+            116.128,
+            40.239
+          ],
+          [
+            116.068,
+            40.288
+          ],
+          [
+            116.0697,
+            40.2884
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-002",
+        "order": 2,
+        "title": "昌平到居庸关",
+        "start_name": "昌平镇",
+        "end_name": "居庸关",
+        "pages": [
+          56,
+          58,
+          60,
+          64
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从昌平一带出发，经旧县村、龙虎台村、南口，进入居庸关方向；作者强调旧县、龙虎台与元代两都道路的关系。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-003",
+        "order": 3,
+        "title": "居庸关到延庆",
+        "start_name": "居庸关",
+        "end_name": "延庆旧县镇",
+        "pages": [
+          88,
+          96,
+          98
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从居庸关云台附近出发，沿关沟北上，经水关长城、八达岭、岔道城，再取山边小路经小泥河、大泥河到大榆树方向；书中在大榆树前后结束当天行走并坐车返回。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_after",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第98页及复核备注显示当天行走未连续到延庆旧县镇，后续存在乘车返回/休整信息。",
+          "书中存在乘车/断点复核说明，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.05,
+            40.497
+          ],
+          [
+            116.07,
+            40.535
+          ],
+          [
+            116.065,
+            40.58
+          ],
+          [
+            116.05,
+            40.64
+          ],
+          [
+            115.93,
+            40.624
+          ],
+          [
+            115.93,
+            40.624
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-004",
+        "order": 4,
+        "title": "延庆旧县镇到白河堡水库",
+        "start_name": "延庆旧县镇",
+        "end_name": "白河堡水库",
+        "pages": [
+          102,
+          104,
+          111,
+          114,
+          115
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "吃完早饭，作者一行告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库；经车坊、黑峪口、盘云岭山口，沿昌赤路和水库边道路到白河堡水库。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "gap_before",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": [
+          "本段从旧县镇开始步行；与上一段之间存在已在 seg-003 标记的断点。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.93,
+            40.624
+          ],
+          [
+            115.9,
+            40.68
+          ],
+          [
+            115.86,
+            40.73
+          ],
+          [
+            115.8,
+            40.79
+          ],
+          [
+            115.73,
+            40.855
+          ],
+          [
+            115.73,
+            40.855
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-005",
+        "order": 5,
+        "title": "白河堡水库到长伸地村",
+        "start_name": "白河堡水库",
+        "end_name": "长伸地村",
+        "pages": [
+          125,
+          126,
+          143
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从白河堡水库一带沿白河河谷行走，上午到达骆驼山村；从骆驼山村离开滦赤路，向北转入 X405 县级公路蒋京线，最终到长伸地村附近。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": [
+          "部分中途地名曾因 OCR 和标题页证据不足被移入复核说明；GPX 仅按已保留正文证据和坐标生成参考线。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.73,
+            40.855
+          ],
+          [
+            115.67,
+            40.885
+          ],
+          [
+            115.62,
+            40.91
+          ],
+          [
+            115.58,
+            40.93
+          ],
+          [
+            115.55,
+            40.95
+          ],
+          [
+            115.49,
+            40.98
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-006",
+        "order": 6,
+        "title": "长伸地村到龙门所镇",
+        "start_name": "长伸地村",
+        "end_name": "龙门所镇",
+        "pages": [
+          150,
+          151,
+          154,
+          155,
+          160,
+          161,
+          167
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从长伸地村出发，经巡检司村、红沙梁一带下山，穿过河谷和国道，进入龙门所镇。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.49,
+            40.98
+          ],
+          [
+            115.5,
+            40.96
+          ],
+          [
+            115.42,
+            40.99
+          ],
+          [
+            115.32,
+            41.05
+          ],
+          [
+            115.22,
+            41.09
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-007",
+        "order": 7,
+        "title": "龙门所到白草镇",
+        "start_name": "龙门所",
+        "end_name": "白草镇",
+        "pages": [
+          174,
+          175,
+          180,
+          189
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从龙门所沿 G112 北上，到小东沟林场一带越过白河与黑河分水岭，下山后折向东，经东万口乡，下午到白草镇；书中另写到塘子庙温泉和住宿安排。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-008",
+        "order": 8,
+        "title": "白草镇到老掌沟",
+        "start_name": "白草镇",
+        "end_name": "老掌沟",
+        "pages": [
+          194,
+          205,
+          207
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从白草镇出发，沿黑河东岸 X404 北上，经过三道川、黑龙山、山神庙等地，进入老掌沟；从沟口往沟里走半小时后，请度假村老板开车来接。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_after",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第207页及复核备注显示进入老掌沟后联系车辆接应，步行终点与住宿点之间存在非步行接续。",
+          "书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.94,
+            41.34
+          ],
+          [
+            114.98,
+            41.29
+          ],
+          [
+            114.94,
+            41.38
+          ],
+          [
+            114.95,
+            41.42
+          ],
+          [
+            114.97,
+            41.46
+          ],
+          [
+            114.99,
+            41.49
+          ],
+          [
+            115.03,
+            41.53
+          ],
+          [
+            115.07,
+            41.57
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-009",
+        "order": 9,
+        "title": "老掌沟到小厂镇",
+        "start_name": "老掌沟",
+        "end_name": "小厂镇",
+        "pages": [
+          218,
+          220,
+          221,
+          222,
+          224,
+          228,
+          232
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "首先要补上昨天没有走完的一段；在南沟口附近下车后开始补走这一段；从沟门往北走十多分钟到分水岭，经前坝村和后坝村一带，下午四点一刻到小厂镇。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "mixed",
+        "continuity_status": "gap_before",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": [
+          "本段包含补走前一日未完成路段；接送车路线不得计入步行路线。",
+          "本段 GPX 只表达书中可支持的补走和随后步行部分。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-010",
+        "order": 10,
+        "title": "小厂镇到五花草甸",
+        "start_name": "小厂镇",
+        "end_name": "五花草甸",
+        "pages": [
+          242,
+          245,
+          251,
+          260
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从小厂镇北行，不取 S241 主路而沿 X404 和葫芦河西岸走，拜访石头城遗址和牛群头一带，最终到五花草甸附近；因疲劳决定去沽源休整，近五花草甸后搭车离开。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_after",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第260页及复核备注显示近五花草甸后搭车离开，不能画成完整步行到沽源。",
+          "书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-011",
+        "order": 11,
+        "title": "五花草甸到沽源",
+        "start_name": "五花草甸",
+        "end_name": "沽源县城",
+        "pages": [
+          265,
+          273,
+          277
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "休整日以车前往梳妆楼和五花草甸后补走五花草甸至沽源一段，经河东村以北回到公路，进入沽源县城。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_before",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第265页及复核备注显示本段先乘出租车到梳妆楼和五花草甸，再补走五花草甸至沽源。",
+          "书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.688,
+            41.669
+          ],
+          [
+            115.86,
+            41.72
+          ],
+          [
+            115.86,
+            41.73
+          ],
+          [
+            115.93,
+            41.78
+          ],
+          [
+            116.03,
+            41.83
+          ],
+          [
+            116.08,
+            41.88
+          ],
+          [
+            116.12,
+            41.91
+          ]
+        ]
+      },
+      "properties": {
+        "segment_id": "seg-012",
+        "order": 12,
+        "title": "沽源到塞北管理区",
+        "start_name": "沽源县城",
+        "end_name": "塞北管理区",
+        "pages": [
+          282,
+          285,
+          286,
+          290,
+          291,
+          298,
+          299,
+          300
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从沽源县城北出，经过察罕脑儿/小宏城子遗址、水泉淖尔；从水泉淖尔向东上山到转佛庙村南口，沿 024 县道东北行到马神庙村，再向塞北管理区方元酒店行走。",
+        "missing_geometry": false,
+        "route_gap": false,
+        "movement_type": "walked",
+        "continuity_status": "continuous",
+        "walkability_status": "book_walkable",
+        "modern_followability": "approximate_only",
+        "do_not_connect_in_gpx": false,
+        "gap_notes": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-013",
+        "order": 13,
+        "title": "塞北管理区到黑城子",
+        "start_name": "塞北管理区",
+        "end_name": "黑城子镇",
+        "pages": [
+          304,
+          305,
+          313,
+          314,
+          318
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从塞北管理区沿县道402往北，跨过河北与内蒙古分界后进入正蓝旗，沿X502继续北行，经黑土城镇前往李陵台遗址；之后到黑城子镇一带。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_after",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第318页及复核备注显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。",
+          "书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-014",
+        "order": 14,
+        "title": "黑城子到四郎城",
+        "start_name": "黑城子",
+        "end_name": "四郎城",
+        "pages": [
+          324,
+          328,
+          332
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "从正蓝旗住宿地乘车回到黑城子以东/李陵台平行位置，补走滦河东岸沙丘地貌，再沿公路南行入上都镇，过闪电河大桥到四郎城。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "isolated",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第324页及复核备注显示本段先坐出租车到补走点，路线连续性需人工确认。",
+          "书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "segment_id": "seg-015",
+        "order": 15,
+        "title": "四郎城到上都遗址",
+        "start_name": "四郎城",
+        "end_name": "元上都遗址",
+        "pages": [
+          318,
+          344,
+          345,
+          346,
+          348,
+          353
+        ],
+        "confidence": "needs_review",
+        "coordinate_confidence": "approximate",
+        "route_summary": "最后一日坐车过上都音高勒大桥后，从桥北开始走北岸大堤，避开南岸高速公路，进入元上都遗址并步行到明德门，完成从健德门到明德门的徒步行程。",
+        "missing_geometry": true,
+        "route_gap": true,
+        "movement_type": "mixed",
+        "continuity_status": "gap_before",
+        "walkability_status": "partially_walkable",
+        "modern_followability": "needs_field_check",
+        "do_not_connect_in_gpx": true,
+        "gap_notes": [
+          "第344页及复核备注显示坐车过上都音高勒大桥后，从桥北开始最后一日步行。",
+          "书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。",
+          "该段只导出 waypoint，不作为连续 GPX track。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# private source materials
+projects/*/private/
+projects/*/review_pack/pages/
+source/
+data/ocr/
+data/book.md
+data/book_pages.jsonl
+data/book_pages.cleaned.jsonl
+data/book_chunks.jsonl
+data/review_pack/pages/
+
+# local build/cache
+web/dist/
+web/node_modules/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local debug/temp files
+data/debug/
+.codex_tmp/
+*.tmp
+tmp_*
+report_tmp.md
+
+# Stray root-level placeholders
+/HTTP
+/'${report}'
+
+# Project-level sub-repos (each has its own .git, treat as untracked)
+/Story-to-game/
+/booktrans-desk/
+/documuse/
+/hu-line-roadtrip-handbook/
+/mini-gpt-from-scratch/
+/openai-interview-roadmap/
+/projects/My-2022-Logseq-Note/
+/repos/AutoGPT/
+/repos/codex-chatgpt-control/
+
+# Unrelated personal translation work (different book, full text)
+/pdf_translation_work/
+
+# Pre-push review report (private audit, not for public release)
+/data/pdf_translation_work_review_before_push.md
+
+# Unrelated sub-projects living in workspace (each is a different tool)
+/xvt2c-edit/
+/hyperspace-control/
+/reports/
+
+# Pre-push audit report (private audit, not for public release)
+/data/pre_push_head_content_audit.md

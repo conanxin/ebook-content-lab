@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ebook-content-lab/route-segment.schema.json",
+  "title": "Route segment",
+  "type": "object",
+  "required": ["id", "order", "title", "start", "end", "book_refs"],
+  "properties": {
+    "id": { "type": "string" },
+    "order": { "type": "integer" },
+    "title": { "type": "string" },
+    "start": { "$ref": "#/$defs/place" },
+    "end": { "$ref": "#/$defs/place" },
+    "via": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+    "book_refs": { "type": "array", "items": { "$ref": "#/$defs/bookRef" } },
+    "chapter_refs": { "type": "array", "items": { "$ref": "#/$defs/bookRef" } },
+    "movement_type": { "enum": ["walked", "vehicle", "mixed", "inferred", "unclear"] },
+    "continuity_status": { "enum": ["continuous", "gap_before", "gap_after", "isolated", "unclear"] },
+    "walkability_status": { "enum": ["book_walkable", "partially_walkable", "not_walkable_as_written", "needs_review"] },
+    "modern_followability": { "enum": ["likely_followable", "approximate_only", "not_enough_information", "needs_field_check"] },
+    "gap_notes": { "type": "array", "items": { "type": "string" } },
+    "do_not_connect_in_gpx": { "type": "boolean" }
+  },
+  "$defs": {
+    "place": {
+      "type": "object",
+      "required": ["name", "lat", "lng", "coordinate_confidence"],
+      "properties": {
+        "name": { "type": "string" },
+        "lat": { "type": ["number", "null"] },
+        "lng": { "type": ["number", "null"] },
+        "coordinate_source": { "type": ["string", "null"] },
+        "coordinate_confidence": { "enum": ["verified", "approximate", "missing"] }
+      },
+      "additionalProperties": true
+    },
+    "bookRef": {
+      "type": "object",
+      "required": ["page", "quote", "note"],
+      "properties": {
+        "page": { "type": "integer" },
+        "quote": { "type": "string", "maxLength": 240 },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
+

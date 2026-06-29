@@ -1,0 +1,471 @@
+{
+  "generated_at": "2026-06-29T02:58:19+00:00",
+  "project_slug": "dadou-shangdu",
+  "identity_status": "identified",
+  "sources": {
+    "pdf": "D:\\WSL\\Codex\\projects\\dadou-shangdu\\private\\source\\book.pdf",
+    "book_md": "D:\\WSL\\Codex\\projects\\dadou-shangdu\\private\\book.md",
+    "book_pages_cleaned": "D:\\WSL\\Codex\\projects\\dadou-shangdu\\private\\book_pages.cleaned.jsonl",
+    "ocr_pdf": "D:\\WSL\\Codex\\projects\\dadou-shangdu\\private\\ocr\\book_ocr.pdf"
+  },
+  "book": {
+    "title": "从大都到上都：在古道上重新发现中国",
+    "author": "罗新",
+    "publication_info": "北京：新星出版社，2018.1",
+    "publisher": "新星出版社",
+    "publication_date": "2018.1",
+    "isbn": "978-7-5133-2899-9",
+    "source_type": "scanned_pdf",
+    "language": "zh-Hans",
+    "is_scanned_likely": true,
+    "total_pages": 360,
+    "evidence": [
+      {
+        "field": "title_author",
+        "quote": "从大都到上都：在古道上重新发现中国/罗新著"
+      },
+      {
+        "field": "publication_info",
+        "quote": "北京：新星出版社，2018.1"
+      },
+      {
+        "field": "isbn",
+        "quote": "ISBN 978-7-5133-2899-9"
+      }
+    ]
+  },
+  "pdf_inspection": {
+    "path": "D:\\WSL\\Codex\\projects\\dadou-shangdu\\private\\source\\book.pdf",
+    "exists": true,
+    "page_count": 360,
+    "sample_embedded_text_chars": 0.0,
+    "is_scanned_likely": true,
+    "inspection_error": null
+  },
+  "ocr_status": {
+    "status": "available",
+    "page_count": 360,
+    "needs_review_pages": [
+      1,
+      2,
+      3,
+      8,
+      9,
+      29,
+      30,
+      31,
+      38,
+      53,
+      54,
+      55,
+      75,
+      76,
+      77,
+      92,
+      99,
+      100,
+      101,
+      122,
+      123,
+      133,
+      147,
+      148,
+      149,
+      171,
+      172,
+      173,
+      176,
+      192,
+      193,
+      215,
+      216,
+      217,
+      239,
+      240,
+      241,
+      252,
+      262,
+      263,
+      274,
+      280,
+      281,
+      301,
+      302,
+      303,
+      321,
+      322,
+      323,
+      333,
+      341,
+      342,
+      343,
+      347,
+      354,
+      355,
+      356,
+      357,
+      360
+    ],
+    "empty_pages": [
+      9,
+      31,
+      53,
+      55,
+      75,
+      77,
+      99,
+      101,
+      123,
+      147,
+      149,
+      171,
+      173,
+      193,
+      215,
+      217,
+      239,
+      241,
+      263,
+      281,
+      301,
+      303,
+      321,
+      323,
+      341,
+      343,
+      355,
+      357
+    ],
+    "average_chars_per_page": 522.01,
+    "ocr_pdf_exists": true
+  },
+  "toc": {
+    "toc_page_range": [
+      6,
+      7
+    ],
+    "toc_pages": [
+      6,
+      7
+    ],
+    "chapter_candidates": [
+      {
+        "title": "写在出发之前：金莲川在召唤",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "千里滦京第一程",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从健德门到皂甲屯",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "龙虎台前暑气深",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从昌平到居庸关",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "居庸关外看长城",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从居庸关到延庆",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "黑谷深深十八盘",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从延庆旧县镇到白河堡水库",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "无限青山锁大边",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从白河堡水库到长伸地村",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "边关何处龙门所",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从长伸地村到龙门所镇",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "白云依旧照黑河",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "从龙门所到白草镇",
+        "source": "toc",
+        "page": 6
+      },
+      {
+        "title": "水远沟深山复山",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从白草镇到老掌沟",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "北出沙岭见平川",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从老掌沟到小厂镇",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "七月杨花满路飞",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从小厂镇到五花草甸",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "梳妆楼下金莲肥",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从五花草甸到沽源",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "察罕脑儿草姜姜",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从沽源到塞北管理区",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "李陵台上野云低",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从塞北管理区到黑城子",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "乌桓城下问白翎",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从黑城子到四郎城",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "紫菊金莲绕滦京",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从四郎城到上都遗址",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "写在一年以后",
+        "source": "toc",
+        "page": 7
+      },
+      {
+        "title": "从大都到上都 / 罗新-著 / 在古道上重新发现中国",
+        "source": "heading_page",
+        "page": 1
+      },
+      {
+        "title": "从大都到上都 / 在古道上重新发现中国 / 罗新——著",
+        "source": "heading_page",
+        "page": 3
+      },
+      {
+        "title": "写在出发之前：金莲川在召唤",
+        "source": "heading_page",
+        "page": 8
+      },
+      {
+        "title": "就如同去撒马尔罕和布哈拉，现在我怀着同样的心情，要去金莲 / 川了。",
+        "source": "heading_page",
+        "page": 29
+      },
+      {
+        "title": "广济桥 / 桥基由双层带企口的石板铺砌而成，原来石桥下有密铺的松木 / 大方木，方木之下是密贯的大木桩。石桥两端有明代石望柱及",
+        "source": "heading_page",
+        "page": 38
+      },
+      {
+        "title": "龙虎台前暑气深 / 从昌平到居庸关 / 居庸关云台",
+        "source": "heading_page",
+        "page": 54
+      },
+      {
+        "title": "岔道雄关 / 古代道路至此分岔，所谓“路从此分，四通八达”。路正是在 / 这里与驿路分开，各奔一方。",
+        "source": "heading_page",
+        "page": 92
+      },
+      {
+        "title": "黑谷深深十八盘 / 从延庆旧县镇到白河堡水库 / 燕山天池宾馆",
+        "source": "heading_page",
+        "page": 100
+      },
+      {
+        "title": "白河堡水库一角 / 沿昌赤路（S212）在水库边走半小时之后，回过头看南 / 边高高的盘云岭山口。山脉在这里断裂下陷，形成一个",
+        "source": "heading_page",
+        "page": 114
+      },
+      {
+        "title": "无限青山锁大边 / 从白河堡水库到长伸地村 / 镇虏楼",
+        "source": "heading_page",
+        "page": 122
+      },
+      {
+        "title": "郑家窑的大榆树 / 村子紧傍公路，路侧南北相距不远各有一颗大榆树，很远 / 就看得见，树冠展开如深绿色的大伞。",
+        "source": "heading_page",
+        "page": 133
+      },
+      {
+        "title": "边关何处龙门所 / 从长伸地村到龙门所镇 / 龙门所",
+        "source": "heading_page",
+        "page": 148
+      },
+      {
+        "title": "白云依旧照黑河 / 从龙门所到白草镇 / 白草镇",
+        "source": "heading_page",
+        "page": 172
+      },
+      {
+        "title": "黑河旧桥 / 东边不远是已经停用的、从前公路的多孔拱桥，看起 / 来很漂亮。黑河是白河的支流、发源于赤城、沽源两",
+        "source": "heading_page",
+        "page": 176
+      },
+      {
+        "title": "水远沟深山复山 / 从白草镇到老掌沟 / 老掌沟",
+        "source": "heading_page",
+        "page": 192
+      },
+      {
+        "title": "老掌沟 / 进入老掌沟，最强烈的感觉是，如同回到了春天。灌木和乔木似乎 / 刚刚进入花期，白杨树正在吐出一团团的白絮。不远处数十头花色",
+        "source": "heading_page",
+        "page": 208
+      },
+      {
+        "title": "骑驴人 / 走到西大道村时雨就停了。迎面一个老乡骑着黑驴过来，驴的 / 额头上那块红布条虽然褪色了、依然非常显眼。我对那一副铁",
+        "source": "heading_page",
+        "page": 226
+      },
+      {
+        "title": "在石头城残剩的石墙上 / 古城只剩下四面早已倾颜、仅有一两米高的 / 城墙，公路穿城而过，城内都是农田。",
+        "source": "heading_page",
+        "page": 252
+      },
+      {
+        "title": "梳妆楼下金莲肥 / 从五花草甸到沽源 / 沽源县",
+        "source": "heading_page",
+        "page": 262
+      },
+      {
+        "title": "头戴花冠的女人 / 我们只在路东园区内的商店里小坐一会儿。开店的老妇人头戴 / 一顶自编的花冠，紫白相间的小花密密麻麻地向外伸展，呈现",
+        "source": "heading_page",
+        "page": 274
+      },
+      {
+        "title": "乌桓城下问白翎 / 从黑城子到四郎城 / 正蓝旗",
+        "source": "heading_page",
+        "page": 322
+      },
+      {
+        "title": "前往四郎城 / 烈日高照，气温高达37℃，街上行人和树木一样稀少，水泥街 / 面和两边的彩色建筑看上去像是处在蒸煮中",
+        "source": "heading_page",
+        "page": 333
+      },
+      {
+        "title": "紫菊金莲绕滦京 / 从四郎城到上都遗址 / 元上都遗址",
+        "source": "heading_page",
+        "page": 342
+      },
+      {
+        "title": "路边的马 / 再走一会儿，路北一片铁丝网圈起来的牧场内有一群骆驼和 / 马，看起来精神抖擞，似乎根本没有受到暑热影响。",
+        "source": "heading_page",
+        "page": 347
+      },
+      {
+        "title": "的北京。我十五天来走过的路，就在这看得见看不见的川野间。河山 / 万里当前，我心里只有感激。生也何幸。",
+        "source": "heading_page",
+        "page": 354
+      },
+      {
+        "title": "写在一年以后",
+        "source": "heading_page",
+        "page": 356
+      },
+      {
+        "title": "我希望自己也实现从旅游者向旅行者的转变，并且，我更希望这 / 一转变是单向的、不可逆的。风雨如晦，鸡鸣不已。何以解忧？唯有行走。",
+        "source": "heading_page",
+        "page": 360
+      }
+    ]
+  },
+  "content_type_scores": {
+    "route / travel / walking": 757,
+    "history": 1599,
+    "biography": 4,
+    "fiction": 27,
+    "geography": 2298,
+    "essay": 112,
+    "technical": 30
+  },
+  "suggested_content_types": [
+    "route / travel / walking",
+    "history",
+    "geography"
+  ],
+  "suggested_project_types": [
+    "route-map",
+    "field-guide",
+    "place-index",
+    "reading-guide",
+    "timeline",
+    "knowledge-map"
+  ]
+}

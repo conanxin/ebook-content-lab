@@ -1,0 +1,381 @@
+﻿segment_id,page,field,issue,current_value,question,manual_result,notes
+seg-001,34,book_refs,书中路线证据核对,我从健德门出发，沿着小月河东岸北行,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明实际出发点和初始方向。
+seg-001,52,book_refs,书中路线证据核对,沿甲屯路东北行，到北玉河村，就到了繁忙喧嚣的沙阳路,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明皂甲屯后至北玉河、沙阳路，第一日行走计划完成。
+seg-001,45,book_refs,书中路线证据核对,找到村民所说的餐馆，点了一碗拉面,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段途中补给：村民提示餐馆，作者在餐馆吃拉面。
+seg-001,30,chapter_refs,章节出处核对,从健德门到皂甲屯,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-001,,lodging,书中未明示,书中未明示；第52页显示之后乘出租车南返。,该字段是否确实无书中明示依据？,,
+seg-001,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-001,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-001,,evidence_notes,证据处理说明核对,resupply: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-001,30,review_notes,复核备注,第30页标题图 OCR 将地名连在一起，需回看 PDF 核对标题页地名排布。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-001,52,review_notes,复核备注,第52页显示行走计划结束后乘出租车南行，不应把乘车路线画入步行线。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-001,45,review_notes,复核备注,[evidence_audit] unsupported_claim: resupply: 第45页提到村民提示餐馆并在餐馆吃拉面,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-001,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 30,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-001,,gap_notes,断点/GPX 规则,书中显示第一日行走结束后另有乘车南返；本段 GPX 只表达健德门至皂甲屯的步行段，不连接乘车路线。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-001,,start,approximate 坐标,"健德门 (39.976, 116.381) source=manual approximate Yuan Dadu Jiandemen area",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[1],approximate 坐标,"小月河 (40.008, 116.37) source=manual modern river corridor approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[2],approximate 坐标,"清河 (40.035, 116.34) source=manual modern place/river approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[3],approximate 坐标,"广济桥 (40.04, 116.34) source=manual historic bridge area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[4],approximate 坐标,"皇后店 (40.115, 116.245) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[5],approximate 坐标,"南沙河水库 (40.104, 116.256) source=manual modern river crossing approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[6],approximate 坐标,"南玉河村 (40.118, 116.195) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,via[7],approximate 坐标,"北玉河村 (40.143, 116.177) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-001,,end,approximate 坐标,"皂甲屯 (40.128, 116.186) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-002,60,book_refs,书中路线证据核对,沿街北行到小学，西行离开旧县村,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明旧县村内外行走方向。
+seg-002,64,book_refs,书中路线证据核对,龙虎台村就在古代的龙虎台上,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文确认途经龙虎台村及其历史位置。
+seg-002,56,book_refs,书中路线证据核对,背包明显变重了。晴空湛蓝，又一个高亢的暑天,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持背包变重和暑热背景。
+seg-002,58,book_refs,书中路线证据核对,既然它不让我走，我只好绕道了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持路上因犬只阻路而绕行。
+seg-002,54,chapter_refs,章节出处核对,从昌平到居庸关,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-002,,water_sources,书中未明示,书中未明示。,该字段是否确实无书中明示依据？,,
+seg-002,,lodging,书中未明示,书中未明示。,该字段是否确实无书中明示依据？,,
+seg-002,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-002,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-002,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-002,54,review_notes,复核备注,第54页标题页 OCR 出现“哈旧县”等噪声，已按正文改为旧县村，需回看 PDF 第54页。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-002,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 暑热、背包变重、路上犬只绕行,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-002,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 54,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-002,,start,approximate 坐标,"昌平镇 (40.2207, 116.2312) source=manual modern town center",该地名和 approximate 坐标是否需要人工核对？,,
+seg-002,,via[1],approximate 坐标,"旧县村 (40.252, 116.18) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-002,,via[2],approximate 坐标,"龙虎台村 (40.276, 116.153) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-002,,via[3],approximate 坐标,"南口村 (40.239, 116.128) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-002,,via[4],approximate 坐标,"居庸关云台 (40.288, 116.068) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,88,book_refs,书中路线证据核对,从水关长城向上，就没有谷底河道可行了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明关沟内道路变化和水关长城之后的行走方式。
+seg-003,96,book_refs,书中路线证据核对,从岔道城经小泥河村、大泥河村，以大榆树镇为今日的目的地,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文明确岔道城后的实际取路。
+seg-003,98,book_refs,书中路线证据核对,离大榆树镇还有二十几分钟的路程。我决定就到这里,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文显示当天实际步行在大榆树镇前结束，后续有乘车。
+seg-003,76,chapter_refs,章节出处核对,从居庸关到延庆,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-003,,lodging,书中未明示,书中未明示,该字段是否确实无书中明示依据？,,
+seg-003,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-003,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-003,,evidence_notes,证据处理说明核对,lodging: cleared_to_unspecified; 未找到能直接支持“无本段步行住宿”的正面证据；保留为复核说明。,该证据处理说明是否需要调整？,,
+seg-003,76,review_notes,复核备注,第76页标题页 OCR 将“八达岭关城”识别为“达岭关城”，已据正文第88页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,88,review_notes,复核备注,第76页标题页 OCR 将“八达岭关城”识别为“达岭关城”，已据正文第88页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,98,review_notes,复核备注,第98页显示步行未连续到延庆旧县镇，居庸关到延庆之间存在需要人工确认的断点。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,,review_notes,复核备注,[evidence_audit] unsupported_claim: lodging: 无本段步行住宿,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 76,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,,review_notes,复核备注,证据不足，待人工复核：lodging 原内容：无本段步行住宿；作者坐车返回居庸关/中关村休整。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-003,98,gap_notes,断点/GPX 规则,第98页及复核备注显示当天行走未连续到延庆旧县镇，后续存在乘车返回/休整信息。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-003,,gap_notes,断点/GPX 规则,书中存在乘车/断点复核说明，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-003,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-003,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-003,,continuity_status,状态高亮复核,gap_after,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-003,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-003,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-003,,via[1],approximate 坐标,"弹琴峡 (40.305, 116.06) source=manual gorge area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,via[2],approximate 坐标,"水关长城 (40.333, 116.035) source=manual modern scenic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,via[4],approximate 坐标,"岔道城 (40.365, 115.995) source=manual historic village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,via[5],approximate 坐标,"小泥河村 (40.401, 115.975) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,via[6],approximate 坐标,"大泥河村 (40.414, 115.957) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,via[7],approximate 坐标,"大榆树镇 (40.432, 115.94) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-003,,end,approximate 坐标,"延庆旧县镇 (40.497, 116.05) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,104,book_refs,书中路线证据核对,今昌赤路（即212省道）从车坊向北，一路缓坡上升,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明车坊至黑峪口方向和道路。
+seg-004,114,book_refs,书中路线证据核对,沿昌赤路（S212）在水库边走半小时之后,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到达白河堡水库后的水库边道路。
+seg-004,102,book_refs,书中路线证据核对,吃完早饭，我们告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段从延庆/旧县镇开始走向白河堡水库。
+seg-004,111,book_refs,书中路线证据核对,盘云岭山口是由地质学上所说的盘云岭断层形成的,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段经过盘云岭山口。
+seg-004,115,book_refs,书中路线证据核对,找到水库库区管理所的燕山天池宾馆,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段住宿地点。
+seg-004,100,chapter_refs,章节出处核对,从延庆旧县镇到白河堡水库,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-004,,resupply,书中未明示,书中未明示。,该字段是否确实无书中明示依据？,,
+seg-004,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-004,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-004,,evidence_notes,证据处理说明核对,route_summary: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-004,,evidence_notes,证据处理说明核对,lodging: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-004,,evidence_notes,证据处理说明核对,p104 quote updated,该证据处理说明是否需要调整？,,
+seg-004,,evidence_notes,证据处理说明核对,p114 quote updated,该证据处理说明是否需要调整？,,
+seg-004,114,review_notes,复核备注,本段部分细节来自标题页和相邻正文，仍需回看第100-114页确认完整日程。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-004,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 100,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-004,,gap_notes,断点/GPX 规则,本段从旧县镇开始步行；与上一段之间存在已在 seg-003 标记的断点。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-004,,continuity_status,状态高亮复核,gap_before,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=walk-block-003
+seg-004,,start,approximate 坐标,"延庆旧县镇 (40.497, 116.05) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,,via[1],approximate 坐标,"车坊 (40.535, 116.07) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,,via[2],approximate 坐标,"黑峪口村 (40.58, 116.065) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,,via[3],approximate 坐标,"盘云岭 (40.64, 116.05) source=manual mountain pass approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,,via[4],approximate 坐标,"燕山天池宾馆 (40.624, 115.93) source=manual lodging area approximation near Baihepu Reservoir",该地名和 approximate 坐标是否需要人工核对？,,
+seg-004,,end,approximate 坐标,"白河堡水库 (40.624, 115.93) source=manual reservoir approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,143,book_refs,书中路线证据核对,靠近长伸地村的村口时，还不到下午三点,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到达长伸地村口的时间和住宿安排。
+seg-005,143,book_refs,书中路线证据核对,右转过河，沿一条新铺的水泥路上山,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明长伸地村口后的具体走法。
+seg-005,125,book_refs,书中路线证据核对,公路紧贴在白河河谷的北岸,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段沿白河河谷行走。
+seg-005,126,book_refs,书中路线证据核对,上午十点，到达骆驼山村,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段到达骆驼山村。
+seg-005,122,chapter_refs,章节出处核对,从白河堡水库到长伸地村,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-005,,resupply,书中未明示,书中未明示。,该字段是否确实无书中明示依据？,,
+seg-005,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-005,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-005,,evidence_notes,证据处理说明核对,route_summary: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-005,,evidence_notes,证据处理说明核对,walking_directions: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-005,,evidence_notes,证据处理说明核对,water_sources: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-005,122,review_notes,复核备注,第122页标题图 OCR 将“长伸地村”识别为“长博地村”，已按正文第143页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-005,143,review_notes,复核备注,第122页标题图 OCR 将“长伸地村”识别为“长博地村”，已按正文第143页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-005,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 122,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-005,,review_notes,复核备注,证据不足，待人工复核：seg-005 原 route_summary / walking_directions 中的“郑家窑、镇虏楼”未在正文事实页形成足够支撑，本轮仅从摘要和方向中移除，地点候选仍需回看 PDF。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-005,,gap_notes,断点/GPX 规则,部分中途地名曾因 OCR 和标题页证据不足被移入复核说明；GPX 仅按已保留正文证据和坐标生成参考线。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-005,,start,approximate 坐标,"白河堡水库 (40.624, 115.93) source=manual reservoir approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,,via[1],approximate 坐标,"白河河谷 (40.68, 115.9) source=manual river valley approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,,via[2],approximate 坐标,"骆驼山 (40.73, 115.86) source=manual village/mountain area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,,via[3],approximate 坐标,"郑家窑村 (40.79, 115.8) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,,via[4],approximate 坐标,"镇虏楼 (40.855, 115.73) source=manual historic tower near Changshendi approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-005,,end,approximate 坐标,"长伸地村 (40.855, 115.73) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,150,book_refs,书中路线证据核对,看看表正好是六点半，背起背包,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明本日出发时间。
+seg-006,160,book_refs,书中路线证据核对,从红沙梁一路下山,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明红沙梁之后的下山路线。
+seg-006,167,book_refs,书中路线证据核对,进人龙门所镇正好是下午四点,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到达龙门所镇。
+seg-006,151,book_refs,书中路线证据核对,我们尽量走路边的老路或人行道,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段修路环境下走老路或人行道。
+seg-006,161,book_refs,书中路线证据核对,汇入国道京环线（G112）,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段道路进入国道京环线/G112。
+seg-006,154,book_refs,书中路线证据核对,大卡车奔忙来去，拖曳着尘土飞扬的长龙,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持修路车辆扬尘。
+seg-006,155,book_refs,书中路线证据核对,他的脚第一天就打了水泡,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持脚部水泡风险。
+seg-006,160,book_refs,书中路线证据核对,顶着烈日再走一个小时,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持烈日和疲劳背景。
+seg-006,148,chapter_refs,章节出处核对,从长伸地村到龙门所镇,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-006,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-006,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-006,,evidence_notes,证据处理说明核对,roads_or_paths: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-006,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-006,148,review_notes,复核备注,“不堡子村”疑似 OCR 或地名需回看第148页标题图。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-006,,review_notes,复核备注,[evidence_audit] unsupported_claim: roads_or_paths: 修路路段、老路、人行道、国道京环线/G112,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-006,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 修路扬尘、烈日、疲劳、水泡,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-006,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 148,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-006,,start,approximate 坐标,"长伸地村 (40.855, 115.73) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,,via[1],approximate 坐标,"巡检司村 (40.885, 115.67) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,,via[2],approximate 坐标,"不堡子村 (40.91, 115.62) source=manual OCR-normalized village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,,via[3],approximate 坐标,"红沙梁 (40.93, 115.58) source=manual pass/ridge approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,,via[4],approximate 坐标,"小堡村 (40.95, 115.55) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-006,,end,approximate 坐标,"龙门所镇 (40.98, 115.49) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-007,175,book_refs,书中路线证据核对,从龙门所沿G112先是向北，一路越走越高,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明离开龙门所后的路线。
+seg-007,180,book_refs,书中路线证据核对,中午十二点，我们走到东万口乡,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明中途集镇与补给。
+seg-007,189,book_refs,书中路线证据核对,下午五点整，我们走到白草镇南G112向东转,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明完成本日行程。
+seg-007,174,book_refs,书中路线证据核对,塘子庙就是明代地图上的“滚水塘”，以温泉得名,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持 route_summary 中塘子庙相关描述。
+seg-007,174,book_refs,书中路线证据核对,我们住的这家“温泉宾馆”开业不久,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段住宿为塘子庙温泉宾馆。
+seg-007,172,chapter_refs,章节出处核对,从龙门所到白草镇,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-007,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-007,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-007,,evidence_notes,证据处理说明核对,route_summary: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-007,,evidence_notes,证据处理说明核对,lodging: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-007,172,review_notes,复核备注,第172页标题页 OCR 可能把“塘子庙”识别为“特子庙”，已据正文第174、191页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-007,191,review_notes,复核备注,第172页标题页 OCR 可能把“塘子庙”识别为“特子庙”，已据正文第174、191页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-007,,review_notes,复核备注,[evidence_audit] unsupported_claim: route_summary: 经塘子庙,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-007,,review_notes,复核备注,[evidence_audit] unsupported_claim: lodging: 塘子庙温泉宾馆一带,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-007,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 172,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-007,,start,approximate 坐标,"龙门所 (40.98, 115.49) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-007,,via[1],approximate 坐标,"巴图营大桥 (40.96, 115.5) source=manual bridge area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-007,,via[2],approximate 坐标,"塘子庙 (40.99, 115.42) source=manual hot spring village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-007,,via[3],approximate 坐标,"东万口乡 (41.05, 115.32) source=manual modern township approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-007,,end,approximate 坐标,"白草镇 (41.09, 115.22) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,194,book_refs,书中路线证据核对,沿黑河东岸的一条县级公路（X404）向北,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明道路和方向。
+seg-008,205,book_refs,书中路线证据核对,随着X404左转进人黑龙山村,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明黑龙山村和距离判断。
+seg-008,207,book_refs,书中路线证据核对,从沟口往沟里走了半小时后,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明进入老掌沟后因时间安排联系车辆。
+seg-008,207,book_refs,书中路线证据核对,请他开车来接我们。他爽快地答应了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段后段由度假村车辆接应。
+seg-008,205,book_refs,书中路线证据核对,离目的地老掌沟还有差不多二十公里，看来很难完成了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段路程压力。
+seg-008,205,book_refs,书中路线证据核对,山区有自己的小气候，也许会突然来一场暴雨,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持天气突变风险。
+seg-008,205,book_refs,书中路线证据核对,一路上已见到好几拨越野车队,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持越野车相关风险。
+seg-008,192,chapter_refs,章节出处核对,从白草镇到老掌沟,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-008,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-008,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-008,,evidence_notes,证据处理说明核对,route_summary: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-008,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-008,207,review_notes,复核备注,第207页显示从老掌沟沟内联系车辆接应，本段步行终点与住宿点之间存在非步行接续，需人工复核。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-008,,review_notes,复核备注,[evidence_audit] unsupported_claim: route_summary: 因路程和同行人返程安排，后段由度假村车接走,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-008,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 长距离近四十公里计划、天气突变、越野车、后段非连续步行,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-008,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 192,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-008,207,gap_notes,断点/GPX 规则,第207页及复核备注显示进入老掌沟后联系车辆接应，步行终点与住宿点之间存在非步行接续。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-008,,gap_notes,断点/GPX 规则,书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-008,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-008,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-008,,continuity_status,状态高亮复核,gap_after,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-008,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-008,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-008,,start,approximate 坐标,"白草镇 (41.09, 115.22) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,via[1],approximate 坐标,"三道川村 (41.14, 115.18) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,via[2],approximate 坐标,"禹龙山村 (41.18, 115.13) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,via[3],approximate 坐标,"黑龙山村 (41.25, 115.02) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,via[4],approximate 坐标,"山神庙村 (41.22, 115.06) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,via[5],approximate 坐标,"南沟门 (41.29, 114.98) source=manual valley entrance approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-008,,end,approximate 坐标,"老掌沟 (41.34, 114.94) source=manual valley/scenic area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,220,book_refs,书中路线证据核对,我们开始补走这一段到处都是牛群的风景区,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明补走前一日未步行路段。
+seg-009,220,book_refs,书中路线证据核对,本来只有五公里长的沟谷，我们实际走了差不多十公里,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明沟谷绕行和距离偏差。
+seg-009,232,book_refs,书中路线证据核对,小厂镇是南北一条主街,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到达小厂镇后的街镇形态和补给。
+seg-009,220,book_refs,书中路线证据核对,无论怎么走都得反复过河,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持反复过河风险。
+seg-009,220,book_refs,书中路线证据核对,满谷都是细沙，被越野车纵横碾压之后，车辙深陷,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持细沙和深车辙。
+seg-009,218,book_refs,书中路线证据核对,首先要补上昨天没有走完的一段,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段补走前一日未完成路段。
+seg-009,221,book_refs,书中路线证据核对,从沟门往北走十多分钟，就到了燕山山脉北支的分水岭,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持从沟门向北过分水岭。
+seg-009,222,book_refs,书中路线证据核对,沙岭至小厂镇地势下降明显,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持沙岭至小厂镇的地势和路线背景。
+seg-009,224,book_refs,书中路线证据核对,X404的路东先后是前坝村和后坝村,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持经前坝、后坝一带。
+seg-009,228,book_refs,书中路线证据核对,下午四点一刻，我们走到X404与S245交叉的地方，终于到小厂镇了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段到达小厂镇。
+seg-009,216,chapter_refs,章节出处核对,从老掌沟到小厂镇,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-009,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-009,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-009,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-009,,evidence_notes,证据处理说明核对,route_summary: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-009,,evidence_notes,证据处理说明核对,walking_directions: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-009,,evidence_notes,证据处理说明核对,terrain: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-009,,review_notes,复核备注,本段包含“补走”逻辑，需在页面显式标记不要把接送车路线算作步行路线。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-009,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 反复过河、深车辙、细沙、绕行导致距离增加,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-009,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 216,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-009,,gap_notes,断点/GPX 规则,本段包含补走前一日未完成路段；接送车路线不得计入步行路线。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-009,,gap_notes,断点/GPX 规则,本段 GPX 只表达书中可支持的补走和随后步行部分。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-009,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=walk-block-007
+seg-009,,continuity_status,状态高亮复核,gap_before,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=walk-block-007
+seg-009,,start,approximate 坐标,"老掌沟 (41.34, 114.94) source=manual valley/scenic area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[1],approximate 坐标,"南沟门 (41.29, 114.98) source=manual valley entrance approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[2],approximate 坐标,"沟门村 (41.38, 114.94) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[3],approximate 坐标,"前坝村 (41.42, 114.95) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[4],approximate 坐标,"黄土坑村 (41.46, 114.97) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[5],approximate 坐标,"雷大道村 (41.49, 114.99) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,via[6],approximate 坐标,"三间房村 (41.53, 115.03) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-009,,end,approximate 坐标,"小厂镇 (41.57, 115.07) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,242,book_refs,书中路线证据核对,我们没有沿着这条主要公路北行,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明不取S241主路。
+seg-010,251,book_refs,书中路线证据核对,从小厂镇走葫芦河西岸向北,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明选择葫芦河西岸的原因。
+seg-010,260,book_refs,书中路线证据核对,沿路往北走几百米，到义合成村南，离五花草甸已经不远了,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明在五花草甸附近搭车去沽源休整。
+seg-010,245,book_refs,书中路线证据核对,我给你们泡碗方便面吧,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持石柱村商店提供方便面。
+seg-010,245,book_refs,书中路线证据核对,从冰箱里拿出两瓶啤酒，让我们先喝着,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持途中补给中的啤酒。
+seg-010,240,chapter_refs,章节出处核对,从小厂镇到五花草甸,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-010,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-010,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-010,,evidence_notes,证据处理说明核对,resupply: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-010,240,review_notes,复核备注,第240页标题页 OCR 将“馒头山村”“石柱村”等识别不稳，需回看 PDF。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-010,260,review_notes,复核备注,第260页显示作者未当晚步行进沽源，而是在五花草甸附近搭车，页面不得画成步行线。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-010,,review_notes,复核备注,[evidence_audit] unsupported_claim: resupply: 途中小店泡面、啤酒,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-010,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 240,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-010,260,gap_notes,断点/GPX 规则,第260页及复核备注显示近五花草甸后搭车离开，不能画成完整步行到沽源。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-010,,gap_notes,断点/GPX 规则,书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-010,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-010,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-010,,continuity_status,状态高亮复核,gap_after,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-010,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-010,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-010,,start,approximate 坐标,"小厂镇 (41.57, 115.07) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[1],approximate 坐标,"馒头山村 (41.6, 115.09) source=manual OCR-normalized village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[2],approximate 坐标,"小南滩村 (41.63, 115.11) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[3],approximate 坐标,"石柱村 (41.66, 115.14) source=manual OCR-normalized village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[4],approximate 坐标,"石头城水库 (41.69, 115.17) source=manual reservoir approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[5],approximate 坐标,"石头城村 (41.715, 115.18) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,via[6],approximate 坐标,"牛群头 (41.72, 115.2) source=manual historic site area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-010,,end,approximate 坐标,"五花草甸 (41.75, 115.31) source=manual scenic area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-011,265,book_refs,书中路线证据核对,先把我们送去梳妆楼，在那里等着，再送我们去五花草甸,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明因前一日乘车，次日以车辆回到补走起点。
+seg-011,277,book_refs,书中路线证据核对,在沽源镇南的河东村以北，我们走出田间土路,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明回到沽源前的实际行走位置。
+seg-011,273,book_refs,书中路线证据核对,上午九点五十分，出租车把我们送到五花草甸,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持从五花草甸开始补走。
+seg-011,262,chapter_refs,章节出处核对,从五花草甸到沽源,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-011,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-011,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-011,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-011,265,review_notes,复核备注,第265页明确先坐出租车到梳妆楼和五花草甸，实际步行补段需人工回看第265-277页确认起点。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-011,277,review_notes,复核备注,第265页明确先坐出租车到梳妆楼和五花草甸，实际步行补段需人工回看第265-277页确认起点。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-011,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 本段包含车辆回到补走起点，需避免误画乘车路线,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-011,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 262,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-011,265,gap_notes,断点/GPX 规则,第265页及复核备注显示本段先乘出租车到梳妆楼和五花草甸，再补走五花草甸至沽源。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-011,,gap_notes,断点/GPX 规则,书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-011,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-011,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-011,,continuity_status,状态高亮复核,gap_before,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-011,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-011,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-011,,start,approximate 坐标,"五花草甸 (41.75, 115.31) source=manual scenic area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-011,,via[1],approximate 坐标,"河东村 (41.66, 115.66) source=manual modern village approximation near Guyuan",该地名和 approximate 坐标是否需要人工核对？,,
+seg-011,,via[2],approximate 坐标,"闪电河水库 (41.66, 115.7) source=manual reservoir approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-011,,via[3],approximate 坐标,"梳妆楼 (41.69, 115.78) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-011,,end,approximate 坐标,"沽源县城 (41.669, 115.688) source=manual modern county center",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,282,book_refs,书中路线证据核对,我们沿着酒店门前的大街向北走,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明沽源县城内出发方向。
+seg-012,290,book_refs,书中路线证据核对,024县级公路贴着小宏城子遗址的西墙向北,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明小宏城子后的道路。
+seg-012,300,book_refs,书中路线证据核对,晚七点一刻，我们终于走到赵欣已订好房间的方元酒店,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到达塞北管理区住宿点。
+seg-012,285,book_refs,书中路线证据核对,高原的暴晒和暑热开始发威,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段暴晒和暑热风险。
+seg-012,286,book_refs,书中路线证据核对,我越来越畏惧阳光,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持强日晒对身体状态的影响。
+seg-012,300,book_refs,书中路线证据核对,两脚的脚跟和外侧都打了水泡,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持到达方元酒店时的脚部风险。
+seg-012,291,book_refs,书中路线证据核对,从水泉淖尔向东，一路上山，到转佛庙村南口所建的旅游点,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持经转佛庙村南口。
+seg-012,298,book_refs,书中路线证据核对,沿着024县道东北行，一路下山，半小时后走到紧傍滦河的马神庙村,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持从转佛庙方向沿 024 县道到马神庙村。
+seg-012,299,book_refs,书中路线证据核对,从马神庙村向北的公路，是县级公路X402从前的老路,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持从马神庙村继续向北进入塞北管理区方向。
+seg-012,280,chapter_refs,章节出处核对,从沽源到塞北管理区,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-012,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-012,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-012,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-012,,evidence_notes,证据处理说明核对,route_summary: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-012,,evidence_notes,证据处理说明核对,walking_directions: 标题引用移出后补充正文证据并收紧表达。,该证据处理说明是否需要调整？,,
+seg-012,280,review_notes,复核备注,第280页标题页 OCR 将水泉淖尔、圆图淖尔等地名识别不稳，需回看 PDF 第280页。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-012,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 酷热、强日晒、长距离无行道树,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-012,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 280,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-012,,start,approximate 坐标,"沽源县城 (41.669, 115.688) source=manual modern county center",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,via[1],approximate 坐标,"察罕脑儿 (41.72, 115.86) source=manual historic lake/palace area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,via[2],approximate 坐标,"小宏城子 (41.73, 115.86) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,via[3],approximate 坐标,"水泉淖尔 (41.78, 115.93) source=manual lake approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,via[4],approximate 坐标,"转佛庙 (41.83, 116.03) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,via[5],approximate 坐标,"马神庙村 (41.88, 116.08) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-012,,end,approximate 坐标,"塞北管理区 (41.91, 116.12) source=manual modern area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,304,book_refs,书中路线证据核对,八点出发，留下赵欣那辆车停在太阳下,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明出发时间和地点。
+seg-013,314,book_refs,书中路线证据核对,地图上显示老黑土城（李陵台）在镇子北边约五公里,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明黑城子与李陵台方向。
+seg-013,318,book_refs,书中路线证据核对,从北京健德门桥算起，到今天的李陵台古城为止,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文把李陵台古城作为十三天累计行程节点。
+seg-013,305,book_refs,书中路线证据核对,由此往北再走三公里，十一点三十分，我们到达河北与内蒙的分界点,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段跨过河北与内蒙古分界。
+seg-013,313,book_refs,书中路线证据核对,下午两点半，我们走到黑土城镇的南侧,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持本段到达黑土城镇。
+seg-013,302,chapter_refs,章节出处核对,从塞北管理区到黑城子,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-013,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-013,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-013,,evidence_notes,证据处理说明核对,route_summary: rewritten_without_unsupported_part; 原 summary 中“经过明安驿”与本段 book_refs 无法对应；已移入复核备注。,该证据处理说明是否需要调整？,,
+seg-013,302,review_notes,复核备注,第302页标题页 OCR 出现“河北内装专分累线”等噪声，已按上下文作河北内蒙古分界线处理，需回看。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-013,318,review_notes,复核备注,第318页显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-013,,review_notes,复核备注,[evidence_audit] unsupported_claim: route_summary: 经过明安驿,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-013,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 302,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-013,,review_notes,复核备注,证据不足，待人工复核：route_summary 原内容含无法由本段 book_refs 支撑的信息；原内容：从塞北管理区沿县道 402 北行，跨过河北/内蒙古边界后沿滦河东岸继续，经过明安驿、李陵台遗址，到黑城子镇一带。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-013,318,gap_notes,断点/GPX 规则,第318页及复核备注显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-013,,gap_notes,断点/GPX 规则,书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-013,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-013,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-013,,continuity_status,状态高亮复核,gap_after,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-013,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-013,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-013,,start,approximate 坐标,"塞北管理区 (41.91, 116.12) source=manual modern area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,,via[1],approximate 坐标,"黄土湾村 (41.96, 116.16) source=manual modern village approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,,via[2],approximate 坐标,"河北内蒙古分界线 (42.02, 116.22) source=manual boundary crossing approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,,via[3],approximate 坐标,"明安驿 (42.03, 116.24) source=manual historic post station area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,,via[4],approximate 坐标,"李陵台 (42.09, 116.28) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-013,,end,approximate 坐标,"黑城子镇 (42.13, 116.33) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,324,book_refs,书中路线证据核对,我们在大致上与李陵台遗址平行的地方下车,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明本段有乘车回到补走点。
+seg-014,328,book_refs,书中路线证据核对,沿山前草场返回公路,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明沙丘段后返回公路。
+seg-014,332,book_refs,书中路线证据核对,过了闪电河（上都高勒）大桥，可以看到公路西北隐隐隆起,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明到四郎城前的道路和目标。
+seg-014,328,book_refs,书中路线证据核对,于是我们进到院内的一个蒙古包里,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持途中在蒙古包休息。
+seg-014,328,book_refs,书中路线证据核对,我们自己带着午饭，所以就不麻烦他们了，就着水吃起自带的馒头和面包,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持自带午饭和热水。
+seg-014,322,chapter_refs,章节出处核对,从黑城子到四郎城,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-014,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-014,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-014,,evidence_notes,证据处理说明核对,resupply: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-014,,evidence_notes,证据处理说明核对,p332 quote updated,该证据处理说明是否需要调整？,,
+seg-014,322,review_notes,复核备注,第322页标题页 OCR 将“滦河东岸沙丘”识别为“梁河东岸沙丘”，已据正文第324页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-014,324,review_notes,复核备注,第322页标题页 OCR 将“滦河东岸沙丘”识别为“梁河东岸沙丘”，已据正文第324页校正。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-014,324,review_notes,复核备注,第324页明确本段先坐出租车到补走点，路线连续性需人工确认。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-014,,review_notes,复核备注,[evidence_audit] unsupported_claim: resupply: 途中蒙古包/牧户处休息、自带午饭和热水,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-014,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 322,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-014,324,gap_notes,断点/GPX 规则,第324页及复核备注显示本段先坐出租车到补走点，路线连续性需人工确认。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-014,,gap_notes,断点/GPX 规则,书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-014,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-014,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-014,,continuity_status,状态高亮复核,isolated,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-014,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-014,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-014,,start,approximate 坐标,"黑城子 (42.13, 116.33) source=manual modern town approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,,via[1],approximate 坐标,"滦河东岸沙丘 (42.15, 116.32) source=manual dunes area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,,via[2],approximate 坐标,"正蓝旗 (42.245, 116.003) source=manual modern banner seat approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,,via[3],approximate 坐标,"上都镇 (42.245, 116.003) source=manual modern banner seat approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,,via[4],approximate 坐标,"闪电河 (41.78, 115.95) source=manual river/area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-014,,end,approximate 坐标,"四郎城 (42.24, 116.08) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-015,344,book_refs,书中路线证据核对,从桥北开始最后一天的行程,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明最后一天实际步行起点。
+seg-015,344,book_refs,书中路线证据核对,我们选择走北岸，不只是追求与元代的路线更接近,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明选择北岸大堤的理由。
+seg-015,353,book_refs,书中路线证据核对,只有走到明德门，才算完成了从大都健德门到上都明德门,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,正文说明终点和徒步完成标准。
+seg-015,348,book_refs,书中路线证据核对,冰冻的矿泉水和西瓜从未如此充满吸引力,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持最后一日补给。
+seg-015,318,book_refs,书中路线证据核对,直奔网上推荐的上都酒店，办好入住手续,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持前一晚住宿在正蓝旗上都酒店。
+seg-015,344,book_refs,书中路线证据核对,今天会是几年来最热的一天,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持极端暑热。
+seg-015,345,book_refs,书中路线证据核对,发现脚趾头和脚后跟打了好几个水泡,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持脚部水泡风险。
+seg-015,346,book_refs,书中路线证据核对,事实上也没有地方适合休息，没有树，也没有其他可以遮阴的地方,短摘是否确在该页，且是否支持本段起终点、途经地、方向、道路/水源/补给/住宿/风险等路线事实？,,支持无遮阴风险。
+seg-015,342,chapter_refs,章节出处核对,从四郎城到上都遗址,该引用是否只是章节/段落标题出处，而非路线事实证据？,,章节或段落标题来源
+seg-015,,evidence_status,evidence_status 非 pass,warning,该段证据清理后的 warning 状态是否符合你的人工判断？,,
+seg-015,,evidence_notes,证据处理说明核对,已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。,该证据处理说明是否需要调整？,,
+seg-015,,evidence_notes,证据处理说明核对,resupply: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-015,,evidence_notes,证据处理说明核对,lodging: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-015,,evidence_notes,证据处理说明核对,risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。,该证据处理说明是否需要调整？,,
+seg-015,344,review_notes,复核备注,第344页显示从桥北开始，四郎城到桥北的乘车接续需要在地图上标记。,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-015,,review_notes,复核备注,[evidence_audit] unsupported_claim: resupply: 电视台记者送冰冻矿泉水和西瓜,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-015,,review_notes,复核备注,[evidence_audit] unsupported_claim: lodging: 前一晚住正蓝旗上都镇,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-015,,review_notes,复核备注,[evidence_audit] unsupported_claim: risks_or_notes: 极端暑热、脚底疼痛、无树荫,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-015,,review_notes,复核备注,[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 342,该复核备注是否仍成立？是否需要回看原书扫描页？,,
+seg-015,344,gap_notes,断点/GPX 规则,第344页及复核备注显示坐车过上都音高勒大桥后，从桥北开始最后一日步行。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-015,,gap_notes,断点/GPX 规则,书中存在乘车/断点信息，不应与前后段强行连成连续徒步轨迹。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-015,,gap_notes,断点/GPX 规则,该段只导出 waypoint，不作为连续 GPX track。,是否确认存在乘车、补走、断点或不应强连 GPX？,,
+seg-015,,movement_type,状态高亮复核,mixed,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-015,,continuity_status,状态高亮复核,gap_before,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-015,,modern_followability,状态高亮复核,needs_field_check,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-015,,do_not_connect_in_gpx,状态高亮复核,True,该状态是否与书中证据、复核备注和 GPX 导出规则一致？,,walkable_block=
+seg-015,,start,approximate 坐标,"四郎城 (42.24, 116.08) source=manual historic site approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-015,,via[1],approximate 坐标,"上都音高勒大桥 (42.28, 116.08) source=manual bridge approximation on Shangdu Gol",该地名和 approximate 坐标是否需要人工核对？,,
+seg-015,,via[2],approximate 坐标,"闪电河 (41.78, 115.95) source=manual river/area approximation",该地名和 approximate 坐标是否需要人工核对？,,
+seg-015,,via[3],approximate 坐标,"明德门 (42.357, 116.188) source=manual approximate Shangdu Mingdemen area",该地名和 approximate 坐标是否需要人工核对？,,
+seg-015,,end,approximate 坐标,"元上都遗址 (42.358, 116.185) source=manual approximate Xanadu/Shangdu ruins",该地名和 approximate 坐标是否需要人工核对？,,
