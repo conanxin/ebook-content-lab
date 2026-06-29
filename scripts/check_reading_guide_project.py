@@ -36,6 +36,24 @@ def rel(path: Path, root: Path) -> str:
         return path.as_posix()
 
 
+def repo_relative(path: Path) -> tuple[str, bool]:
+    """Best-effort: return the project path relative to the repo root as a POSIX string.
+
+    Returns (relative_path, is_repo_relative). When the project lives outside the
+    repo (e.g. CI cache, /tmp), we fall back to the directory name and flag a
+    warning via is_repo_relative=False — never emit a platform-specific absolute
+    path, since that would create noise diffs between WSL and PowerShell.
+    """
+    resolved = path.resolve()
+    cwd = Path.cwd().resolve()
+    for candidate in (resolved, resolved.parent):
+        try:
+            return candidate.relative_to(cwd).as_posix(), True
+        except ValueError:
+            continue
+    return resolved.name, False
+
+
 def add(findings: list[Finding], severity: str, path: Path | str, message: str, root: Path) -> None:
     findings.append(Finding(severity=severity, path=rel(path, root) if isinstance(path, Path) else path, message=message))
 
@@ -218,7 +236,29 @@ def main() -> int:
 
     report_path = project_dir / "reports" / "reading_guide_validation_report.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.write_text(render_report(project_dir, project, loaded, findings), encoding="utf-8")
+    report_text = render_report(project_dir, project, loaded, findings)
+
+    # Stabilise the Project line so WSL vs PowerShell doesn't churn the report.
+    # We only rewrite the single `Project:` line that render_report just emitted;
+    # everything else is byte-for-byte identical to the prior version.
+    display_path, is_repo_relative = repo_relative(project_dir)
+    if is_repo_relative:
+        report_text = report_text.replace(
+            f"Project: `{project_dir.as_posix()}`",
+            f"Project: `{display_path}`",
+            1,
+        )
+    else:
+        # Fall back to the project directory name (no absolute path) and append
+        # a one-line warning so the report still records the situation.
+        report_text = report_text.replace(
+            f"Project: `{project_dir.as_posix()}`",
+            f"Project: `{display_path}`",
+            1,
+        )
+        report_text += f"\n<!-- path-warning: project dir is outside the repo ({project_dir.as_posix()}). Report shows directory name only. -->\n"
+
+    report_path.write_text(report_text, encoding="utf-8")
 
     errors = [item for item in findings if item.severity == "error"]
     warnings = [item for item in findings if item.severity == "warning"]

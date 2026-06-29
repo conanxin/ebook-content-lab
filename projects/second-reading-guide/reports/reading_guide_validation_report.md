@@ -1,6 +1,6 @@
 # Reading Guide Validation Report
 
-Project: `D:/WSL/Codex/projects/second-reading-guide`
+Project: `projects/second-reading-guide`
 Status: **pass**
 Project status: `draft`
 

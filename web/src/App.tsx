@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import { HomePage } from "./pages/HomePage";
 import { ProjectPage } from "./pages/ProjectPage";
 import { getHashPath, getLegacyTabFromHash, legacyProjectTabUrl, type ProjectTab } from "./utils/hashRoute";
+import { projectDataPath } from "./utils/paths";
+import type { ProjectMetadata } from "./types/project";
+
+const SITE_NAME = "ebook-content-lab";
+const HOME_TITLE = `电子书内容实验室 · ${SITE_NAME}`;
+const NOT_FOUND_TITLE = `未找到页面 · ${SITE_NAME}`;
 
 type RouteState =
   | { name: "home" }
@@ -22,8 +28,20 @@ function parseHashRoute(): RouteState {
   return { name: "not-found", path };
 }
 
+async function fetchProjectMeta(slug: string): Promise<ProjectMetadata | null> {
+  try {
+    const url = projectDataPath(slug, "project.json");
+    const response = await fetch(url);
+    if (!response.ok) return null;
+    return (await response.json()) as ProjectMetadata;
+  } catch {
+    return null;
+  }
+}
+
 export function App() {
   const [route, setRoute] = useState<RouteState>(() => parseHashRoute());
+  const [projectMeta, setProjectMeta] = useState<{ slug: string; meta: ProjectMetadata } | null>(null);
 
   useEffect(() => {
     const handleHashChange = () => setRoute(parseHashRoute());
@@ -36,6 +54,43 @@ export function App() {
       window.location.replace(legacyProjectTabUrl(route.tab));
     }
   }, [route]);
+
+  // Reset project meta on every route change so titles never stick to a previous project.
+  useEffect(() => {
+    setProjectMeta(null);
+  }, [route]);
+
+  // Fetch project meta only when we're on the project route.
+  useEffect(() => {
+    if (route.name !== "project") return;
+    let alive = true;
+    fetchProjectMeta(route.slug).then((meta) => {
+      if (!alive) return;
+      if (meta) setProjectMeta({ slug: route.slug, meta });
+    });
+    return () => {
+      alive = false;
+    };
+  }, [route]);
+
+  // Centralised document.title — the single source of truth for browser tab titles.
+  useEffect(() => {
+    if (route.name === "home") {
+      document.title = HOME_TITLE;
+      return;
+    }
+    if (route.name === "project") {
+      if (projectMeta && projectMeta.slug === route.slug) {
+        document.title = `${projectMeta.meta.title} · ${SITE_NAME}`;
+      } else {
+        document.title = `正在加载项目 · ${SITE_NAME}`;
+      }
+      return;
+    }
+    if (route.name === "not-found") {
+      document.title = NOT_FOUND_TITLE;
+    }
+  }, [route, projectMeta]);
 
   if (route.name === "home") return <HomePage />;
   if (route.name === "project") return <ProjectPage slug={route.slug} />;
