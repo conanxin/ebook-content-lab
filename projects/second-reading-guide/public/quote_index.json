@@ -1,0 +1,10 @@
+{
+  "schema_version": "reading-guide.v0.1",
+  "status": "draft",
+  "book": {
+    "title": "待定书名",
+    "author": null,
+    "language": "unknown"
+  },
+  "quotes": []
+}

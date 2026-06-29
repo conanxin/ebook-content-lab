@@ -1,0 +1,421 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://conanxin.github.io/ebook-content-lab/schemas/reading_guide.schema.json",
+  "title": "ebook-content-lab reading-guide public data",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "book_overview": {
+      "$ref": "#/$defs/book_overview"
+    },
+    "chapter_reading_cards": {
+      "$ref": "#/$defs/chapter_reading_cards"
+    },
+    "key_concepts": {
+      "$ref": "#/$defs/key_concepts"
+    },
+    "quote_index": {
+      "$ref": "#/$defs/quote_index"
+    },
+    "reading_questions": {
+      "$ref": "#/$defs/reading_questions"
+    }
+  },
+  "required": [
+    "book_overview",
+    "chapter_reading_cards",
+    "key_concepts",
+    "quote_index",
+    "reading_questions"
+  ],
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in_review",
+        "published"
+      ]
+    },
+    "book": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "author": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "title"
+      ]
+    },
+    "evidence_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "note": {
+          "type": "string"
+        },
+        "source_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "page",
+        "quote",
+        "note"
+      ]
+    },
+    "book_overview": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "book": {
+          "$ref": "#/$defs/book"
+        },
+        "one_sentence_summary": {
+          "type": "string"
+        },
+        "reading_purpose": {
+          "type": "string"
+        },
+        "structure_overview": {
+          "type": "string"
+        },
+        "how_to_use": {
+          "type": "string"
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "book",
+        "one_sentence_summary",
+        "evidence_refs"
+      ]
+    },
+    "chapter_card": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "chapter_id": {
+          "type": "string"
+        },
+        "chapter_title": {
+          "type": "string"
+        },
+        "page_start": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "page_end": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "summary": {
+          "type": "string"
+        },
+        "key_points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "reading_notes": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        },
+        "review_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "chapter_id",
+        "chapter_title",
+        "summary",
+        "evidence_refs"
+      ]
+    },
+    "chapter_reading_cards": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "book": {
+          "$ref": "#/$defs/book"
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/chapter_card"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "book",
+        "chapters"
+      ]
+    },
+    "concept": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "term": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "appears_in_chapters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "term",
+        "definition",
+        "evidence_refs"
+      ]
+    },
+    "key_concepts": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "book": {
+          "$ref": "#/$defs/book"
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/concept"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "book",
+        "concepts"
+      ]
+    },
+    "quote_item": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "page": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "topic",
+        "quote",
+        "page",
+        "note"
+      ]
+    },
+    "quote_index": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "book": {
+          "$ref": "#/$defs/book"
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote_item"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "book",
+        "quotes"
+      ]
+    },
+    "reading_question": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "question_type": {
+          "type": "string",
+          "enum": [
+            "comprehension",
+            "discussion",
+            "research",
+            "reflection",
+            "unknown"
+          ]
+        },
+        "related_chapters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "question",
+        "question_type",
+        "evidence_refs"
+      ]
+    },
+    "reading_questions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "book": {
+          "$ref": "#/$defs/book"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reading_question"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "status",
+        "book",
+        "questions"
+      ]
+    }
+  }
+}

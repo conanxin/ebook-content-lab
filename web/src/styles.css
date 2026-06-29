@@ -214,6 +214,111 @@ code {
   margin: 0;
 }
 
+.reading-guide-page {
+  color: #202725;
+}
+
+.reading-guide-hero,
+.reading-guide-module {
+  border: 1px solid rgba(32, 39, 37, 0.13);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.reading-guide-hero {
+  max-width: 980px;
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.reading-guide-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f6f7e;
+  font-weight: 800;
+}
+
+.reading-guide-hero h1 {
+  margin: 14px 0 0;
+  font-size: clamp(30px, 5vw, 56px);
+}
+
+.reading-guide-hero p,
+.reading-guide-notice p {
+  max-width: 860px;
+  color: #59635f;
+  line-height: 1.75;
+}
+
+.reading-guide-hero dl,
+.reading-guide-module dl {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+}
+
+.reading-guide-hero dl {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.reading-guide-hero dl div,
+.reading-guide-module dl div {
+  padding: 10px 12px;
+  border: 1px solid rgba(32, 39, 37, 0.1);
+  border-radius: 8px;
+  background: #fafaf7;
+}
+
+.reading-guide-hero dt,
+.reading-guide-module dt {
+  margin-bottom: 4px;
+  color: #78817d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.reading-guide-hero dd,
+.reading-guide-module dd {
+  margin: 0;
+  color: #2f3734;
+}
+
+.reading-guide-module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.reading-guide-module {
+  padding: 16px;
+}
+
+.reading-guide-module header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f6f7e;
+}
+
+.reading-guide-module h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.reading-guide-module p {
+  min-height: 52px;
+  margin: 10px 0 0;
+  color: #59635f;
+  line-height: 1.65;
+}
+
+.reading-guide-steps {
+  margin: 12px 0 0;
+  padding-left: 22px;
+  line-height: 1.8;
+}
+
 .app-shell {
   min-height: 100vh;
   background:
@@ -985,7 +1090,8 @@ blockquote footer {
   .rewalk-grid,
   .depth-grid,
   .theme-grid,
-  .compact-status {
+  .compact-status,
+  .reading-guide-hero dl {
     grid-template-columns: 1fr;
     min-width: 0;
   }

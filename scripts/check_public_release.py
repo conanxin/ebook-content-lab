@@ -30,6 +30,10 @@ ALLOWED_WEB_PROJECT_FILES = {
     "segment_reading_cards.json",
     "place_index.json",
     "book_themes.json",
+    "chapter_reading_cards.json",
+    "key_concepts.json",
+    "quote_index.json",
+    "reading_questions.json",
 }
 
 HIGH_RISK_COPY = [

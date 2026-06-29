@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowLeft, FileQuestion } from "lucide-react";
 import type { ProjectMetadata } from "../types/project";
 import { projectDataPath } from "../utils/paths";
+import { ReadingGuideProjectPage } from "./ReadingGuideProjectPage";
 import { RouteMapProjectPage } from "./RouteMapProjectPage";
 
 interface ProjectPageProps {
@@ -62,6 +63,10 @@ export function ProjectPage({ slug }: ProjectPageProps) {
 
   if (project.project_type === "route-map") {
     return <RouteMapProjectPage project={project} projectSlug={slug} />;
+  }
+
+  if (project.project_type === "reading-guide") {
+    return <ReadingGuideProjectPage project={project} projectSlug={slug} />;
   }
 
   return (

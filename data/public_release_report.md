@@ -4,7 +4,7 @@ Status: **pass**
 
 ## Summary
 
-- Projects in web/public/projects/index.json: 1
+- Projects in web/public/projects/index.json: 2
 - Errors: 0
 - Warnings: 0
 

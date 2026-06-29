@@ -1,0 +1,10 @@
+{
+  "schema_version": "reading-guide.v0.1",
+  "status": "draft",
+  "book": {
+    "title": "__BOOK_TITLE__",
+    "author": null,
+    "language": "unknown"
+  },
+  "concepts": []
+}

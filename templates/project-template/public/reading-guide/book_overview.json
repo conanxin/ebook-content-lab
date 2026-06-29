@@ -1,0 +1,17 @@
+{
+  "schema_version": "reading-guide.v0.1",
+  "status": "draft",
+  "book": {
+    "title": "__BOOK_TITLE__",
+    "author": null,
+    "language": "unknown"
+  },
+  "one_sentence_summary": "待电子书导入后生成",
+  "reading_purpose": "待电子书导入后生成",
+  "structure_overview": "待电子书导入后生成",
+  "how_to_use": "待电子书导入后生成",
+  "limitations": [
+    "待电子书导入后生成"
+  ],
+  "evidence_refs": []
+}

@@ -10,7 +10,13 @@
     "public_artifacts_kept_in": "projects/second-reading-guide/public/",
     "web_public_path": "/projects/second-reading-guide/"
   },
-  "public_files": [],
+  "public_files": [
+    "book_overview.json",
+    "chapter_reading_cards.json",
+    "key_concepts.json",
+    "quote_index.json",
+    "reading_questions.json"
+  ],
   "quality_summary": {
     "ocr": "unknown",
     "content_extraction": "unknown",
