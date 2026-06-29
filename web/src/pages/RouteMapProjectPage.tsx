@@ -4,16 +4,15 @@ import { AlertTriangle, Download, FileJson, MapPinned, Route, Search } from "luc
 import type { ProjectMetadata } from "../types/project";
 import type { BookOverview, BookTheme, PlaceIndexItem, SegmentReadingCard } from "../types/contentDepth";
 import type { BookRef, CoordinateConfidence, PlacePoint, RouteSegment, WalkableBlock } from "../types/route";
+import { getActiveTab, projectTabUrl, setProjectTab, type ProjectTab } from "../utils/hashRoute";
 import { projectDataPath } from "../utils/paths";
-
-type ProjectTab = "overview" | "map" | "reading" | "places" | "rewalk";
 
 const projectTabs: Array<{ key: ProjectTab; label: string }> = [
   { key: "overview", label: "总览" },
   { key: "map", label: "地图路线" },
-  { key: "reading", label: "路线细读" },
-  { key: "places", label: "书中地名" },
-  { key: "rewalk", label: "复走说明" },
+  { key: "reading-detail", label: "路线细读" },
+  { key: "place-index", label: "书中地名" },
+  { key: "field-guide", label: "复走说明" },
 ];
 
 type FilterKey =
@@ -522,6 +521,7 @@ interface SegmentCardProps {
   segment: RouteSegment;
   block: WalkableBlock | undefined;
   readingCard: SegmentReadingCard | undefined;
+  readingHref: string;
   selected: boolean;
   onSelect: (segmentId: string) => void;
 }
@@ -564,7 +564,7 @@ function RefList({ title, refs, kind }: { title: string; refs: BookRef[] | undef
   );
 }
 
-function SegmentCard({ segment, block, readingCard, selected, onSelect }: SegmentCardProps) {
+function SegmentCard({ segment, block, readingCard, readingHref, selected, onSelect }: SegmentCardProps) {
   const coordState = segmentCoordinateState(segment);
   const pages = segment.book_refs.map((ref) => ref.page);
   const inTrack = Boolean(block) && !segment.do_not_connect_in_gpx;
@@ -602,7 +602,7 @@ function SegmentCard({ segment, block, readingCard, selected, onSelect }: Segmen
         <section className="reading-preview">
           <strong>书中细读</strong>
           <p>{readingCard.book_scene_summary}</p>
-          <a href="#reading-detail" onClick={(event) => event.stopPropagation()}>
+          <a href={readingHref} onClick={(event) => event.stopPropagation()}>
             查看路线细读
           </a>
         </section>
@@ -861,7 +861,7 @@ interface RouteMapProjectPageProps {
 export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPageProps) {
   const { segments, routeGeoJson, placesGeoJson, blocks, error, loading } = useRouteData(projectSlug);
   const contentDepth = useContentDepth(projectSlug);
-  const [activeTab, setActiveTab] = useState<ProjectTab>("overview");
+  const [activeTab, setActiveTabState] = useState<ProjectTab>(() => getActiveTab("overview"));
   const [filter, setFilter] = useState<FilterKey>("all");
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -904,6 +904,13 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
     }
   }, [filteredSegments, selectedId]);
 
+  useEffect(() => {
+    const handleHashChange = () => setActiveTabState(getActiveTab("overview"));
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange();
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
   return (
     <main className="app-shell">
       <section className="intro">
@@ -932,7 +939,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
 
       <nav className="project-tabs" aria-label="项目内容分区">
         {projectTabs.map((tab) => (
-          <button key={tab.key} className={activeTab === tab.key ? "active" : ""} onClick={() => setActiveTab(tab.key)} type="button">
+          <button key={tab.key} className={activeTab === tab.key ? "active" : ""} onClick={() => setProjectTab(projectSlug, tab.key)} type="button">
             {tab.label}
           </button>
         ))}
@@ -997,6 +1004,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
                 segment={segment}
                 block={blockMap.get(segment.id)}
                 readingCard={readingCardMap.get(segment.id)}
+                readingHref={projectTabUrl(projectSlug, "reading-detail")}
                 selected={selectedSegment?.id === segment.id}
                 onSelect={setSelectedId}
               />
@@ -1006,7 +1014,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
       </section>
       )}
 
-      {activeTab === "reading" &&
+      {activeTab === "reading-detail" &&
         (contentDepth.loading ? (
           <div className="content-tab-panel"><div className="state-box">正在加载路线细读...</div></div>
         ) : contentDepth.error ? (
@@ -1015,7 +1023,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
           <ReadingCardsTab cards={contentDepth.readingCards} />
         ))}
 
-      {activeTab === "places" &&
+      {activeTab === "place-index" &&
         (contentDepth.loading ? (
           <div className="content-tab-panel"><div className="state-box">正在加载书中地名...</div></div>
         ) : contentDepth.error ? (
@@ -1024,7 +1032,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
           <PlacesTab places={contentDepth.placeIndex} />
         ))}
 
-      {activeTab === "rewalk" && <RewalkTab segments={segments} blocks={blocks} projectSlug={projectSlug} />}
+      {activeTab === "field-guide" && <RewalkTab segments={segments} blocks={blocks} projectSlug={projectSlug} />}
     </main>
   );
 }
