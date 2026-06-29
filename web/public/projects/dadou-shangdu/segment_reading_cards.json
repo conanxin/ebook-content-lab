@@ -1,0 +1,836 @@
+[
+  {
+    "segment_id": "seg-001",
+    "reading_title": "01｜健德门到皂甲屯",
+    "book_scene_summary": "本段对应“健德门到皂甲屯”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从大都北侧健德门出发，先沿小月河、清河一带北行，经皇后店、南沙河和南玉河，至皂甲屯一带完成第一日步行。",
+    "landmarks_in_book": [
+      "健德门",
+      "小月河",
+      "清河",
+      "广济桥",
+      "皇后店",
+      "南沙河水库",
+      "南玉河村",
+      "北玉河村",
+      "皂甲屯"
+    ],
+    "walking_experience": "行走方向：健德门出发，沿小月河东岸北行。；经清河、皇后店方向继续北行。；从南玉河村向西到皂甲屯，再沿甲屯路至北玉河、沙阳路。；地形：北京北郊河道、村镇和平原道路。；道路：小月河沿线、友谊路、皇后店路、甲屯路、沙阳路等现代道路。；水源/河流：小月河、清河、南沙河。；补给：村民提示附近有餐馆，作者找到餐馆后吃了一碗拉面。；住宿：书中未明示；第52页显示之后乘出租车南返。；风险：暑热、城市和郊区道路交通。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 34,
+        "quote": "我从健德门出发，沿着小月河东岸北行",
+        "note": "正文说明实际出发点和初始方向。"
+      },
+      {
+        "page": 52,
+        "quote": "沿甲屯路东北行，到北玉河村，就到了繁忙喧嚣的沙阳路",
+        "note": "正文说明皂甲屯后至北玉河、沙阳路，第一日行走计划完成。"
+      },
+      {
+        "page": 45,
+        "quote": "找到村民所说的餐馆，点了一碗拉面",
+        "note": "支持本段途中补给：村民提示餐馆，作者在餐馆吃拉面。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "第30页标题图 OCR 将地名连在一起，需回看 PDF 核对标题页地名排布。",
+      "第52页显示行走计划结束后乘出租车南行，不应把乘车路线画入步行线。",
+      "[evidence_audit] unsupported_claim: resupply: 第45页提到村民提示餐馆并在餐馆吃拉面",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 30",
+      "书中显示第一日行走结束后另有乘车南返；本段 GPX 只表达健德门至皂甲屯的步行段，不连接乘车路线。"
+    ]
+  },
+  {
+    "segment_id": "seg-002",
+    "reading_title": "02｜昌平到居庸关",
+    "book_scene_summary": "本段对应“昌平到居庸关”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从昌平一带出发，经旧县村、龙虎台村、南口，进入居庸关方向；作者强调旧县、龙虎台与元代两都道路的关系。",
+    "landmarks_in_book": [
+      "昌平镇",
+      "旧县村",
+      "龙虎台村",
+      "南口村",
+      "居庸关云台",
+      "居庸关"
+    ],
+    "walking_experience": "行走方向：从昌平出发，先到旧县村。；旧县村沿街北行到小学，西行离村后转农场路北行。；前往龙虎台村，再向南口、居庸关方向。；地形：昌平北部村镇、山前道路，逐步接近关沟。；道路：旧县村街道、农场路及通往龙虎台、南口、居庸关的道路。；水源/河流：书中未明示。；补给：第60页提到在小店买水。；住宿：书中未明示。；风险：背包明显变重；晴空湛蓝，又一个高亢的暑天；遇狗阻路后绕道。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 60,
+        "quote": "沿街北行到小学，西行离开旧县村",
+        "note": "正文说明旧县村内外行走方向。"
+      },
+      {
+        "page": 64,
+        "quote": "龙虎台村就在古代的龙虎台上",
+        "note": "正文确认途经龙虎台村及其历史位置。"
+      },
+      {
+        "page": 56,
+        "quote": "背包明显变重了。晴空湛蓝，又一个高亢的暑天",
+        "note": "支持背包变重和暑热背景。"
+      },
+      {
+        "page": 58,
+        "quote": "既然它不让我走，我只好绕道了",
+        "note": "支持路上因犬只阻路而绕行。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "第54页标题页 OCR 出现“哈旧县”等噪声，已按正文改为旧县村，需回看 PDF 第54页。",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 暑热、背包变重、路上犬只绕行",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 54",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。",
+      "risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。"
+    ]
+  },
+  {
+    "segment_id": "seg-003",
+    "reading_title": "03｜居庸关到延庆",
+    "book_scene_summary": "本段对应“居庸关到延庆”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从居庸关云台附近出发，沿关沟北上，经水关长城、八达岭、岔道城，再取山边小路经小泥河、大泥河到大榆树方向；书中在大榆树前后结束当天行走并坐车返回。",
+    "landmarks_in_book": [
+      "居庸关",
+      "弹琴峡",
+      "水关长城",
+      "八达岭关城",
+      "岔道城",
+      "小泥河村",
+      "大泥河村",
+      "大榆树镇",
+      "延庆旧县镇"
+    ],
+    "walking_experience": "行走方向：从居庸关出发沿关沟北上。；水关长城以上离开谷底河道，改在公路边行走。；过八达岭至岔道城，午后从西门外小路经小泥河、大泥河向大榆树镇。；地形：关沟峡谷、长城关口、山边小路、村庄农田。；道路：关沟公路、岔道城西门外沙土路、山边小路。；水源/河流：谷底河道、水关一带。；补给：岔道城客栈午饭。；风险：连续上山、来车避让、甲沟炎和水泡。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 88,
+        "quote": "从水关长城向上，就没有谷底河道可行了",
+        "note": "正文说明关沟内道路变化和水关长城之后的行走方式。"
+      },
+      {
+        "page": 96,
+        "quote": "从岔道城经小泥河村、大泥河村，以大榆树镇为今日的目的地",
+        "note": "正文明确岔道城后的实际取路。"
+      },
+      {
+        "page": 98,
+        "quote": "离大榆树镇还有二十几分钟的路程。我决定就到这里",
+        "note": "正文显示当天实际步行在大榆树镇前结束，后续有乘车。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第76页标题页 OCR 将“八达岭关城”识别为“达岭关城”，已据正文第88页校正。",
+      "第98页显示步行未连续到延庆旧县镇，居庸关到延庆之间存在需要人工确认的断点。",
+      "[evidence_audit] unsupported_claim: lodging: 无本段步行住宿",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 76",
+      "证据不足，待人工复核：lodging 原内容：无本段步行住宿；作者坐车返回居庸关/中关村休整。"
+    ]
+  },
+  {
+    "segment_id": "seg-004",
+    "reading_title": "04｜延庆旧县镇到白河堡水库",
+    "book_scene_summary": "本段对应“延庆旧县镇到白河堡水库”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "吃完早饭，作者一行告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库；经车坊、黑峪口、盘云岭山口，沿昌赤路和水库边道路到白河堡水库。",
+    "landmarks_in_book": [
+      "延庆旧县镇",
+      "车坊",
+      "黑峪口村",
+      "盘云岭",
+      "燕山天池宾馆",
+      "白河堡水库"
+    ],
+    "walking_experience": "行走方向：由延庆旧县镇向车坊、黑峪口方向。；从车坊向北沿昌赤路缓坡上升。；过黑峪口、盘云岭后到达白河堡水库边。；地形：黑谷山道、水库山地、山口。；道路：昌赤路/S212、水库边道路。；水源/河流：白河堡水库。；补给：书中未明示。；住宿：水库库区管理所的燕山天池宾馆。；风险：山路爬升、黑谷十八盘、暑热后转高地气候。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 104,
+        "quote": "今昌赤路（即212省道）从车坊向北，一路缓坡上升",
+        "note": "正文说明车坊至黑峪口方向和道路。"
+      },
+      {
+        "page": 114,
+        "quote": "沿昌赤路（S212）在水库边走半小时之后",
+        "note": "正文说明到达白河堡水库后的水库边道路。"
+      },
+      {
+        "page": 102,
+        "quote": "吃完早饭，我们告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库",
+        "note": "支持本段从延庆/旧县镇开始走向白河堡水库。"
+      },
+      {
+        "page": 111,
+        "quote": "盘云岭山口是由地质学上所说的盘云岭断层形成的",
+        "note": "支持本段经过盘云岭山口。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "本段部分细节来自标题页和相邻正文，仍需回看第100-114页确认完整日程。",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 100",
+      "本段从旧县镇开始步行；与上一段之间存在已在 seg-003 标记的断点。",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。",
+      "route_summary: 标题引用移出后补充正文证据并收紧表达。"
+    ]
+  },
+  {
+    "segment_id": "seg-005",
+    "reading_title": "05｜白河堡水库到长伸地村",
+    "book_scene_summary": "本段对应“白河堡水库到长伸地村”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从白河堡水库一带沿白河河谷行走，上午到达骆驼山村；从骆驼山村离开滦赤路，向北转入 X405 县级公路蒋京线，最终到长伸地村附近。",
+    "landmarks_in_book": [
+      "白河堡水库",
+      "白河河谷",
+      "骆驼山",
+      "郑家窑村",
+      "镇虏楼",
+      "长伸地村"
+    ],
+    "walking_experience": "行走方向：沿白河河谷前行。；上午到达骆驼山村后，向北折入 X405 县级公路蒋京线。；到长伸地村口后右转过河上山至住宿处。；地形：白河河谷、山谷、边堡遗址地带。；道路：河谷道路、新铺水泥路。；水源/河流：白河河谷。；补给：书中未明示。；住宿：贾先生家客房。；风险：村庄小，无招待所；住宿需事先联系。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 143,
+        "quote": "靠近长伸地村的村口时，还不到下午三点",
+        "note": "正文说明到达长伸地村口的时间和住宿安排。"
+      },
+      {
+        "page": 143,
+        "quote": "右转过河，沿一条新铺的水泥路上山",
+        "note": "正文说明长伸地村口后的具体走法。"
+      },
+      {
+        "page": 125,
+        "quote": "公路紧贴在白河河谷的北岸",
+        "note": "支持本段沿白河河谷行走。"
+      },
+      {
+        "page": 126,
+        "quote": "上午十点，到达骆驼山村",
+        "note": "支持本段到达骆驼山村。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "第122页标题图 OCR 将“长伸地村”识别为“长博地村”，已按正文第143页校正。",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 122",
+      "证据不足，待人工复核：seg-005 原 route_summary / walking_directions 中的“郑家窑、镇虏楼”未在正文事实页形成足够支撑，本轮仅从摘要和方向中移除，地点候选仍需回看 PDF。",
+      "部分中途地名曾因 OCR 和标题页证据不足被移入复核说明；GPX 仅按已保留正文证据和坐标生成参考线。",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。"
+    ]
+  },
+  {
+    "segment_id": "seg-006",
+    "reading_title": "06｜长伸地村到龙门所镇",
+    "book_scene_summary": "本段对应“长伸地村到龙门所镇”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从长伸地村出发，经巡检司村、红沙梁一带下山，穿过河谷和国道，进入龙门所镇。",
+    "landmarks_in_book": [
+      "长伸地村",
+      "巡检司村",
+      "不堡子村",
+      "红沙梁",
+      "小堡村",
+      "龙门所镇"
+    ],
+    "walking_experience": "行走方向：早饭后从长伸地村住宿处出发。；尽量走路边老路或人行道，经过巡检司村。；从红沙梁一路下山，经小堡村一带，转入国道后到龙门所镇。；地形：山口、河谷、边堡与墩台地带。；道路：修路路段、老路、人行道、国道京环线（G112）。；水源/河流：白河支流与河谷。；补给：巡检司村流动售货车；转入国道后有加油站和餐馆。；住宿：龙门所镇小旅馆，每人十五元。；风险：修路尘土飞扬、烈日、疲劳；王抒脚上打了水泡。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 150,
+        "quote": "看看表正好是六点半，背起背包",
+        "note": "正文说明本日出发时间。"
+      },
+      {
+        "page": 160,
+        "quote": "从红沙梁一路下山",
+        "note": "正文说明红沙梁之后的下山路线。"
+      },
+      {
+        "page": 167,
+        "quote": "进人龙门所镇正好是下午四点",
+        "note": "正文说明到达龙门所镇。"
+      },
+      {
+        "page": 151,
+        "quote": "我们尽量走路边的老路或人行道",
+        "note": "支持本段修路环境下走老路或人行道。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "“不堡子村”疑似 OCR 或地名需回看第148页标题图。",
+      "[evidence_audit] unsupported_claim: roads_or_paths: 修路路段、老路、人行道、国道京环线/G112",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 修路扬尘、烈日、疲劳、水泡",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 148",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。"
+    ]
+  },
+  {
+    "segment_id": "seg-007",
+    "reading_title": "07｜龙门所到白草镇",
+    "book_scene_summary": "本段对应“龙门所到白草镇”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从龙门所沿 G112 北上，到小东沟林场一带越过白河与黑河分水岭，下山后折向东，经东万口乡，下午到白草镇；书中另写到塘子庙温泉和住宿安排。",
+    "landmarks_in_book": [
+      "龙门所",
+      "巴图营大桥",
+      "塘子庙",
+      "东万口乡",
+      "白草镇"
+    ],
+    "walking_experience": "行走方向：从龙门所沿G112向北，越走越高。；到小东沟林场一带过白河与黑河分水岭，下山后折向东。；沿黑河河谷经东万口，至白草镇南G112转向处。；地形：分水岭、黑河河谷、集镇和国道。；道路：G112、黑河河谷道路。；水源/河流：黑河。；补给：东万口乡买水和西瓜；白草镇西头餐厅。；住宿：塘子庙一带的“温泉宾馆”。；风险：本日步数高、脚部水泡、国道交通。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 175,
+        "quote": "从龙门所沿G112先是向北，一路越走越高",
+        "note": "正文说明离开龙门所后的路线。"
+      },
+      {
+        "page": 180,
+        "quote": "中午十二点，我们走到东万口乡",
+        "note": "正文说明中途集镇与补给。"
+      },
+      {
+        "page": 189,
+        "quote": "下午五点整，我们走到白草镇南G112向东转",
+        "note": "正文说明完成本日行程。"
+      },
+      {
+        "page": 174,
+        "quote": "塘子庙就是明代地图上的“滚水塘”，以温泉得名",
+        "note": "支持 route_summary 中塘子庙相关描述。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "第172页标题页 OCR 可能把“塘子庙”识别为“特子庙”，已据正文第174、191页校正。",
+      "[evidence_audit] unsupported_claim: route_summary: 经塘子庙",
+      "[evidence_audit] unsupported_claim: lodging: 塘子庙温泉宾馆一带",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 172",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。"
+    ]
+  },
+  {
+    "segment_id": "seg-008",
+    "reading_title": "08｜白草镇到老掌沟",
+    "book_scene_summary": "本段对应“白草镇到老掌沟”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从白草镇出发，沿黑河东岸 X404 北上，经过三道川、黑龙山、山神庙等地，进入老掌沟；从沟口往沟里走半小时后，请度假村老板开车来接。",
+    "landmarks_in_book": [
+      "白草镇",
+      "三道川村",
+      "禹龙山村",
+      "黑龙山村",
+      "山神庙村",
+      "南沟门",
+      "老掌沟"
+    ],
+    "walking_experience": "行走方向：从白草镇沿黑河东岸县级公路X404北行。；在黑龙山村休息后继续向西北。；进入老掌沟河谷森林地带，后联系度假村车辆接应。；地形：黑河上游河谷、森林、山岩、沙石河滩。；道路：X404、老掌沟河谷路。；水源/河流：黑河及老掌沟河谷多条水流。；补给：白草镇早餐和午饭；途中自带水食。；住宿：老掌沟度假村客房。；风险：离老掌沟还有约二十公里，书中判断很难完成；山区可能突降暴雨，路上有越野车队；后段联系度假村车辆接应。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 194,
+        "quote": "沿黑河东岸的一条县级公路（X404）向北",
+        "note": "正文说明道路和方向。"
+      },
+      {
+        "page": 205,
+        "quote": "随着X404左转进人黑龙山村",
+        "note": "正文说明黑龙山村和距离判断。"
+      },
+      {
+        "page": 207,
+        "quote": "从沟口往沟里走了半小时后",
+        "note": "正文说明进入老掌沟后因时间安排联系车辆。"
+      },
+      {
+        "page": 207,
+        "quote": "请他开车来接我们。他爽快地答应了",
+        "note": "支持本段后段由度假村车辆接应。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第207页显示从老掌沟沟内联系车辆接应，本段步行终点与住宿点之间存在非步行接续，需人工复核。",
+      "[evidence_audit] unsupported_claim: route_summary: 因路程和同行人返程安排，后段由度假村车接走",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 长距离近四十公里计划、天气突变、越野车、后段非连续步行",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 192",
+      "第207页及复核备注显示进入老掌沟后联系车辆接应，步行终点与住宿点之间存在非步行接续。"
+    ]
+  },
+  {
+    "segment_id": "seg-009",
+    "reading_title": "09｜老掌沟到小厂镇",
+    "book_scene_summary": "本段对应“老掌沟到小厂镇”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "首先要补上昨天没有走完的一段；在南沟口附近下车后开始补走这一段；从沟门往北走十多分钟到分水岭，经前坝村和后坝村一带，下午四点一刻到小厂镇。",
+    "landmarks_in_book": [
+      "老掌沟",
+      "南沟门",
+      "沟门村",
+      "前坝村",
+      "黄土坑村",
+      "雷大道村",
+      "三间房村",
+      "小厂镇"
+    ],
+    "walking_experience": "行走方向：在南沟口附近下车，补走前一日未完成的沟谷路段。；从沟门往北过分水岭。；沿 X404 经前坝、后坝一带，下午到小厂镇。；地形：沟谷多小河、细沙和车辙；沟门以北为开阔田野，沙岭一带为沙质地貌。；道路：沟谷车辙、山麓绕行、乡镇道路。；水源/河流：沟谷多条小河，需反复过河。；补给：小厂镇餐馆、宾馆。；住宿：小厂镇宾馆。；风险：沟谷中需反复过河；细沙和深车辙使行走困难；五公里沟谷实际走了差不多十公里。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 220,
+        "quote": "我们开始补走这一段到处都是牛群的风景区",
+        "note": "正文说明补走前一日未步行路段。"
+      },
+      {
+        "page": 220,
+        "quote": "本来只有五公里长的沟谷，我们实际走了差不多十公里",
+        "note": "正文说明沟谷绕行和距离偏差。"
+      },
+      {
+        "page": 232,
+        "quote": "小厂镇是南北一条主街",
+        "note": "正文说明到达小厂镇后的街镇形态和补给。"
+      },
+      {
+        "page": 220,
+        "quote": "无论怎么走都得反复过河",
+        "note": "支持反复过河风险。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "本段包含“补走”逻辑，需在页面显式标记不要把接送车路线算作步行路线。",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 反复过河、深车辙、细沙、绕行导致距离增加",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 216",
+      "本段包含补走前一日未完成路段；接送车路线不得计入步行路线。",
+      "本段 GPX 只表达书中可支持的补走和随后步行部分。"
+    ]
+  },
+  {
+    "segment_id": "seg-010",
+    "reading_title": "10｜小厂镇到五花草甸",
+    "book_scene_summary": "本段对应“小厂镇到五花草甸”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从小厂镇北行，不取 S241 主路而沿 X404 和葫芦河西岸走，拜访石头城遗址和牛群头一带，最终到五花草甸附近；因疲劳决定去沽源休整，近五花草甸后搭车离开。",
+    "landmarks_in_book": [
+      "小厂镇",
+      "馒头山村",
+      "小南滩村",
+      "石柱村",
+      "石头城水库",
+      "石头城村",
+      "牛群头",
+      "五花草甸"
+    ],
+    "walking_experience": "行走方向：小厂镇早餐、补水后离开。；不沿S241北行，继续沿X404到镇西侧。；走葫芦河西岸，经石头城水库、石头城遗址和牛群头一带。；到义合成村南、五花草甸附近后拦车去沽源。；地形：坝上村镇、河谷草滩、水库、古城遗址。；道路：X404、葫芦河西岸土路，避开S241主路。；水源/河流：葫芦河、石头城水库。；补给：石柱村商店提供方便面，作者先喝两瓶啤酒。；住宿：当晚到沽源宾馆，非本段步行终点住宿。；风险：暴热、疲劳、水泡，近五花草甸后发生乘车接续。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 242,
+        "quote": "我们没有沿着这条主要公路北行",
+        "note": "正文说明不取S241主路。"
+      },
+      {
+        "page": 251,
+        "quote": "从小厂镇走葫芦河西岸向北",
+        "note": "正文说明选择葫芦河西岸的原因。"
+      },
+      {
+        "page": 260,
+        "quote": "沿路往北走几百米，到义合成村南，离五花草甸已经不远了",
+        "note": "正文说明在五花草甸附近搭车去沽源休整。"
+      },
+      {
+        "page": 245,
+        "quote": "我给你们泡碗方便面吧",
+        "note": "支持石柱村商店提供方便面。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第240页标题页 OCR 将“馒头山村”“石柱村”等识别不稳，需回看 PDF。",
+      "第260页显示作者未当晚步行进沽源，而是在五花草甸附近搭车，页面不得画成步行线。",
+      "[evidence_audit] unsupported_claim: resupply: 途中小店泡面、啤酒",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 240",
+      "第260页及复核备注显示近五花草甸后搭车离开，不能画成完整步行到沽源。"
+    ]
+  },
+  {
+    "segment_id": "seg-011",
+    "reading_title": "11｜五花草甸到沽源",
+    "book_scene_summary": "本段对应“五花草甸到沽源”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "休整日以车前往梳妆楼和五花草甸后补走五花草甸至沽源一段，经河东村以北回到公路，进入沽源县城。",
+    "landmarks_in_book": [
+      "五花草甸",
+      "河东村",
+      "闪电河水库",
+      "梳妆楼",
+      "沽源县城"
+    ],
+    "walking_experience": "行走方向：从沽源先乘出租车去梳妆楼，再去五花草甸补走。；经闪电河水库、河东村一带。；在沽源镇南离开公路，向北进入县城。；地形：草甸、湖库、县城郊区、田间土路。；道路：田间土路、S241、县城道路。；水源/河流：闪电河水库、葫芦河。；补给：沽源县城餐厅和宾馆。；住宿：继续住沽源宾馆。；风险：本段先乘出租车到梳妆楼，再送到五花草甸；随后从五花草甸一带补走到沽源。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 265,
+        "quote": "先把我们送去梳妆楼，在那里等着，再送我们去五花草甸",
+        "note": "正文说明因前一日乘车，次日以车辆回到补走起点。"
+      },
+      {
+        "page": 277,
+        "quote": "在沽源镇南的河东村以北，我们走出田间土路",
+        "note": "正文说明回到沽源前的实际行走位置。"
+      },
+      {
+        "page": 273,
+        "quote": "上午九点五十分，出租车把我们送到五花草甸",
+        "note": "支持从五花草甸开始补走。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第265页明确先坐出租车到梳妆楼和五花草甸，实际步行补段需人工回看第265-277页确认起点。",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 本段包含车辆回到补走起点，需避免误画乘车路线",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 262",
+      "第265页及复核备注显示本段先乘出租车到梳妆楼和五花草甸，再补走五花草甸至沽源。",
+      "书中存在乘车/补走信息，不应与前后段强行连成连续徒步轨迹。"
+    ]
+  },
+  {
+    "segment_id": "seg-012",
+    "reading_title": "12｜沽源到塞北管理区",
+    "book_scene_summary": "本段对应“沽源到塞北管理区”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从沽源县城北出，经过察罕脑儿/小宏城子遗址、水泉淖尔；从水泉淖尔向东上山到转佛庙村南口，沿 024 县道东北行到马神庙村，再向塞北管理区方元酒店行走。",
+    "landmarks_in_book": [
+      "沽源县城",
+      "察罕脑儿",
+      "小宏城子",
+      "水泉淖尔",
+      "转佛庙",
+      "马神庙村",
+      "塞北管理区"
+    ],
+    "walking_experience": "行走方向：从沽源酒店沿街北走，右转东行过青年湖大桥。；到小宏城子遗址后沿024县级公路向北，再折向东北。；从水泉淖尔向东上山到转佛庙村南口；沿024县道东北行，半小时后到马神庙村，再向塞北管理区行走。；地形：草原湖泊、河谷、无树道路、县道。；道路：青年湖大桥、024县级公路、县道。；水源/河流：葫芦河、察罕脑儿、水泉淖尔、滦河相关水系。；补给：小宏城子村供销社买水、食物和啤酒。；住宿：塞北管理区方元酒店。；风险：高原的暴晒和暑热开始发威；作者越来越畏惧阳光；到方元酒店时两脚打了水泡。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为书中明确徒步。坐标和路线只可作为大致参考。",
+    "evidence_refs": [
+      {
+        "page": 282,
+        "quote": "我们沿着酒店门前的大街向北走",
+        "note": "正文说明沽源县城内出发方向。"
+      },
+      {
+        "page": 290,
+        "quote": "024县级公路贴着小宏城子遗址的西墙向北",
+        "note": "正文说明小宏城子后的道路。"
+      },
+      {
+        "page": 300,
+        "quote": "晚七点一刻，我们终于走到赵欣已订好房间的方元酒店",
+        "note": "正文说明到达塞北管理区住宿点。"
+      },
+      {
+        "page": 285,
+        "quote": "高原的暴晒和暑热开始发威",
+        "note": "支持本段暴晒和暑热风险。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "approximate_only"
+    },
+    "review_notes": [
+      "第280页标题页 OCR 将水泉淖尔、圆图淖尔等地名识别不稳，需回看 PDF 第280页。",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 酷热、强日晒、长距离无行道树",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 280",
+      "已将 1 条章节/路线标题引用移入 chapter_refs，book_refs 仅保留路线事实证据。",
+      "risks_or_notes: supported_with_new_book_ref; 已按书中证据清理。"
+    ]
+  },
+  {
+    "segment_id": "seg-013",
+    "reading_title": "13｜塞北管理区到黑城子",
+    "book_scene_summary": "本段对应“塞北管理区到黑城子”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从塞北管理区沿县道402往北，跨过河北与内蒙古分界后进入正蓝旗，沿X502继续北行，经黑土城镇前往李陵台遗址；之后到黑城子镇一带。",
+    "landmarks_in_book": [
+      "塞北管理区",
+      "黄土湾村",
+      "河北内蒙古分界线",
+      "明安驿",
+      "李陵台",
+      "黑城子镇"
+    ],
+    "walking_experience": "行走方向：塞北管理区八点出发，沿县道402往北。；沿没有行道树的道路顶着日晒前进。；进入黑土城/黑城子镇后向李陵台遗址方向探访。；地形：滦河东岸草原、无树县道、盐碱草地、古城遗址。；道路：县道402、X502一带、土路。；水源/河流：滦河河谷。；补给：黑城子镇商店。；住宿：正蓝旗上都酒店；黑城子到正蓝旗之间有乘车接续描述。；风险：酷热、铁丝网、灰尘、长距离无树荫。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 304,
+        "quote": "八点出发，留下赵欣那辆车停在太阳下",
+        "note": "正文说明出发时间和地点。"
+      },
+      {
+        "page": 314,
+        "quote": "地图上显示老黑土城（李陵台）在镇子北边约五公里",
+        "note": "正文说明黑城子与李陵台方向。"
+      },
+      {
+        "page": 318,
+        "quote": "从北京健德门桥算起，到今天的李陵台古城为止",
+        "note": "正文把李陵台古城作为十三天累计行程节点。"
+      },
+      {
+        "page": 305,
+        "quote": "由此往北再走三公里，十一点三十分，我们到达河北与内蒙的分界点",
+        "note": "支持本段跨过河北与内蒙古分界。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第302页标题页 OCR 出现“河北内装专分累线”等噪声，已按上下文作河北内蒙古分界线处理，需回看。",
+      "第318页显示黑城子到正蓝旗存在车辆接续，需避免画成步行路线。",
+      "[evidence_audit] unsupported_claim: route_summary: 经过明安驿",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 302",
+      "证据不足，待人工复核：route_summary 原内容含无法由本段 book_refs 支撑的信息；原内容：从塞北管理区沿县道 402 北行，跨过河北/内蒙古边界后沿滦河东岸继续，经过明安驿、李陵台遗址，到黑城子镇一带。"
+    ]
+  },
+  {
+    "segment_id": "seg-014",
+    "reading_title": "14｜黑城子到四郎城",
+    "book_scene_summary": "本段对应“黑城子到四郎城”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "从正蓝旗住宿地乘车回到黑城子以东/李陵台平行位置，补走滦河东岸沙丘地貌，再沿公路南行入上都镇，过闪电河大桥到四郎城。",
+    "landmarks_in_book": [
+      "黑城子",
+      "滦河东岸沙丘",
+      "正蓝旗",
+      "上都镇",
+      "闪电河",
+      "四郎城"
+    ],
+    "walking_experience": "行走方向：从黑城子以东X502往正蓝旗方向的沙丘地貌开始补走。；穿越沙丘和铁丝网地带后返回公路。；进入上都镇，沿圣元街东行至四郎城路北上，过闪电河大桥到四郎城。；地形：沙丘、草场、铁丝网分割的草原、城址。；道路：X502方向公路、圣元街、四郎城路、闪电河大桥。；水源/河流：滦河/闪电河。；补给：途中在蒙古包休息；对方提供热水，作者一行吃自带的馒头和面包。；住宿：正蓝旗上都镇酒店。；风险：沙丘行走吃力、铁丝网、酷热、需标记乘车回补点。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 324,
+        "quote": "我们在大致上与李陵台遗址平行的地方下车",
+        "note": "正文说明本段有乘车回到补走点。"
+      },
+      {
+        "page": 328,
+        "quote": "沿山前草场返回公路",
+        "note": "正文说明沙丘段后返回公路。"
+      },
+      {
+        "page": 332,
+        "quote": "过了闪电河（上都高勒）大桥，可以看到公路西北隐隐隆起",
+        "note": "正文说明到四郎城前的道路和目标。"
+      },
+      {
+        "page": 328,
+        "quote": "于是我们进到院内的一个蒙古包里",
+        "note": "支持途中在蒙古包休息。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第322页标题页 OCR 将“滦河东岸沙丘”识别为“梁河东岸沙丘”，已据正文第324页校正。",
+      "第324页明确本段先坐出租车到补走点，路线连续性需人工确认。",
+      "[evidence_audit] unsupported_claim: resupply: 途中蒙古包/牧户处休息、自带午饭和热水",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 322",
+      "第324页及复核备注显示本段先坐出租车到补走点，路线连续性需人工确认。"
+    ]
+  },
+  {
+    "segment_id": "seg-015",
+    "reading_title": "15｜四郎城到上都遗址",
+    "book_scene_summary": "本段对应“四郎城到上都遗址”。书中短摘提供了起讫、道路、地形或行走状态等证据，详见 evidence_refs。",
+    "route_narrative": "最后一日坐车过上都音高勒大桥后，从桥北开始走北岸大堤，避开南岸高速公路，进入元上都遗址并步行到明德门，完成从健德门到明德门的徒步行程。",
+    "landmarks_in_book": [
+      "四郎城",
+      "上都音高勒大桥",
+      "闪电河",
+      "明德门",
+      "元上都遗址"
+    ],
+    "walking_experience": "行走方向：坐车过上都音高勒大桥，从桥北开始。；选择河谷北岸大堤，而非现代高速公路。；进入上都遗址后不坐电瓶车，步行到明德门。；地形：滦河/上都河河谷、北岸大堤、草滩、遗址公园。；道路：上都音高勒大桥、北岸大堤、遗址内高路。；水源/河流：闪电河/上都河/滦河。；补给：电视台记者送来冰冻矿泉水和西瓜。；住宿：前一晚住正蓝旗上都镇的上都酒店。；风险：最后一天天气极热；脚趾和脚后跟多处水泡，脚底疼痛；路上没有树，也没有其他可以遮阴的地方。",
+    "what_to_notice": [
+      "路线事实以 book_refs 为准；chapter_refs 仅是章节出处。",
+      "坐标只用于辅助定位，不用来改写书中路线。",
+      "有复核标记的地名、断点和乘车接续需回看原书。"
+    ],
+    "route_practicality": "本段在当前数据中标为 mixed，涉及补走、乘车接续或非连续处理。不应把本段强行接入连续 GPX track，只宜按 waypoint 和文字证据理解。现代复走前需要实地或现代路况核验。",
+    "evidence_refs": [
+      {
+        "page": 344,
+        "quote": "从桥北开始最后一天的行程",
+        "note": "正文说明最后一天实际步行起点。"
+      },
+      {
+        "page": 344,
+        "quote": "我们选择走北岸，不只是追求与元代的路线更接近",
+        "note": "正文说明选择北岸大堤的理由。"
+      },
+      {
+        "page": 353,
+        "quote": "只有走到明德门，才算完成了从大都健德门到上都明德门",
+        "note": "正文说明终点和徒步完成标准。"
+      },
+      {
+        "page": 348,
+        "quote": "冰冻的矿泉水和西瓜从未如此充满吸引力",
+        "note": "支持最后一日补给。"
+      }
+    ],
+    "confidence": {
+      "route_confidence": "needs_review",
+      "evidence_status": "warning",
+      "coordinate_confidence": "approximate",
+      "modern_followability": "needs_field_check"
+    },
+    "review_notes": [
+      "第344页显示从桥北开始，四郎城到桥北的乘车接续需要在地图上标记。",
+      "[evidence_audit] unsupported_claim: resupply: 电视台记者送冰冻矿泉水和西瓜",
+      "[evidence_audit] unsupported_claim: lodging: 前一晚住正蓝旗上都镇",
+      "[evidence_audit] unsupported_claim: risks_or_notes: 极端暑热、脚底疼痛、无树荫",
+      "[evidence_audit] needs_pdf_review: 引用页 OCR 标记需复核: 342"
+    ]
+  }
+]

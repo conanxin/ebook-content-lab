@@ -26,6 +26,10 @@ ALLOWED_WEB_PROJECT_FILES = {
     "route_walkable_blocks.json",
     "field_guide.md",
     "review_index.md",
+    "book_overview.json",
+    "segment_reading_cards.json",
+    "place_index.json",
+    "book_themes.json",
 }
 
 HIGH_RISK_COPY = [

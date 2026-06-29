@@ -2,8 +2,19 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import L from "leaflet";
 import { AlertTriangle, Download, FileJson, MapPinned, Route, Search } from "lucide-react";
 import type { ProjectMetadata } from "../types/project";
+import type { BookOverview, BookTheme, PlaceIndexItem, SegmentReadingCard } from "../types/contentDepth";
 import type { BookRef, CoordinateConfidence, PlacePoint, RouteSegment, WalkableBlock } from "../types/route";
 import { projectDataPath } from "../utils/paths";
+
+type ProjectTab = "overview" | "map" | "reading" | "places" | "rewalk";
+
+const projectTabs: Array<{ key: ProjectTab; label: string }> = [
+  { key: "overview", label: "总览" },
+  { key: "map", label: "地图路线" },
+  { key: "reading", label: "路线细读" },
+  { key: "places", label: "书中地名" },
+  { key: "rewalk", label: "复走说明" },
+];
 
 type FilterKey =
   | "all"
@@ -219,6 +230,43 @@ function useRouteData(projectSlug: string) {
   }, [projectSlug]);
 
   return { segments, routeGeoJson, placesGeoJson, blocks, error, loading };
+}
+
+function useContentDepth(projectSlug: string) {
+  const [overview, setOverview] = useState<BookOverview | null>(null);
+  const [readingCards, setReadingCards] = useState<SegmentReadingCard[]>([]);
+  const [placeIndex, setPlaceIndex] = useState<PlaceIndexItem[]>([]);
+  const [themes, setThemes] = useState<BookTheme[]>([]);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let alive = true;
+    Promise.all([
+      fetchJson<BookOverview>(projectDataPath(projectSlug, "book_overview.json")),
+      fetchJson<SegmentReadingCard[]>(projectDataPath(projectSlug, "segment_reading_cards.json")),
+      fetchJson<PlaceIndexItem[]>(projectDataPath(projectSlug, "place_index.json")),
+      fetchJson<BookTheme[]>(projectDataPath(projectSlug, "book_themes.json")),
+    ])
+      .then(([overviewData, cardData, placeData, themeData]) => {
+        if (!alive) return;
+        setOverview(overviewData);
+        setReadingCards(cardData);
+        setPlaceIndex(placeData);
+        setThemes(themeData);
+        setLoading(false);
+      })
+      .catch((err: Error) => {
+        if (!alive) return;
+        setError(err.message);
+        setLoading(false);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [projectSlug]);
+
+  return { overview, readingCards, placeIndex, themes, error, loading };
 }
 
 function buildBlockMap(blocks: WalkableBlock[]) {
@@ -473,6 +521,7 @@ function SummaryItem({ label, value }: { label: string; value: string }) {
 interface SegmentCardProps {
   segment: RouteSegment;
   block: WalkableBlock | undefined;
+  readingCard: SegmentReadingCard | undefined;
   selected: boolean;
   onSelect: (segmentId: string) => void;
 }
@@ -515,7 +564,7 @@ function RefList({ title, refs, kind }: { title: string; refs: BookRef[] | undef
   );
 }
 
-function SegmentCard({ segment, block, selected, onSelect }: SegmentCardProps) {
+function SegmentCard({ segment, block, readingCard, selected, onSelect }: SegmentCardProps) {
   const coordState = segmentCoordinateState(segment);
   const pages = segment.book_refs.map((ref) => ref.page);
   const inTrack = Boolean(block) && !segment.do_not_connect_in_gpx;
@@ -548,6 +597,16 @@ function SegmentCard({ segment, block, selected, onSelect }: SegmentCardProps) {
       </div>
 
       <p className="summary">{valueText(segment.route_summary)}</p>
+
+      {readingCard && (
+        <section className="reading-preview">
+          <strong>书中细读</strong>
+          <p>{readingCard.book_scene_summary}</p>
+          <a href="#reading-detail" onClick={(event) => event.stopPropagation()}>
+            查看路线细读
+          </a>
+        </section>
+      )}
 
       <div className="status-grid">
         <StatusRow label="movement_type" value={segment.movement_type} formatter={movementLabel} />
@@ -598,6 +657,193 @@ function SegmentCard({ segment, block, selected, onSelect }: SegmentCardProps) {
   );
 }
 
+function OverviewTab({
+  overview,
+  themes,
+  loading,
+  error,
+}: {
+  overview: BookOverview | null;
+  themes: BookTheme[];
+  loading: boolean;
+  error: string | null;
+}) {
+  if (loading) return <div className="state-box">正在加载书中细读数据...</div>;
+  if (error) return <div className="state-box error">细读数据加载失败：{error}</div>;
+  if (!overview) return <div className="state-box">书中细读数据暂不可用。</div>;
+  return (
+    <section className="content-tab-panel">
+      <div className="depth-hero">
+        <h2>总览</h2>
+        <p>{overview.one_sentence_summary}</p>
+        {overview.source_policy && <p className="content-note">{overview.source_policy}</p>}
+      </div>
+      <div className="depth-grid">
+        <InfoList title="全书路线结构" items={overview.route_structure} />
+        <InfoList title="如何使用这个页面" items={overview.how_to_use_this_page} />
+        <InfoList title="徒步 / 混合 / 断点 / GPX" items={overview.movement_gpx_notes} />
+        <InfoList title="页面限制" items={overview.limitations} />
+      </div>
+      <section className="content-section">
+        <h2>主题线索</h2>
+        <div className="theme-grid">
+          {themes.map((theme) => (
+            <article className="theme-card" key={theme.theme}>
+              <h3>{theme.theme}</h3>
+              <p>{theme.summary}</p>
+              <FieldRow label="相关段落" value={theme.related_segments} />
+              <FieldRow label="相关地名" value={theme.related_places} />
+              <RefList title="主题证据" refs={theme.refs} kind="book" />
+            </article>
+          ))}
+        </div>
+      </section>
+    </section>
+  );
+}
+
+function InfoList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <section className="info-list">
+      <h3>{title}</h3>
+      <ul>
+        {(items?.length ? items : ["书中未明示"]).map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function ReadingCardsTab({ cards }: { cards: SegmentReadingCard[] }) {
+  return (
+    <section id="reading-detail" className="content-tab-panel">
+      <div className="panel-heading">
+        <h2>路线细读</h2>
+        <p>新增细读内容依据 OCR 文本和书中证据整理，仍需人工复核标记处请以原书为准。</p>
+      </div>
+      <div className="reading-card-list">
+        {cards.map((card) => (
+          <article className="reading-card" key={card.segment_id}>
+            <header>
+              <span>{card.segment_id}</span>
+              <h3>{card.reading_title}</h3>
+            </header>
+            <FieldRow label="书中这一段" value={card.book_scene_summary} />
+            <FieldRow label="路线叙事" value={card.route_narrative} />
+            <FieldRow label="沿途地名" value={card.landmarks_in_book} />
+            <FieldRow label="行走体验" value={card.walking_experience} />
+            <FieldRow label="读者应注意的细节" value={card.what_to_notice} />
+            <FieldRow label="今日复走提示" value={card.route_practicality} />
+            <div className="status-grid">
+              <StatusRow label="evidence_status" value={card.confidence.evidence_status} />
+              <StatusRow label="coordinate_confidence" value={card.confidence.coordinate_confidence} />
+              <StatusRow label="modern_followability" value={card.confidence.modern_followability} />
+              <StatusRow label="route_confidence" value={card.confidence.route_confidence} />
+            </div>
+            <RefList title="证据出处" refs={card.evidence_refs} kind="book" />
+            <section className="review-notes">
+              <strong>复核事项</strong>
+              <ul>
+                {card.review_notes.map((note) => (
+                  <li key={note}>{note}</li>
+                ))}
+              </ul>
+            </section>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+type PlaceFilter = "all" | "needs_review" | "needs_field_check" | "approximate" | "missing";
+
+function PlacesTab({ places }: { places: PlaceIndexItem[] }) {
+  const [filter, setFilter] = useState<PlaceFilter>("all");
+  const filtered = places.filter((place) => {
+    if (filter === "all") return true;
+    if (filter === "needs_review") return place.review_status === "needs_review";
+    if (filter === "needs_field_check") return place.review_status === "needs_field_check";
+    if (filter === "approximate") return place.coordinate_confidence === "approximate";
+    if (filter === "missing") return place.coordinate_confidence === "missing";
+    return true;
+  });
+  return (
+    <section className="content-tab-panel">
+      <div className="panel-heading">
+        <h2>书中地名</h2>
+        <p>这里集中展示书中重要地名、关联段落、证据页和复核状态。历史地名和 OCR 不稳定处不作为已核定现代地点处理。</p>
+      </div>
+      <div className="filter-tabs place-filter" role="tablist" aria-label="地名筛选">
+        {[
+          ["all", "全部"],
+          ["needs_review", "需人工复核"],
+          ["needs_field_check", "需路况核验"],
+          ["approximate", "坐标大致"],
+          ["missing", "缺坐标"],
+        ].map(([key, label]) => (
+          <button key={key} className={filter === key ? "active" : ""} onClick={() => setFilter(key as PlaceFilter)} type="button">
+            {label}
+          </button>
+        ))}
+      </div>
+      <div className="place-grid">
+        {filtered.map((place) => (
+          <article className="place-card" key={place.name}>
+            <header>
+              <h3>{place.name}</h3>
+              <span className={statusClass(place.review_status)}>{place.review_status}</span>
+            </header>
+            <FieldRow label="角色" value={place.role} />
+            <FieldRow label="关联段落" value={place.appears_in_segments} />
+            <FieldRow label="页码" value={place.pages.map(String)} />
+            <FieldRow label="书中上下文" value={place.book_context} />
+            <div className="status-grid compact-status">
+              <StatusRow label="coordinate_confidence" value={place.coordinate_confidence} />
+              <StatusRow label="review_status" value={place.review_status} />
+            </div>
+            <RefList title="地名证据" refs={place.refs} kind="book" />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function RewalkTab({ segments, blocks, projectSlug }: { segments: RouteSegment[]; blocks: WalkableBlock[]; projectSlug: string }) {
+  return (
+    <section className="content-tab-panel">
+      <RewalkSummary segments={segments} blocks={blocks} />
+      <section className="content-section">
+        <h2>连续徒步块</h2>
+        <div className="block-grid">
+          {blocks.map((block) => (
+            <article className="summary-item" key={block.block_id}>
+              <span>{block.block_id}</span>
+              <p>
+                {block.start_name} → {block.end_name}
+              </p>
+              <p>{block.segment_ids.join(" + ")}</p>
+              <p>{block.status}：{block.notes}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="content-section">
+        <h2>下载与使用说明</h2>
+        <p className="content-note">GPX 分成多个连续 track；断点、补走、乘车或不应连接的段落只作为 waypoint 或文字解读使用。不要把 waypoint 之间自动连线当成书中徒步轨迹。</p>
+        <div className="downloads">
+          <DownloadLink href={projectDataPath(projectSlug, "route_segments.json")} label="路线 JSON" icon={<FileJson size={16} />} />
+          <DownloadLink href={projectDataPath(projectSlug, "route.geojson")} label="GeoJSON" icon={<Route size={16} />} />
+          <DownloadLink href={projectDataPath(projectSlug, "route.gpx")} label="GPX" icon={<Download size={16} />} />
+          <DownloadLink href={projectDataPath(projectSlug, "field_guide.md")} label="复走说明" icon={<FileJson size={16} />} />
+        </div>
+      </section>
+    </section>
+  );
+}
+
 function DownloadLink({ href, label, icon }: { href: string; label: string; icon: ReactNode }) {
   return (
     <a className="download-link" href={href} download>
@@ -614,10 +860,17 @@ interface RouteMapProjectPageProps {
 
 export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPageProps) {
   const { segments, routeGeoJson, placesGeoJson, blocks, error, loading } = useRouteData(projectSlug);
+  const contentDepth = useContentDepth(projectSlug);
+  const [activeTab, setActiveTab] = useState<ProjectTab>("overview");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const blockMap = useMemo(() => buildBlockMap(blocks), [blocks]);
+  const readingCardMap = useMemo(() => {
+    const map = new Map<string, SegmentReadingCard>();
+    contentDepth.readingCards.forEach((card) => map.set(card.segment_id, card));
+    return map;
+  }, [contentDepth.readingCards]);
 
   const filteredSegments = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -677,6 +930,24 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
         </div>
       </section>
 
+      <nav className="project-tabs" aria-label="项目内容分区">
+        {projectTabs.map((tab) => (
+          <button key={tab.key} className={activeTab === tab.key ? "active" : ""} onClick={() => setActiveTab(tab.key)} type="button">
+            {tab.label}
+          </button>
+        ))}
+      </nav>
+
+      {activeTab === "overview" && (
+        <OverviewTab
+          overview={contentDepth.overview}
+          themes={contentDepth.themes}
+          loading={contentDepth.loading}
+          error={contentDepth.error}
+        />
+      )}
+
+      {activeTab === "map" && (
       <section className="workspace">
         <MapPanel
           segments={segments}
@@ -725,6 +996,7 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
                 key={segment.id}
                 segment={segment}
                 block={blockMap.get(segment.id)}
+                readingCard={readingCardMap.get(segment.id)}
                 selected={selectedSegment?.id === segment.id}
                 onSelect={setSelectedId}
               />
@@ -732,6 +1004,27 @@ export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPag
           </div>
         </section>
       </section>
+      )}
+
+      {activeTab === "reading" &&
+        (contentDepth.loading ? (
+          <div className="content-tab-panel"><div className="state-box">正在加载路线细读...</div></div>
+        ) : contentDepth.error ? (
+          <div className="content-tab-panel"><div className="state-box error">路线细读加载失败：{contentDepth.error}</div></div>
+        ) : (
+          <ReadingCardsTab cards={contentDepth.readingCards} />
+        ))}
+
+      {activeTab === "places" &&
+        (contentDepth.loading ? (
+          <div className="content-tab-panel"><div className="state-box">正在加载书中地名...</div></div>
+        ) : contentDepth.error ? (
+          <div className="content-tab-panel"><div className="state-box error">书中地名加载失败：{contentDepth.error}</div></div>
+        ) : (
+          <PlacesTab places={contentDepth.placeIndex} />
+        ))}
+
+      {activeTab === "rewalk" && <RewalkTab segments={segments} blocks={blocks} projectSlug={projectSlug} />}
     </main>
   );
 }

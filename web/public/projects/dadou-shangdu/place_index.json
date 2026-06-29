@@ -1,0 +1,662 @@
+[
+  {
+    "name": "旧县村",
+    "appears_in_segments": [
+      "seg-002",
+      "seg-004"
+    ],
+    "pages": [
+      54,
+      58,
+      60
+    ],
+    "role": "村镇 / 路线节点",
+    "book_context": "旧县村在当前数据中关联 seg-002, seg-004。村镇 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 60,
+        "quote": "沿街北行到小学，西行离开旧县村",
+        "note": "正文说明旧县村内外行走方向。"
+      },
+      {
+        "page": 58,
+        "quote": "主任时，我在北大昌平校区（昌平园）生活过一年，而旧县村就 在昌平园附近，原京张公路的南侧。那时我常在园区周围及十三陵陵 区走动，对附近村庄和道路有一定了解，但仅止于京",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 60,
+        "quote": "间发生了时空错乱的晕眩。沿街北行到小学，西行离开旧县村，越过无水的河道，走到豪华别墅区“北京湾”的北 侧马路上，在农场路转而北行，前往下一站一—龙虎台村。“每次旅行都",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "八达岭关城",
+    "appears_in_segments": [
+      "seg-003"
+    ],
+    "pages": [
+      76,
+      88,
+      89,
+      90
+    ],
+    "role": "关口 / 山地通道",
+    "book_context": "八达岭关城在当前数据中关联 seg-003。关口 / 山地通道。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "verified",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 88,
+        "quote": "和背 后的来车。再走一个多小时，中午一点半，到达八达岭。这里就是元 代居庸关的北口。我们走过那些出售“好汉证书”的商店，穿过乱糟 糟拥挤着要购买“好汉证书”的游客人群",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 89,
+        "quote": "1日所看到八 达岭长城，并借此机会大发议论 刚过八达岭村，一条令人震惊的长线盘旋于我们前后的山脊 之上，遥遥在望。这条长线时隐时现，微露齿状，有如一个带牙 的东西，靠",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 90,
+        "quote": "来说，长城就更加经不起比较 了。然而，当我们过了八达岭，在通往岔道城的路上回过头再看 长城时，不由得倒抽一口凉气。一线白色的长城直奔目力所不及 的远方，起起伏伏，随山",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "居庸关云台",
+    "appears_in_segments": [
+      "seg-002",
+      "seg-003"
+    ],
+    "pages": [
+      54,
+      73
+    ],
+    "role": "关口遗存 / 章节地标",
+    "book_context": "居庸关云台在当前数据中关联 seg-002, seg-003。关口遗存 / 章节地标。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 54,
+        "quote": "龙虎台前暑气深 从昌平到居庸关 居庸关云台 南口村 龙虎台村 哈 旧县 昌平镇",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 73,
+        "quote": "，这让我感到了大半天都没有 体会到的安静和轻松。居庸关云台是我今天的目的地。下午五点多，我走到云台前时，游人正在散去，服务人员也在准备下班。天光虽然正在变暗，青白汉 白玉",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "不堡子村",
+    "appears_in_segments": [
+      "seg-006"
+    ],
+    "pages": [
+      148
+    ],
+    "role": "村镇 / OCR 需复核地名",
+    "book_context": "不堡子村在当前数据中关联 seg-006。村镇 / OCR 需复核地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 148,
+        "quote": "龙门所 从长伸地村到龙门所镇 龙门所 巡检司村 不堡子村 长伸地村",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "塘子庙",
+    "appears_in_segments": [
+      "seg-007"
+    ],
+    "pages": [
+      169,
+      174
+    ],
+    "role": "村镇 / 温泉地名",
+    "book_context": "塘子庙在当前数据中关联 seg-007。村镇 / 温泉地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 174,
+        "quote": "塘子庙就是明代地图上的“滚水塘”，以温泉得名",
+        "note": "支持 route_summary 中塘子庙相关描述。"
+      },
+      {
+        "page": 174,
+        "quote": "我们住的这家“温泉宾馆”开业不久",
+        "note": "支持本段住宿为塘子庙温泉宾馆。"
+      }
+    ]
+  },
+  {
+    "name": "馒头山村",
+    "appears_in_segments": [
+      "seg-010"
+    ],
+    "pages": [
+      240
+    ],
+    "role": "村镇 / OCR 需复核地名",
+    "book_context": "馒头山村在当前数据中关联 seg-010。村镇 / OCR 需复核地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 240,
+        "quote": "村 天存品通址 石头城水库 俗石柱村 小南滩村 慢头山村 小厂镇",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "石柱村",
+    "appears_in_segments": [
+      "seg-010"
+    ],
+    "pages": [
+      240,
+      244,
+      245
+    ],
+    "role": "村镇 / 路线地名",
+    "book_context": "石柱村在当前数据中关联 seg-010。村镇 / 路线地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 245,
+        "quote": "我给你们泡碗方便面吧",
+        "note": "支持石柱村商店提供方便面。"
+      },
+      {
+        "page": 240,
+        "quote": "牛群 头 石头城村 天存品通址 石头城水库 俗石柱村 小南滩村 慢头山村 小厂镇",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 244,
+        "quote": "有不知哪里传来的鸡鸣说明这里并没有被废弃。走出北石柱村，路边一个村民正在收拾摩托车，我问他哪里可以买到 吃的。他说，咱这村没有。问他家里是不是有馒头什么的，答说还真",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "水泉淖尔",
+    "appears_in_segments": [
+      "seg-012"
+    ],
+    "pages": [
+      280,
+      284,
+      291
+    ],
+    "role": "湖淖 / 水域",
+    "book_context": "水泉淖尔在当前数据中关联 seg-012。湖淖 / 水域。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 291,
+        "quote": "从水泉淖尔向东，一路上山，到转佛庙村南口所建的旅游点",
+        "note": "支持经转佛庙村南口。"
+      },
+      {
+        "page": 280,
+        "quote": "源到塞北管理区 塞北管理区 马神庙村 转佛庙村 水泉津尔 份 个宏城村 圆图漳尔 沽源县城",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 284,
+        "quote": "基本成为碱滩的北淖，并 且西北与公鸡淖尔，东北与水泉淖尔相通，最后向东汇入滦河。值得 注意的是，从前公鸡淖尔的水源主要是西来的河水，这条河连通察罕 脑儿以西的多个湖泊，",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "圆图淖尔",
+    "appears_in_segments": [
+      "seg-012"
+    ],
+    "pages": [
+      280
+    ],
+    "role": "湖淖 / OCR 需复核地名",
+    "book_context": "圆图淖尔在当前数据中关联 seg-012。湖淖 / OCR 需复核地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 280,
+        "quote": "区 马神庙村 转佛庙村 水泉津尔 份 个宏城村 圆图漳尔 沽源县城",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "河北内蒙古分界线",
+    "appears_in_segments": [
+      "seg-013"
+    ],
+    "pages": [
+      302,
+      305
+    ],
+    "role": "边界 / 省际分界",
+    "book_context": "河北内蒙古分界线在当前数据中关联 seg-013。边界 / 省际分界。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 305,
+        "quote": "由此往北再走三公里，十一点三十分，我们到达河北与内蒙的分界点",
+        "note": "支持本段跨过河北与内蒙古分界。"
+      },
+      {
+        "page": 305,
+        "quote": "儿。由此往北再走 三公里，十一点三十分，我们到达河北与内蒙的分界点，就此进入内 蒙的正蓝旗，这条路进入内蒙后改名X502。省际分界点也是县级公路 两不管的地方，几百米长的路面沙石",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "滦河东岸沙丘",
+    "appears_in_segments": [
+      "seg-014"
+    ],
+    "pages": [
+      322,
+      324,
+      328
+    ],
+    "role": "地貌 / 沙丘",
+    "book_context": "滦河东岸沙丘在当前数据中关联 seg-014。地貌 / 沙丘。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_review",
+    "refs": [
+      {
+        "page": 328,
+        "quote": "沿山前草场返回公路",
+        "note": "正文说明沙丘段后返回公路。"
+      },
+      {
+        "page": 322,
+        "quote": "翎 从黑城子到四郎城 正蓝旗 闪 电河 梁河东岸沙丘 黑城子",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 324,
+        "quote": "。昨晚北行时一切都在暗夜里，现在可以看到 公路在滦河东岸，河谷西侧有间断的村庄、厂房和早已荒弃的耕地，东侧则是草原、沙丘和几乎没有植被的山地。我们在大致上与李陵台 遗址",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "健德门",
+    "appears_in_segments": [
+      "seg-001"
+    ],
+    "pages": [
+      32,
+      34
+    ],
+    "role": "起点 / 大都城门",
+    "book_context": "健德门在当前数据中关联 seg-001。起点 / 大都城门。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "review_recommended",
+    "refs": [
+      {
+        "page": 34,
+        "quote": "我从健德门出发，沿着小月河东岸北行",
+        "note": "正文说明实际出发点和初始方向。"
+      },
+      {
+        "page": 32,
+        "quote": "清晨六点半，健德门桥上桥下六个方向都已排满了汽车。这是6 月24日，天气晴好，很适合作为“走向金莲川”的启动日。阳光开始 震行人，",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 34,
+        "quote": "不会看见“若在眉睫”的都城宫苑。六点四十分，我从健德门出发，沿着小月河东岸北行。小月河以 东百十米，就是八达岭高速。我在健德门附近的牡丹园小区住过很多年，从我家窗户可",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "皂甲屯",
+    "appears_in_segments": [
+      "seg-001"
+    ],
+    "pages": [
+      30,
+      52
+    ],
+    "role": "村镇 / 路线节点",
+    "book_context": "皂甲屯在当前数据中关联 seg-001。村镇 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "review_recommended",
+    "refs": [
+      {
+        "page": 52,
+        "quote": "沿甲屯路东北行，到北玉河村，就到了繁忙喧嚣的沙阳路",
+        "note": "正文说明皂甲屯后至北玉河、沙阳路，第一日行走计划完成。"
+      },
+      {
+        "page": 30,
+        "quote": "千里滦京第一程 从健德门到皂甲屯 南玉河村 皂甲屯 南 沙河水库 沙 河 皇后店 清 河 月 河 健德门",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "白河堡水库",
+    "appears_in_segments": [
+      "seg-004",
+      "seg-005"
+    ],
+    "pages": [
+      100,
+      102,
+      114
+    ],
+    "role": "水域 / 路线节点",
+    "book_context": "白河堡水库在当前数据中关联 seg-004, seg-005。水域 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "review_recommended",
+    "refs": [
+      {
+        "page": 114,
+        "quote": "沿昌赤路（S212）在水库边走半小时之后",
+        "note": "正文说明到达白河堡水库后的水库边道路。"
+      },
+      {
+        "page": 102,
+        "quote": "吃完早饭，我们告别延庆，坐出租车前往旧县镇，从那里开始走去白河堡水库",
+        "note": "支持本段从延庆/旧县镇开始走向白河堡水库。"
+      }
+    ]
+  },
+  {
+    "name": "龙门所",
+    "appears_in_segments": [
+      "seg-006",
+      "seg-007"
+    ],
+    "pages": [
+      148,
+      167,
+      175
+    ],
+    "role": "村镇 / 历史地名",
+    "book_context": "龙门所在当前数据中关联 seg-006, seg-007。村镇 / 历史地名。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "review_recommended",
+    "refs": [
+      {
+        "page": 167,
+        "quote": "进人龙门所镇正好是下午四点",
+        "note": "正文说明到达龙门所镇。"
+      },
+      {
+        "page": 175,
+        "quote": "从龙门所沿G112先是向北，一路越走越高",
+        "note": "正文说明离开龙门所后的路线。"
+      }
+    ]
+  },
+  {
+    "name": "白草镇",
+    "appears_in_segments": [
+      "seg-007",
+      "seg-008"
+    ],
+    "pages": [
+      189,
+      192
+    ],
+    "role": "村镇 / 路线节点",
+    "book_context": "白草镇在当前数据中关联 seg-007, seg-008。村镇 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 189,
+        "quote": "下午五点整，我们走到白草镇南G112向东转",
+        "note": "正文说明完成本日行程。"
+      },
+      {
+        "page": 189,
+        "quote": "下午五点整，我们走到白草镇南G112向东转告别黑河河谷的地 方，完成了今天的行程。在镇子西头找到一家餐厅，外面屋角竖着一 块红漆大字“泰山",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 192,
+        "quote": "水远沟深山复山 从白草镇到老掌沟 老掌沟 南沟门 山神庙村 禹龙山村 三道川村 白草镇",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "老掌沟",
+    "appears_in_segments": [
+      "seg-008",
+      "seg-009"
+    ],
+    "pages": [
+      205,
+      207
+    ],
+    "role": "沟谷 / 补走节点",
+    "book_context": "老掌沟在当前数据中关联 seg-008, seg-009。沟谷 / 补走节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 207,
+        "quote": "从沟口往沟里走了半小时后",
+        "note": "正文说明进入老掌沟后因时间安排联系车辆。"
+      },
+      {
+        "page": 205,
+        "quote": "离目的地老掌沟还有差不多二十公里，看来很难完成了",
+        "note": "支持本段路程压力。"
+      }
+    ]
+  },
+  {
+    "name": "小厂镇",
+    "appears_in_segments": [
+      "seg-009",
+      "seg-010"
+    ],
+    "pages": [
+      222,
+      228,
+      232
+    ],
+    "role": "村镇 / 路线节点",
+    "book_context": "小厂镇在当前数据中关联 seg-009, seg-010。村镇 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 232,
+        "quote": "小厂镇是南北一条主街",
+        "note": "正文说明到达小厂镇后的街镇形态和补给。"
+      },
+      {
+        "page": 222,
+        "quote": "沙岭至小厂镇地势下降明显",
+        "note": "支持沙岭至小厂镇的地势和路线背景。"
+      },
+      {
+        "page": 228,
+        "quote": "下午四点一刻，我们走到X404与S245交叉的地方，终于到小厂镇了",
+        "note": "支持本段到达小厂镇。"
+      }
+    ]
+  },
+  {
+    "name": "五花草甸",
+    "appears_in_segments": [
+      "seg-010",
+      "seg-011"
+    ],
+    "pages": [
+      240,
+      260,
+      265,
+      273
+    ],
+    "role": "草甸 / 补走节点",
+    "book_context": "五花草甸在当前数据中关联 seg-010, seg-011。草甸 / 补走节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 260,
+        "quote": "沿路往北走几百米，到义合成村南，离五花草甸已经不远了",
+        "note": "正文说明在五花草甸附近搭车去沽源休整。"
+      },
+      {
+        "page": 265,
+        "quote": "先把我们送去梳妆楼，在那里等着，再送我们去五花草甸",
+        "note": "正文说明因前一日乘车，次日以车辆回到补走起点。"
+      },
+      {
+        "page": 273,
+        "quote": "上午九点五十分，出租车把我们送到五花草甸",
+        "note": "支持从五花草甸开始补走。"
+      }
+    ]
+  },
+  {
+    "name": "塞北管理区",
+    "appears_in_segments": [
+      "seg-012",
+      "seg-013"
+    ],
+    "pages": [
+      280,
+      299,
+      300
+    ],
+    "role": "行政地名 / 路线节点",
+    "book_context": "塞北管理区在当前数据中关联 seg-012, seg-013。行政地名 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 300,
+        "quote": "晚七点一刻，我们终于走到赵欣已订好房间的方元酒店",
+        "note": "正文说明到达塞北管理区住宿点。"
+      },
+      {
+        "page": 299,
+        "quote": "从马神庙村向北的公路，是县级公路X402从前的老路",
+        "note": "支持从马神庙村继续向北进入塞北管理区方向。"
+      }
+    ]
+  },
+  {
+    "name": "黑城子",
+    "appears_in_segments": [
+      "seg-013",
+      "seg-014"
+    ],
+    "pages": [
+      302,
+      314,
+      318
+    ],
+    "role": "村镇 / 路线节点",
+    "book_context": "黑城子在当前数据中关联 seg-013, seg-014。村镇 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 314,
+        "quote": "地图上显示老黑土城（李陵台）在镇子北边约五公里",
+        "note": "正文说明黑城子与李陵台方向。"
+      },
+      {
+        "page": 302,
+        "quote": "李陵台上野云低 从塞北管理区到黑城子 李陵台 李陵台遗址 黑城子镇 购电 河北内装专分累线 黄土湾村 赛北营理区",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 318,
+        "quote": "黑城子到正蓝旗一段。从塞北管理区到正蓝旗，沿滦河东岸的县级公 路走，全程五十公里，不足一小时就到了。直奔网上推荐的上都",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "四郎城",
+    "appears_in_segments": [
+      "seg-014",
+      "seg-015"
+    ],
+    "pages": [
+      322,
+      332
+    ],
+    "role": "遗址 / 路线节点",
+    "book_context": "四郎城在当前数据中关联 seg-014, seg-015。遗址 / 路线节点。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 332,
+        "quote": "过了闪电河（上都高勒）大桥，可以看到公路西北隐隐隆起",
+        "note": "正文说明到四郎城前的道路和目标。"
+      },
+      {
+        "page": 322,
+        "quote": "乌桓城下问白翎 从黑城子到四郎城 正蓝旗 闪 电河 梁河东岸沙丘 黑城子",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      },
+      {
+        "page": 332,
+        "quote": "西北隐隐 隆起的青色城垣，那就是我们今天的目的地四郎城。四郎城，当地人又称侍郎城，据说是因清代某位侍郎镇守此地而 得名。这里是金代西北路招讨司所在，那时命名为桓州。金",
+        "note": "OCR 文本中出现该地名或其待核对写法。"
+      }
+    ]
+  },
+  {
+    "name": "元上都遗址",
+    "appears_in_segments": [
+      "seg-015"
+    ],
+    "pages": [
+      318,
+      342,
+      353
+    ],
+    "role": "终点 / 遗址",
+    "book_context": "元上都遗址在当前数据中关联 seg-015。终点 / 遗址。具体地名写法和上下文以 refs 所列页码为准。",
+    "coordinate_confidence": "approximate",
+    "review_status": "needs_field_check",
+    "refs": [
+      {
+        "page": 353,
+        "quote": "只有走到明德门，才算完成了从大都健德门到上都明德门",
+        "note": "正文说明终点和徒步完成标准。"
+      },
+      {
+        "page": 318,
+        "quote": "直奔网上推荐的上都酒店，办好入住手续",
+        "note": "支持前一晚住宿在正蓝旗上都酒店。"
+      }
+    ]
+  }
+]
