@@ -3,6 +3,7 @@ import L from "leaflet";
 import { AlertTriangle, Download, FileJson, MapPinned, Route, Search } from "lucide-react";
 import type { ProjectMetadata } from "../types/project";
 import type { BookRef, CoordinateConfidence, PlacePoint, RouteSegment, WalkableBlock } from "../types/route";
+import { projectDataPath } from "../utils/paths";
 
 type FilterKey =
   | "all"
@@ -183,7 +184,7 @@ async function fetchJson<T>(url: string): Promise<T> {
   return response.json() as Promise<T>;
 }
 
-function useRouteData(dataBase: string) {
+function useRouteData(projectSlug: string) {
   const [segments, setSegments] = useState<RouteSegment[]>([]);
   const [routeGeoJson, setRouteGeoJson] = useState<GeoJSON.FeatureCollection | null>(null);
   const [placesGeoJson, setPlacesGeoJson] = useState<GeoJSON.FeatureCollection | null>(null);
@@ -194,10 +195,10 @@ function useRouteData(dataBase: string) {
   useEffect(() => {
     let alive = true;
     Promise.all([
-      fetchJson<RouteSegment[]>(`${dataBase}/route_segments.json`),
-      fetchJson<GeoJSON.FeatureCollection>(`${dataBase}/route.geojson`),
-      fetchJson<GeoJSON.FeatureCollection>(`${dataBase}/route_places.geojson`),
-      fetchJson<WalkableBlock[]>(`${dataBase}/route_walkable_blocks.json`),
+      fetchJson<RouteSegment[]>(projectDataPath(projectSlug, "route_segments.json")),
+      fetchJson<GeoJSON.FeatureCollection>(projectDataPath(projectSlug, "route.geojson")),
+      fetchJson<GeoJSON.FeatureCollection>(projectDataPath(projectSlug, "route_places.geojson")),
+      fetchJson<WalkableBlock[]>(projectDataPath(projectSlug, "route_walkable_blocks.json")),
     ])
       .then(([segmentData, routeData, placeData, blockData]) => {
         if (!alive) return;
@@ -215,7 +216,7 @@ function useRouteData(dataBase: string) {
     return () => {
       alive = false;
     };
-  }, [dataBase]);
+  }, [projectSlug]);
 
   return { segments, routeGeoJson, placesGeoJson, blocks, error, loading };
 }
@@ -608,11 +609,11 @@ function DownloadLink({ href, label, icon }: { href: string; label: string; icon
 
 interface RouteMapProjectPageProps {
   project: ProjectMetadata;
-  dataBase: string;
+  projectSlug: string;
 }
 
-export function RouteMapProjectPage({ project, dataBase }: RouteMapProjectPageProps) {
-  const { segments, routeGeoJson, placesGeoJson, blocks, error, loading } = useRouteData(dataBase);
+export function RouteMapProjectPage({ project, projectSlug }: RouteMapProjectPageProps) {
+  const { segments, routeGeoJson, placesGeoJson, blocks, error, loading } = useRouteData(projectSlug);
   const [filter, setFilter] = useState<FilterKey>("all");
   const [query, setQuery] = useState("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -707,10 +708,10 @@ export function RouteMapProjectPage({ project, dataBase }: RouteMapProjectPagePr
               ))}
             </div>
             <div className="downloads">
-              <DownloadLink href={`${dataBase}/route_segments.json`} label="路线 JSON" icon={<FileJson size={16} />} />
-              <DownloadLink href={`${dataBase}/route.geojson`} label="GeoJSON" icon={<Route size={16} />} />
-              <DownloadLink href={`${dataBase}/route.gpx`} label="GPX" icon={<Download size={16} />} />
-              <DownloadLink href={`${dataBase}/field_guide.md`} label="复走说明" icon={<FileJson size={16} />} />
+              <DownloadLink href={projectDataPath(projectSlug, "route_segments.json")} label="路线 JSON" icon={<FileJson size={16} />} />
+              <DownloadLink href={projectDataPath(projectSlug, "route.geojson")} label="GeoJSON" icon={<Route size={16} />} />
+              <DownloadLink href={projectDataPath(projectSlug, "route.gpx")} label="GPX" icon={<Download size={16} />} />
+              <DownloadLink href={projectDataPath(projectSlug, "field_guide.md")} label="复走说明" icon={<FileJson size={16} />} />
             </div>
           </div>
 

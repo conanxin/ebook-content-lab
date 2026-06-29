@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import { LibraryBig } from "lucide-react";
 import { ProjectCard } from "../components/ProjectCard";
 import type { ProjectIndex, ProjectIndexItem } from "../types/project";
+import { projectsIndexPath } from "../utils/paths";
 
 async function fetchProjectIndex() {
-  const response = await fetch("/projects/index.json");
-  if (!response.ok) throw new Error(`/projects/index.json ${response.status}`);
+  const url = projectsIndexPath();
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`${url} ${response.status}`);
   return response.json() as Promise<ProjectIndex>;
 }
 

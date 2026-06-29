@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowLeft, FileQuestion } from "lucide-react";
 import type { ProjectMetadata } from "../types/project";
+import { projectDataPath } from "../utils/paths";
 import { RouteMapProjectPage } from "./RouteMapProjectPage";
 
 interface ProjectPageProps {
@@ -8,8 +9,9 @@ interface ProjectPageProps {
 }
 
 async function fetchProject(slug: string) {
-  const response = await fetch(`/projects/${slug}/project.json`);
-  if (!response.ok) throw new Error(`/projects/${slug}/project.json ${response.status}`);
+  const url = projectDataPath(slug, "project.json");
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`${url} ${response.status}`);
   return response.json() as Promise<ProjectMetadata>;
 }
 
@@ -59,7 +61,7 @@ export function ProjectPage({ slug }: ProjectPageProps) {
   }
 
   if (project.project_type === "route-map") {
-    return <RouteMapProjectPage project={project} dataBase={`/projects/${slug}`} />;
+    return <RouteMapProjectPage project={project} projectSlug={slug} />;
   }
 
   return (
