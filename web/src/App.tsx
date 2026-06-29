@@ -66,7 +66,19 @@ export function App() {
     let alive = true;
     fetchProjectMeta(route.slug).then((meta) => {
       if (!alive) return;
-      if (meta) setProjectMeta({ slug: route.slug, meta });
+      if (meta) {
+        setProjectMeta({ slug: route.slug, meta });
+        return;
+      }
+      // Project slug is well-formed but the project does not exist on the site
+      // (e.g. 404 on project.json). Promote the route to not-found so the UI
+      // and document.title both reflect the correct state.
+      const fallbackPath = `/projects/${route.slug}`;
+      setRoute((prev) =>
+        prev.name === "project" && prev.slug === route.slug
+          ? { name: "not-found", path: fallbackPath }
+          : prev
+      );
     });
     return () => {
       alive = false;

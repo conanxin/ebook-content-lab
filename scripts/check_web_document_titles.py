@@ -92,6 +92,28 @@ def check_app_title_logic(web_src: Path, root: Path, findings: list[Finding]) ->
                 "App.tsx does not appear to set a project-specific title.",
             )
         )
+    # Missing-project fallback: if fetchProjectMeta resolves null, App must
+    # promote the route to not-found (or otherwise land in a not-found state)
+    # so document.title can stop at "正在加载项目".
+    fetch_call = re.search(r"fetchProjectMeta\([^)]*\)\.then", text)
+    if fetch_call:
+        # Look at the next ~600 chars after the .then() call to inspect the
+        # failure branch.
+        tail = text[fetch_call.end() : fetch_call.end() + 800]
+        promotes_to_not_found = (
+            ("not-found" in tail) and ("setRoute" in tail or "set_route" in tail or "fallback" in tail)
+        )
+        if not promotes_to_not_found:
+            findings.append(
+                Finding(
+                    "error",
+                    repo_relative(app_tsx),
+                    "fetchProjectMeta success branch is followed by code, but the "
+                    "failure branch (meta == null) does not appear to promote the "
+                    "route to not-found. Missing projects will leave document.title "
+                    "stuck on '正在加载项目'.",
+                )
+            )
 
 
 def check_project_pages(web_src: Path, root: Path, findings: list[Finding]) -> None:
@@ -153,6 +175,7 @@ def render_report(findings: list[Finding]) -> str:
             "- App.tsx must assign to document.title at least once.",
             "- App.tsx should reference a home title and a not-found title literal.",
             "- ProjectPage.tsx should still mention 'title' so future refactors don't drop the project title field.",
+            "- App.tsx must promote the route to not-found when fetchProjectMeta resolves null, so missing slugs do not leave document.title stuck on '正在加载项目'.",
             "",
         ]
     )
