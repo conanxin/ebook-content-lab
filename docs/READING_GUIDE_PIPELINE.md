@@ -77,6 +77,31 @@ These scripts do not exist in the current R2 baseline.
 - **C**: Add status promotion.
 - **D**: Tag and release after public data and review gates pass.
 
+## v0.7-A1 Path Resolver
+
+`ProjectPaths` centralizes path construction for one ebook subproject. It resolves the repository root, project directory, private source path, working artifacts, reports, public data, and the web mirror path from a single `projects/<slug>` input.
+
+A1 solves three immediate problems:
+
+- Reduce duplicated path construction in reading-guide scripts.
+- Make Windows and WSL path handling consistent.
+- Provide one place for future scripts to find private, working, reports, public, and web mirror files without hard-coding `projects/second-reading-guide`.
+
+Current A1 integration is intentionally small:
+
+- `scripts/inspect_reading_guide_pipeline.py` uses `ProjectPaths`.
+- `scripts/check_reading_guide_pipeline.py` uses `ProjectPaths`.
+- Build scripts and public-data generation scripts are not changed in A1.
+
+This stage does not change build logic because the current baseline is still **draft + intake-ready**. The public reading-guide JSON is not regenerated, manual-review data is not required, and no status promotion happens. Keeping A1 limited to inspect/check lets the path abstraction be verified without changing public output.
+
+Future reuse:
+
+- **A2** can use `ProjectPaths` to read private EPUB extraction artifacts and write a `letters_brief` working artifact.
+- **A3** can use it to write approved public reading-guide JSON and sync the web mirror.
+- **B** can use it for manual review task/report paths.
+- **C** can use it for status promotion checks and project metadata updates.
+
 ## Why R2 Replaces The Old Assumption
 
 The current repository has `HEAD = origin/main = 74478b1`. The earlier expected refs `6486c19`, `1b3c8d8`, and `v0.6.1-reading-guide-reviewed-draft` are not available in this clone or in the configured origin. R2 therefore treats the committed EPUB intake workflow as the source of truth.

@@ -5,6 +5,11 @@ import json
 from pathlib import Path
 from typing import Any
 
+try:
+    from scripts.lib.project_paths import ProjectPaths
+except ModuleNotFoundError:  # Direct execution: python scripts/inspect_*.py
+    from lib.project_paths import ProjectPaths
+
 
 PUBLIC_FILES = [
     "book_overview.json",
@@ -34,14 +39,6 @@ PRIVATE_PUBLIC_PATTERNS = [
     "raw_text",
     "chapter_text",
 ]
-
-
-def find_repo_root(start: Path) -> Path:
-    current = start.resolve()
-    for candidate in [current, *current.parents]:
-        if (candidate / "scripts").is_dir() and (candidate / "web").is_dir():
-            return candidate
-    raise FileNotFoundError(f"Cannot find repo root above {start}")
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -86,40 +83,30 @@ def source_type(project_data: dict[str, Any]) -> str:
 
 
 def inspect_project(project_path: str | Path) -> dict[str, Any]:
-    project_dir = Path(project_path).resolve()
-    repo_root = find_repo_root(project_dir)
-    slug = project_dir.name
+    paths = ProjectPaths.from_project(project_path)
 
-    project_json = project_dir / "project.json"
-    project_data = read_json(project_json) if project_json.exists() else {}
+    project_data = read_json(paths.project_json) if paths.project_json.exists() else {}
 
     scripts = {
-        "extract_epub": repo_root / "scripts" / "extract_epub.py",
-        "identify_book": repo_root / "scripts" / "identify_book.py",
-        "check_reading_guide_project": repo_root / "scripts" / "check_reading_guide_project.py",
-        "check_public_release": repo_root / "scripts" / "check_public_release.py",
+        "extract_epub": paths.repo_root / "scripts" / "extract_epub.py",
+        "identify_book": paths.repo_root / "scripts" / "identify_book.py",
+        "check_reading_guide_project": paths.repo_root / "scripts" / "check_reading_guide_project.py",
+        "check_public_release": paths.repo_root / "scripts" / "check_public_release.py",
     }
-    next_scripts = {name: repo_root / "scripts" / name for name in NEXT_SCRIPTS}
+    next_scripts = {name: paths.repo_root / "scripts" / name for name in NEXT_SCRIPTS}
 
-    private_dir = project_dir / "private"
-    working_dir = project_dir / "working"
-    reports_dir = project_dir / "reports"
-    public_dir = project_dir / "public"
-    web_project_dir = repo_root / "web" / "public" / "projects" / slug
-
-    epub_source = private_dir / "source" / "book.epub"
     identity_files = {
-        "book_identity": working_dir / "book_identity.json",
-        "book_identity_source": working_dir / "book_identity_source.json",
+        "book_identity": paths.book_identity_json,
+        "book_identity_source": paths.book_identity_source_json,
     }
     intake_reports = {
-        "book_identity_report": reports_dir / "book_identity_report.md",
-        "epub_extraction_report": reports_dir / "epub_extraction_report.md",
+        "book_identity_report": paths.book_identity_report,
+        "epub_extraction_report": paths.epub_extraction_report,
     }
 
-    public_files_present = [name for name in PUBLIC_FILES if (public_dir / name).exists()]
-    web_public_files_present = [name for name in PUBLIC_FILES if (web_project_dir / name).exists()]
-    privacy_ok, privacy_findings = scan_public_boundary([public_dir, web_project_dir])
+    public_files_present = [name for name in PUBLIC_FILES if paths.public_path(name).exists()]
+    web_public_files_present = [name for name in PUBLIC_FILES if paths.web_project_path(name).exists()]
+    privacy_ok, privacy_findings = scan_public_boundary([paths.public_dir, paths.web_project_dir])
 
     script_presence = exists_map(scripts)
     identity_presence = exists_map(identity_files)
@@ -127,13 +114,13 @@ def inspect_project(project_path: str | Path) -> dict[str, Any]:
     missing_next_scripts = [name for name, path in next_scripts.items() if not path.exists()]
 
     identity_artifacts_present = all(identity_presence.values()) and all(report_presence.values())
-    public_layer_present = public_dir.exists()
-    web_mirror_present = web_project_dir.exists()
+    public_layer_present = paths.public_dir.exists()
+    web_mirror_present = paths.web_project_dir.exists()
     intake_ready = (
-        project_json.exists()
+        paths.project_json.exists()
         and script_presence["extract_epub"]
         and script_presence["identify_book"]
-        and epub_source.exists()
+        and paths.epub_path.exists()
         and identity_artifacts_present
         and privacy_ok
     )
@@ -144,27 +131,27 @@ def inspect_project(project_path: str | Path) -> dict[str, Any]:
     if not intake_ready:
         recommended_next_actions.append("Complete EPUB intake artifacts before building public reading-guide data.")
     else:
-        recommended_next_actions.append("Proceed to v0.7-A1 ProjectPaths path resolver.")
+        recommended_next_actions.append("Proceed to v0.7-A2 letters brief builder.")
 
     return {
         "project": {
-            "slug": slug,
-            "path": project_dir.relative_to(repo_root).as_posix(),
+            "slug": paths.slug,
+            "path": paths.project_dir.relative_to(paths.repo_root).as_posix(),
             "project_type": project_data.get("project_type"),
             "title": project_data.get("title"),
         },
         "status": project_data.get("status", "unknown"),
         "source_type": source_type(project_data),
         "intake_ready": intake_ready,
-        "epub_source_present": epub_source.exists(),
+        "epub_source_present": paths.epub_path.exists(),
         "identity_artifacts_present": identity_artifacts_present,
         "public_layer_present": public_layer_present,
         "web_mirror_present": web_mirror_present,
         "counts": {
             "public_files_present": len(public_files_present),
             "web_public_files_present": len(web_public_files_present),
-            "public_dir_file_count": count_files(public_dir),
-            "web_project_file_count": count_files(web_project_dir),
+            "public_dir_file_count": count_files(paths.public_dir),
+            "web_project_file_count": count_files(paths.web_project_dir),
             "identity_working_files_present": sum(1 for present in identity_presence.values() if present),
             "intake_reports_present": sum(1 for present in report_presence.values() if present),
             "missing_next_scripts": len(missing_next_scripts),
