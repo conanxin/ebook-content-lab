@@ -1,7 +1,7 @@
 {
   "slug": "second-reading-guide",
-  "title": "第二本电子书阅读导读",
-  "book_title": "待定书名",
+  "title": "《旅行人信札》阅读导览",
+  "book_title": "《旅行人信札》",
   "source_type": "scanned_pdf",
   "project_type": "reading-guide",
   "status": "draft",
@@ -26,15 +26,15 @@
   },
   "route_stats": {},
   "review_status": {
-    "status": "not_started",
-    "notes": "新项目草稿，尚未完成 OCR、抽取、审计和人工复核。"
+    "status": "manual-review-pending",
+    "notes": "公开预览已发布，人工复核未完成。"
   },
   "generated_at": "2026-06-29T09:02:19+00:00",
   "repository_url": "https://github.com/conanxin/ebook-content-lab",
   "site_url": "https://conanxin.github.io/ebook-content-lab/",
   "project_page_url": "https://conanxin.github.io/ebook-content-lab/#/projects/second-reading-guide",
   "book": {
-    "title": "旅行人信札",
+    "title": "《旅行人信札》",
     "author": "陈嘉映",
     "publication_info": null,
     "publisher": "上海文艺出版社",
@@ -57,5 +57,8 @@
     "reading-guide",
     "knowledge-map"
   ],
-  "identity_status": "identified"
+  "identity_status": "identified",
+  "subtitle": "25 封旅行书信的路线、地点与主题导读",
+  "release_phase": "public-preview",
+  "description": "25 封旅行书信的路线、地点与主题导读"
 }

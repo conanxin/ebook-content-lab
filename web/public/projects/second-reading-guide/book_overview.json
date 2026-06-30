@@ -3,7 +3,7 @@
   "status": "draft",
   "generated_at": "2026-06-30T06:02:38.677636+00:00",
   "book": {
-    "title": "旅行人信札",
+    "title": "《旅行人信札》",
     "author": "陈嘉映",
     "language": "zh-Hans",
     "publisher": "上海文艺出版社",
@@ -11,8 +11,8 @@
     "isbn": "d3671844-e97c-499e-855a-8753809f0381",
     "source_type": "epub"
   },
-  "one_sentence_summary": "《旅行人信札》当前公开导读基于 EPUB 结构与 25 封正文书信的标题、章节统计和工作层结构摘要生成。",
-  "reading_purpose": "帮助读者先按书信顺序、地点线索和主题标签建立阅读骨架；当前版本不替代逐章细读。",
+  "one_sentence_summary": "《旅行人信札》阅读导览把 25 封旅行书信整理为可浏览的路线、地点与主题草案，供公开预览和后续人工复核。",
+  "reading_purpose": "帮助读者先看见全书的行旅骨架、地名线索和主题分布，再回到原书逐封细读。当前内容不是最终解读。",
   "structure_overview": {
     "body_letter_count": 25,
     "section_range": {
@@ -21,17 +21,19 @@
     },
     "place_count_from_titles": 66,
     "theme_count_from_structural_tags": 5,
-    "source_mode": "metadata_and_letters_brief"
+    "source_mode": "metadata_and_letters_brief",
+    "public_preview_focus": "路线、地点、主题、阅读问题与答案提示",
+    "manual_review_status": "pending"
   },
   "how_to_use": [
-    "先浏览章节导读卡，了解 25 封书信的顺序与地点线索。",
-    "再查看主题概念，观察哪些主题在多封信中反复出现。",
-    "问题列表适合作为初读提示，不作为最终学术判断。"
+    "先从 25 封书信的信封卡片了解行程顺序和地点线索。",
+    "再查看核心概念，观察全书中反复出现的旅行、山水、城市与旅途主题。",
+    "阅读问题和参考回答只作为导读提示，不能替代原书细读和人工复核。"
   ],
   "limitations": [
-    "当前为 draft：内容由结构化元数据和 working/letters_brief.json 生成。",
-    "没有公开 EPUB 正文、完整章节正文或长段摘录。",
-    "概念、问题和结构说明仍需后续人工复核。"
+    "当前为 draft public preview，人工复核尚未完成。",
+    "公开页面不发布电子书正文、长段摘录或本地来源路径。",
+    "导读摘要和答案提示根据标题、地点和结构化主题生成，仍需人工确认。"
   ],
   "evidence_refs": [
     {
@@ -48,5 +50,7 @@
   "visibility": "public",
   "release_phase": "public-preview",
   "review_status": "manual-review-pending",
-  "preview_notice": "Draft public preview. Manual review is pending; do not treat this as final reviewed content."
+  "preview_notice": "公开预览版本：导读内容基于标题、地点线索和结构化主题生成，人工复核仍在进行中。",
+  "display_title": "《旅行人信札》阅读导览",
+  "subtitle": "25 封旅行书信的路线、地点与主题导读"
 }

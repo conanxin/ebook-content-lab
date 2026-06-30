@@ -24,6 +24,8 @@ export interface ReadingGuidePublicMeta {
   release_phase?: string;
   review_status?: string;
   preview_notice?: string;
+  display_title?: string;
+  subtitle?: string;
   book: ReadingGuideBook;
 }
 
@@ -52,6 +54,13 @@ export interface ChapterReadingCard {
   order?: number;
   title?: string;
   summary?: string;
+  letter_stamp?: string;
+  route_label?: string;
+  letter_summary?: string;
+  route_note?: string;
+  reading_focus?: string;
+  theme_note?: string;
+  review_notice?: string;
   places?: string[];
   themes?: string[];
   char_count?: number;
@@ -69,6 +78,7 @@ export interface KeyConcept {
   concept_id: string;
   label?: string;
   description?: string;
+  guide_note?: string;
   related_letters?: Array<{
     letter_id?: string;
     section_id?: string;
@@ -95,6 +105,7 @@ export interface QuoteIndexEntry {
 
 export interface QuoteIndexData extends ReadingGuidePublicMeta {
   quote_mode?: string;
+  reader_note?: string;
   quotes: QuoteIndexEntry[];
 }
 
@@ -105,6 +116,10 @@ export interface ReadingQuestion {
   section_id?: string;
   question?: string;
   basis?: string;
+  answer_hint?: string;
+  reference_answer?: string;
+  guide_answer?: string;
+  review_notice?: string;
   review_status?: string;
 }
 

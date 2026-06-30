@@ -3,7 +3,7 @@
   "status": "draft",
   "generated_at": "2026-06-30T06:02:38.678621+00:00",
   "book": {
-    "title": "旅行人信札",
+    "title": "《旅行人信札》",
     "author": "陈嘉映",
     "language": "zh-Hans",
     "publisher": "上海文艺出版社",
@@ -43,7 +43,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月17日~18日",
+      "route_label": "娘子关 → 骊山 → 西安",
+      "letter_summary": "本封信以“第1封 3月17日~18日 娘子关→骊山→西安”为入口，围绕娘子关、骊山、西安展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：娘子关 → 骊山 → 西安。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注娘子关、骊山、西安如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-002",
@@ -76,7 +83,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月19日~20日",
+      "route_label": "半坡 → 碑林 → 成都",
+      "letter_summary": "本封信以“第2封 3月19日~20日 半坡/碑林→成都”为入口，围绕半坡、碑林、成都展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：半坡 → 碑林 → 成都。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注半坡、碑林、成都如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-003",
@@ -109,7 +123,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月21日~23日",
+      "route_label": "杜甫草堂 → 武侯祠 → 青城山",
+      "letter_summary": "本封信以“第3封 3月21日~23日 杜甫草堂/武侯祠→青城山”为入口，围绕杜甫草堂、武侯祠、青城山展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：杜甫草堂 → 武侯祠 → 青城山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注杜甫草堂、武侯祠、青城山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-004",
@@ -144,7 +165,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月24日~26日",
+      "route_label": "乐山大佛 → 青衣亭 → 峨嵋山脚",
+      "letter_summary": "本封信以“第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚”为入口，围绕乐山大佛、青衣亭、峨嵋山脚展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：乐山大佛 → 青衣亭 → 峨嵋山脚。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注乐山大佛、青衣亭、峨嵋山脚如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-005",
@@ -178,7 +206,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月26日~29日",
+      "route_label": "峨嵋车站 → 成昆线隧道 → 昆明车站",
+      "letter_summary": "本封信以“第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站”为入口，围绕峨嵋车站、成昆线隧道、昆明车站展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：峨嵋车站 → 成昆线隧道 → 昆明车站。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注峨嵋车站、成昆线隧道、昆明车站如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-006",
@@ -213,7 +248,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "3月31日",
+      "route_label": "昆明温泉 → 西山 → 石林 → 贵阳花溪",
+      "letter_summary": "本封信以“第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪”为入口，围绕昆明温泉、西山、石林、贵阳花溪展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：昆明温泉 → 西山 → 石林 → 贵阳花溪。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注昆明温泉、西山、石林、贵阳花溪如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-007",
@@ -248,7 +290,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月2日~3日",
+      "route_label": "贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江",
+      "letter_summary": "本封信以“第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江”为入口，围绕贵阳流山、桂林伏波山、七星山、象鼻山展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注贵阳流山、桂林伏波山、七星山、象鼻山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-008",
@@ -281,7 +330,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月3日~5日",
+      "route_label": "桂林南溪山 → 叠彩峰 → 隐山 → 阳朔",
+      "letter_summary": "本封信以“第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔”为入口，围绕桂林南溪山、叠彩峰、隐山、阳朔展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：桂林南溪山 → 叠彩峰 → 隐山 → 阳朔。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注桂林南溪山、叠彩峰、隐山、阳朔如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-009",
@@ -313,7 +369,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月5日~7日",
+      "route_label": "漓江 → 阳朔 → 梧州",
+      "letter_summary": "本封信以“第9封 4月5日~7日 漓江→阳朔→梧州”为入口，围绕漓江、阳朔、梧州展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：漓江 → 阳朔 → 梧州。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注漓江、阳朔、梧州如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
+      "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-010",
@@ -342,7 +405,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月7日~8日",
+      "route_label": "梧州西江种种",
+      "letter_summary": "本封信以“第10封 4月7日~8日 梧州西江种种”为入口，围绕梧州西江种种展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：梧州西江种种。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注梧州西江种种如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
+      "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-011",
@@ -372,7 +442,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月8日~9日",
+      "route_label": "肇庆天柱阁",
+      "letter_summary": "本封信以“第11封 4月8日~9日 肇庆天柱阁”为入口，围绕肇庆天柱阁展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：肇庆天柱阁。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注肇庆天柱阁如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
+      "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-012",
@@ -404,7 +481,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月9日~11日",
+      "route_label": "广州中山大学 → 白云山",
+      "letter_summary": "本封信以“第12封 4月9日~11日 广州中山大学/白云山”为入口，围绕广州中山大学、白云山展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：广州中山大学 → 白云山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注广州中山大学、白云山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-013",
@@ -434,7 +518,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月13日~14日",
+      "route_label": "汕头看海",
+      "letter_summary": "本封信以“第13封 4月13日~14日 汕头看海”为入口，围绕汕头看海展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：汕头看海。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注汕头看海如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
+      "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-014",
@@ -470,7 +561,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月15日~16日",
+      "route_label": "云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿",
+      "letter_summary": "本封信以“第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿”为入口，围绕云霄、漳浦、漳州、厦门展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注云霄、漳浦、漳州、厦门如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-015",
@@ -505,7 +603,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月17日~19日",
+      "route_label": "泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺",
+      "letter_summary": "本封信以“第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺”为入口，围绕泉州、福州西湖、戚公祠、乌龙江大桥展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注泉州、福州西湖、戚公祠、乌龙江大桥如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-016",
@@ -540,7 +645,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月20日~22日",
+      "route_label": "福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡",
+      "letter_summary": "本封信以“第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡”为入口，围绕福安交溪、福鼎灵溪、南雁荡、会文书院展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注福安交溪、福鼎灵溪、南雁荡、会文书院如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-017",
@@ -573,7 +685,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月23日~25日",
+      "route_label": "温州北雁荡由浅入深",
+      "letter_summary": "本封信以“第17封 4月23日~25日 温州北雁荡由浅入深”为入口，围绕温州北雁荡由浅入深展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：温州北雁荡由浅入深。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注温州北雁荡由浅入深如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-018",
@@ -603,7 +722,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月28日",
+      "route_label": "朝辞雁荡暮至余杭",
+      "letter_summary": "本封信以“第18封 4月28日 朝辞雁荡暮至余杭”为入口，围绕朝辞雁荡暮至余杭展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：朝辞雁荡暮至余杭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注朝辞雁荡暮至余杭如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-019",
@@ -635,7 +761,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "4月28日",
+      "route_label": "千古如斯的余杭",
+      "letter_summary": "本封信以“第19封 4月28日~5月2日 千古如斯的余杭”为入口，围绕千古如斯的余杭展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：千古如斯的余杭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注千古如斯的余杭如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-020",
@@ -666,7 +799,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月4日~5日",
+      "route_label": "黄山天都峰排云亭",
+      "letter_summary": "本封信以“第20封 5月4日~5日 黄山天都峰排云亭”为入口，围绕黄山天都峰排云亭展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：黄山天都峰排云亭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注黄山天都峰排云亭如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-021",
@@ -700,7 +840,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月6日~8日",
+      "route_label": "青阳九华山 → 安庆小孤山",
+      "letter_summary": "本封信以“第21封 5月6日~8日 青阳九华山/安庆小孤山”为入口，围绕青阳九华山、安庆小孤山展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：青阳九华山 → 安庆小孤山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注青阳九华山、安庆小孤山如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-022",
@@ -734,7 +881,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月8日~11日",
+      "route_label": "鄱阳五老峰 → 三叠瀑",
+      "letter_summary": "本封信以“第22封 5月8日~11日 鄱阳五老峰/三叠瀑”为入口，围绕鄱阳五老峰、三叠瀑展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：鄱阳五老峰 → 三叠瀑。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注鄱阳五老峰、三叠瀑如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-023",
@@ -768,7 +922,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月11日~14日",
+      "route_label": "南京中山陵 → 玄武湖 → 苏州园林",
+      "letter_summary": "本封信以“第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林”为入口，围绕南京中山陵、玄武湖、苏州园林展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：南京中山陵 → 玄武湖 → 苏州园林。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注南京中山陵、玄武湖、苏州园林如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-024",
@@ -801,7 +962,14 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月15日~17日",
+      "route_label": "苏州天平山沧浪亭 → 上海",
+      "letter_summary": "本封信以“第24封 5月15日~17日 苏州天平山沧浪亭→上海”为入口，围绕苏州天平山沧浪亭、上海展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：苏州天平山沧浪亭 → 上海。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注苏州天平山沧浪亭、上海如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
+      "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     },
     {
       "chapter_id": "chapter-025",
@@ -837,11 +1005,20 @@
           "note": "Structural evidence only; no source text excerpt is included."
         }
       ],
-      "review_status": "auto_structural_draft"
+      "review_status": "auto_structural_draft",
+      "letter_stamp": "5月18日~23日",
+      "route_label": "沪青海航 → 青岛崂山 → 返京",
+      "letter_summary": "本封信以“第25封 5月18日~23日 沪青海航→青岛崂山→返京”为入口，围绕沪青海航、青岛崂山、返京展开行旅线索。当前导读按标题、地点和结构标签概括，不替代原书细读。",
+      "route_note": "路线提示：沪青海航 → 青岛崂山 → 返京。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
+      "reading_focus": "阅读时可关注沪青海航、青岛崂山、返京如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
+      "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
+      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
     }
   ],
   "visibility": "public",
   "release_phase": "public-preview",
   "review_status": "manual-review-pending",
-  "preview_notice": "Draft public preview. Manual review is pending; do not treat this as final reviewed content."
+  "preview_notice": "公开预览版本：导读内容基于标题、地点线索和结构化主题生成，人工复核仍在进行中。",
+  "display_title": "《旅行人信札》阅读导览",
+  "subtitle": "25 封旅行书信的路线、地点与主题导读"
 }

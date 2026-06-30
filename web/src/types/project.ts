@@ -17,6 +17,9 @@ export interface ProjectIndexItem {
   status: string;
   public_path: string;
   project_json: string;
+  subtitle?: string;
+  release_phase?: string;
+  review_status?: string | Record<string, unknown>;
 }
 
 export interface ProjectIndex {
@@ -34,7 +37,7 @@ export interface ProjectMetadata extends ProjectIndexItem {
   public_files?: string[];
   quality_summary?: Record<string, unknown>;
   route_stats?: Record<string, unknown>;
-  review_status?: Record<string, unknown>;
+  review_status?: string | Record<string, unknown>;
   book?: {
     title?: string | null;
     author?: string | null;
