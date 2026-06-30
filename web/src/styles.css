@@ -730,11 +730,87 @@ code {
   margin-top: 14px;
 }
 
+.place-overview-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.place-overview-panel div {
+  padding: 13px 14px;
+  border: 1px solid rgba(32, 39, 37, 0.11);
+  border-radius: 8px;
+  background: #f7f7f1;
+}
+
+.place-overview-panel strong {
+  display: block;
+  font-size: 26px;
+}
+
+.place-overview-panel span {
+  color: #65706b;
+  font-size: 13px;
+}
+
+.route-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 10px;
+  margin: 14px 0 18px;
+}
+
+.route-index-item {
+  display: grid;
+  gap: 4px;
+  min-height: 94px;
+  padding: 12px;
+  border: 1px solid rgba(32, 39, 37, 0.12);
+  border-radius: 8px;
+  background: #fffdfa;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.route-index-item:hover,
+.route-index-item:focus-visible {
+  border-color: rgba(98, 91, 66, 0.35);
+  background: #fbf5e6;
+}
+
+.route-index-item strong {
+  color: #5f5133;
+}
+
+.route-index-item span {
+  line-height: 1.45;
+}
+
+.route-index-item small {
+  color: #6d756f;
+  line-height: 1.45;
+}
+
 .place-now-source {
   padding: 14px;
   border: 1px solid rgba(32, 39, 37, 0.11);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
+}
+
+.place-comparison-card {
+  display: grid;
+  gap: 8px;
+}
+
+.place-comparison-card header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .place-now-source h3 {
@@ -767,6 +843,29 @@ code {
 
 .place-now-source dd {
   margin: 0;
+}
+
+.place-source-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.source-status-public {
+  border: 1px solid rgba(47, 111, 92, 0.25);
+  background: #e9f4ef;
+  color: #245846;
+}
+
+.source-status-pending {
+  border: 1px solid rgba(140, 97, 38, 0.25);
+  background: #fff1d8;
+  color: #72501e;
 }
 
 .app-shell {

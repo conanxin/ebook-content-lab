@@ -63,7 +63,23 @@
     "original_clue_coverage": 25,
     "scene_notes_coverage": 25,
     "then_now_coverage": 25,
-    "question_answer_coverage": 26
+    "question_answer_coverage": 26,
+    "place_source_strengthening": {
+      "version": "v0.7-A12",
+      "a11_public_source_count": 9,
+      "public_source_count": 45,
+      "a12_public_source_count": 45,
+      "new_public_source_count": 36,
+      "needs_source_review_count": 21,
+      "total_place_count": 66,
+      "source_type_counts": {
+        "encyclopedia": 31,
+        "museum": 2,
+        "official": 1,
+        "unesco": 11
+      },
+      "generated_at": "2026-06-30T11:16:13.143826+00:00"
+    }
   },
   "place_then_now": [
     {
@@ -74,11 +90,22 @@
       "then_context": [
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
-      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按历史关隘与太行山交通节点理解；实际游览开放、交通和保护状态仍需临行前核验。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Niangziguan",
+      "source_url": "https://en.wikipedia.org/wiki/Niangziguan",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "娘子关",
+      "appears_in_letters": [
+        "letter-001"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面可作初步地名核对，后续建议补充地方文旅或景区官方来源。",
+      "now_context": "今日可按历史关隘与太行山交通节点理解；实际游览开放、交通和保护状态仍需临行前核验。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "骊山",
@@ -88,11 +115,22 @@
       "then_context": [
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按西安近郊山岳与历史文化景观理解；与华清宫、秦岭北麓旅游线路相关。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Mount Li",
+      "source_url": "https://en.wikipedia.org/wiki/Mount_Li",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "骊山",
+      "appears_in_letters": [
+        "letter-001"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面可作初步对照，后续建议补充景区或文旅官方来源。",
+      "now_context": "今日可按西安近郊山岳与历史文化景观理解；与华清宫、秦岭北麓旅游线路相关。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "西安",
@@ -102,11 +140,22 @@
       "then_context": [
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按陕西省会、古都与综合交通城市节点理解，是多处历史遗址和博物馆的入口城市。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Xi'an",
+      "source_url": "https://en.wikipedia.org/wiki/Xi%27an",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "西安",
+      "appears_in_letters": [
+        "letter-001"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
+      "now_context": "今日可按陕西省会、古都与综合交通城市节点理解，是多处历史遗址和博物馆的入口城市。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "半坡",
@@ -116,11 +165,22 @@
       "then_context": [
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按新石器时代遗址博物馆理解，适合与书中早期旅行的考古兴趣相互参照。",
+      "source_status": "public_source",
+      "source_name": "Xi'an Banpo Museum",
+      "source_url": "http://www.banpomuseum.com/",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "半坡",
+      "appears_in_letters": [
+        "letter-002"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "museum",
+      "source_review_note": "博物馆官网用于场馆身份核对，开放信息需临行前复核。",
+      "now_context": "今日可按新石器时代遗址博物馆理解，适合与书中早期旅行的考古兴趣相互参照。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "碑林",
@@ -130,11 +190,22 @@
       "then_context": [
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
-      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按碑刻、石刻和博物馆型历史文化节点理解。",
+      "source_status": "public_source",
+      "source_name": "Xi'an Beilin Museum",
+      "source_url": "https://en.wikipedia.org/wiki/Stele_Forest",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "碑林",
+      "appears_in_letters": [
+        "letter-002"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步定位，后续建议补充博物馆官网。",
+      "now_context": "今日可按碑刻、石刻和博物馆型历史文化节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "成都",
@@ -144,11 +215,22 @@
       "then_context": [
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按四川省会、区域交通枢纽与城市文化节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Chengdu",
+      "source_url": "https://en.wikipedia.org/wiki/Chengdu",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "成都",
+      "appears_in_letters": [
+        "letter-002"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
+      "now_context": "今日可按四川省会、区域交通枢纽与城市文化节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "杜甫草堂",
@@ -158,11 +240,22 @@
       "then_context": [
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按诗人纪念馆和成都文化景点理解，阅读时可对照作者在城市中的文化访问线索。",
+      "source_status": "public_source",
+      "source_name": "Du Fu Thatched Cottage Museum",
+      "source_url": "https://en.wikipedia.org/wiki/Du_Fu_Thatched_Cottage",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "杜甫草堂",
+      "appears_in_letters": [
+        "letter-003"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "museum",
+      "source_review_note": "百科页面用于初步核对，后续建议补充博物馆官方页面。",
+      "now_context": "今日可按诗人纪念馆和成都文化景点理解，阅读时可对照作者在城市中的文化访问线索。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "武侯祠",
@@ -172,11 +265,22 @@
       "then_context": [
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
-      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按三国历史纪念空间和成都重要文化景点理解。",
+      "source_status": "public_source",
+      "source_name": "Wuhou Shrine",
+      "source_url": "https://en.wikipedia.org/wiki/Wuhou_Shrine",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "武侯祠",
+      "appears_in_letters": [
+        "letter-003"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区或博物馆官方来源。",
+      "now_context": "今日可按三国历史纪念空间和成都重要文化景点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "青城山",
@@ -186,11 +290,22 @@
       "then_context": [
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
-      "today_reading": "今日可按世界遗产语境中的道教名山与历史景观来理解，实际游览信息仍需查当日官方公告。",
+      "today_reading": "今日可按世界遗产体系中的道教名山与水利文化景观理解。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
       "source_url": "https://whc.unesco.org/en/list/1001/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "青城山",
+      "appears_in_letters": [
+        "letter-003"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作世界遗产身份核对，具体登山路线需另行核验。",
+      "now_context": "今日可按世界遗产体系中的道教名山与水利文化景观理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "乐山大佛",
@@ -200,11 +315,22 @@
       "then_context": [
         "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
       ],
-      "today_reading": "今日多被理解为峨眉山-乐山大佛遗产景观的一部分，和当年行旅中的山水、佛教场景形成对照。",
+      "today_reading": "今日可按世界遗产中的佛教造像与岷江、青衣江、大渡河交汇景观理解。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
       "source_url": "https://whc.unesco.org/en/list/779/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "乐山大佛",
+      "appears_in_letters": [
+        "letter-004"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，游线和开放信息需另查。",
+      "now_context": "今日可按世界遗产中的佛教造像与岷江、青衣江、大渡河交汇景观理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "青衣亭",
@@ -218,7 +344,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "青衣亭",
+      "appears_in_letters": [
+        "letter-004"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "峨嵋山脚",
@@ -228,11 +365,22 @@
       "then_context": [
         "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
       ],
-      "today_reading": "今日可按峨眉山遗产景区外围和登山入口语境理解，具体线路与交通需另查现行信息。",
+      "today_reading": "今日可按峨眉山世界遗产景区入口地带理解，书中山脚经验与现代景区交通已有明显差异。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
       "source_url": "https://whc.unesco.org/en/list/779/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "峨嵋山脚",
+      "appears_in_letters": [
+        "letter-004"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，具体入口、索道和徒步路况需另查。",
+      "now_context": "今日可按峨眉山世界遗产景区入口地带理解，书中山脚经验与现代景区交通已有明显差异。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "峨嵋车站",
@@ -246,7 +394,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "峨嵋车站",
+      "appears_in_letters": [
+        "letter-005"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "成昆线隧道",
@@ -260,7 +419,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "成昆线隧道",
+      "appears_in_letters": [
+        "letter-005"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "昆明车站",
@@ -270,11 +440,22 @@
       "then_context": [
         "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
       ],
-      "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按云南省会和铁路、城市交通节点理解，车站只是进入昆明旅行空间的交通入口。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Kunming",
+      "source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "昆明车站",
+      "appears_in_letters": [
+        "letter-005"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，车站具体信息需另行确认。",
+      "now_context": "今日可按云南省会和铁路、城市交通节点理解，车站只是进入昆明旅行空间的交通入口。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "昆明温泉",
@@ -284,11 +465,22 @@
       "then_context": [
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可先按昆明城市周边休闲游览线索理解；具体温泉地点仍需人工核对。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Kunming",
+      "source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "昆明温泉",
+      "appears_in_letters": [
+        "letter-006"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "仅能支持昆明城市背景，温泉精确地点仍为待复核项。",
+      "now_context": "今日可先按昆明城市周边休闲游览线索理解；具体温泉地点仍需人工核对。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "西山",
@@ -298,11 +490,22 @@
       "then_context": [
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按昆明滇池西岸山地景区理解，适合对照书中城市近郊游览经验。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Western Hills",
+      "source_url": "https://en.wikipedia.org/wiki/Western_Hills",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "西山",
+      "appears_in_letters": [
+        "letter-006"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
+      "now_context": "今日可按昆明滇池西岸山地景区理解，适合对照书中城市近郊游览经验。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "石林",
@@ -312,11 +515,22 @@
       "then_context": [
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
-      "today_reading": "今日可按喀斯特自然景观和景区化游览节点理解，和书信中的途中观看经验形成对照。",
+      "today_reading": "今日可按南方喀斯特世界遗产组成部分理解，景区化程度与早年旅行经验需要分开阅读。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - South China Karst",
       "source_url": "https://whc.unesco.org/en/list/1248/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "石林",
+      "appears_in_letters": [
+        "letter-006"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，具体景区游线需另查。",
+      "now_context": "今日可按南方喀斯特世界遗产组成部分理解，景区化程度与早年旅行经验需要分开阅读。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "贵阳花溪",
@@ -326,11 +540,22 @@
       "then_context": [
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
-      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按贵阳近郊区和山水休闲节点理解，具体书中地点仍需人工复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Huaxi District",
+      "source_url": "https://en.wikipedia.org/wiki/Huaxi_District",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "贵阳花溪",
+      "appears_in_letters": [
+        "letter-006"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于地名初步核对，后续建议补充地方文旅来源。",
+      "now_context": "今日可按贵阳近郊区和山水休闲节点理解，具体书中地点仍需人工复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "贵阳流山",
@@ -344,7 +569,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "贵阳流山",
+      "appears_in_letters": [
+        "letter-007"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "桂林伏波山",
@@ -354,11 +590,22 @@
       "then_context": [
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按桂林市区山水景点理解，适合对照书中城市山水游览线索。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Fubo Hill",
+      "source_url": "https://en.wikipedia.org/wiki/Fubo_Hill",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "桂林伏波山",
+      "appears_in_letters": [
+        "letter-007"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充桂林官方旅游来源。",
+      "now_context": "今日可按桂林市区山水景点理解，适合对照书中城市山水游览线索。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "七星山",
@@ -368,11 +615,22 @@
       "then_context": [
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按桂林七星景区相关山水公园理解，精确对应仍需人工复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Seven Star Park",
+      "source_url": "https://en.wikipedia.org/wiki/Seven_Star_Park",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "七星山",
+      "appears_in_letters": [
+        "letter-007"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充官方景区来源。",
+      "now_context": "今日可按桂林七星景区相关山水公园理解，精确对应仍需人工复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "象鼻山",
@@ -382,11 +640,22 @@
       "then_context": [
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按桂林标志性城市山水景点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Elephant Trunk Hill",
+      "source_url": "https://en.wikipedia.org/wiki/Elephant_Trunk_Hill",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "象鼻山",
+      "appears_in_letters": [
+        "letter-007"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区或文旅官方来源。",
+      "now_context": "今日可按桂林标志性城市山水景点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "漓江",
@@ -398,11 +667,23 @@
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江",
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
-      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按桂林至阳朔之间的典型山水游览水系理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Li River",
+      "source_url": "https://en.wikipedia.org/wiki/Li_River",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "漓江",
+      "appears_in_letters": [
+        "letter-007",
+        "letter-009"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，游船线路和生态保护信息需另查。",
+      "now_context": "今日可按桂林至阳朔之间的典型山水游览水系理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "桂林南溪山",
@@ -416,7 +697,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "桂林南溪山",
+      "appears_in_letters": [
+        "letter-008"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "high"
     },
     {
       "place": "叠彩峰",
@@ -430,7 +722,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "叠彩峰",
+      "appears_in_letters": [
+        "letter-008"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "隐山",
@@ -444,7 +747,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "隐山",
+      "appears_in_letters": [
+        "letter-008"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "阳朔",
@@ -456,11 +770,23 @@
         "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔",
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按桂林山水旅游县城与漓江游览节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Yangshuo County",
+      "source_url": "https://en.wikipedia.org/wiki/Yangshuo_County",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "阳朔",
+      "appears_in_letters": [
+        "letter-008",
+        "letter-009"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于地名核对，具体景区和交通需另查。",
+      "now_context": "今日可按桂林山水旅游县城与漓江游览节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "梧州",
@@ -470,11 +796,22 @@
       "then_context": [
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按西江流域城市节点理解，适合对照书中水路或沿江旅行线索。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Wuzhou",
+      "source_url": "https://en.wikipedia.org/wiki/Wuzhou",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "梧州",
+      "appears_in_letters": [
+        "letter-009"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体江岸地点仍需人工复核。",
+      "now_context": "今日可按西江流域城市节点理解，适合对照书中水路或沿江旅行线索。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "梧州西江种种",
@@ -488,7 +825,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "梧州西江种种",
+      "appears_in_letters": [
+        "letter-010"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "肇庆天柱阁",
@@ -498,11 +846,22 @@
       "then_context": [
         "第11封 4月8日~9日 肇庆天柱阁"
       ],
-      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可先按肇庆城市和岭南山水游览节点理解；天柱阁精确对应仍需复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Zhaoqing",
+      "source_url": "https://en.wikipedia.org/wiki/Zhaoqing",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "肇庆天柱阁",
+      "appears_in_letters": [
+        "letter-011"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面只能支持城市背景，天柱阁需要继续补充公开来源。",
+      "now_context": "今日可先按肇庆城市和岭南山水游览节点理解；天柱阁精确对应仍需复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "广州中山大学",
@@ -512,11 +871,22 @@
       "then_context": [
         "第12封 4月9日~11日 广州中山大学/白云山"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按高校校园和广州城市文化节点理解，需与书中访问语境分开阅读。",
+      "source_status": "public_source",
+      "source_name": "Sun Yat-sen University",
+      "source_url": "https://www.sysu.edu.cn/en/",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "广州中山大学",
+      "appears_in_letters": [
+        "letter-012"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "official",
+      "source_review_note": "高校官网可作机构身份核对，具体历史校区仍需人工复核。",
+      "now_context": "今日可按高校校园和广州城市文化节点理解，需与书中访问语境分开阅读。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "白云山",
@@ -526,11 +896,22 @@
       "then_context": [
         "第12封 4月9日~11日 广州中山大学/白云山"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按广州城市山岳景区理解，现代游览设施与早年旅行视角差异明显。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Baiyun Mountain (Guangzhou)",
+      "source_url": "https://en.wikipedia.org/wiki/Baiyun_Mountain_(Guangzhou)",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "白云山",
+      "appears_in_letters": [
+        "letter-012"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
+      "now_context": "今日可按广州城市山岳景区理解，现代游览设施与早年旅行视角差异明显。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "汕头看海",
@@ -544,7 +925,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "汕头看海",
+      "appears_in_letters": [
+        "letter-013"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "云霄",
@@ -558,7 +950,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "云霄",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "漳浦",
@@ -572,7 +975,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "漳浦",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "漳州",
@@ -582,11 +996,22 @@
       "then_context": [
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按闽南城市节点理解，具体书中抵达、停留或交通语境仍需细读复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Zhangzhou",
+      "source_url": "https://en.wikipedia.org/wiki/Zhangzhou",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "漳州",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对。",
+      "now_context": "今日可按闽南城市节点理解，具体书中抵达、停留或交通语境仍需细读复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "厦门",
@@ -596,11 +1021,22 @@
       "then_context": [
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按沿海城市、港口和旅游城市节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Xiamen",
+      "source_url": "https://en.wikipedia.org/wiki/Xiamen",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "厦门",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
+      "now_context": "今日可按沿海城市、港口和旅游城市节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "福州",
@@ -610,11 +1046,22 @@
       "then_context": [
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按福建省会和城市文化节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Fuzhou",
+      "source_url": "https://en.wikipedia.org/wiki/Fuzhou",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "福州",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
+      "now_context": "今日可按福建省会和城市文化节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "鼓浪屿",
@@ -624,11 +1071,22 @@
       "then_context": [
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
-      "today_reading": "今日可按历史国际社区与城市文化景观理解，适合和书信中的海岛、城市经验对读。",
+      "today_reading": "今日可按世界遗产中的近代国际社区与海岛步行游览空间理解。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
       "source_url": "https://whc.unesco.org/en/list/1541/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "鼓浪屿",
+      "appears_in_letters": [
+        "letter-014"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，岛上具体游线需另查。",
+      "now_context": "今日可按世界遗产中的近代国际社区与海岛步行游览空间理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "泉州",
@@ -638,11 +1096,22 @@
       "then_context": [
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
-      "today_reading": "今日可按海上贸易城市和历史遗产节点理解，和书信中的沿海行旅形成对照。",
+      "today_reading": "今日可按宋元中国海洋商贸世界遗产城市理解。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
       "source_url": "https://whc.unesco.org/en/list/1561/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "泉州",
+      "appears_in_letters": [
+        "letter-015"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，具体点位需另查。",
+      "now_context": "今日可按宋元中国海洋商贸世界遗产城市理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "福州西湖",
@@ -652,11 +1121,22 @@
       "then_context": [
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
-      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按福州市区历史园林和公园节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - West Lake Park, Fuzhou",
+      "source_url": "https://en.wikipedia.org/wiki/West_Lake_Park,_Fuzhou",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "福州西湖",
+      "appears_in_letters": [
+        "letter-015"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
+      "now_context": "今日可按福州市区历史园林和公园节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "戚公祠",
@@ -670,7 +1150,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "戚公祠",
+      "appears_in_letters": [
+        "letter-015"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "乌龙江大桥",
@@ -684,7 +1175,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "乌龙江大桥",
+      "appears_in_letters": [
+        "letter-015"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "medium"
     },
     {
       "place": "涌泉寺",
@@ -694,11 +1196,22 @@
       "then_context": [
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
-      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按福州鼓山佛寺景点理解，适合对照书中寺庙游览线索。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Yongquan Temple",
+      "source_url": "https://en.wikipedia.org/wiki/Yongquan_Temple",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "涌泉寺",
+      "appears_in_letters": [
+        "letter-015"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充寺院或文旅官方来源。",
+      "now_context": "今日可按福州鼓山佛寺景点理解，适合对照书中寺庙游览线索。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "福安交溪",
@@ -712,7 +1225,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "福安交溪",
+      "appears_in_letters": [
+        "letter-016"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "福鼎灵溪",
@@ -726,7 +1250,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "福鼎灵溪",
+      "appears_in_letters": [
+        "letter-016"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "南雁荡",
@@ -736,11 +1271,22 @@
       "then_context": [
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按雁荡山系旅行线索理解，具体南雁荡景区范围需人工复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Yandang Mountains",
+      "source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "南雁荡",
+      "appears_in_letters": [
+        "letter-016"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
+      "now_context": "今日可按雁荡山系旅行线索理解，具体南雁荡景区范围需人工复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "会文书院",
@@ -754,7 +1300,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "会文书院",
+      "appears_in_letters": [
+        "letter-016"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "北雁荡",
@@ -764,11 +1321,22 @@
       "then_context": [
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
-      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按温州雁荡山山岳景区理解；南北雁荡的具体对应需继续人工核对。",
+      "source_status": "public_source",
+      "source_name": "UNESCO Global Geoparks - Yandangshan",
+      "source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "北雁荡",
+      "appears_in_letters": [
+        "letter-016"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充官方地质公园或景区来源。",
+      "now_context": "今日可按温州雁荡山山岳景区理解；南北雁荡的具体对应需继续人工核对。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "low"
     },
     {
       "place": "温州北雁荡由浅入深",
@@ -782,7 +1350,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "温州北雁荡由浅入深",
+      "appears_in_letters": [
+        "letter-017"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "朝辞雁荡暮至余杭",
@@ -796,7 +1375,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "朝辞雁荡暮至余杭",
+      "appears_in_letters": [
+        "letter-018"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "千古如斯的余杭",
@@ -810,7 +1400,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "千古如斯的余杭",
+      "appears_in_letters": [
+        "letter-019"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "黄山天都峰排云亭",
@@ -820,11 +1421,22 @@
       "then_context": [
         "第20封 5月4日~5日 黄山天都峰排云亭"
       ],
-      "today_reading": "今日可按黄山世界遗产和山岳景区语境理解，登临条件需以现行景区公告为准。",
+      "today_reading": "今日可按黄山世界遗产景区中的登山与观景节点理解，具体峰顶开放状态需临行前核验。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Mount Huangshan",
       "source_url": "https://whc.unesco.org/en/list/547/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "黄山天都峰排云亭",
+      "appears_in_letters": [
+        "letter-020"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，天都峰和排云亭细节需补充景区来源。",
+      "now_context": "今日可按黄山世界遗产景区中的登山与观景节点理解，具体峰顶开放状态需临行前核验。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "青阳九华山",
@@ -834,11 +1446,22 @@
       "then_context": [
         "第21封 5月6日~8日 青阳九华山/安庆小孤山"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按佛教名山与安徽山岳景区理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Mount Jiuhua",
+      "source_url": "https://en.wikipedia.org/wiki/Mount_Jiuhua",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "青阳九华山",
+      "appears_in_letters": [
+        "letter-021"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
+      "now_context": "今日可按佛教名山与安徽山岳景区理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "安庆小孤山",
@@ -848,11 +1471,22 @@
       "then_context": [
         "第21封 5月6日~8日 青阳九华山/安庆小孤山"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按长江江中山体和历史景观节点理解，具体游览条件需复核。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Xiaogu Shan",
+      "source_url": "https://en.wikipedia.org/wiki/Xiaogu_Shan",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "安庆小孤山",
+      "appears_in_letters": [
+        "letter-021"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
+      "now_context": "今日可按长江江中山体和历史景观节点理解，具体游览条件需复核。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "鄱阳五老峰",
@@ -862,11 +1496,22 @@
       "then_context": [
         "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按庐山世界遗产山岳景观的一部分理解；五老峰与鄱阳语境仍需人工核对。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "source_url": "https://whc.unesco.org/en/list/778/",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "鄱阳五老峰",
+      "appears_in_letters": [
+        "letter-022"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作庐山遗产身份核对，具体峰名对应需补充景区来源。",
+      "now_context": "今日可按庐山世界遗产山岳景观的一部分理解；五老峰与鄱阳语境仍需人工核对。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "三叠瀑",
@@ -876,11 +1521,22 @@
       "then_context": [
         "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按庐山瀑布景观线索理解，书中山路经验与现代景区游览需分开阅读。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "source_url": "https://whc.unesco.org/en/list/778/",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "三叠瀑",
+      "appears_in_letters": [
+        "letter-022"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作庐山遗产身份核对，瀑布点位开放信息需另查。",
+      "now_context": "今日可按庐山瀑布景观线索理解，书中山路经验与现代景区游览需分开阅读。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "南京中山陵",
@@ -890,11 +1546,22 @@
       "then_context": [
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按南京近代纪念建筑和景区节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Sun Yat-sen Mausoleum",
+      "source_url": "https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "南京中山陵",
+      "appears_in_letters": [
+        "letter-023"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
+      "now_context": "今日可按南京近代纪念建筑和景区节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "玄武湖",
@@ -904,11 +1571,22 @@
       "then_context": [
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
-      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按南京城市湖泊公园和历史景观节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Xuanwu Lake",
+      "source_url": "https://en.wikipedia.org/wiki/Xuanwu_Lake",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "玄武湖",
+      "appears_in_letters": [
+        "letter-023"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充地方官方来源。",
+      "now_context": "今日可按南京城市湖泊公园和历史景观节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "苏州园林",
@@ -918,11 +1596,22 @@
       "then_context": [
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
-      "today_reading": "今日可按古典园林遗产景观理解，适合和书信中的城市、园林审美经验对读。",
+      "today_reading": "今日可按世界遗产古典园林体系理解。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
       "source_url": "https://whc.unesco.org/en/list/813/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "苏州园林",
+      "appears_in_letters": [
+        "letter-023"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作遗产身份核对，具体园林点位需分别查证。",
+      "now_context": "今日可按世界遗产古典园林体系理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "苏州天平山沧浪亭",
@@ -932,11 +1621,22 @@
       "then_context": [
         "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
       ],
-      "today_reading": "今日可按苏州园林与山水游览线索综合理解，具体地点开放状态需另查现行信息。",
+      "today_reading": "今日可按苏州古典园林与近郊山水游览线索理解；天平山和沧浪亭需分开核对。",
       "source_status": "public_source",
       "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
       "source_url": "https://whc.unesco.org/en/list/813/",
-      "review_status": "needs_field_check"
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "苏州天平山沧浪亭",
+      "appears_in_letters": [
+        "letter-024"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "unesco",
+      "source_review_note": "UNESCO 来源可作沧浪亭等古典园林身份核对，天平山仍需补充地方来源。",
+      "now_context": "今日可按苏州古典园林与近郊山水游览线索理解；天平山和沧浪亭需分开核对。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "medium"
     },
     {
       "place": "上海",
@@ -946,11 +1646,22 @@
       "then_context": [
         "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
       ],
-      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按中国东部沿海超大城市、交通和文化节点理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Shanghai",
+      "source_url": "https://en.wikipedia.org/wiki/Shanghai",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "上海",
+      "appears_in_letters": [
+        "letter-024"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于城市节点核对，具体书中地点仍需人工复核。",
+      "now_context": "今日可按中国东部沿海超大城市、交通和文化节点理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "沪青海航",
@@ -964,7 +1675,18 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "沪青海航",
+      "appears_in_letters": [
+        "letter-025"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     },
     {
       "place": "青岛崂山",
@@ -974,11 +1696,22 @@
       "then_context": [
         "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
       ],
-      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
-      "source_status": "needs_source_review",
-      "source_name": "待补充公开来源",
-      "source_url": null,
-      "review_status": "needs_source_review"
+      "today_reading": "今日可按青岛海岸山岳景区和道教文化名山理解。",
+      "source_status": "public_source",
+      "source_name": "Wikipedia - Mount Lao",
+      "source_url": "https://en.wikipedia.org/wiki/Mount_Lao",
+      "review_status": "public_source_pending_manual_review",
+      "place_name": "青岛崂山",
+      "appears_in_letters": [
+        "letter-025"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": true,
+      "source_type": "encyclopedia",
+      "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
+      "now_context": "今日可按青岛海岸山岳景区和道教文化名山理解。",
+      "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
+      "priority": "high"
     },
     {
       "place": "返京",
@@ -992,8 +1725,481 @@
       "source_status": "needs_source_review",
       "source_name": "待补充公开来源",
       "source_url": null,
-      "review_status": "needs_source_review"
+      "review_status": "needs_source_review",
+      "place_name": "返京",
+      "appears_in_letters": [
+        "letter-025"
+      ],
+      "updated_in": "v0.7-A12",
+      "is_key_place": false,
+      "source_type": "unknown",
+      "source_review_note": "待补充公开来源",
+      "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
+      "priority": "low"
     }
   ],
-  "then_now_summary": "昔日旅程按书信中的移动和观看经验展开；今日景点对照只作为阅读参照。列出公开来源的地点可先作为现代参照，未列来源的地点保留待复核状态。"
+  "then_now_summary": "本轮补强后，66 个地点中已有 45 个记录公开来源，21 个仍需后续查证。页面把书中旅行线索与今日景区、城市、遗址或自然景观点并置，用于个人阅读导览，不作为最终考据结论。",
+  "place_source_stats": {
+    "version": "v0.7-A12",
+    "a11_public_source_count": 9,
+    "public_source_count": 45,
+    "a12_public_source_count": 45,
+    "new_public_source_count": 36,
+    "needs_source_review_count": 21,
+    "total_place_count": 66,
+    "source_type_counts": {
+      "encyclopedia": 31,
+      "museum": 2,
+      "official": 1,
+      "unesco": 11
+    },
+    "generated_at": "2026-06-30T11:16:13.143826+00:00"
+  },
+  "route_index": [
+    {
+      "chapter_id": "chapter-001",
+      "letter_id": "letter-001",
+      "order": 1,
+      "title": "第1封 3月17日~18日 娘子关→骊山→西安",
+      "core_places": [
+        "娘子关",
+        "骊山",
+        "西安"
+      ],
+      "source_covered_places": [
+        "娘子关",
+        "骊山",
+        "西安"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-002",
+      "letter_id": "letter-002",
+      "order": 2,
+      "title": "第2封 3月19日~20日 半坡/碑林→成都",
+      "core_places": [
+        "半坡",
+        "碑林",
+        "成都"
+      ],
+      "source_covered_places": [
+        "半坡",
+        "碑林",
+        "成都"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-003",
+      "letter_id": "letter-003",
+      "order": 3,
+      "title": "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山",
+      "core_places": [
+        "杜甫草堂",
+        "武侯祠",
+        "青城山"
+      ],
+      "source_covered_places": [
+        "杜甫草堂",
+        "武侯祠",
+        "青城山"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-004",
+      "letter_id": "letter-004",
+      "order": 4,
+      "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚",
+      "core_places": [
+        "乐山大佛",
+        "青衣亭",
+        "峨嵋山脚"
+      ],
+      "source_covered_places": [
+        "乐山大佛",
+        "峨嵋山脚"
+      ],
+      "pending_places": [
+        "青衣亭"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-005",
+      "letter_id": "letter-005",
+      "order": 5,
+      "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站",
+      "core_places": [
+        "峨嵋车站",
+        "成昆线隧道",
+        "昆明车站"
+      ],
+      "source_covered_places": [
+        "昆明车站"
+      ],
+      "pending_places": [
+        "峨嵋车站",
+        "成昆线隧道"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-006",
+      "letter_id": "letter-006",
+      "order": 6,
+      "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪",
+      "core_places": [
+        "昆明温泉",
+        "西山",
+        "石林",
+        "贵阳花溪"
+      ],
+      "source_covered_places": [
+        "昆明温泉",
+        "西山",
+        "石林",
+        "贵阳花溪"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-007",
+      "letter_id": "letter-007",
+      "order": 7,
+      "title": "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江",
+      "core_places": [
+        "贵阳流山",
+        "桂林伏波山",
+        "七星山",
+        "象鼻山",
+        "漓江"
+      ],
+      "source_covered_places": [
+        "桂林伏波山",
+        "七星山",
+        "象鼻山",
+        "漓江"
+      ],
+      "pending_places": [
+        "贵阳流山"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-008",
+      "letter_id": "letter-008",
+      "order": 8,
+      "title": "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔",
+      "core_places": [
+        "桂林南溪山",
+        "叠彩峰",
+        "隐山",
+        "阳朔"
+      ],
+      "source_covered_places": [
+        "阳朔"
+      ],
+      "pending_places": [
+        "桂林南溪山",
+        "叠彩峰",
+        "隐山"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-009",
+      "letter_id": "letter-009",
+      "order": 9,
+      "title": "第9封 4月5日~7日 漓江→阳朔→梧州",
+      "core_places": [
+        "漓江",
+        "阳朔",
+        "梧州"
+      ],
+      "source_covered_places": [
+        "漓江",
+        "阳朔",
+        "梧州"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-010",
+      "letter_id": "letter-010",
+      "order": 10,
+      "title": "第10封 4月7日~8日 梧州西江种种",
+      "core_places": [
+        "梧州西江种种"
+      ],
+      "source_covered_places": [],
+      "pending_places": [
+        "梧州西江种种"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-011",
+      "letter_id": "letter-011",
+      "order": 11,
+      "title": "第11封 4月8日~9日 肇庆天柱阁",
+      "core_places": [
+        "肇庆天柱阁"
+      ],
+      "source_covered_places": [
+        "肇庆天柱阁"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-012",
+      "letter_id": "letter-012",
+      "order": 12,
+      "title": "第12封 4月9日~11日 广州中山大学/白云山",
+      "core_places": [
+        "广州中山大学",
+        "白云山"
+      ],
+      "source_covered_places": [
+        "广州中山大学",
+        "白云山"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-013",
+      "letter_id": "letter-013",
+      "order": 13,
+      "title": "第13封 4月13日~14日 汕头看海",
+      "core_places": [
+        "汕头看海"
+      ],
+      "source_covered_places": [],
+      "pending_places": [
+        "汕头看海"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-014",
+      "letter_id": "letter-014",
+      "order": 14,
+      "title": "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿",
+      "core_places": [
+        "云霄",
+        "漳浦",
+        "漳州",
+        "厦门",
+        "福州",
+        "鼓浪屿"
+      ],
+      "source_covered_places": [
+        "漳州",
+        "厦门",
+        "福州",
+        "鼓浪屿"
+      ],
+      "pending_places": [
+        "云霄",
+        "漳浦"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-015",
+      "letter_id": "letter-015",
+      "order": 15,
+      "title": "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺",
+      "core_places": [
+        "泉州",
+        "福州西湖",
+        "戚公祠",
+        "乌龙江大桥",
+        "涌泉寺"
+      ],
+      "source_covered_places": [
+        "泉州",
+        "福州西湖",
+        "涌泉寺"
+      ],
+      "pending_places": [
+        "戚公祠",
+        "乌龙江大桥"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-016",
+      "letter_id": "letter-016",
+      "order": 16,
+      "title": "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡",
+      "core_places": [
+        "福安交溪",
+        "福鼎灵溪",
+        "南雁荡",
+        "会文书院",
+        "北雁荡"
+      ],
+      "source_covered_places": [
+        "南雁荡",
+        "北雁荡"
+      ],
+      "pending_places": [
+        "福安交溪",
+        "福鼎灵溪",
+        "会文书院"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-017",
+      "letter_id": "letter-017",
+      "order": 17,
+      "title": "第17封 4月23日~25日 温州北雁荡由浅入深",
+      "core_places": [
+        "温州北雁荡由浅入深"
+      ],
+      "source_covered_places": [],
+      "pending_places": [
+        "温州北雁荡由浅入深"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-018",
+      "letter_id": "letter-018",
+      "order": 18,
+      "title": "第18封 4月28日 朝辞雁荡暮至余杭",
+      "core_places": [
+        "朝辞雁荡暮至余杭"
+      ],
+      "source_covered_places": [],
+      "pending_places": [
+        "朝辞雁荡暮至余杭"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-019",
+      "letter_id": "letter-019",
+      "order": 19,
+      "title": "第19封 4月28日~5月2日 千古如斯的余杭",
+      "core_places": [
+        "千古如斯的余杭"
+      ],
+      "source_covered_places": [],
+      "pending_places": [
+        "千古如斯的余杭"
+      ],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-020",
+      "letter_id": "letter-020",
+      "order": 20,
+      "title": "第20封 5月4日~5日 黄山天都峰排云亭",
+      "core_places": [
+        "黄山天都峰排云亭"
+      ],
+      "source_covered_places": [
+        "黄山天都峰排云亭"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-021",
+      "letter_id": "letter-021",
+      "order": 21,
+      "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山",
+      "core_places": [
+        "青阳九华山",
+        "安庆小孤山"
+      ],
+      "source_covered_places": [
+        "青阳九华山",
+        "安庆小孤山"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-022",
+      "letter_id": "letter-022",
+      "order": 22,
+      "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑",
+      "core_places": [
+        "鄱阳五老峰",
+        "三叠瀑"
+      ],
+      "source_covered_places": [
+        "鄱阳五老峰",
+        "三叠瀑"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-023",
+      "letter_id": "letter-023",
+      "order": 23,
+      "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林",
+      "core_places": [
+        "南京中山陵",
+        "玄武湖",
+        "苏州园林"
+      ],
+      "source_covered_places": [
+        "南京中山陵",
+        "玄武湖",
+        "苏州园林"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-024",
+      "letter_id": "letter-024",
+      "order": 24,
+      "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海",
+      "core_places": [
+        "苏州天平山沧浪亭",
+        "上海"
+      ],
+      "source_covered_places": [
+        "苏州天平山沧浪亭",
+        "上海"
+      ],
+      "pending_places": [],
+      "updated_in": "v0.7-A12"
+    },
+    {
+      "chapter_id": "chapter-025",
+      "letter_id": "letter-025",
+      "order": 25,
+      "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京",
+      "core_places": [
+        "沪青海航",
+        "青岛崂山",
+        "返京"
+      ],
+      "source_covered_places": [
+        "青岛崂山"
+      ],
+      "pending_places": [
+        "沪青海航",
+        "返京"
+      ],
+      "updated_in": "v0.7-A12"
+    }
+  ]
 }

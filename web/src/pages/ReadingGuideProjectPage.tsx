@@ -18,10 +18,12 @@ import type {
   ChapterReadingCardsData,
   KeyConcept,
   KeyConceptsData,
+  PlaceThenNow,
   QuoteIndexData,
   ReadingGuideDataBundle,
   ReadingQuestion,
   ReadingQuestionsData,
+  RouteIndexEntry,
 } from "../types/readingGuide";
 import { projectDataPath } from "../utils/paths";
 
@@ -83,6 +85,38 @@ function evidenceLabel(refs: Array<{ section_id?: string; letter_id?: string }> 
 
 function allPlaces(chapters: ChapterReadingCard[]): string[] {
   return Array.from(new Set(chapters.flatMap((chapter) => chapter.places || [])));
+}
+
+function placeName(place: PlaceThenNow): string {
+  return place.place || place.place_name || place.name || "地点待复核";
+}
+
+function sourceStatusLabel(status?: string): string {
+  return status === "public_source" ? "已补公开来源" : "待补来源";
+}
+
+function sourceStatusClass(status?: string): string {
+  return status === "public_source" ? "source-status-public" : "source-status-pending";
+}
+
+function sourceTypeLabel(sourceType?: string): string {
+  const labels: Record<string, string> = {
+    official: "官方",
+    unesco: "世界遗产",
+    government: "政府",
+    museum: "博物馆",
+    encyclopedia: "百科",
+    tourism: "文旅",
+    other: "其他",
+    unknown: "待复核",
+  };
+  return labels[sourceType || "unknown"] || sourceType || "待复核";
+}
+
+function scrollToChapter(chapterId?: string): void {
+  if (!chapterId) return;
+  const node = document.getElementById(chapterId);
+  node?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuideProjectPageProps) {
@@ -183,6 +217,25 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
   const questions = data.readingQuestions?.questions || [];
   const places = allPlaces(chapters);
   const placeThenNow = overview?.place_then_now || [];
+  const placeStats = overview?.place_source_stats;
+  const publicSourceCount = placeStats?.public_source_count ?? placeThenNow.filter((place) => place.source_status === "public_source").length;
+  const pendingSourceCount =
+    placeStats?.needs_source_review_count ?? placeThenNow.filter((place) => place.source_status !== "public_source").length;
+  const routeIndex: RouteIndexEntry[] =
+    overview?.route_index ||
+    chapters.map((chapter) => ({
+      chapter_id: chapter.chapter_id,
+      letter_id: chapter.letter_id,
+      order: chapter.order,
+      title: chapter.title,
+      core_places: chapter.places || [],
+      source_covered_places: (chapter.places || []).filter((name) =>
+        placeThenNow.some((place) => placeName(place) === name && place.source_status === "public_source"),
+      ),
+      pending_places: (chapter.places || []).filter((name) =>
+        !placeThenNow.some((place) => placeName(place) === name && place.source_status === "public_source"),
+      ),
+    }));
   const projectTitle = overview?.display_title || project.title || "《旅行人信札》阅读导览";
   const bookTitle = overview?.book?.title || project.book?.title || project.book_title || "《旅行人信札》";
   const subtitle = overview?.subtitle || project.subtitle || "25 封旅行书信的路线、地点与主题导读";
@@ -281,15 +334,65 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       <section className="content-section">
         <h2>昔日旅程与今日景点</h2>
         <p>{displayText(overview?.then_now_summary, "今日景点对照仍待补充公开来源。")}</p>
+        <div className="place-overview-panel">
+          <div>
+            <strong>{placeStats?.total_place_count ?? placeThenNow.length}</strong>
+            <span>地点总览</span>
+          </div>
+          <div>
+            <strong>{publicSourceCount}</strong>
+            <span>已补公开来源</span>
+          </div>
+          <div>
+            <strong>{pendingSourceCount}</strong>
+            <span>待补来源</span>
+          </div>
+          <div>
+            <strong>{routeIndex.length}</strong>
+            <span>书信路线索引</span>
+          </div>
+        </div>
+
+        <div className="route-index" aria-label="25 封书信路线索引">
+          {routeIndex.map((item) => (
+            <button
+              className="route-index-item"
+              key={item.chapter_id || item.letter_id || item.title}
+              type="button"
+              onClick={() => scrollToChapter(item.chapter_id)}
+            >
+              <strong>第{item.order ?? "?"}封</strong>
+              <span>{displayText(item.title, "书信标题待复核")}</span>
+              <small>
+                {joinList(item.source_covered_places, "暂无已补来源")} / {joinList(item.pending_places, "无待补来源")}
+              </small>
+            </button>
+          ))}
+        </div>
+
         <div className="place-comparison-grid">
           {placeThenNow.map((place) => (
-            <article className="place-now-source" key={place.place || place.name}>
-              <h3>{place.place || place.name}</h3>
-              <p>{displayText(place.today_reading, "今日景点信息待公开来源复核。")}</p>
+            <article className="place-now-source place-comparison-card" key={placeName(place)}>
+              <header>
+                <h3>{placeName(place)}</h3>
+                <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>
+                  {sourceStatusLabel(place.source_status)}
+                </span>
+              </header>
+              <p>{displayText(place.now_context || place.today_reading, "今日景点信息待公开来源复核。")}</p>
+              <p>{displayText(place.change_note, "当年旅行经验与今日景点状态的差异仍待补充。")}</p>
               <dl>
                 <div>
                   <dt>书信位置</dt>
-                  <dd>{joinList(place.letters, "待复核")}</dd>
+                  <dd>{joinList(place.appears_in_letters || place.letters, "待复核")}</dd>
+                </div>
+                <div>
+                  <dt>当年语境</dt>
+                  <dd>{joinList(place.then_context, "书中语境待人工复核")}</dd>
+                </div>
+                <div>
+                  <dt>来源类型</dt>
+                  <dd>{sourceTypeLabel(place.source_type)}</dd>
                 </div>
                 <div>
                   <dt>今日来源</dt>
@@ -305,7 +408,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 </div>
                 <div>
                   <dt>复核状态</dt>
-                  <dd>{place.review_status || place.source_status || "needs_source_review"}</dd>
+                  <dd>{displayText(place.source_review_note || place.review_status || place.source_status, "待补充公开来源")}</dd>
                 </div>
               </dl>
             </article>
@@ -350,7 +453,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         <h2>25 封旅行书信</h2>
         <div className="letter-envelope-list">
           {chapters.map((chapter: ChapterReadingCard) => (
-            <article className="letter-envelope-card" key={chapter.chapter_id}>
+            <article className="letter-envelope-card" id={chapter.chapter_id} key={chapter.chapter_id}>
               <div className="letter-flap" aria-hidden="true" />
               <header>
                 <span className="letter-number">{chapter.order ?? "?"}</span>
@@ -395,8 +498,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                   <p>{displayText(chapter.then_now_comparison, "昔日旅程与今日景点对照待补充。")}</p>
                   <div className="reading-guide-tags">
                     {(chapter.route_now || []).map((place) => (
-                      <span key={`${chapter.chapter_id}-${place.name}`}>
-                        {place.name}：{place.source_status === "public_source" ? "有公开来源" : "待补充公开来源"}
+                      <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`} key={`${chapter.chapter_id}-${placeName(place)}`}>
+                        {placeName(place)}：{sourceStatusLabel(place.source_status)}
                       </span>
                     ))}
                   </div>

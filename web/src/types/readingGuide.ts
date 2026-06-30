@@ -46,6 +46,17 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
   limitations?: string[];
   evidence_refs?: StructuralEvidenceRef[];
   source_enrichment?: Record<string, unknown>;
+  place_source_stats?: {
+    version?: string;
+    a11_public_source_count?: number;
+    public_source_count?: number;
+    a12_public_source_count?: number;
+    new_public_source_count?: number;
+    needs_source_review_count?: number;
+    total_place_count?: number;
+    source_type_counts?: Record<string, number>;
+  };
+  route_index?: RouteIndexEntry[];
   then_now_summary?: string;
   place_then_now?: PlaceThenNow[];
 }
@@ -58,14 +69,34 @@ export interface OriginalExcerpt {
 
 export interface PlaceThenNow {
   place?: string;
+  place_name?: string;
   name?: string;
   letters?: string[];
+  appears_in_letters?: string[];
   then_context?: string[];
   today_reading?: string;
+  now_context?: string;
   source_status?: string;
   source_name?: string;
   source_url?: string | null;
+  source_type?: string;
+  source_review_note?: string;
   review_status?: string;
+  change_note?: string;
+  priority?: string;
+  is_key_place?: boolean;
+  updated_in?: string;
+}
+
+export interface RouteIndexEntry {
+  chapter_id?: string;
+  letter_id?: string;
+  order?: number;
+  title?: string;
+  core_places?: string[];
+  source_covered_places?: string[];
+  pending_places?: string[];
+  updated_in?: string;
 }
 
 export interface ChapterReadingCard {
@@ -92,6 +123,11 @@ export interface ChapterReadingCard {
     note?: string;
   };
   route_now?: PlaceThenNow[];
+  place_source_summary?: {
+    public_source_count?: number;
+    needs_source_review_count?: number;
+    updated_in?: string;
+  };
   needs_source_review?: boolean;
   then_now_comparison?: string;
   reading_focus_expanded?: string;
