@@ -45,6 +45,27 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
   how_to_use?: string[];
   limitations?: string[];
   evidence_refs?: StructuralEvidenceRef[];
+  source_enrichment?: Record<string, unknown>;
+  then_now_summary?: string;
+  place_then_now?: PlaceThenNow[];
+}
+
+export interface OriginalExcerpt {
+  excerpt?: string;
+  note?: string;
+  mode?: string;
+}
+
+export interface PlaceThenNow {
+  place?: string;
+  name?: string;
+  letters?: string[];
+  then_context?: string[];
+  today_reading?: string;
+  source_status?: string;
+  source_name?: string;
+  source_url?: string | null;
+  review_status?: string;
 }
 
 export interface ChapterReadingCard {
@@ -61,6 +82,20 @@ export interface ChapterReadingCard {
   reading_focus?: string;
   theme_note?: string;
   review_notice?: string;
+  source_enrichment_status?: string;
+  source_informed_summary?: string;
+  original_excerpt?: OriginalExcerpt[];
+  original_scene_notes?: string[];
+  route_then?: {
+    places?: string[];
+    route_label?: string;
+    note?: string;
+  };
+  route_now?: PlaceThenNow[];
+  needs_source_review?: boolean;
+  then_now_comparison?: string;
+  reading_focus_expanded?: string;
+  answer_hint_expanded?: string;
   places?: string[];
   themes?: string[];
   char_count?: number;
@@ -119,6 +154,10 @@ export interface ReadingQuestion {
   answer_hint?: string;
   reference_answer?: string;
   guide_answer?: string;
+  answer_hint_expanded?: string;
+  source_clues?: string[];
+  place_clues?: string[];
+  then_now_hint?: string;
   review_notice?: string;
   review_status?: string;
 }

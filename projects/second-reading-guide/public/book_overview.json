@@ -9,7 +9,7 @@
     "publisher": "上海文艺出版社",
     "date": "2021-12-31T16:00:00+00:00",
     "isbn": "d3671844-e97c-499e-855a-8753809f0381",
-    "source_type": "epub"
+    "source_type": "ebook"
   },
   "one_sentence_summary": "《旅行人信札》阅读导览把 25 封旅行书信整理为可浏览的路线、地点与主题草案，供公开预览和后续人工复核。",
   "reading_purpose": "帮助读者先看见全书的行旅骨架、地名线索和主题分布，再回到原书逐封细读。当前内容不是最终解读。",
@@ -52,5 +52,948 @@
   "review_status": "manual-review-pending",
   "preview_notice": "公开预览版本：导读内容基于标题、地点线索和结构化主题生成，人工复核仍在进行中。",
   "display_title": "《旅行人信札》阅读导览",
-  "subtitle": "25 封旅行书信的路线、地点与主题导读"
+  "subtitle": "25 封旅行书信的路线、地点与主题导读",
+  "preview_mode": "personal-reading-source-enriched-preview",
+  "source_enrichment": {
+    "version": "v0.7-A11",
+    "mode": "personal-reading-source-enriched-preview",
+    "generated_at": "2026-06-30T10:56:05.161098+00:00",
+    "chapter_cards": 25,
+    "source_informed_summaries": 25,
+    "original_clue_coverage": 25,
+    "scene_notes_coverage": 25,
+    "then_now_coverage": 25,
+    "question_answer_coverage": 26
+  },
+  "place_then_now": [
+    {
+      "place": "娘子关",
+      "letters": [
+        "letter-001"
+      ],
+      "then_context": [
+        "第1封 3月17日~18日 娘子关→骊山→西安"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "骊山",
+      "letters": [
+        "letter-001"
+      ],
+      "then_context": [
+        "第1封 3月17日~18日 娘子关→骊山→西安"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "西安",
+      "letters": [
+        "letter-001"
+      ],
+      "then_context": [
+        "第1封 3月17日~18日 娘子关→骊山→西安"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "半坡",
+      "letters": [
+        "letter-002"
+      ],
+      "then_context": [
+        "第2封 3月19日~20日 半坡/碑林→成都"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "碑林",
+      "letters": [
+        "letter-002"
+      ],
+      "then_context": [
+        "第2封 3月19日~20日 半坡/碑林→成都"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "成都",
+      "letters": [
+        "letter-002"
+      ],
+      "then_context": [
+        "第2封 3月19日~20日 半坡/碑林→成都"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "杜甫草堂",
+      "letters": [
+        "letter-003"
+      ],
+      "then_context": [
+        "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "武侯祠",
+      "letters": [
+        "letter-003"
+      ],
+      "then_context": [
+        "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "青城山",
+      "letters": [
+        "letter-003"
+      ],
+      "then_context": [
+        "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
+      ],
+      "today_reading": "今日可按世界遗产语境中的道教名山与历史景观来理解，实际游览信息仍需查当日官方公告。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
+      "source_url": "https://whc.unesco.org/en/list/1001/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "乐山大佛",
+      "letters": [
+        "letter-004"
+      ],
+      "then_context": [
+        "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+      ],
+      "today_reading": "今日多被理解为峨眉山-乐山大佛遗产景观的一部分，和当年行旅中的山水、佛教场景形成对照。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "source_url": "https://whc.unesco.org/en/list/779/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "青衣亭",
+      "letters": [
+        "letter-004"
+      ],
+      "then_context": [
+        "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "峨嵋山脚",
+      "letters": [
+        "letter-004"
+      ],
+      "then_context": [
+        "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+      ],
+      "today_reading": "今日可按峨眉山遗产景区外围和登山入口语境理解，具体线路与交通需另查现行信息。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "source_url": "https://whc.unesco.org/en/list/779/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "峨嵋车站",
+      "letters": [
+        "letter-005"
+      ],
+      "then_context": [
+        "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+      ],
+      "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "成昆线隧道",
+      "letters": [
+        "letter-005"
+      ],
+      "then_context": [
+        "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+      ],
+      "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "昆明车站",
+      "letters": [
+        "letter-005"
+      ],
+      "then_context": [
+        "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+      ],
+      "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "昆明温泉",
+      "letters": [
+        "letter-006"
+      ],
+      "then_context": [
+        "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "西山",
+      "letters": [
+        "letter-006"
+      ],
+      "then_context": [
+        "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "石林",
+      "letters": [
+        "letter-006"
+      ],
+      "then_context": [
+        "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+      ],
+      "today_reading": "今日可按喀斯特自然景观和景区化游览节点理解，和书信中的途中观看经验形成对照。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - South China Karst",
+      "source_url": "https://whc.unesco.org/en/list/1248/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "贵阳花溪",
+      "letters": [
+        "letter-006"
+      ],
+      "then_context": [
+        "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "贵阳流山",
+      "letters": [
+        "letter-007"
+      ],
+      "then_context": [
+        "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "桂林伏波山",
+      "letters": [
+        "letter-007"
+      ],
+      "then_context": [
+        "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "七星山",
+      "letters": [
+        "letter-007"
+      ],
+      "then_context": [
+        "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "象鼻山",
+      "letters": [
+        "letter-007"
+      ],
+      "then_context": [
+        "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "漓江",
+      "letters": [
+        "letter-007",
+        "letter-009"
+      ],
+      "then_context": [
+        "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江",
+        "第9封 4月5日~7日 漓江→阳朔→梧州"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "桂林南溪山",
+      "letters": [
+        "letter-008"
+      ],
+      "then_context": [
+        "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "叠彩峰",
+      "letters": [
+        "letter-008"
+      ],
+      "then_context": [
+        "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "隐山",
+      "letters": [
+        "letter-008"
+      ],
+      "then_context": [
+        "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "阳朔",
+      "letters": [
+        "letter-008",
+        "letter-009"
+      ],
+      "then_context": [
+        "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔",
+        "第9封 4月5日~7日 漓江→阳朔→梧州"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "梧州",
+      "letters": [
+        "letter-009"
+      ],
+      "then_context": [
+        "第9封 4月5日~7日 漓江→阳朔→梧州"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "梧州西江种种",
+      "letters": [
+        "letter-010"
+      ],
+      "then_context": [
+        "第10封 4月7日~8日 梧州西江种种"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "肇庆天柱阁",
+      "letters": [
+        "letter-011"
+      ],
+      "then_context": [
+        "第11封 4月8日~9日 肇庆天柱阁"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "广州中山大学",
+      "letters": [
+        "letter-012"
+      ],
+      "then_context": [
+        "第12封 4月9日~11日 广州中山大学/白云山"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "白云山",
+      "letters": [
+        "letter-012"
+      ],
+      "then_context": [
+        "第12封 4月9日~11日 广州中山大学/白云山"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "汕头看海",
+      "letters": [
+        "letter-013"
+      ],
+      "then_context": [
+        "第13封 4月13日~14日 汕头看海"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "云霄",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "漳浦",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "漳州",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "厦门",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "福州",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "鼓浪屿",
+      "letters": [
+        "letter-014"
+      ],
+      "then_context": [
+        "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+      ],
+      "today_reading": "今日可按历史国际社区与城市文化景观理解，适合和书信中的海岛、城市经验对读。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
+      "source_url": "https://whc.unesco.org/en/list/1541/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "泉州",
+      "letters": [
+        "letter-015"
+      ],
+      "then_context": [
+        "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+      ],
+      "today_reading": "今日可按海上贸易城市和历史遗产节点理解，和书信中的沿海行旅形成对照。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
+      "source_url": "https://whc.unesco.org/en/list/1561/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "福州西湖",
+      "letters": [
+        "letter-015"
+      ],
+      "then_context": [
+        "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "戚公祠",
+      "letters": [
+        "letter-015"
+      ],
+      "then_context": [
+        "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "乌龙江大桥",
+      "letters": [
+        "letter-015"
+      ],
+      "then_context": [
+        "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "涌泉寺",
+      "letters": [
+        "letter-015"
+      ],
+      "then_context": [
+        "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "福安交溪",
+      "letters": [
+        "letter-016"
+      ],
+      "then_context": [
+        "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "福鼎灵溪",
+      "letters": [
+        "letter-016"
+      ],
+      "then_context": [
+        "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "南雁荡",
+      "letters": [
+        "letter-016"
+      ],
+      "then_context": [
+        "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "会文书院",
+      "letters": [
+        "letter-016"
+      ],
+      "then_context": [
+        "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+      ],
+      "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "北雁荡",
+      "letters": [
+        "letter-016"
+      ],
+      "then_context": [
+        "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "温州北雁荡由浅入深",
+      "letters": [
+        "letter-017"
+      ],
+      "then_context": [
+        "第17封 4月23日~25日 温州北雁荡由浅入深"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "朝辞雁荡暮至余杭",
+      "letters": [
+        "letter-018"
+      ],
+      "then_context": [
+        "第18封 4月28日 朝辞雁荡暮至余杭"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "千古如斯的余杭",
+      "letters": [
+        "letter-019"
+      ],
+      "then_context": [
+        "第19封 4月28日~5月2日 千古如斯的余杭"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "黄山天都峰排云亭",
+      "letters": [
+        "letter-020"
+      ],
+      "then_context": [
+        "第20封 5月4日~5日 黄山天都峰排云亭"
+      ],
+      "today_reading": "今日可按黄山世界遗产和山岳景区语境理解，登临条件需以现行景区公告为准。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Mount Huangshan",
+      "source_url": "https://whc.unesco.org/en/list/547/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "青阳九华山",
+      "letters": [
+        "letter-021"
+      ],
+      "then_context": [
+        "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "安庆小孤山",
+      "letters": [
+        "letter-021"
+      ],
+      "then_context": [
+        "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "鄱阳五老峰",
+      "letters": [
+        "letter-022"
+      ],
+      "then_context": [
+        "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "三叠瀑",
+      "letters": [
+        "letter-022"
+      ],
+      "then_context": [
+        "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "南京中山陵",
+      "letters": [
+        "letter-023"
+      ],
+      "then_context": [
+        "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "玄武湖",
+      "letters": [
+        "letter-023"
+      ],
+      "then_context": [
+        "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "苏州园林",
+      "letters": [
+        "letter-023"
+      ],
+      "then_context": [
+        "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+      ],
+      "today_reading": "今日可按古典园林遗产景观理解，适合和书信中的城市、园林审美经验对读。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "source_url": "https://whc.unesco.org/en/list/813/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "苏州天平山沧浪亭",
+      "letters": [
+        "letter-024"
+      ],
+      "then_context": [
+        "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
+      ],
+      "today_reading": "今日可按苏州园林与山水游览线索综合理解，具体地点开放状态需另查现行信息。",
+      "source_status": "public_source",
+      "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "source_url": "https://whc.unesco.org/en/list/813/",
+      "review_status": "needs_field_check"
+    },
+    {
+      "place": "上海",
+      "letters": [
+        "letter-024"
+      ],
+      "then_context": [
+        "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "沪青海航",
+      "letters": [
+        "letter-025"
+      ],
+      "then_context": [
+        "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+      ],
+      "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "青岛崂山",
+      "letters": [
+        "letter-025"
+      ],
+      "then_context": [
+        "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+      ],
+      "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    },
+    {
+      "place": "返京",
+      "letters": [
+        "letter-025"
+      ],
+      "then_context": [
+        "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+      ],
+      "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+      "source_status": "needs_source_review",
+      "source_name": "待补充公开来源",
+      "source_url": null,
+      "review_status": "needs_source_review"
+    }
+  ],
+  "then_now_summary": "昔日旅程按书信中的移动和观看经验展开；今日景点对照只作为阅读参照。列出公开来源的地点可先作为现代参照，未列来源的地点保留待复核状态。"
 }

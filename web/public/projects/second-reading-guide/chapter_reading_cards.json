@@ -9,7 +9,7 @@
     "publisher": "上海文艺出版社",
     "date": "2021-12-31T16:00:00+00:00",
     "isbn": "d3671844-e97c-499e-855a-8753809f0381",
-    "source_type": "epub"
+    "source_type": "ebook"
   },
   "chapters": [
     {
@@ -50,7 +50,68 @@
       "route_note": "路线提示：娘子关 → 骊山 → 西安。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注娘子关、骊山、西安如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第1封 3月17日~18日 娘子关→骊山→西安”展开，原书信息显示它不是单纯的地名列表，而是把娘子关 → 骊山 → 西安放进一次具体行旅中。本封约 1955 字、29 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封3月17日~18日娘子关→骊山→西安父母大人台鉴：保定有",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "7日~18日娘子关→骊山→西安父母大人台鉴：保定有人下车",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把娘子关、骊山、西安组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "娘子关",
+          "骊山",
+          "西安"
+        ],
+        "route_label": "娘子关 → 骊山 → 西安",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "娘子关",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "骊山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "西安",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住娘子关 → 骊山 → 西安这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从娘子关 → 骊山 → 西安进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-002",
@@ -90,7 +151,68 @@
       "route_note": "路线提示：半坡 → 碑林 → 成都。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注半坡、碑林、成都如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第2封 3月19日~20日 半坡/碑林→成都”展开，原书信息显示它不是单纯的地名列表，而是把半坡 → 碑林 → 成都放进一次具体行旅中。本封约 2718 字、25 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封3月19日~20日半坡/碑林→成都阿晖［笔者的妻子］：",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "19日~20日半坡/碑林→成都阿晖［笔者的妻子］：昨晚又",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把半坡、碑林、成都组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "半坡",
+          "碑林",
+          "成都"
+        ],
+        "route_label": "半坡 → 碑林 → 成都",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "半坡",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "碑林",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "成都",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住半坡 → 碑林 → 成都这条空间线，再观察旅行书信、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从半坡 → 碑林 → 成都进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-003",
@@ -130,7 +252,68 @@
       "route_note": "路线提示：杜甫草堂 → 武侯祠 → 青城山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注杜甫草堂、武侯祠、青城山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第3封 3月21日~23日 杜甫草堂/武侯祠→青城山”展开，原书信息显示它不是单纯的地名列表，而是把杜甫草堂 → 武侯祠 → 青城山放进一次具体行旅中。本封约 3349 字、36 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封3月21日~23日杜甫草堂/武侯祠→青城山嘉曜[笔者的哥哥",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~23日杜甫草堂/武侯祠→青城山嘉曜[笔者的哥哥]：这个",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把杜甫草堂、武侯祠、青城山组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "杜甫草堂",
+          "武侯祠",
+          "青城山"
+        ],
+        "route_label": "杜甫草堂 → 武侯祠 → 青城山",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "杜甫草堂",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "武侯祠",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "青城山",
+          "today_reading": "今日可按世界遗产语境中的道教名山与历史景观来理解，实际游览信息仍需查当日官方公告。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
+          "source_url": "https://whc.unesco.org/en/list/1001/",
+          "review_status": "needs_field_check"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住杜甫草堂 → 武侯祠 → 青城山这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从杜甫草堂 → 武侯祠 → 青城山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-004",
@@ -172,7 +355,68 @@
       "route_note": "路线提示：乐山大佛 → 青衣亭 → 峨嵋山脚。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注乐山大佛、青衣亭、峨嵋山脚如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚”展开，原书信息显示它不是单纯的地名列表，而是把乐山大佛 → 青衣亭 → 峨嵋山脚放进一次具体行旅中。本封约 6491 字、89 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封3月24日~26日乐山大佛/青衣亭→峨嵋山脚农家/峨嵋山腰",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~26日乐山大佛/青衣亭→峨嵋山脚农家/峨嵋山腰息心所/",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把乐山大佛、青衣亭、峨嵋山脚组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "乐山大佛",
+          "青衣亭",
+          "峨嵋山脚"
+        ],
+        "route_label": "乐山大佛 → 青衣亭 → 峨嵋山脚",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "乐山大佛",
+          "today_reading": "今日多被理解为峨眉山-乐山大佛遗产景观的一部分，和当年行旅中的山水、佛教场景形成对照。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+          "source_url": "https://whc.unesco.org/en/list/779/",
+          "review_status": "needs_field_check"
+        },
+        {
+          "name": "青衣亭",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "峨嵋山脚",
+          "today_reading": "今日可按峨眉山遗产景区外围和登山入口语境理解，具体线路与交通需另查现行信息。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+          "source_url": "https://whc.unesco.org/en/list/779/",
+          "review_status": "needs_field_check"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住乐山大佛 → 青衣亭 → 峨嵋山脚这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从乐山大佛 → 青衣亭 → 峨嵋山脚进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-005",
@@ -213,7 +457,68 @@
       "route_note": "路线提示：峨嵋车站 → 成昆线隧道 → 昆明车站。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注峨嵋车站、成昆线隧道、昆明车站如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站”展开，原书信息显示它不是单纯的地名列表，而是把峨嵋车站 → 成昆线隧道 → 昆明车站放进一次具体行旅中。本封约 2709 字、34 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封3月26日~29日峨嵋车站→成昆线隧道→昆明车站老爸老妈：",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~29日峨嵋车站→成昆线隧道→昆明车站老爸老妈：昨天日行90",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把峨嵋车站、成昆线隧道、昆明车站组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "峨嵋车站",
+          "成昆线隧道",
+          "昆明车站"
+        ],
+        "route_label": "峨嵋车站 → 成昆线隧道 → 昆明车站",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "峨嵋车站",
+          "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "成昆线隧道",
+          "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "昆明车站",
+          "today_reading": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住峨嵋车站 → 成昆线隧道 → 昆明车站这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从峨嵋车站 → 成昆线隧道 → 昆明车站进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-006",
@@ -255,7 +560,77 @@
       "route_note": "路线提示：昆明温泉 → 西山 → 石林 → 贵阳花溪。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注昆明温泉、西山、石林、贵阳花溪如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪”展开，原书信息显示它不是单纯的地名列表，而是把昆明温泉 → 西山 → 石林 → 贵阳花溪放进一次具体行旅中。本封约 2626 字、23 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "3月31日~4月1日昆明温泉/西山/石林→贵阳花溪刘建［笔者",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "~4月1日昆明温泉/西山/石林→贵阳花溪刘建［笔者最要好",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把昆明温泉、西山、石林、贵阳花溪组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "昆明温泉",
+          "西山",
+          "石林",
+          "贵阳花溪"
+        ],
+        "route_label": "昆明温泉 → 西山 → 石林 → 贵阳花溪",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "昆明温泉",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "西山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "石林",
+          "today_reading": "今日可按喀斯特自然景观和景区化游览节点理解，和书信中的途中观看经验形成对照。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - South China Karst",
+          "source_url": "https://whc.unesco.org/en/list/1248/",
+          "review_status": "needs_field_check"
+        },
+        {
+          "name": "贵阳花溪",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住昆明温泉 → 西山 → 石林 → 贵阳花溪这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从昆明温泉 → 西山 → 石林 → 贵阳花溪进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-007",
@@ -297,7 +672,86 @@
       "route_note": "路线提示：贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注贵阳流山、桂林伏波山、七星山、象鼻山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江”展开，原书信息显示它不是单纯的地名列表，而是把贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江放进一次具体行旅中。本封约 3113 字、29 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "第7封4月2日~3日贵阳流山→桂林伏波山/七星山/象鼻山/漓",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "2日~3日贵阳流山→桂林伏波山/七星山/象鼻山/漓江嘉明：一直",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把贵阳流山、桂林伏波山、七星山、象鼻山组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "贵阳流山",
+          "桂林伏波山",
+          "七星山",
+          "象鼻山",
+          "漓江"
+        ],
+        "route_label": "贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "贵阳流山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "桂林伏波山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "七星山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "象鼻山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "漓江",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-008",
@@ -337,7 +791,77 @@
       "route_note": "路线提示：桂林南溪山 → 叠彩峰 → 隐山 → 阳朔。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注桂林南溪山、叠彩峰、隐山、阳朔如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔”展开，原书信息显示它不是单纯的地名列表，而是把桂林南溪山 → 叠彩峰 → 隐山 → 阳朔放进一次具体行旅中。本封约 1399 字、19 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "第8封4月3日~5日桂林南溪山月岸/叠彩峰/隐山→阳朔阿晖：下",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "5日桂林南溪山月岸/叠彩峰/隐山→阳朔阿晖：下了一夜雨，还",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把桂林南溪山、叠彩峰、隐山、阳朔组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "桂林南溪山",
+          "叠彩峰",
+          "隐山",
+          "阳朔"
+        ],
+        "route_label": "桂林南溪山 → 叠彩峰 → 隐山 → 阳朔",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "桂林南溪山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "叠彩峰",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "隐山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "阳朔",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住桂林南溪山 → 叠彩峰 → 隐山 → 阳朔这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从桂林南溪山 → 叠彩峰 → 隐山 → 阳朔进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-009",
@@ -376,7 +900,68 @@
       "route_note": "路线提示：漓江 → 阳朔 → 梧州。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注漓江、阳朔、梧州如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
       "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第9封 4月5日~7日 漓江→阳朔→梧州”展开，原书信息显示它不是单纯的地名列表，而是把漓江 → 阳朔 → 梧州放进一次具体行旅中。本封约 2983 字、30 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "第9封4月5日~7日漓江→阳朔→梧州嘉曜：漓江上不通纯粹",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "4月5日~7日漓江→阳朔→梧州嘉曜：漓江上不通纯粹客航只",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把漓江、阳朔、梧州组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信。"
+      ],
+      "route_then": {
+        "places": [
+          "漓江",
+          "阳朔",
+          "梧州"
+        ],
+        "route_label": "漓江 → 阳朔 → 梧州",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "漓江",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "阳朔",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "梧州",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住漓江 → 阳朔 → 梧州这条空间线，再观察旅行书信如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从漓江 → 阳朔 → 梧州进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-010",
@@ -412,7 +997,50 @@
       "route_note": "路线提示：梧州西江种种。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注梧州西江种种如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
       "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第10封 4月7日~8日 梧州西江种种”展开，原书信息显示它不是单纯的地名列表，而是把梧州西江种种放进一次具体行旅中。本封约 1763 字、20 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "10封4月7日~8日梧州西江种种嘉明嘉曜并呈父母亲大人：后来终于",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "睡着。由于旅店对着汽车站，一早就听到车次广播，先用“白",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把梧州西江种种组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信。"
+      ],
+      "route_then": {
+        "places": [
+          "梧州西江种种"
+        ],
+        "route_label": "梧州西江种种",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "梧州西江种种",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住梧州西江种种这条空间线，再观察旅行书信如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从梧州西江种种进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-011",
@@ -449,7 +1077,50 @@
       "route_note": "路线提示：肇庆天柱阁。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注肇庆天柱阁如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
       "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第11封 4月8日~9日 肇庆天柱阁”展开，原书信息显示它不是单纯的地名列表，而是把肇庆天柱阁放进一次具体行旅中。本封约 3484 字、38 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "11封4月8日~9日肇庆天柱阁嘉曜：原来舱里只让睡到四点半。真",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "东侧的湖中路走，有骑车人，但无跑步、打太极拳的。两旁古",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把肇庆天柱阁组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信。"
+      ],
+      "route_then": {
+        "places": [
+          "肇庆天柱阁"
+        ],
+        "route_label": "肇庆天柱阁",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "肇庆天柱阁",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住肇庆天柱阁这条空间线，再观察旅行书信如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从肇庆天柱阁进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-012",
@@ -488,7 +1159,59 @@
       "route_note": "路线提示：广州中山大学 → 白云山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注广州中山大学、白云山如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第12封 4月9日~11日 广州中山大学/白云山”展开，原书信息显示它不是单纯的地名列表，而是把广州中山大学 → 白云山放进一次具体行旅中。本封约 1851 字、22 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "2封4月9日~11日广州中山大学/白云山父母亲大人：坐下来就招蚊",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "11日广州中山大学/白云山父母亲大人：坐下来就招蚊子，只好",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把广州中山大学、白云山组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "广州中山大学",
+          "白云山"
+        ],
+        "route_label": "广州中山大学 → 白云山",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "广州中山大学",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "白云山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住广州中山大学 → 白云山这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从广州中山大学 → 白云山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-013",
@@ -525,7 +1248,50 @@
       "route_note": "路线提示：汕头看海。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注汕头看海如何成为本封信的空间线索，并观察它与旅行书信之间的关系。",
       "theme_note": "主题标签包括旅行书信。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第13封 4月13日~14日 汕头看海”展开，原书信息显示它不是单纯的地名列表，而是把汕头看海放进一次具体行旅中。本封约 3602 字、33 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封4月13日~14日汕头看海阿晖：13日下午一点，汽笛长鸣数",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "走到百货公司，上3路车，在车上站了半个小时才开。6分钱",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把汕头看海组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信。"
+      ],
+      "route_then": {
+        "places": [
+          "汕头看海"
+        ],
+        "route_label": "汕头看海",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "汕头看海",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住汕头看海这条空间线，再观察旅行书信如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从汕头看海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-014",
@@ -568,7 +1334,95 @@
       "route_note": "路线提示：云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注云霄、漳浦、漳州、厦门如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿”展开，原书信息显示它不是单纯的地名列表，而是把云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿放进一次具体行旅中。本封约 3971 字、41 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封4月15日~16日云霄→漳浦→漳州→厦门→福州→鼓浪屿",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "15日~16日云霄→漳浦→漳州→厦门→福州→鼓浪屿嘉曜并",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把云霄、漳浦、漳州、厦门组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "云霄",
+          "漳浦",
+          "漳州",
+          "厦门",
+          "福州",
+          "鼓浪屿"
+        ],
+        "route_label": "云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "云霄",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "漳浦",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "漳州",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "厦门",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "福州",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "鼓浪屿",
+          "today_reading": "今日可按历史国际社区与城市文化景观理解，适合和书信中的海岛、城市经验对读。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
+          "source_url": "https://whc.unesco.org/en/list/1541/",
+          "review_status": "needs_field_check"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿这条空间线，再观察旅行书信、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-015",
@@ -610,7 +1464,86 @@
       "route_note": "路线提示：泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注泉州、福州西湖、戚公祠、乌龙江大桥如何成为本封信的空间线索，并观察它与旅行书信、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺”展开，原书信息显示它不是单纯的地名列表，而是把泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺放进一次具体行旅中。本封约 3778 字、23 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封4月17日~19日泉州→福州西湖/戚公祠/乌龙江大桥/",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "17日~19日泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺嘉明",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把泉州、福州西湖、戚公祠、乌龙江大桥组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "泉州",
+          "福州西湖",
+          "戚公祠",
+          "乌龙江大桥",
+          "涌泉寺"
+        ],
+        "route_label": "泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "泉州",
+          "today_reading": "今日可按海上贸易城市和历史遗产节点理解，和书信中的沿海行旅形成对照。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
+          "source_url": "https://whc.unesco.org/en/list/1561/",
+          "review_status": "needs_field_check"
+        },
+        {
+          "name": "福州西湖",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "戚公祠",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "乌龙江大桥",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "涌泉寺",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺这条空间线，再观察旅行书信、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-016",
@@ -652,7 +1585,86 @@
       "route_note": "路线提示：福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注福安交溪、福鼎灵溪、南雁荡、会文书院如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡”展开，原书信息显示它不是单纯的地名列表，而是把福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡放进一次具体行旅中。本封约 3046 字、30 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封4月20日~22日福安交溪→福鼎灵溪→南雁荡/会文书院→北",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~22日福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡刘建：",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把福安交溪、福鼎灵溪、南雁荡、会文书院组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "福安交溪",
+          "福鼎灵溪",
+          "南雁荡",
+          "会文书院",
+          "北雁荡"
+        ],
+        "route_label": "福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "福安交溪",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "福鼎灵溪",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "南雁荡",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "会文书院",
+          "today_reading": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "北雁荡",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-017",
@@ -692,7 +1704,50 @@
       "route_note": "路线提示：温州北雁荡由浅入深。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注温州北雁荡由浅入深如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第17封 4月23日~25日 温州北雁荡由浅入深”展开，原书信息显示它不是单纯的地名列表，而是把温州北雁荡由浅入深放进一次具体行旅中。本封约 6750 字、45 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封4月23日~25日温州北雁荡由浅入深嘉曜：到温州的外地人多，温州人对",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "，江面很宽；7:40车从对岸始发。我坐在前排右窗边，本",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把温州北雁荡由浅入深组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "温州北雁荡由浅入深"
+        ],
+        "route_label": "温州北雁荡由浅入深",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "温州北雁荡由浅入深",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住温州北雁荡由浅入深这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从温州北雁荡由浅入深进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-018",
@@ -729,7 +1784,50 @@
       "route_note": "路线提示：朝辞雁荡暮至余杭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注朝辞雁荡暮至余杭如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第18封 4月28日 朝辞雁荡暮至余杭”展开，原书信息显示它不是单纯的地名列表，而是把朝辞雁荡暮至余杭放进一次具体行旅中。本封约 2255 字、19 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "第18封4月28日朝辞雁荡暮至余杭老爸老妈：雁湖上所能望到的东海，",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "散水岩别具一格。乘汽车9里到仙人坦，找一人家安顿，睡了",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把朝辞雁荡暮至余杭组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "朝辞雁荡暮至余杭"
+        ],
+        "route_label": "朝辞雁荡暮至余杭",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "朝辞雁荡暮至余杭",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住朝辞雁荡暮至余杭这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从朝辞雁荡暮至余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-019",
@@ -768,7 +1866,50 @@
       "route_note": "路线提示：千古如斯的余杭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注千古如斯的余杭如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第19封 4月28日~5月2日 千古如斯的余杭”展开，原书信息显示它不是单纯的地名列表，而是把千古如斯的余杭放进一次具体行旅中。本封约 5332 字、50 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "4月28日~5月2日千古如斯的余杭韩虹［嘉曜的夫人］、嘉曜：昨晚回",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "振。步行到灵隐。未坐车骑车，宁愿步行，反正杭州处处花园",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把千古如斯的余杭组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "千古如斯的余杭"
+        ],
+        "route_label": "千古如斯的余杭",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "千古如斯的余杭",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住千古如斯的余杭这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从千古如斯的余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-020",
@@ -806,7 +1947,50 @@
       "route_note": "路线提示：黄山天都峰排云亭。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注黄山天都峰排云亭如何成为本封信的空间线索，并观察它与旅行书信、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第20封 5月4日~5日 黄山天都峰排云亭”展开，原书信息显示它不是单纯的地名列表，而是把黄山天都峰排云亭放进一次具体行旅中。本封约 4454 字、45 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "20封5月4日~5日黄山天都峰排云亭阿晖：六点一刻发车，近临安时，车",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "云亭阿晖：六点一刻发车，近临安时，车右一湖，大若西湖，",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把黄山天都峰排云亭组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅。"
+      ],
+      "route_then": {
+        "places": [
+          "黄山天都峰排云亭"
+        ],
+        "route_label": "黄山天都峰排云亭",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "黄山天都峰排云亭",
+          "today_reading": "今日可按黄山世界遗产和山岳景区语境理解，登临条件需以现行景区公告为准。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Mount Huangshan",
+          "source_url": "https://whc.unesco.org/en/list/547/",
+          "review_status": "needs_field_check"
+        }
+      ],
+      "needs_source_review": false,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住黄山天都峰排云亭这条空间线，再观察旅行书信、山水行旅如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从黄山天都峰排云亭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-021",
@@ -847,7 +2031,59 @@
       "route_note": "路线提示：青阳九华山 → 安庆小孤山。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注青阳九华山、安庆小孤山如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第21封 5月6日~8日 青阳九华山/安庆小孤山”展开，原书信息显示它不是单纯的地名列表，而是把青阳九华山 → 安庆小孤山放进一次具体行旅中。本封约 5672 字、54 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "21封5月6日~8日青阳九华山/安庆小孤山嘉曜：在黄山宾馆大厅",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~8日青阳九华山/安庆小孤山嘉曜：在黄山宾馆大厅里，同北京的",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把青阳九华山、安庆小孤山组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "青阳九华山",
+          "安庆小孤山"
+        ],
+        "route_label": "青阳九华山 → 安庆小孤山",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "青阳九华山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "安庆小孤山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住青阳九华山 → 安庆小孤山这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从青阳九华山 → 安庆小孤山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-022",
@@ -888,7 +2124,59 @@
       "route_note": "路线提示：鄱阳五老峰 → 三叠瀑。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注鄱阳五老峰、三叠瀑如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第22封 5月8日~11日 鄱阳五老峰/三叠瀑”展开，原书信息显示它不是单纯的地名列表，而是把鄱阳五老峰 → 三叠瀑放进一次具体行旅中。本封约 6267 字、58 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "2封5月8日~11日鄱阳五老峰/三叠瀑刘建：回到码头边的九江旅",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "~11日鄱阳五老峰/三叠瀑刘建：回到码头边的九江旅社要了一",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把鄱阳五老峰、三叠瀑组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "鄱阳五老峰",
+          "三叠瀑"
+        ],
+        "route_label": "鄱阳五老峰 → 三叠瀑",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "鄱阳五老峰",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "三叠瀑",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住鄱阳五老峰 → 三叠瀑这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从鄱阳五老峰 → 三叠瀑进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-023",
@@ -929,7 +2217,68 @@
       "route_note": "路线提示：南京中山陵 → 玄武湖 → 苏州园林。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注南京中山陵、玄武湖、苏州园林如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林”展开，原书信息显示它不是单纯的地名列表，而是把南京中山陵 → 玄武湖 → 苏州园林放进一次具体行旅中。本封约 3007 字、29 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封5月11日~14日南京中山陵/玄武湖→苏州园林老爸老妈：走到",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "~14日南京中山陵/玄武湖→苏州园林老爸老妈：走到中山码头",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把南京中山陵、玄武湖、苏州园林组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "南京中山陵",
+          "玄武湖",
+          "苏州园林"
+        ],
+        "route_label": "南京中山陵 → 玄武湖 → 苏州园林",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "南京中山陵",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "玄武湖",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "苏州园林",
+          "today_reading": "今日可按古典园林遗产景观理解，适合和书信中的城市、园林审美经验对读。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+          "source_url": "https://whc.unesco.org/en/list/813/",
+          "review_status": "needs_field_check"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住南京中山陵 → 玄武湖 → 苏州园林这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从南京中山陵 → 玄武湖 → 苏州园林进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-024",
@@ -969,7 +2318,59 @@
       "route_note": "路线提示：苏州天平山沧浪亭 → 上海。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注苏州天平山沧浪亭、上海如何成为本封信的空间线索，并观察它与旅行书信、山水行旅、城市与旅途之间的关系。",
       "theme_note": "主题标签包括旅行书信、山水行旅、城市与旅途。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第24封 5月15日~17日 苏州天平山沧浪亭→上海”展开，原书信息显示它不是单纯的地名列表，而是把苏州天平山沧浪亭 → 上海放进一次具体行旅中。本封约 3612 字、32 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封5月15日~17日苏州天平山沧浪亭→上海嘉曜：不是独处，难能随时记",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日苏州天平山沧浪亭→上海嘉曜：不是独处，难能随时记录。今",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把苏州天平山沧浪亭、上海组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、山水行旅、城市与旅途。"
+      ],
+      "route_then": {
+        "places": [
+          "苏州天平山沧浪亭",
+          "上海"
+        ],
+        "route_label": "苏州天平山沧浪亭 → 上海",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "苏州天平山沧浪亭",
+          "today_reading": "今日可按苏州园林与山水游览线索综合理解，具体地点开放状态需另查现行信息。",
+          "source_status": "public_source",
+          "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+          "source_url": "https://whc.unesco.org/en/list/813/",
+          "review_status": "needs_field_check"
+        },
+        {
+          "name": "上海",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住苏州天平山沧浪亭 → 上海这条空间线，再观察旅行书信、山水行旅、城市与旅途如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从苏州天平山沧浪亭 → 上海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     },
     {
       "chapter_id": "chapter-025",
@@ -1012,7 +2413,68 @@
       "route_note": "路线提示：沪青海航 → 青岛崂山 → 返京。这里只呈现标题和结构数据中的地点顺序，不补充现代路线判断。",
       "reading_focus": "阅读时可关注沪青海航、青岛崂山、返京如何成为本封信的空间线索，并观察它与旅行书信、长篇行旅记录、多段叙述、山水行旅之间的关系。",
       "theme_note": "主题标签包括旅行书信、长篇行旅记录、多段叙述、山水行旅。这些标签用于公开预览导览，后续需要人工复核其准确性。",
-      "review_notice": "Public preview：本卡片为结构化导读草案，尚未完成人工复核。"
+      "review_notice": "公开预览 / 个人阅读增强版：摘录、地点说明和今日对照仍待人工复核。",
+      "source_enrichment_status": "source-enriched-public-preview",
+      "source_informed_summary": "这封信围绕“第25封 5月18日~23日 沪青海航→青岛崂山→返京”展开，原书信息显示它不是单纯的地名列表，而是把沪青海航 → 青岛崂山 → 返京放进一次具体行旅中。本封约 5963 字、76 个段落，场景线索集中在交通、山水、古迹、城市。读者可以先看地点移动，再看作者如何把途中所见、停留节点和主题感受组织成一封旅行书信。",
+      "original_excerpt": [
+        {
+          "excerpt": "封5月18日~23日沪青海航→青岛崂山→返京又开动啦，15:",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        },
+        {
+          "excerpt": "日~23日沪青海航→青岛崂山→返京又开动啦，15:15。这将",
+          "note": "用于定位本封信的场景和语气，不作为全文替代。",
+          "mode": "short_original_clue"
+        }
+      ],
+      "original_scene_notes": [
+        "原书信息中可见交通与移动方式线索，适合作为细读入口。",
+        "原书信息中可见山水地貌与自然景观线索，适合作为细读入口。",
+        "原书信息中可见历史建筑与文化遗迹线索，适合作为细读入口。",
+        "原书信息中可见城市空间与停留节点线索，适合作为细读入口。",
+        "标题和正文线索把沪青海航、青岛崂山、返京组织成本封信的空间骨架。",
+        "结构主题提示读者关注旅行书信、长篇行旅记录、多段叙述。"
+      ],
+      "route_then": {
+        "places": [
+          "沪青海航",
+          "青岛崂山",
+          "返京"
+        ],
+        "route_label": "沪青海航 → 青岛崂山 → 返京",
+        "note": "当年旅行路径按标题、正文地点线索和结构化导读整理，仍待人工复核。"
+      },
+      "route_now": [
+        {
+          "name": "沪青海航",
+          "today_reading": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "青岛崂山",
+          "today_reading": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        },
+        {
+          "name": "返京",
+          "today_reading": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
+          "source_status": "needs_source_review",
+          "source_name": "待补充公开来源",
+          "source_url": null,
+          "review_status": "needs_source_review"
+        }
+      ],
+      "needs_source_review": true,
+      "then_now_comparison": "当年书信更强调移动中的观看和停留；今天读者往往会通过景区、城市节点或交通节点重新理解这些地点。已列公开来源的地点可先作现代参照，未列来源的地点只作为待复核的今日读法。",
+      "reading_focus_expanded": "细读时先抓住沪青海航 → 青岛崂山 → 返京这条空间线，再观察旅行书信、长篇行旅记录、多段叙述如何改变作者对途中景物、城市和时间的感受。",
+      "answer_hint_expanded": "参考回答：本封信可以从沪青海航 → 青岛崂山 → 返京进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。"
     }
   ],
   "visibility": "public",
@@ -1020,5 +2482,6 @@
   "review_status": "manual-review-pending",
   "preview_notice": "公开预览版本：导读内容基于标题、地点线索和结构化主题生成，人工复核仍在进行中。",
   "display_title": "《旅行人信札》阅读导览",
-  "subtitle": "25 封旅行书信的路线、地点与主题导读"
+  "subtitle": "25 封旅行书信的路线、地点与主题导读",
+  "preview_mode": "personal-reading-source-enriched-preview"
 }

@@ -9,7 +9,7 @@
     "publisher": "上海文艺出版社",
     "date": "2021-12-31T16:00:00+00:00",
     "isbn": "d3671844-e97c-499e-855a-8753809f0381",
-    "source_type": "epub"
+    "source_type": "ebook"
   },
   "concepts": [
     {
@@ -568,5 +568,6 @@
   "review_status": "manual-review-pending",
   "preview_notice": "公开预览版本：导读内容基于标题、地点线索和结构化主题生成，人工复核仍在进行中。",
   "display_title": "《旅行人信札》阅读导览",
-  "subtitle": "25 封旅行书信的路线、地点与主题导读"
+  "subtitle": "25 封旅行书信的路线、地点与主题导读",
+  "preview_mode": "personal-reading-source-enriched-preview"
 }

@@ -182,6 +182,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
   const quotes = data.quoteIndex?.quotes || [];
   const questions = data.readingQuestions?.questions || [];
   const places = allPlaces(chapters);
+  const placeThenNow = overview?.place_then_now || [];
   const projectTitle = overview?.display_title || project.title || "《旅行人信札》阅读导览";
   const bookTitle = overview?.book?.title || project.book?.title || project.book_title || "《旅行人信札》";
   const subtitle = overview?.subtitle || project.subtitle || "25 封旅行书信的路线、地点与主题导读";
@@ -278,6 +279,41 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       </section>
 
       <section className="content-section">
+        <h2>昔日旅程与今日景点</h2>
+        <p>{displayText(overview?.then_now_summary, "今日景点对照仍待补充公开来源。")}</p>
+        <div className="place-comparison-grid">
+          {placeThenNow.map((place) => (
+            <article className="place-now-source" key={place.place || place.name}>
+              <h3>{place.place || place.name}</h3>
+              <p>{displayText(place.today_reading, "今日景点信息待公开来源复核。")}</p>
+              <dl>
+                <div>
+                  <dt>书信位置</dt>
+                  <dd>{joinList(place.letters, "待复核")}</dd>
+                </div>
+                <div>
+                  <dt>今日来源</dt>
+                  <dd>
+                    {place.source_url ? (
+                      <a href={place.source_url} target="_blank" rel="noreferrer">
+                        {place.source_name || "公开来源"}
+                      </a>
+                    ) : (
+                      place.source_name || "待补充公开来源"
+                    )}
+                  </dd>
+                </div>
+                <div>
+                  <dt>复核状态</dt>
+                  <dd>{place.review_status || place.source_status || "needs_source_review"}</dd>
+                </div>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
         <h2>内容模块</h2>
         <div className="reading-guide-module-grid">
           {moduleStatuses.map((item) => (
@@ -328,13 +364,47 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 <span>{chapter.route_label || joinList(chapter.places)}</span>
               </div>
               <div className="letter-body">
-                <p>{displayText(chapter.letter_summary || chapter.summary, "本封信导读摘要待复核。")}</p>
+                <p className="letter-source-summary">
+                  {displayText(chapter.source_informed_summary || chapter.letter_summary || chapter.summary, "本封信导读摘要待复核。")}
+                </p>
                 <p>{displayText(chapter.route_note, "路线说明待复核。")}</p>
-                <p>{displayText(chapter.reading_focus, "阅读重点待复核。")}</p>
-                <p>{displayText(chapter.theme_note, "主题说明待复核。")}</p>
+                <p>{displayText(chapter.reading_focus_expanded || chapter.reading_focus, "阅读重点待复核。")}</p>
               </div>
               <details className="letter-answer">
                 <summary>展开阅读线索</summary>
+                <div className="letter-original-clues">
+                  <h4>原文摘录与阅读线索</h4>
+                  {(chapter.original_excerpt || []).map((item, index) => (
+                    <blockquote className="letter-original-excerpt" key={`${chapter.chapter_id}-excerpt-${index}`}>
+                      <p>{displayText(item.excerpt, "原文线索待复核。")}</p>
+                      <cite>{displayText(item.note, "这条线索用于辅助阅读，不替代原书。")}</cite>
+                    </blockquote>
+                  ))}
+                </div>
+                <div className="letter-scene-notes">
+                  <h4>原书场景线索</h4>
+                  <ul>
+                    {(chapter.original_scene_notes || ["场景线索待人工复核。"]).map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="letter-then-now">
+                  <h4>当年路线 / 今日对照</h4>
+                  <p>{displayText(chapter.route_then?.note, "当年路线说明待复核。")}</p>
+                  <p>{displayText(chapter.then_now_comparison, "昔日旅程与今日景点对照待补充。")}</p>
+                  <div className="reading-guide-tags">
+                    {(chapter.route_now || []).map((place) => (
+                      <span key={`${chapter.chapter_id}-${place.name}`}>
+                        {place.name}：{place.source_status === "public_source" ? "有公开来源" : "待补充公开来源"}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="letter-answer-expanded">
+                  <h4>对应问题与参考回答</h4>
+                  <p>{displayText(chapter.answer_hint_expanded, "参考回答待人工复核。")}</p>
+                </div>
                 <div className="reading-guide-tags">
                   <span>地点：{joinList(chapter.places)}</span>
                   <span>主题：{joinList(chapter.themes)}</span>
@@ -368,10 +438,10 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         <header>
           <ShieldCheck size={22} />
           <div>
-            <h2>引文状态：暂不公开原文摘录</h2>
+            <h2>原文摘录与阅读线索</h2>
             <p>
               {data.quoteIndex?.reader_note ||
-                "当前公开预览只提供结构化引文定位线索，不发布电子书正文或长摘录。后续人工复核完成后，可补充合规短引或页码线索。"}
+                "当前页面作为个人阅读导览，补充来自原书的摘录、场景摘要、地点线索和阅读提示。页面仍处于公开预览与人工复核阶段。"}
             </p>
           </div>
         </header>
@@ -397,11 +467,20 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 <strong>参考回答 / 导读提示</strong>
                 <p>
                   {displayText(
-                    question.answer_hint || question.reference_answer || question.guide_answer,
+                    question.answer_hint_expanded || question.answer_hint || question.reference_answer || question.guide_answer,
                     "参考回答待人工复核。",
                   )}
                 </p>
               </div>
+              <div className="reading-guide-tags">
+                {(question.place_clues || []).slice(0, 4).map((place) => (
+                  <span key={`${question.question_id}-${place}`}>地点：{place}</span>
+                ))}
+                {(question.source_clues || []).slice(0, 2).map((clue, index) => (
+                  <span key={`${question.question_id}-clue-${index}`}>线索：{clue}</span>
+                ))}
+              </div>
+              <p>{displayText(question.then_now_hint, "今日对照待补充公开来源。")}</p>
               <p>{displayText(question.basis, "基于标题、地点线索与结构化主题生成，待人工复核。")}</p>
               <span>
                 {question.scope || "scope pending"} {question.section_id ? ` / ${question.section_id}` : ""}
