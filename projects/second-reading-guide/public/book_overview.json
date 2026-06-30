@@ -1,17 +1,48 @@
 {
-  "schema_version": "reading-guide.v0.1",
+  "schema_version": "reading-guide.v0.2",
   "status": "draft",
+  "generated_at": "2026-06-30T06:02:38.677636+00:00",
   "book": {
-    "title": "待定书名",
-    "author": null,
-    "language": "unknown"
+    "title": "旅行人信札",
+    "author": "陈嘉映",
+    "language": "zh-Hans",
+    "publisher": "上海文艺出版社",
+    "date": "2021-12-31T16:00:00+00:00",
+    "isbn": "d3671844-e97c-499e-855a-8753809f0381",
+    "source_type": "epub"
   },
-  "one_sentence_summary": "待第二本电子书导入后生成",
-  "reading_purpose": "待第二本电子书导入后生成",
-  "structure_overview": "待第二本电子书导入后生成",
-  "how_to_use": "待第二本电子书导入后生成",
-  "limitations": [
-    "待第二本电子书导入后生成"
+  "one_sentence_summary": "《旅行人信札》当前公开导读基于 EPUB 结构与 25 封正文书信的标题、章节统计和工作层结构摘要生成。",
+  "reading_purpose": "帮助读者先按书信顺序、地点线索和主题标签建立阅读骨架；当前版本不替代逐章细读。",
+  "structure_overview": {
+    "body_letter_count": 25,
+    "section_range": {
+      "start": "sec-006",
+      "end": "sec-030"
+    },
+    "place_count_from_titles": 66,
+    "theme_count_from_structural_tags": 5,
+    "source_mode": "metadata_and_letters_brief"
+  },
+  "how_to_use": [
+    "先浏览章节导读卡，了解 25 封书信的顺序与地点线索。",
+    "再查看主题概念，观察哪些主题在多封信中反复出现。",
+    "问题列表适合作为初读提示，不作为最终学术判断。"
   ],
-  "evidence_refs": []
+  "limitations": [
+    "当前为 draft：内容由结构化元数据和 working/letters_brief.json 生成。",
+    "没有公开 EPUB 正文、完整章节正文或长段摘录。",
+    "概念、问题和结构说明仍需后续人工复核。"
+  ],
+  "evidence_refs": [
+    {
+      "ref_id": "overview-letters-brief",
+      "evidence_mode": "structural_no_quote",
+      "note": "Structural reference only; no source text excerpt is included."
+    },
+    {
+      "ref_id": "overview-book-identity",
+      "evidence_mode": "structural_no_quote",
+      "note": "Structural reference only; no source text excerpt is included."
+    }
+  ]
 }

@@ -1,10 +1,561 @@
 {
-  "schema_version": "reading-guide.v0.1",
+  "schema_version": "reading-guide.v0.2",
   "status": "draft",
+  "generated_at": "2026-06-30T06:02:38.678621+00:00",
   "book": {
-    "title": "待定书名",
-    "author": null,
-    "language": "unknown"
+    "title": "旅行人信札",
+    "author": "陈嘉映",
+    "language": "zh-Hans",
+    "publisher": "上海文艺出版社",
+    "date": "2021-12-31T16:00:00+00:00",
+    "isbn": "d3671844-e97c-499e-855a-8753809f0381",
+    "source_type": "epub"
   },
-  "concepts": []
+  "concepts": [
+    {
+      "concept_id": "concept-001",
+      "label": "旅行书信",
+      "description": "结构化主题“旅行书信”由章节标题、篇幅和 A2 working 层主题标签聚合而来，需后续人工复核。",
+      "related_letters": [
+        {
+          "letter_id": "letter-001",
+          "section_id": "sec-006",
+          "title": "第1封 3月17日~18日 娘子关→骊山→西安"
+        },
+        {
+          "letter_id": "letter-002",
+          "section_id": "sec-007",
+          "title": "第2封 3月19日~20日 半坡/碑林→成都"
+        },
+        {
+          "letter_id": "letter-003",
+          "section_id": "sec-008",
+          "title": "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
+        },
+        {
+          "letter_id": "letter-004",
+          "section_id": "sec-009",
+          "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+        },
+        {
+          "letter_id": "letter-005",
+          "section_id": "sec-010",
+          "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+        },
+        {
+          "letter_id": "letter-006",
+          "section_id": "sec-011",
+          "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+        },
+        {
+          "letter_id": "letter-007",
+          "section_id": "sec-012",
+          "title": "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+        },
+        {
+          "letter_id": "letter-008",
+          "section_id": "sec-013",
+          "title": "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
+        },
+        {
+          "letter_id": "letter-009",
+          "section_id": "sec-014",
+          "title": "第9封 4月5日~7日 漓江→阳朔→梧州"
+        },
+        {
+          "letter_id": "letter-010",
+          "section_id": "sec-015",
+          "title": "第10封 4月7日~8日 梧州西江种种"
+        },
+        {
+          "letter_id": "letter-011",
+          "section_id": "sec-016",
+          "title": "第11封 4月8日~9日 肇庆天柱阁"
+        },
+        {
+          "letter_id": "letter-012",
+          "section_id": "sec-017",
+          "title": "第12封 4月9日~11日 广州中山大学/白云山"
+        },
+        {
+          "letter_id": "letter-013",
+          "section_id": "sec-018",
+          "title": "第13封 4月13日~14日 汕头看海"
+        },
+        {
+          "letter_id": "letter-014",
+          "section_id": "sec-019",
+          "title": "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+        },
+        {
+          "letter_id": "letter-015",
+          "section_id": "sec-020",
+          "title": "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+        },
+        {
+          "letter_id": "letter-016",
+          "section_id": "sec-021",
+          "title": "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+        },
+        {
+          "letter_id": "letter-017",
+          "section_id": "sec-022",
+          "title": "第17封 4月23日~25日 温州北雁荡由浅入深"
+        },
+        {
+          "letter_id": "letter-018",
+          "section_id": "sec-023",
+          "title": "第18封 4月28日 朝辞雁荡暮至余杭"
+        },
+        {
+          "letter_id": "letter-019",
+          "section_id": "sec-024",
+          "title": "第19封 4月28日~5月2日 千古如斯的余杭"
+        },
+        {
+          "letter_id": "letter-020",
+          "section_id": "sec-025",
+          "title": "第20封 5月4日~5日 黄山天都峰排云亭"
+        },
+        {
+          "letter_id": "letter-021",
+          "section_id": "sec-026",
+          "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+        },
+        {
+          "letter_id": "letter-022",
+          "section_id": "sec-027",
+          "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+        },
+        {
+          "letter_id": "letter-023",
+          "section_id": "sec-028",
+          "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+        },
+        {
+          "letter_id": "letter-024",
+          "section_id": "sec-029",
+          "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
+        },
+        {
+          "letter_id": "letter-025",
+          "section_id": "sec-030",
+          "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "ref_id": "concept-001-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-006",
+          "letter_id": "letter-001"
+        },
+        {
+          "ref_id": "concept-001-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-007",
+          "letter_id": "letter-002"
+        },
+        {
+          "ref_id": "concept-001-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-008",
+          "letter_id": "letter-003"
+        },
+        {
+          "ref_id": "concept-001-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-009",
+          "letter_id": "letter-004"
+        },
+        {
+          "ref_id": "concept-001-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-010",
+          "letter_id": "letter-005"
+        }
+      ],
+      "review_status": "auto_structural_draft"
+    },
+    {
+      "concept_id": "concept-002",
+      "label": "山水行旅",
+      "description": "结构化主题“山水行旅”由章节标题、篇幅和 A2 working 层主题标签聚合而来，需后续人工复核。",
+      "related_letters": [
+        {
+          "letter_id": "letter-001",
+          "section_id": "sec-006",
+          "title": "第1封 3月17日~18日 娘子关→骊山→西安"
+        },
+        {
+          "letter_id": "letter-003",
+          "section_id": "sec-008",
+          "title": "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
+        },
+        {
+          "letter_id": "letter-004",
+          "section_id": "sec-009",
+          "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+        },
+        {
+          "letter_id": "letter-005",
+          "section_id": "sec-010",
+          "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+        },
+        {
+          "letter_id": "letter-006",
+          "section_id": "sec-011",
+          "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+        },
+        {
+          "letter_id": "letter-007",
+          "section_id": "sec-012",
+          "title": "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
+        },
+        {
+          "letter_id": "letter-008",
+          "section_id": "sec-013",
+          "title": "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
+        },
+        {
+          "letter_id": "letter-012",
+          "section_id": "sec-017",
+          "title": "第12封 4月9日~11日 广州中山大学/白云山"
+        },
+        {
+          "letter_id": "letter-016",
+          "section_id": "sec-021",
+          "title": "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
+        },
+        {
+          "letter_id": "letter-017",
+          "section_id": "sec-022",
+          "title": "第17封 4月23日~25日 温州北雁荡由浅入深"
+        },
+        {
+          "letter_id": "letter-018",
+          "section_id": "sec-023",
+          "title": "第18封 4月28日 朝辞雁荡暮至余杭"
+        },
+        {
+          "letter_id": "letter-020",
+          "section_id": "sec-025",
+          "title": "第20封 5月4日~5日 黄山天都峰排云亭"
+        },
+        {
+          "letter_id": "letter-021",
+          "section_id": "sec-026",
+          "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+        },
+        {
+          "letter_id": "letter-022",
+          "section_id": "sec-027",
+          "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+        },
+        {
+          "letter_id": "letter-023",
+          "section_id": "sec-028",
+          "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+        },
+        {
+          "letter_id": "letter-024",
+          "section_id": "sec-029",
+          "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
+        },
+        {
+          "letter_id": "letter-025",
+          "section_id": "sec-030",
+          "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "ref_id": "concept-002-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-006",
+          "letter_id": "letter-001"
+        },
+        {
+          "ref_id": "concept-002-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-008",
+          "letter_id": "letter-003"
+        },
+        {
+          "ref_id": "concept-002-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-009",
+          "letter_id": "letter-004"
+        },
+        {
+          "ref_id": "concept-002-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-010",
+          "letter_id": "letter-005"
+        },
+        {
+          "ref_id": "concept-002-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-011",
+          "letter_id": "letter-006"
+        }
+      ],
+      "review_status": "auto_structural_draft"
+    },
+    {
+      "concept_id": "concept-003",
+      "label": "城市与旅途",
+      "description": "结构化主题“城市与旅途”由章节标题、篇幅和 A2 working 层主题标签聚合而来，需后续人工复核。",
+      "related_letters": [
+        {
+          "letter_id": "letter-001",
+          "section_id": "sec-006",
+          "title": "第1封 3月17日~18日 娘子关→骊山→西安"
+        },
+        {
+          "letter_id": "letter-002",
+          "section_id": "sec-007",
+          "title": "第2封 3月19日~20日 半坡/碑林→成都"
+        },
+        {
+          "letter_id": "letter-005",
+          "section_id": "sec-010",
+          "title": "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
+        },
+        {
+          "letter_id": "letter-006",
+          "section_id": "sec-011",
+          "title": "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
+        },
+        {
+          "letter_id": "letter-012",
+          "section_id": "sec-017",
+          "title": "第12封 4月9日~11日 广州中山大学/白云山"
+        },
+        {
+          "letter_id": "letter-014",
+          "section_id": "sec-019",
+          "title": "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
+        },
+        {
+          "letter_id": "letter-015",
+          "section_id": "sec-020",
+          "title": "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
+        },
+        {
+          "letter_id": "letter-023",
+          "section_id": "sec-028",
+          "title": "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
+        },
+        {
+          "letter_id": "letter-024",
+          "section_id": "sec-029",
+          "title": "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
+        },
+        {
+          "letter_id": "letter-025",
+          "section_id": "sec-030",
+          "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "ref_id": "concept-003-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-006",
+          "letter_id": "letter-001"
+        },
+        {
+          "ref_id": "concept-003-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-007",
+          "letter_id": "letter-002"
+        },
+        {
+          "ref_id": "concept-003-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-010",
+          "letter_id": "letter-005"
+        },
+        {
+          "ref_id": "concept-003-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-011",
+          "letter_id": "letter-006"
+        },
+        {
+          "ref_id": "concept-003-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-017",
+          "letter_id": "letter-012"
+        }
+      ],
+      "review_status": "auto_structural_draft"
+    },
+    {
+      "concept_id": "concept-004",
+      "label": "多段叙述",
+      "description": "结构化主题“多段叙述”由章节标题、篇幅和 A2 working 层主题标签聚合而来，需后续人工复核。",
+      "related_letters": [
+        {
+          "letter_id": "letter-004",
+          "section_id": "sec-009",
+          "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+        },
+        {
+          "letter_id": "letter-017",
+          "section_id": "sec-022",
+          "title": "第17封 4月23日~25日 温州北雁荡由浅入深"
+        },
+        {
+          "letter_id": "letter-019",
+          "section_id": "sec-024",
+          "title": "第19封 4月28日~5月2日 千古如斯的余杭"
+        },
+        {
+          "letter_id": "letter-021",
+          "section_id": "sec-026",
+          "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+        },
+        {
+          "letter_id": "letter-022",
+          "section_id": "sec-027",
+          "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+        },
+        {
+          "letter_id": "letter-025",
+          "section_id": "sec-030",
+          "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "ref_id": "concept-004-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-009",
+          "letter_id": "letter-004"
+        },
+        {
+          "ref_id": "concept-004-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-022",
+          "letter_id": "letter-017"
+        },
+        {
+          "ref_id": "concept-004-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-024",
+          "letter_id": "letter-019"
+        },
+        {
+          "ref_id": "concept-004-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-026",
+          "letter_id": "letter-021"
+        },
+        {
+          "ref_id": "concept-004-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-027",
+          "letter_id": "letter-022"
+        }
+      ],
+      "review_status": "auto_structural_draft"
+    },
+    {
+      "concept_id": "concept-005",
+      "label": "长篇行旅记录",
+      "description": "结构化主题“长篇行旅记录”由章节标题、篇幅和 A2 working 层主题标签聚合而来，需后续人工复核。",
+      "related_letters": [
+        {
+          "letter_id": "letter-004",
+          "section_id": "sec-009",
+          "title": "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
+        },
+        {
+          "letter_id": "letter-017",
+          "section_id": "sec-022",
+          "title": "第17封 4月23日~25日 温州北雁荡由浅入深"
+        },
+        {
+          "letter_id": "letter-019",
+          "section_id": "sec-024",
+          "title": "第19封 4月28日~5月2日 千古如斯的余杭"
+        },
+        {
+          "letter_id": "letter-021",
+          "section_id": "sec-026",
+          "title": "第21封 5月6日~8日 青阳九华山/安庆小孤山"
+        },
+        {
+          "letter_id": "letter-022",
+          "section_id": "sec-027",
+          "title": "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
+        },
+        {
+          "letter_id": "letter-025",
+          "section_id": "sec-030",
+          "title": "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
+        }
+      ],
+      "evidence_refs": [
+        {
+          "ref_id": "concept-005-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-009",
+          "letter_id": "letter-004"
+        },
+        {
+          "ref_id": "concept-005-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-022",
+          "letter_id": "letter-017"
+        },
+        {
+          "ref_id": "concept-005-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-024",
+          "letter_id": "letter-019"
+        },
+        {
+          "ref_id": "concept-005-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-026",
+          "letter_id": "letter-021"
+        },
+        {
+          "ref_id": "concept-005-structural",
+          "evidence_mode": "structural_no_quote",
+          "note": "Structural reference only; no source text excerpt is included.",
+          "section_id": "sec-027",
+          "letter_id": "letter-022"
+        }
+      ],
+      "review_status": "auto_structural_draft"
+    }
+  ]
 }

@@ -106,6 +106,10 @@ def scan_reports_for_body_text(paths: ProjectPaths, findings: list[Finding]) -> 
     if not reports_dir.exists():
         return
     for path in reports_dir.glob("*.md"):
+        # Avoid recursive false positives from this checker writing prior failures
+        # into its own pipeline-check reports.
+        if path.name.startswith("v0.7_") and path.name.endswith("_pipeline_check.md"):
+            continue
         text = path.read_text(encoding="utf-8", errors="replace")
         lowered = text.lower()
         for pattern in REPORT_BODY_PATTERNS:
