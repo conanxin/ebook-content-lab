@@ -44,5 +44,9 @@
       "evidence_mode": "structural_no_quote",
       "note": "Structural reference only; no source text excerpt is included."
     }
-  ]
+  ],
+  "visibility": "public",
+  "release_phase": "public-preview",
+  "review_status": "manual-review-pending",
+  "preview_notice": "Draft public preview. Manual review is pending; do not treat this as final reviewed content."
 }

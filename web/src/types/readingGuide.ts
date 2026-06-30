@@ -1,54 +1,115 @@
-export interface EvidenceRef {
-  page: number | null;
-  quote: string;
-  note: string;
-  source_file?: string | null;
+export interface StructuralEvidenceRef {
+  ref_id?: string;
+  evidence_mode?: string;
+  note?: string;
+  section_id?: string;
+  letter_id?: string;
+  chunk_ids?: string[];
 }
 
 export interface ReadingGuideBook {
   title: string | null;
   author?: string | null;
   language?: string | null;
+  publisher?: string | null;
+  date?: string | null;
+  source_type?: string | null;
 }
 
-export interface BookOverviewData {
+export interface ReadingGuidePublicMeta {
   schema_version: string;
   status: string;
+  generated_at?: string;
+  visibility?: string;
+  release_phase?: string;
+  review_status?: string;
+  preview_notice?: string;
   book: ReadingGuideBook;
+}
+
+export interface BookOverviewData extends ReadingGuidePublicMeta {
   one_sentence_summary?: string;
   reading_purpose?: string;
-  structure_overview?: string;
-  how_to_use?: string;
+  structure_overview?: {
+    body_letter_count?: number;
+    section_range?: {
+      start?: string;
+      end?: string;
+    };
+    place_count_from_titles?: number;
+    theme_count_from_structural_tags?: number;
+    source_mode?: string;
+  };
+  how_to_use?: string[];
   limitations?: string[];
-  evidence_refs?: EvidenceRef[];
+  evidence_refs?: StructuralEvidenceRef[];
 }
 
-export interface ChapterReadingCardsData {
-  schema_version: string;
-  status: string;
-  book: ReadingGuideBook;
-  chapters: unknown[];
+export interface ChapterReadingCard {
+  chapter_id: string;
+  letter_id?: string;
+  section_id?: string;
+  order?: number;
+  title?: string;
+  summary?: string;
+  places?: string[];
+  themes?: string[];
+  char_count?: number;
+  paragraph_count?: number;
+  chunk_count?: number;
+  evidence_refs?: StructuralEvidenceRef[];
+  review_status?: string;
 }
 
-export interface KeyConceptsData {
-  schema_version: string;
-  status: string;
-  book: ReadingGuideBook;
-  concepts: unknown[];
+export interface ChapterReadingCardsData extends ReadingGuidePublicMeta {
+  chapters: ChapterReadingCard[];
 }
 
-export interface QuoteIndexData {
-  schema_version: string;
-  status: string;
-  book: ReadingGuideBook;
-  quotes: unknown[];
+export interface KeyConcept {
+  concept_id: string;
+  label?: string;
+  description?: string;
+  related_letters?: Array<{
+    letter_id?: string;
+    section_id?: string;
+    title?: string;
+  }>;
+  evidence_refs?: StructuralEvidenceRef[];
+  review_status?: string;
 }
 
-export interface ReadingQuestionsData {
-  schema_version: string;
-  status: string;
-  book: ReadingGuideBook;
-  questions: unknown[];
+export interface KeyConceptsData extends ReadingGuidePublicMeta {
+  concepts: KeyConcept[];
+}
+
+export interface QuoteIndexEntry {
+  quote_id: string;
+  letter_id?: string;
+  section_id?: string;
+  quote_mode?: string;
+  quote?: string;
+  note?: string;
+  evidence_refs?: StructuralEvidenceRef[];
+  review_status?: string;
+}
+
+export interface QuoteIndexData extends ReadingGuidePublicMeta {
+  quote_mode?: string;
+  quotes: QuoteIndexEntry[];
+}
+
+export interface ReadingQuestion {
+  question_id: string;
+  scope?: string;
+  letter_id?: string;
+  section_id?: string;
+  question?: string;
+  basis?: string;
+  review_status?: string;
+}
+
+export interface ReadingQuestionsData extends ReadingGuidePublicMeta {
+  questions: ReadingQuestion[];
 }
 
 export interface ReadingGuideDataBundle {

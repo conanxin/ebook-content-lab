@@ -319,6 +319,175 @@ code {
   line-height: 1.8;
 }
 
+.reading-guide-status-strip,
+.reading-guide-tags,
+.download-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reading-guide-status-strip {
+  margin-top: 18px;
+}
+
+.preview-badge,
+.reading-guide-tags span,
+.download-row a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 9px;
+  border: 1px solid rgba(32, 39, 37, 0.12);
+  border-radius: 6px;
+  background: #f8f7f1;
+  color: #2f3734;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.preview-badge.is-draft {
+  border-color: rgba(139, 106, 39, 0.28);
+  background: #fff8df;
+  color: #72511b;
+}
+
+.preview-badge.is-preview {
+  border-color: rgba(47, 111, 126, 0.24);
+  background: #eaf5f6;
+  color: #275d68;
+}
+
+.preview-badge.is-pending {
+  border-color: rgba(154, 75, 34, 0.25);
+  background: #fff0e5;
+  color: #783b1d;
+}
+
+.reading-guide-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-color: rgba(154, 75, 34, 0.28);
+  background: #fff8f0;
+}
+
+.reading-guide-warning h2 {
+  margin-top: 0;
+}
+
+.reading-guide-warning p,
+.reading-guide-overview p,
+.chapter-card p,
+.concept-card p,
+.quote-policy p,
+.question-card p {
+  line-height: 1.72;
+}
+
+.reading-guide-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.reading-guide-stat-grid div {
+  padding: 12px;
+  border: 1px solid rgba(32, 39, 37, 0.1);
+  border-radius: 8px;
+  background: #fafaf7;
+}
+
+.reading-guide-stat-grid strong {
+  display: block;
+  font-size: 24px;
+}
+
+.reading-guide-stat-grid span,
+.muted-line,
+.chapter-card small,
+.question-card span {
+  color: #65706b;
+}
+
+.reading-guide-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.reading-guide-two-column h3,
+.chapter-card h3,
+.concept-card h3,
+.question-card h3 {
+  margin: 0 0 8px;
+}
+
+.chapter-card-list,
+.question-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.chapter-card,
+.concept-card,
+.question-card {
+  padding: 14px;
+  border: 1px solid rgba(32, 39, 37, 0.11);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.chapter-card header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.chapter-card header > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 50%;
+  background: #2f6f7e;
+  color: #fff;
+  font-weight: 900;
+}
+
+.chapter-card header p {
+  margin: 0;
+  color: #65706b;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.quote-policy header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.quote-policy code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #eef0ec;
+}
+
+.download-row a {
+  text-decoration: none;
+}
+
 .app-shell {
   min-height: 100vh;
   background:

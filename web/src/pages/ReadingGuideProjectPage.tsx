@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import {
+  AlertTriangle,
   ArrowLeft,
   BookOpen,
   CircleHelp,
@@ -7,14 +8,18 @@ import {
   Layers,
   Lightbulb,
   Quote,
+  ShieldCheck,
 } from "lucide-react";
 import type { ProjectMetadata } from "../types/project";
 import type {
   BookOverviewData,
+  ChapterReadingCard,
   ChapterReadingCardsData,
+  KeyConcept,
   KeyConceptsData,
   QuoteIndexData,
   ReadingGuideDataBundle,
+  ReadingQuestion,
   ReadingQuestionsData,
 } from "../types/readingGuide";
 import { projectDataPath } from "../utils/paths";
@@ -32,8 +37,6 @@ interface ModuleStatus {
   count: number | null;
   description: string;
 }
-
-const PLACEHOLDER = "待第二本电子书导入后生成";
 
 async function fetchJson<T>(slug: string, file: string): Promise<T> {
   const url = projectDataPath(slug, file);
@@ -54,6 +57,25 @@ function countItems(data: ReadingGuideDataBundle, key: keyof ReadingGuideDataBun
 
 function moduleDataStatus(data: ReadingGuideDataBundle, key: keyof ReadingGuideDataBundle): string {
   return data[key]?.status || "missing";
+}
+
+function joinList(values?: string[], fallback = "待人工复核"): string {
+  if (!values || values.length === 0) return fallback;
+  return values.join("、");
+}
+
+function displayText(value: string | null | undefined, fallback = "待人工复核"): string {
+  const trimmed = value?.trim();
+  return trimmed ? trimmed : fallback;
+}
+
+function evidenceLabel(refs: Array<{ section_id?: string; letter_id?: string }> | undefined): string {
+  if (!refs || refs.length === 0) return "结构证据待补充";
+  return refs
+    .slice(0, 2)
+    .map((ref) => [ref.section_id, ref.letter_id].filter(Boolean).join(" / "))
+    .filter(Boolean)
+    .join("；") || "结构证据待补充";
 }
 
 export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuideProjectPageProps) {
@@ -109,7 +131,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "book_overview.json",
         status: moduleDataStatus(data, "bookOverview"),
         count: null,
-        description: "全书定位、阅读目的、结构概览和使用说明。",
+        description: "书籍定位、阅读目的、结构概览、使用方式和限制说明。",
       },
       {
         key: "chapterReadingCards",
@@ -117,7 +139,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "chapter_reading_cards.json",
         status: moduleDataStatus(data, "chapterReadingCards"),
         count: countItems(data, "chapterReadingCards"),
-        description: "按章节生成摘要、关键点、阅读提示和证据引用。",
+        description: "按 25 封书信展示标题、结构摘要、地点、主题和复核状态。",
       },
       {
         key: "keyConcepts",
@@ -125,7 +147,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "key_concepts.json",
         status: moduleDataStatus(data, "keyConcepts"),
         count: countItems(data, "keyConcepts"),
-        description: "整理术语、主题、人物或概念线索。",
+        description: "由结构化主题聚合出的概念草案，等待人工细读修订。",
       },
       {
         key: "quoteIndex",
@@ -133,7 +155,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "quote_index.json",
         status: moduleDataStatus(data, "quoteIndex"),
         count: countItems(data, "quoteIndex"),
-        description: "只保存短引文、页码和说明，不公开 OCR 全文。",
+        description: "当前只保留结构引用，不发布原文引文或长摘录。",
       },
       {
         key: "readingQuestions",
@@ -141,14 +163,22 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "reading_questions.json",
         status: moduleDataStatus(data, "readingQuestions"),
         count: countItems(data, "readingQuestions"),
-        description: "生成理解、讨论、研究和反思问题。",
+        description: "基于标题、地点和主题生成的轻量阅读提示。",
       },
     ],
     [data],
   );
 
   const overview = data.bookOverview;
-  const bookTitle = project.book?.title || project.book_title || overview?.book?.title || "书名未定";
+  const chapters = data.chapterReadingCards?.chapters || [];
+  const concepts = data.keyConcepts?.concepts || [];
+  const quotes = data.quoteIndex?.quotes || [];
+  const questions = data.readingQuestions?.questions || [];
+  const bookTitle = project.book?.title || project.book_title || overview?.book?.title || "待定书名";
+  const schemaVersion = overview?.schema_version || data.chapterReadingCards?.schema_version || "reading-guide.v0.2";
+  const publicStatus = overview?.status || project.status || "draft";
+  const releasePhase = overview?.release_phase || "public-preview";
+  const reviewStatus = overview?.review_status || "manual-review-pending";
 
   return (
     <main className="portal-shell reading-guide-page">
@@ -164,9 +194,16 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         </div>
         <h1>{project.title}</h1>
         <p>
-          当前项目为 reading-guide 草稿，尚未导入电子书。导入 PDF、完成 OCR 和证据抽取后，
-          这里会展示全书导读、章节导读、核心概念、引文索引和阅读问题。
+          这是第二个电子书子项目的公开预览版。页面展示的是结构化导读草案：章节卡、概念、问题和结构化引文槽位已经公开，
+          但人工复核尚未完成，因此不能视为最终导读或审定内容。
         </p>
+
+        <div className="reading-guide-status-strip" aria-label="public preview status">
+          <span className="preview-badge is-draft">Draft</span>
+          <span className="preview-badge is-preview">Public Preview</span>
+          <span className="preview-badge is-pending">Manual review pending</span>
+        </div>
+
         <dl>
           <div>
             <dt>书名</dt>
@@ -174,25 +211,80 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
           </div>
           <div>
             <dt>status</dt>
-            <dd>{project.status}</dd>
+            <dd>{publicStatus}</dd>
           </div>
           <div>
-            <dt>当前数据状态</dt>
-            <dd>{loading ? "正在加载 draft 数据" : error ? "公开 draft 数据加载失败" : "draft 数据已就绪"}</dd>
+            <dt>release phase</dt>
+            <dd>{releasePhase}</dd>
+          </div>
+          <div>
+            <dt>review status</dt>
+            <dd>{reviewStatus}</dd>
+          </div>
+          <div>
+            <dt>schema</dt>
+            <dd>{schemaVersion}</dd>
+          </div>
+          <div>
+            <dt>数据状态</dt>
+            <dd>{loading ? "加载中" : error ? "加载失败" : "公开预览数据已加载"}</dd>
           </div>
         </dl>
       </section>
 
-      {error ? (
-        <section className="state-box error">reading-guide 数据加载失败：{error}</section>
-      ) : null}
+      {error ? <section className="state-box error">reading-guide 数据加载失败：{error}</section> : null}
 
-      <section className="content-section reading-guide-notice">
-        <h2>待导入电子书</h2>
-        <p>
-          该项目目前只包含通用数据骨架，没有 PDF、OCR 文本或书中内容。所有内容字段均保持草稿状态：
-          {overview?.one_sentence_summary || PLACEHOLDER}。
-        </p>
+      <section className="content-section reading-guide-warning">
+        <AlertTriangle size={20} />
+        <div>
+          <h2>公开预览说明</h2>
+          <p>
+            本页面只发布结构化摘要、主题标签和复核任务所需的公开数据，不发布电子书正文、长段摘录或本地来源路径。
+            当前 95 条人工复核任务尚未完成，页面内容需要后续人工确认。
+          </p>
+        </div>
+      </section>
+
+      <section className="content-section reading-guide-overview">
+        <h2>书籍概览</h2>
+        <p>{displayText(overview?.one_sentence_summary, "公开导读草案已生成，概览仍待人工复核。")}</p>
+        <p>{displayText(overview?.reading_purpose, "阅读目的仍待人工复核。")}</p>
+        <div className="reading-guide-stat-grid">
+          <div>
+            <strong>{overview?.structure_overview?.body_letter_count ?? chapters.length}</strong>
+            <span>章节卡</span>
+          </div>
+          <div>
+            <strong>{concepts.length}</strong>
+            <span>核心概念</span>
+          </div>
+          <div>
+            <strong>{questions.length}</strong>
+            <span>阅读问题</span>
+          </div>
+          <div>
+            <strong>{quotes.length}</strong>
+            <span>结构化引文槽位</span>
+          </div>
+        </div>
+        <div className="reading-guide-two-column">
+          <div>
+            <h3>如何使用</h3>
+            <ul>
+              {(overview?.how_to_use || ["先按章节顺序浏览导读卡，再查看概念和问题。"]).map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3>限制说明</h3>
+            <ul>
+              {(overview?.limitations || ["当前版本仍是 draft，需人工复核。"]).map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section className="content-section">
@@ -229,14 +321,92 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       </section>
 
       <section className="content-section">
-        <h2>后续生成流程</h2>
-        <ol className="reading-guide-steps">
-          <li>把第二本电子书放入项目 private/source 目录。</li>
-          <li>运行 OCR，并把 OCR 全文保留在 private 目录。</li>
-          <li>识别书名、作者、章节结构和内容类型。</li>
-          <li>生成章节导读、核心概念、短引文索引和阅读问题。</li>
-          <li>为每条判断补充页码、短摘和说明，再运行 reading-guide 校验。</li>
-        </ol>
+        <h2>25 个章节导读卡</h2>
+        <div className="chapter-card-list">
+          {chapters.map((chapter: ChapterReadingCard) => (
+            <article className="chapter-card" key={chapter.chapter_id}>
+              <header>
+                <span>{chapter.order ?? "?"}</span>
+                <div>
+                  <h3>{displayText(chapter.title, "章节标题待复核")}</h3>
+                  <p>{chapter.section_id} / {chapter.letter_id}</p>
+                </div>
+              </header>
+              <p>{displayText(chapter.summary, "结构摘要待复核。")}</p>
+              <div className="reading-guide-tags">
+                <span>地点：{joinList(chapter.places)}</span>
+                <span>主题：{joinList(chapter.themes)}</span>
+                <span>chunk：{chapter.chunk_count ?? "待复核"}</span>
+                <span>复核：{chapter.review_status || "pending"}</span>
+              </div>
+              <small>结构证据：{evidenceLabel(chapter.evidence_refs)}</small>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <h2>5 个核心概念</h2>
+        <div className="concept-grid">
+          {concepts.map((concept: KeyConcept) => (
+            <article className="concept-card" key={concept.concept_id}>
+              <h3>{displayText(concept.label, "概念待复核")}</h3>
+              <p>{displayText(concept.description, "概念说明待人工复核。")}</p>
+              <p className="muted-line">
+                关联章节：{concept.related_letters?.length ?? 0}；复核状态：{concept.review_status || "pending"}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section quote-policy">
+        <header>
+          <ShieldCheck size={22} />
+          <div>
+            <h2>引文索引策略</h2>
+            <p>
+              当前 quote index 使用 <code>{data.quoteIndex?.quote_mode || "structural_no_quote"}</code>：
+              只保留章节和书信级结构引用，不发布原文句子。后续如需加入短摘，必须经过人工复核。
+            </p>
+          </div>
+        </header>
+        <div className="reading-guide-stat-grid">
+          <div>
+            <strong>{quotes.length}</strong>
+            <span>结构化槽位</span>
+          </div>
+          <div>
+            <strong>0</strong>
+            <span>公开原文引文</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <h2>26 个阅读问题</h2>
+        <div className="question-list">
+          {questions.map((question: ReadingQuestion) => (
+            <article className="question-card" key={question.question_id}>
+              <h3>{displayText(question.question, "阅读问题待复核")}</h3>
+              <p>{displayText(question.basis, "结构依据待复核。")}</p>
+              <span>
+                {question.scope || "scope pending"} {question.section_id ? ` / ${question.section_id}` : ""}
+              </span>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <h2>公开数据下载</h2>
+        <div className="download-row">
+          <a href={projectDataPath(projectSlug, "book_overview.json")}>book_overview.json</a>
+          <a href={projectDataPath(projectSlug, "chapter_reading_cards.json")}>chapter_reading_cards.json</a>
+          <a href={projectDataPath(projectSlug, "key_concepts.json")}>key_concepts.json</a>
+          <a href={projectDataPath(projectSlug, "quote_index.json")}>quote_index.json</a>
+          <a href={projectDataPath(projectSlug, "reading_questions.json")}>reading_questions.json</a>
+        </div>
       </section>
     </main>
   );

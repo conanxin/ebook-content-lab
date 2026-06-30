@@ -839,5 +839,9 @@
       ],
       "review_status": "auto_structural_draft"
     }
-  ]
+  ],
+  "visibility": "public",
+  "release_phase": "public-preview",
+  "review_status": "manual-review-pending",
+  "preview_notice": "Draft public preview. Manual review is pending; do not treat this as final reviewed content."
 }
