@@ -1,0 +1,43 @@
+{
+  "project": "second-reading-guide",
+  "version": "v0.7-A4",
+  "status": "draft",
+  "generatedAt": "2026-06-30T07:05:54.719592+00:00",
+  "totalTasks": 95,
+  "priorityCounts": {
+    "P0": 10,
+    "P1": 81,
+    "P2": 4
+  },
+  "categoryCounts": {
+    "book_overview": 1,
+    "chapter_card": 25,
+    "chapter_card_sample": 5,
+    "concept_grouping_refinement": 1,
+    "future_quote_replacement": 1,
+    "key_concept": 5,
+    "public_boundary": 1,
+    "question_quality_enhancement": 1,
+    "quote_policy": 1,
+    "quote_structural_entry": 25,
+    "reading_question": 26,
+    "schema_status": 1,
+    "web_mirror": 1,
+    "wording_polish": 1
+  },
+  "sourceFileCounts": {
+    "projects/second-reading-guide/public/*.json": 3,
+    "projects/second-reading-guide/public/book_overview.json": 1,
+    "projects/second-reading-guide/public/chapter_reading_cards.json": 30,
+    "projects/second-reading-guide/public/key_concepts.json": 6,
+    "projects/second-reading-guide/public/quote_index.json": 27,
+    "projects/second-reading-guide/public/reading_questions.json": 27,
+    "web/public/projects/second-reading-guide/*.json": 1
+  },
+  "coverage": {
+    "chapterCards": 25,
+    "keyConcepts": 5,
+    "quoteStructuralEntries": 25,
+    "readingQuestions": 26
+  }
+}
