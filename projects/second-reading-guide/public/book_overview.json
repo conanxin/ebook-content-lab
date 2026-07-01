@@ -88,6 +88,21 @@
       "reading_steps_count": 25,
       "question_linkage_count": 26,
       "generated_at": "2026-07-01T02:01:48.257729+00:00"
+    },
+    "map_mobile_polish": {
+      "version": "v0.7-A14",
+      "total_place_count": 66,
+      "public_coordinate_count": 26,
+      "approximate_coordinate_count": 19,
+      "needs_coordinate_review_count": 21,
+      "coordinate_ready_count": 45,
+      "coordinate_source_type_counts": {
+        "encyclopedia": 31,
+        "museum": 2,
+        "official": 1,
+        "unesco": 11
+      },
+      "generated_at": "2026-07-01T02:18:38.686970+00:00"
     }
   },
   "place_then_now": [
@@ -108,13 +123,22 @@
       "appears_in_letters": [
         "letter-001"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面可作初步地名核对，后续建议补充地方文旅或景区官方来源。",
       "now_context": "今日可按历史关隘与太行山交通节点理解；实际游览开放、交通和保护状态仍需临行前核验。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 37.94,
+        "lng": 113.88
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Niangziguan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Niangziguan",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按娘子关关隘/镇域作阅读地图近似点，后续建议补地方官方坐标。"
     },
     {
       "place": "骊山",
@@ -133,13 +157,22 @@
       "appears_in_letters": [
         "letter-001"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面可作初步对照，后续建议补充景区或文旅官方来源。",
       "now_context": "今日可按西安近郊山岳与历史文化景观理解；与华清宫、秦岭北麓旅游线路相关。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 34.36,
+        "lng": 109.22
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Li",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Li",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按骊山景区山体作近似点，具体书中落点待复核。"
     },
     {
       "place": "西安",
@@ -158,13 +191,22 @@
       "appears_in_letters": [
         "letter-001"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
       "now_context": "今日可按陕西省会、古都与综合交通城市节点理解，是多处历史遗址和博物馆的入口城市。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 34.3416,
+        "lng": 108.9398
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xi'an",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xi%27an",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按西安市城市中心作城市节点坐标。"
     },
     {
       "place": "半坡",
@@ -183,13 +225,22 @@
       "appears_in_letters": [
         "letter-002"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "museum",
       "source_review_note": "博物馆官网用于场馆身份核对，开放信息需临行前复核。",
       "now_context": "今日可按新石器时代遗址博物馆理解，适合与书中早期旅行的考古兴趣相互参照。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 34.279,
+        "lng": 109.052
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Xi'an Banpo Museum",
+      "coordinate_source_url": "http://www.banpomuseum.com/",
+      "coordinate_source_type": "museum",
+      "coordinate_review_note": "按半坡遗址/博物馆区域作阅读地图坐标。"
     },
     {
       "place": "碑林",
@@ -208,13 +259,22 @@
       "appears_in_letters": [
         "letter-002"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步定位，后续建议补充博物馆官网。",
       "now_context": "今日可按碑刻、石刻和博物馆型历史文化节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 34.257,
+        "lng": 108.954
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Xi'an Beilin Museum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Stele_Forest",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按西安碑林博物馆区域作阅读地图坐标。"
     },
     {
       "place": "成都",
@@ -233,13 +293,22 @@
       "appears_in_letters": [
         "letter-002"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
       "now_context": "今日可按四川省会、区域交通枢纽与城市文化节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 30.5728,
+        "lng": 104.0668
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Chengdu",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Chengdu",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按成都市城市中心作城市节点坐标。"
     },
     {
       "place": "杜甫草堂",
@@ -258,13 +327,22 @@
       "appears_in_letters": [
         "letter-003"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "museum",
       "source_review_note": "百科页面用于初步核对，后续建议补充博物馆官方页面。",
       "now_context": "今日可按诗人纪念馆和成都文化景点理解，阅读时可对照作者在城市中的文化访问线索。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 30.66,
+        "lng": 104.027
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Du Fu Thatched Cottage Museum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Du_Fu_Thatched_Cottage",
+      "coordinate_source_type": "museum",
+      "coordinate_review_note": "按杜甫草堂博物馆区域作阅读地图坐标。"
     },
     {
       "place": "武侯祠",
@@ -283,13 +361,22 @@
       "appears_in_letters": [
         "letter-003"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区或博物馆官方来源。",
       "now_context": "今日可按三国历史纪念空间和成都重要文化景点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 30.647,
+        "lng": 104.048
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wuhou Shrine",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Wuhou_Shrine",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按成都武侯祠区域作阅读地图坐标。"
     },
     {
       "place": "青城山",
@@ -308,13 +395,22 @@
       "appears_in_letters": [
         "letter-003"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作世界遗产身份核对，具体登山路线需另行核验。",
       "now_context": "今日可按世界遗产体系中的道教名山与水利文化景观理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 30.905,
+        "lng": 103.574
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1001/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按青城山世界遗产/景区区域作阅读地图坐标。"
     },
     {
       "place": "乐山大佛",
@@ -333,13 +429,22 @@
       "appears_in_letters": [
         "letter-004"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，游线和开放信息需另查。",
       "now_context": "今日可按世界遗产中的佛教造像与岷江、青衣江、大渡河交汇景观理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 29.547,
+        "lng": 103.772
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/779/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按乐山大佛景区区域作阅读地图坐标。"
     },
     {
       "place": "青衣亭",
@@ -358,13 +463,19 @@
       "appears_in_letters": [
         "letter-004"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "峨嵋山脚",
@@ -383,13 +494,22 @@
       "appears_in_letters": [
         "letter-004"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体入口、索道和徒步路况需另查。",
       "now_context": "今日可按峨眉山世界遗产景区入口地带理解，书中山脚经验与现代景区交通已有明显差异。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 29.602,
+        "lng": 103.484
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/779/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按峨眉山景区入口地带作近似阅读坐标，具体山脚位置待人工复核。"
     },
     {
       "place": "峨嵋车站",
@@ -408,13 +528,19 @@
       "appears_in_letters": [
         "letter-005"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "成昆线隧道",
@@ -433,13 +559,19 @@
       "appears_in_letters": [
         "letter-005"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按交通节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "昆明车站",
@@ -458,13 +590,22 @@
       "appears_in_letters": [
         "letter-005"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，车站具体信息需另行确认。",
       "now_context": "今日可按云南省会和铁路、城市交通节点理解，车站只是进入昆明旅行空间的交通入口。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 25.017,
+        "lng": 102.722
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Kunming",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明站城市交通节点作近似坐标。"
     },
     {
       "place": "昆明温泉",
@@ -483,13 +624,22 @@
       "appears_in_letters": [
         "letter-006"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "仅能支持昆明城市背景，温泉精确地点仍为待复核项。",
       "now_context": "今日可先按昆明城市周边休闲游览线索理解；具体温泉地点仍需人工核对。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 24.958,
+        "lng": 102.45
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Kunming",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明/安宁温泉方向作近似阅读坐标，具体温泉点位待复核。"
     },
     {
       "place": "西山",
@@ -508,13 +658,22 @@
       "appears_in_letters": [
         "letter-006"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
       "now_context": "今日可按昆明滇池西岸山地景区理解，适合对照书中城市近郊游览经验。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 24.965,
+        "lng": 102.625
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Western Hills",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Western_Hills",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明西山/滇池西岸山地作近似坐标。"
     },
     {
       "place": "石林",
@@ -533,13 +692,22 @@
       "appears_in_letters": [
         "letter-006"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体景区游线需另查。",
       "now_context": "今日可按南方喀斯特世界遗产组成部分理解，景区化程度与早年旅行经验需要分开阅读。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 24.817,
+        "lng": 103.324
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - South China Karst",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1248/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按石林喀斯特景区区域作阅读地图坐标。"
     },
     {
       "place": "贵阳花溪",
@@ -558,13 +726,22 @@
       "appears_in_letters": [
         "letter-006"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于地名初步核对，后续建议补充地方文旅来源。",
       "now_context": "今日可按贵阳近郊区和山水休闲节点理解，具体书中地点仍需人工复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 26.409,
+        "lng": 106.67
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Huaxi District",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Huaxi_District",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按贵阳花溪区作近似坐标，具体书中地点待复核。"
     },
     {
       "place": "贵阳流山",
@@ -583,13 +760,19 @@
       "appears_in_letters": [
         "letter-007"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "桂林伏波山",
@@ -608,13 +791,22 @@
       "appears_in_letters": [
         "letter-007"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充桂林官方旅游来源。",
       "now_context": "今日可按桂林市区山水景点理解，适合对照书中城市山水游览线索。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 25.284,
+        "lng": 110.3
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Fubo Hill",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Fubo_Hill",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林伏波山景点区域作阅读地图坐标。"
     },
     {
       "place": "七星山",
@@ -633,13 +825,22 @@
       "appears_in_letters": [
         "letter-007"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充官方景区来源。",
       "now_context": "今日可按桂林七星景区相关山水公园理解，精确对应仍需人工复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 25.276,
+        "lng": 110.318
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Seven Star Park",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Seven_Star_Park",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林七星景区区域作近似坐标。"
     },
     {
       "place": "象鼻山",
@@ -658,13 +859,22 @@
       "appears_in_letters": [
         "letter-007"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区或文旅官方来源。",
       "now_context": "今日可按桂林标志性城市山水景点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 25.273,
+        "lng": 110.292
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Elephant Trunk Hill",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Elephant_Trunk_Hill",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林象鼻山景点区域作阅读地图坐标。"
     },
     {
       "place": "漓江",
@@ -686,13 +896,22 @@
         "letter-007",
         "letter-009"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，游船线路和生态保护信息需另查。",
       "now_context": "今日可按桂林至阳朔之间的典型山水游览水系理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 25.167,
+        "lng": 110.417
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Li River",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Li_River",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "漓江为线性水系，按桂林至阳朔游览段作近似阅读坐标。"
     },
     {
       "place": "桂林南溪山",
@@ -711,13 +930,19 @@
       "appears_in_letters": [
         "letter-008"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "叠彩峰",
@@ -736,13 +961,19 @@
       "appears_in_letters": [
         "letter-008"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "隐山",
@@ -761,13 +992,19 @@
       "appears_in_letters": [
         "letter-008"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按自然景观或山岳游览节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "阳朔",
@@ -789,13 +1026,22 @@
         "letter-008",
         "letter-009"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于地名核对，具体景区和交通需另查。",
       "now_context": "今日可按桂林山水旅游县城与漓江游览节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 24.778,
+        "lng": 110.497
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Yangshuo County",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yangshuo_County",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按阳朔县城/漓江游览节点作阅读地图坐标。"
     },
     {
       "place": "梧州",
@@ -814,13 +1060,22 @@
       "appears_in_letters": [
         "letter-009"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体江岸地点仍需人工复核。",
       "now_context": "今日可按西江流域城市节点理解，适合对照书中水路或沿江旅行线索。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 23.476,
+        "lng": 111.279
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Wuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Wuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按梧州市城市节点作阅读地图坐标。"
     },
     {
       "place": "梧州西江种种",
@@ -839,13 +1094,19 @@
       "appears_in_letters": [
         "letter-010"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "肇庆天柱阁",
@@ -864,13 +1125,22 @@
       "appears_in_letters": [
         "letter-011"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面只能支持城市背景，天柱阁需要继续补充公开来源。",
       "now_context": "今日可先按肇庆城市和岭南山水游览节点理解；天柱阁精确对应仍需复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 23.05,
+        "lng": 112.465
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Zhaoqing",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Zhaoqing",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "当前公开来源只支撑肇庆城市背景，天柱阁精确点位待复核。"
     },
     {
       "place": "广州中山大学",
@@ -889,13 +1159,22 @@
       "appears_in_letters": [
         "letter-012"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "official",
       "source_review_note": "高校官网可作机构身份核对，具体历史校区仍需人工复核。",
       "now_context": "今日可按高校校园和广州城市文化节点理解，需与书中访问语境分开阅读。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 23.096,
+        "lng": 113.293
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Sun Yat-sen University",
+      "coordinate_source_url": "https://www.sysu.edu.cn/en/",
+      "coordinate_source_type": "official",
+      "coordinate_review_note": "按广州中山大学旧校园/海珠校区方向作近似坐标，具体校区待复核。"
     },
     {
       "place": "白云山",
@@ -914,13 +1193,22 @@
       "appears_in_letters": [
         "letter-012"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
       "now_context": "今日可按广州城市山岳景区理解，现代游览设施与早年旅行视角差异明显。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 23.188,
+        "lng": 113.297
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Baiyun Mountain (Guangzhou)",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Baiyun_Mountain_(Guangzhou)",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按广州白云山景区区域作阅读地图坐标。"
     },
     {
       "place": "汕头看海",
@@ -939,13 +1227,19 @@
       "appears_in_letters": [
         "letter-013"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "云霄",
@@ -964,13 +1258,19 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "漳浦",
@@ -989,13 +1289,19 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "漳州",
@@ -1014,13 +1320,22 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对。",
       "now_context": "今日可按闽南城市节点理解，具体书中抵达、停留或交通语境仍需细读复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 24.513,
+        "lng": 117.647
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Zhangzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Zhangzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按漳州市城市节点作阅读地图坐标。"
     },
     {
       "place": "厦门",
@@ -1039,13 +1354,22 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
       "now_context": "今日可按沿海城市、港口和旅游城市节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 24.4798,
+        "lng": 118.0894
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xiamen",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xiamen",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按厦门城市节点作阅读地图坐标。"
     },
     {
       "place": "福州",
@@ -1064,13 +1388,22 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
       "now_context": "今日可按福建省会和城市文化节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 26.0745,
+        "lng": 119.2965
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Fuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Fuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州市城市节点作阅读地图坐标。"
     },
     {
       "place": "鼓浪屿",
@@ -1089,13 +1422,22 @@
       "appears_in_letters": [
         "letter-014"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，岛上具体游线需另查。",
       "now_context": "今日可按世界遗产中的近代国际社区与海岛步行游览空间理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 24.448,
+        "lng": 118.067
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1541/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按鼓浪屿世界遗产岛屿区域作阅读地图坐标。"
     },
     {
       "place": "泉州",
@@ -1114,13 +1456,22 @@
       "appears_in_letters": [
         "letter-015"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体点位需另查。",
       "now_context": "今日可按宋元中国海洋商贸世界遗产城市理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 24.874,
+        "lng": 118.675
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1561/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按泉州世界遗产城市节点作阅读地图坐标。"
     },
     {
       "place": "福州西湖",
@@ -1139,13 +1490,22 @@
       "appears_in_letters": [
         "letter-015"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
       "now_context": "今日可按福州市区历史园林和公园节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 26.089,
+        "lng": 119.291
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - West Lake Park, Fuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/West_Lake_Park,_Fuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州西湖公园区域作阅读地图坐标。"
     },
     {
       "place": "戚公祠",
@@ -1164,13 +1524,19 @@
       "appears_in_letters": [
         "letter-015"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "乌龙江大桥",
@@ -1189,13 +1555,19 @@
       "appears_in_letters": [
         "letter-015"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "涌泉寺",
@@ -1214,13 +1586,22 @@
       "appears_in_letters": [
         "letter-015"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充寺院或文旅官方来源。",
       "now_context": "今日可按福州鼓山佛寺景点理解，适合对照书中寺庙游览线索。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 26.079,
+        "lng": 119.392
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Yongquan Temple",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yongquan_Temple",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州鼓山涌泉寺区域作阅读地图坐标。"
     },
     {
       "place": "福安交溪",
@@ -1239,13 +1620,19 @@
       "appears_in_letters": [
         "letter-016"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "福鼎灵溪",
@@ -1264,13 +1651,19 @@
       "appears_in_letters": [
         "letter-016"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "南雁荡",
@@ -1289,13 +1682,22 @@
       "appears_in_letters": [
         "letter-016"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
       "now_context": "今日可按雁荡山系旅行线索理解，具体南雁荡景区范围需人工复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 27.655,
+        "lng": 120.123
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Yandang Mountains",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南雁荡山区域作近似坐标，具体景点范围待复核。"
     },
     {
       "place": "会文书院",
@@ -1314,13 +1716,19 @@
       "appears_in_letters": [
         "letter-016"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按历史文化或遗址景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "北雁荡",
@@ -1339,13 +1747,22 @@
       "appears_in_letters": [
         "letter-016"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充官方地质公园或景区来源。",
       "now_context": "今日可按温州雁荡山山岳景区理解；南北雁荡的具体对应需继续人工核对。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": {
+        "lat": 28.373,
+        "lng": 121.061
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO Global Geoparks - Yandangshan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按雁荡山景区北部区域作近似坐标，具体书中路线待复核。"
     },
     {
       "place": "温州北雁荡由浅入深",
@@ -1364,13 +1781,19 @@
       "appears_in_letters": [
         "letter-017"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "朝辞雁荡暮至余杭",
@@ -1389,13 +1812,19 @@
       "appears_in_letters": [
         "letter-018"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "千古如斯的余杭",
@@ -1414,13 +1843,19 @@
       "appears_in_letters": [
         "letter-019"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "黄山天都峰排云亭",
@@ -1439,13 +1874,22 @@
       "appears_in_letters": [
         "letter-020"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，天都峰和排云亭细节需补充景区来源。",
       "now_context": "今日可按黄山世界遗产景区中的登山与观景节点理解，具体峰顶开放状态需临行前核验。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 30.132,
+        "lng": 118.166
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Huangshan",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/547/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按黄山风景区核心区域作近似坐标，天都峰/排云亭需分点复核。"
     },
     {
       "place": "青阳九华山",
@@ -1464,13 +1908,22 @@
       "appears_in_letters": [
         "letter-021"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
       "now_context": "今日可按佛教名山与安徽山岳景区理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 30.478,
+        "lng": 117.81
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Jiuhua",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Jiuhua",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按九华山景区区域作阅读地图坐标。"
     },
     {
       "place": "安庆小孤山",
@@ -1489,13 +1942,22 @@
       "appears_in_letters": [
         "letter-021"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
       "now_context": "今日可按长江江中山体和历史景观节点理解，具体游览条件需复核。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 29.74,
+        "lng": 116.17
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Xiaogu Shan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xiaogu_Shan",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按长江小孤山区域作近似坐标，具体点位待复核。"
     },
     {
       "place": "鄱阳五老峰",
@@ -1514,13 +1976,22 @@
       "appears_in_letters": [
         "letter-022"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作庐山遗产身份核对，具体峰名对应需补充景区来源。",
       "now_context": "今日可按庐山世界遗产山岳景观的一部分理解；五老峰与鄱阳语境仍需人工核对。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 116.02
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/778/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按庐山五老峰区域作近似坐标，鄱阳语境待复核。"
     },
     {
       "place": "三叠瀑",
@@ -1539,13 +2010,22 @@
       "appears_in_letters": [
         "letter-022"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作庐山遗产身份核对，瀑布点位开放信息需另查。",
       "now_context": "今日可按庐山瀑布景观线索理解，书中山路经验与现代景区游览需分开阅读。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 29.55,
+        "lng": 115.99
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/778/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按庐山三叠泉瀑布区域作近似坐标。"
     },
     {
       "place": "南京中山陵",
@@ -1564,13 +2044,22 @@
       "appears_in_letters": [
         "letter-023"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
       "now_context": "今日可按南京近代纪念建筑和景区节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 32.064,
+        "lng": 118.849
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Sun Yat-sen Mausoleum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南京中山陵景区区域作阅读地图坐标。"
     },
     {
       "place": "玄武湖",
@@ -1589,13 +2078,22 @@
       "appears_in_letters": [
         "letter-023"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充地方官方来源。",
       "now_context": "今日可按南京城市湖泊公园和历史景观节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 32.071,
+        "lng": 118.794
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xuanwu Lake",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xuanwu_Lake",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南京玄武湖公园区域作阅读地图坐标。"
     },
     {
       "place": "苏州园林",
@@ -1614,13 +2112,22 @@
       "appears_in_letters": [
         "letter-023"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体园林点位需分别查证。",
       "now_context": "今日可按世界遗产古典园林体系理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 31.32,
+        "lng": 120.625
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/813/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "苏州园林为多点世界遗产，按苏州古城园林区域作近似阅读坐标。"
     },
     {
       "place": "苏州天平山沧浪亭",
@@ -1639,13 +2146,22 @@
       "appears_in_letters": [
         "letter-024"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "unesco",
       "source_review_note": "UNESCO 来源可作沧浪亭等古典园林身份核对，天平山仍需补充地方来源。",
       "now_context": "今日可按苏州古典园林与近郊山水游览线索理解；天平山和沧浪亭需分开核对。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "medium"
+      "priority": "medium",
+      "coordinates": {
+        "lat": 31.304,
+        "lng": 120.621
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/813/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "复合地点，暂按苏州古城园林节点作近似坐标，天平山需另核。"
     },
     {
       "place": "上海",
@@ -1664,13 +2180,22 @@
       "appears_in_letters": [
         "letter-024"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于城市节点核对，具体书中地点仍需人工复核。",
       "now_context": "今日可按中国东部沿海超大城市、交通和文化节点理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 31.2304,
+        "lng": 121.4737
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Shanghai",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Shanghai",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按上海城市中心作城市节点坐标。"
     },
     {
       "place": "沪青海航",
@@ -1689,13 +2214,19 @@
       "appears_in_letters": [
         "letter-025"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按水系或滨水景观节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place": "青岛崂山",
@@ -1714,13 +2245,22 @@
       "appears_in_letters": [
         "letter-025"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": true,
       "source_type": "encyclopedia",
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
       "now_context": "今日可按青岛海岸山岳景区和道教文化名山理解。",
       "change_note": "书中旅行经验可与今日景区化、城市化或交通条件变化对照阅读；本说明仍需人工复核。",
-      "priority": "high"
+      "priority": "high",
+      "coordinates": {
+        "lat": 36.182,
+        "lng": 120.6
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Lao",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Lao",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按青岛崂山景区区域作阅读地图坐标。"
     },
     {
       "place": "返京",
@@ -1739,13 +2279,19 @@
       "appears_in_letters": [
         "letter-025"
       ],
-      "updated_in": "v0.7-A12",
+      "updated_in": "v0.7-A14",
       "is_key_place": false,
       "source_type": "unknown",
       "source_review_note": "待补充公开来源",
       "now_context": "今日可暂按城市或地名节点理解；具体景点状态、开放信息和交通条件待公开来源复核。",
       "change_note": "今日景点身份、开放状态和交通条件尚无足够公开来源支撑，暂不展开判断。",
-      "priority": "low"
+      "priority": "low",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     }
   ],
   "then_now_summary": "本轮补强后，66 个地点中已有 45 个记录公开来源，21 个仍需后续查证。页面把书中旅行线索与今日景区、城市、遗址或自然景观点并置，用于个人阅读导览，不作为最终考据结论。",
@@ -2233,7 +2779,12 @@
       "linked_question_ids": [
         "letter-question-001"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-002",
@@ -2256,7 +2807,12 @@
       "linked_question_ids": [
         "letter-question-002"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-003",
@@ -2279,7 +2835,12 @@
       "linked_question_ids": [
         "letter-question-003"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-004",
@@ -2302,7 +2863,12 @@
       "linked_question_ids": [
         "letter-question-004"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-005",
@@ -2325,7 +2891,12 @@
       "linked_question_ids": [
         "letter-question-005"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 1,
+        "needs_coordinate_review_count": 2,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-006",
@@ -2349,7 +2920,12 @@
       "linked_question_ids": [
         "letter-question-006"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 4,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-007",
@@ -2374,7 +2950,12 @@
       "linked_question_ids": [
         "letter-question-007"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 4,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-008",
@@ -2398,7 +2979,12 @@
       "linked_question_ids": [
         "letter-question-008"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 1,
+        "needs_coordinate_review_count": 3,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-009",
@@ -2421,7 +3007,12 @@
       "linked_question_ids": [
         "letter-question-009"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-010",
@@ -2442,7 +3033,12 @@
       "linked_question_ids": [
         "letter-question-010"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 0,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-011",
@@ -2463,7 +3059,12 @@
       "linked_question_ids": [
         "letter-question-011"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 1,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-012",
@@ -2485,7 +3086,12 @@
       "linked_question_ids": [
         "letter-question-012"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-013",
@@ -2506,7 +3112,12 @@
       "linked_question_ids": [
         "letter-question-013"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 0,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-014",
@@ -2532,7 +3143,12 @@
       "linked_question_ids": [
         "letter-question-014"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 4,
+        "needs_coordinate_review_count": 2,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-015",
@@ -2557,7 +3173,12 @@
       "linked_question_ids": [
         "letter-question-015"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 2,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-016",
@@ -2582,7 +3203,12 @@
       "linked_question_ids": [
         "letter-question-016"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 3,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-017",
@@ -2603,7 +3229,12 @@
       "linked_question_ids": [
         "letter-question-017"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 0,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-018",
@@ -2624,7 +3255,12 @@
       "linked_question_ids": [
         "letter-question-018"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 0,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-019",
@@ -2645,7 +3281,12 @@
       "linked_question_ids": [
         "letter-question-019"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 0,
+        "needs_coordinate_review_count": 1,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-020",
@@ -2666,7 +3307,12 @@
       "linked_question_ids": [
         "letter-question-020"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 1,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-021",
@@ -2688,7 +3334,12 @@
       "linked_question_ids": [
         "letter-question-021"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-022",
@@ -2710,7 +3361,12 @@
       "linked_question_ids": [
         "letter-question-022"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-023",
@@ -2733,7 +3389,12 @@
       "linked_question_ids": [
         "letter-question-023"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 3,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-024",
@@ -2755,7 +3416,12 @@
       "linked_question_ids": [
         "letter-question-024"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 2,
+        "needs_coordinate_review_count": 0,
+        "updated_in": "v0.7-A14"
+      }
     },
     {
       "letter_id": "letter-025",
@@ -2778,7 +3444,12 @@
       "linked_question_ids": [
         "letter-question-025"
       ],
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A13",
+      "coordinate_status_summary": {
+        "coordinate_ready_count": 1,
+        "needs_coordinate_review_count": 2,
+        "updated_in": "v0.7-A14"
+      }
     }
   ],
   "place_route_index": [
@@ -2802,7 +3473,16 @@
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
       "source_review_note": "百科页面可作初步地名核对，后续建议补充地方文旅或景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 37.94,
+        "lng": 113.88
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Niangziguan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Niangziguan",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按娘子关关隘/镇域作阅读地图近似点，后续建议补地方官方坐标。"
     },
     {
       "place_name": "骊山",
@@ -2824,7 +3504,16 @@
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
       "source_review_note": "百科页面可作初步对照，后续建议补充景区或文旅官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 34.36,
+        "lng": 109.22
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Li",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Li",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按骊山景区山体作近似点，具体书中落点待复核。"
     },
     {
       "place_name": "西安",
@@ -2846,7 +3535,16 @@
         "第1封 3月17日~18日 娘子关→骊山→西安"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 34.3416,
+        "lng": 108.9398
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xi'an",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xi%27an",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按西安市城市中心作城市节点坐标。"
     },
     {
       "place_name": "半坡",
@@ -2868,7 +3566,16 @@
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
       "source_review_note": "博物馆官网用于场馆身份核对，开放信息需临行前复核。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 34.279,
+        "lng": 109.052
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Xi'an Banpo Museum",
+      "coordinate_source_url": "http://www.banpomuseum.com/",
+      "coordinate_source_type": "museum",
+      "coordinate_review_note": "按半坡遗址/博物馆区域作阅读地图坐标。"
     },
     {
       "place_name": "碑林",
@@ -2890,7 +3597,16 @@
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
       "source_review_note": "百科页面用于初步定位，后续建议补充博物馆官网。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 34.257,
+        "lng": 108.954
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Xi'an Beilin Museum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Stele_Forest",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按西安碑林博物馆区域作阅读地图坐标。"
     },
     {
       "place_name": "成都",
@@ -2912,7 +3628,16 @@
         "第2封 3月19日~20日 半坡/碑林→成都"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.5728,
+        "lng": 104.0668
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Chengdu",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Chengdu",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按成都市城市中心作城市节点坐标。"
     },
     {
       "place_name": "杜甫草堂",
@@ -2934,7 +3659,16 @@
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充博物馆官方页面。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.66,
+        "lng": 104.027
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Du Fu Thatched Cottage Museum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Du_Fu_Thatched_Cottage",
+      "coordinate_source_type": "museum",
+      "coordinate_review_note": "按杜甫草堂博物馆区域作阅读地图坐标。"
     },
     {
       "place_name": "武侯祠",
@@ -2956,7 +3690,16 @@
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区或博物馆官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.647,
+        "lng": 104.048
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wuhou Shrine",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Wuhou_Shrine",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按成都武侯祠区域作阅读地图坐标。"
     },
     {
       "place_name": "青城山",
@@ -2978,7 +3721,16 @@
         "第3封 3月21日~23日 杜甫草堂/武侯祠→青城山"
       ],
       "source_review_note": "UNESCO 来源可作世界遗产身份核对，具体登山路线需另行核验。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.905,
+        "lng": 103.574
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1001/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按青城山世界遗产/景区区域作阅读地图坐标。"
     },
     {
       "place_name": "乐山大佛",
@@ -3000,7 +3752,16 @@
         "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，游线和开放信息需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 29.547,
+        "lng": 103.772
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/779/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按乐山大佛景区区域作阅读地图坐标。"
     },
     {
       "place_name": "青衣亭",
@@ -3022,7 +3783,13 @@
         "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "峨嵋山脚",
@@ -3044,7 +3811,16 @@
         "第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体入口、索道和徒步路况需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 29.602,
+        "lng": 103.484
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/779/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按峨眉山景区入口地带作近似阅读坐标，具体山脚位置待人工复核。"
     },
     {
       "place_name": "峨嵋车站",
@@ -3066,7 +3842,13 @@
         "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "成昆线隧道",
@@ -3088,7 +3870,13 @@
         "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "昆明车站",
@@ -3110,7 +3898,16 @@
         "第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站"
       ],
       "source_review_note": "百科页面用于城市节点核对，车站具体信息需另行确认。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 25.017,
+        "lng": 102.722
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Kunming",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明站城市交通节点作近似坐标。"
     },
     {
       "place_name": "昆明温泉",
@@ -3132,7 +3929,16 @@
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
       "source_review_note": "仅能支持昆明城市背景，温泉精确地点仍为待复核项。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.958,
+        "lng": 102.45
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Kunming",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Kunming",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明/安宁温泉方向作近似阅读坐标，具体温泉点位待复核。"
     },
     {
       "place_name": "西山",
@@ -3154,7 +3960,16 @@
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.965,
+        "lng": 102.625
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Western Hills",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Western_Hills",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按昆明西山/滇池西岸山地作近似坐标。"
     },
     {
       "place_name": "石林",
@@ -3176,7 +3991,16 @@
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体景区游线需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.817,
+        "lng": 103.324
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - South China Karst",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1248/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按石林喀斯特景区区域作阅读地图坐标。"
     },
     {
       "place_name": "贵阳花溪",
@@ -3198,7 +4022,16 @@
         "第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪"
       ],
       "source_review_note": "百科页面用于地名初步核对，后续建议补充地方文旅来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 26.409,
+        "lng": 106.67
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Huaxi District",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Huaxi_District",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按贵阳花溪区作近似坐标，具体书中地点待复核。"
     },
     {
       "place_name": "贵阳流山",
@@ -3220,7 +4053,13 @@
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "桂林伏波山",
@@ -3242,7 +4081,16 @@
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充桂林官方旅游来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 25.284,
+        "lng": 110.3
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Fubo Hill",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Fubo_Hill",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林伏波山景点区域作阅读地图坐标。"
     },
     {
       "place_name": "七星山",
@@ -3264,7 +4112,16 @@
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充官方景区来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 25.276,
+        "lng": 110.318
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Seven Star Park",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Seven_Star_Park",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林七星景区区域作近似坐标。"
     },
     {
       "place_name": "象鼻山",
@@ -3286,7 +4143,16 @@
         "第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区或文旅官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 25.273,
+        "lng": 110.292
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Elephant Trunk Hill",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Elephant_Trunk_Hill",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按桂林象鼻山景点区域作阅读地图坐标。"
     },
     {
       "place_name": "漓江",
@@ -3312,7 +4178,16 @@
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
       "source_review_note": "百科页面用于初步核对，游船线路和生态保护信息需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 25.167,
+        "lng": 110.417
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Li River",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Li_River",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "漓江为线性水系，按桂林至阳朔游览段作近似阅读坐标。"
     },
     {
       "place_name": "桂林南溪山",
@@ -3334,7 +4209,13 @@
         "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "叠彩峰",
@@ -3356,7 +4237,13 @@
         "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "隐山",
@@ -3378,7 +4265,13 @@
         "第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "阳朔",
@@ -3404,7 +4297,16 @@
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
       "source_review_note": "百科页面用于地名核对，具体景区和交通需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.778,
+        "lng": 110.497
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Yangshuo County",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yangshuo_County",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按阳朔县城/漓江游览节点作阅读地图坐标。"
     },
     {
       "place_name": "梧州",
@@ -3426,7 +4328,16 @@
         "第9封 4月5日~7日 漓江→阳朔→梧州"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体江岸地点仍需人工复核。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 23.476,
+        "lng": 111.279
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Wuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Wuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按梧州市城市节点作阅读地图坐标。"
     },
     {
       "place_name": "梧州西江种种",
@@ -3448,7 +4359,13 @@
         "第10封 4月7日~8日 梧州西江种种"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "肇庆天柱阁",
@@ -3470,7 +4387,16 @@
         "第11封 4月8日~9日 肇庆天柱阁"
       ],
       "source_review_note": "百科页面只能支持城市背景，天柱阁需要继续补充公开来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 23.05,
+        "lng": 112.465
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Zhaoqing",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Zhaoqing",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "当前公开来源只支撑肇庆城市背景，天柱阁精确点位待复核。"
     },
     {
       "place_name": "广州中山大学",
@@ -3492,7 +4418,16 @@
         "第12封 4月9日~11日 广州中山大学/白云山"
       ],
       "source_review_note": "高校官网可作机构身份核对，具体历史校区仍需人工复核。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 23.096,
+        "lng": 113.293
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Sun Yat-sen University",
+      "coordinate_source_url": "https://www.sysu.edu.cn/en/",
+      "coordinate_source_type": "official",
+      "coordinate_review_note": "按广州中山大学旧校园/海珠校区方向作近似坐标，具体校区待复核。"
     },
     {
       "place_name": "白云山",
@@ -3514,7 +4449,16 @@
         "第12封 4月9日~11日 广州中山大学/白云山"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 23.188,
+        "lng": 113.297
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Baiyun Mountain (Guangzhou)",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Baiyun_Mountain_(Guangzhou)",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按广州白云山景区区域作阅读地图坐标。"
     },
     {
       "place_name": "汕头看海",
@@ -3536,7 +4480,13 @@
         "第13封 4月13日~14日 汕头看海"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "云霄",
@@ -3558,7 +4508,13 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "漳浦",
@@ -3580,7 +4536,13 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "漳州",
@@ -3602,7 +4564,16 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "百科页面用于城市节点核对。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.513,
+        "lng": 117.647
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Zhangzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Zhangzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按漳州市城市节点作阅读地图坐标。"
     },
     {
       "place_name": "厦门",
@@ -3624,7 +4595,16 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.4798,
+        "lng": 118.0894
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xiamen",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xiamen",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按厦门城市节点作阅读地图坐标。"
     },
     {
       "place_name": "福州",
@@ -3646,7 +4626,16 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体景点需分别查证。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 26.0745,
+        "lng": 119.2965
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Fuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Fuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州市城市节点作阅读地图坐标。"
     },
     {
       "place_name": "鼓浪屿",
@@ -3668,7 +4657,16 @@
         "第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，岛上具体游线需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.448,
+        "lng": 118.067
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1541/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按鼓浪屿世界遗产岛屿区域作阅读地图坐标。"
     },
     {
       "place_name": "泉州",
@@ -3690,7 +4688,16 @@
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体点位需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 24.874,
+        "lng": 118.675
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/1561/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按泉州世界遗产城市节点作阅读地图坐标。"
     },
     {
       "place_name": "福州西湖",
@@ -3712,7 +4719,16 @@
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 26.089,
+        "lng": 119.291
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - West Lake Park, Fuzhou",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/West_Lake_Park,_Fuzhou",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州西湖公园区域作阅读地图坐标。"
     },
     {
       "place_name": "戚公祠",
@@ -3734,7 +4750,13 @@
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "乌龙江大桥",
@@ -3756,7 +4778,13 @@
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "涌泉寺",
@@ -3778,7 +4806,16 @@
         "第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充寺院或文旅官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 26.079,
+        "lng": 119.392
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Yongquan Temple",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yongquan_Temple",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按福州鼓山涌泉寺区域作阅读地图坐标。"
     },
     {
       "place_name": "福安交溪",
@@ -3800,7 +4837,13 @@
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "福鼎灵溪",
@@ -3822,7 +4865,13 @@
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "南雁荡",
@@ -3844,7 +4893,16 @@
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 27.655,
+        "lng": 120.123
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Yandang Mountains",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南雁荡山区域作近似坐标，具体景点范围待复核。"
     },
     {
       "place_name": "会文书院",
@@ -3866,7 +4924,13 @@
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "北雁荡",
@@ -3888,7 +4952,16 @@
         "第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充官方地质公园或景区来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 28.373,
+        "lng": 121.061
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO Global Geoparks - Yandangshan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Yandang_Mountains",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按雁荡山景区北部区域作近似坐标，具体书中路线待复核。"
     },
     {
       "place_name": "温州北雁荡由浅入深",
@@ -3910,7 +4983,13 @@
         "第17封 4月23日~25日 温州北雁荡由浅入深"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "朝辞雁荡暮至余杭",
@@ -3932,7 +5011,13 @@
         "第18封 4月28日 朝辞雁荡暮至余杭"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "千古如斯的余杭",
@@ -3954,7 +5039,13 @@
         "第19封 4月28日~5月2日 千古如斯的余杭"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "黄山天都峰排云亭",
@@ -3976,7 +5067,16 @@
         "第20封 5月4日~5日 黄山天都峰排云亭"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，天都峰和排云亭细节需补充景区来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.132,
+        "lng": 118.166
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Mount Huangshan",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/547/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按黄山风景区核心区域作近似坐标，天都峰/排云亭需分点复核。"
     },
     {
       "place_name": "青阳九华山",
@@ -3998,7 +5098,16 @@
         "第21封 5月6日~8日 青阳九华山/安庆小孤山"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 30.478,
+        "lng": 117.81
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Jiuhua",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Jiuhua",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按九华山景区区域作阅读地图坐标。"
     },
     {
       "place_name": "安庆小孤山",
@@ -4020,7 +5129,16 @@
         "第21封 5月6日~8日 青阳九华山/安庆小孤山"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充地方文旅来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 29.74,
+        "lng": 116.17
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "Wikipedia - Xiaogu Shan",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xiaogu_Shan",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按长江小孤山区域作近似坐标，具体点位待复核。"
     },
     {
       "place_name": "鄱阳五老峰",
@@ -4042,7 +5160,16 @@
         "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
       ],
       "source_review_note": "UNESCO 来源可作庐山遗产身份核对，具体峰名对应需补充景区来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 29.56,
+        "lng": 116.02
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/778/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按庐山五老峰区域作近似坐标，鄱阳语境待复核。"
     },
     {
       "place_name": "三叠瀑",
@@ -4064,7 +5191,16 @@
         "第22封 5月8日~11日 鄱阳五老峰/三叠瀑"
       ],
       "source_review_note": "UNESCO 来源可作庐山遗产身份核对，瀑布点位开放信息需另查。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 29.55,
+        "lng": 115.99
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Lushan National Park",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/778/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "按庐山三叠泉瀑布区域作近似坐标。"
     },
     {
       "place_name": "南京中山陵",
@@ -4086,7 +5222,16 @@
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 32.064,
+        "lng": 118.849
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Sun Yat-sen Mausoleum",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南京中山陵景区区域作阅读地图坐标。"
     },
     {
       "place_name": "玄武湖",
@@ -4108,7 +5253,16 @@
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充地方官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 32.071,
+        "lng": 118.794
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Xuanwu Lake",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Xuanwu_Lake",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按南京玄武湖公园区域作阅读地图坐标。"
     },
     {
       "place_name": "苏州园林",
@@ -4130,7 +5284,16 @@
         "第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林"
       ],
       "source_review_note": "UNESCO 来源可作遗产身份核对，具体园林点位需分别查证。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 31.32,
+        "lng": 120.625
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/813/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "苏州园林为多点世界遗产，按苏州古城园林区域作近似阅读坐标。"
     },
     {
       "place_name": "苏州天平山沧浪亭",
@@ -4152,7 +5315,16 @@
         "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
       ],
       "source_review_note": "UNESCO 来源可作沧浪亭等古典园林身份核对，天平山仍需补充地方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 31.304,
+        "lng": 120.621
+      },
+      "coordinate_status": "approximate_coordinate",
+      "coordinate_source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+      "coordinate_source_url": "https://whc.unesco.org/en/list/813/",
+      "coordinate_source_type": "unesco",
+      "coordinate_review_note": "复合地点，暂按苏州古城园林节点作近似坐标，天平山需另核。"
     },
     {
       "place_name": "上海",
@@ -4174,7 +5346,16 @@
         "第24封 5月15日~17日 苏州天平山沧浪亭→上海"
       ],
       "source_review_note": "百科页面用于城市节点核对，具体书中地点仍需人工复核。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 31.2304,
+        "lng": 121.4737
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Shanghai",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Shanghai",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按上海城市中心作城市节点坐标。"
     },
     {
       "place_name": "沪青海航",
@@ -4196,7 +5377,13 @@
         "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     },
     {
       "place_name": "青岛崂山",
@@ -4218,7 +5405,16 @@
         "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
       ],
       "source_review_note": "百科页面用于初步核对，后续建议补充景区官方来源。",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": {
+        "lat": 36.182,
+        "lng": 120.6
+      },
+      "coordinate_status": "public_coordinate",
+      "coordinate_source_name": "Wikipedia - Mount Lao",
+      "coordinate_source_url": "https://en.wikipedia.org/wiki/Mount_Lao",
+      "coordinate_source_type": "encyclopedia",
+      "coordinate_review_note": "按青岛崂山景区区域作阅读地图坐标。"
     },
     {
       "place_name": "返京",
@@ -4240,7 +5436,13 @@
         "第25封 5月18日~23日 沪青海航→青岛崂山→返京"
       ],
       "source_review_note": "待补充公开来源",
-      "updated_in": "v0.7-A13"
+      "updated_in": "v0.7-A14",
+      "coordinates": null,
+      "coordinate_status": "needs_coordinate_review",
+      "coordinate_source_name": null,
+      "coordinate_source_url": null,
+      "coordinate_source_type": "unknown",
+      "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
     }
   ],
   "route_overview": {
@@ -4253,5 +5455,956 @@
     "method": "按“摘录或原文线索 → 场景 → 地点 → 昔日/今日对照 → 问题 → 回答”的顺序精读。",
     "scope": "覆盖 25 封旅行书信；当前仍是公开预览与人工复核阶段。",
     "updated_in": "v0.7-A13"
+  },
+  "travel_map": {
+    "version": "v0.7-A14",
+    "map_mode": "paper-route-map",
+    "description": "轻量纸面路线图，使用公开或近似坐标帮助阅读，不作为导航轨迹。",
+    "nodes": [
+      {
+        "order": 1,
+        "place_name": "娘子关",
+        "letters": [
+          "letter-001"
+        ],
+        "coordinates": {
+          "lat": 37.94,
+          "lng": 113.88
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Niangziguan",
+        "coordinate_review_note": "按娘子关关隘/镇域作阅读地图近似点，后续建议补地方官方坐标。"
+      },
+      {
+        "order": 2,
+        "place_name": "骊山",
+        "letters": [
+          "letter-001"
+        ],
+        "coordinates": {
+          "lat": 34.36,
+          "lng": 109.22
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Mount Li",
+        "coordinate_review_note": "按骊山景区山体作近似点，具体书中落点待复核。"
+      },
+      {
+        "order": 3,
+        "place_name": "西安",
+        "letters": [
+          "letter-001"
+        ],
+        "coordinates": {
+          "lat": 34.3416,
+          "lng": 108.9398
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Xi'an",
+        "coordinate_review_note": "按西安市城市中心作城市节点坐标。"
+      },
+      {
+        "order": 4,
+        "place_name": "半坡",
+        "letters": [
+          "letter-002"
+        ],
+        "coordinates": {
+          "lat": 34.279,
+          "lng": 109.052
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Xi'an Banpo Museum",
+        "coordinate_review_note": "按半坡遗址/博物馆区域作阅读地图坐标。"
+      },
+      {
+        "order": 5,
+        "place_name": "碑林",
+        "letters": [
+          "letter-002"
+        ],
+        "coordinates": {
+          "lat": 34.257,
+          "lng": 108.954
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Xi'an Beilin Museum",
+        "coordinate_review_note": "按西安碑林博物馆区域作阅读地图坐标。"
+      },
+      {
+        "order": 6,
+        "place_name": "成都",
+        "letters": [
+          "letter-002"
+        ],
+        "coordinates": {
+          "lat": 30.5728,
+          "lng": 104.0668
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Chengdu",
+        "coordinate_review_note": "按成都市城市中心作城市节点坐标。"
+      },
+      {
+        "order": 7,
+        "place_name": "杜甫草堂",
+        "letters": [
+          "letter-003"
+        ],
+        "coordinates": {
+          "lat": 30.66,
+          "lng": 104.027
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Du Fu Thatched Cottage Museum",
+        "coordinate_review_note": "按杜甫草堂博物馆区域作阅读地图坐标。"
+      },
+      {
+        "order": 8,
+        "place_name": "武侯祠",
+        "letters": [
+          "letter-003"
+        ],
+        "coordinates": {
+          "lat": 30.647,
+          "lng": 104.048
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wuhou Shrine",
+        "coordinate_review_note": "按成都武侯祠区域作阅读地图坐标。"
+      },
+      {
+        "order": 9,
+        "place_name": "青城山",
+        "letters": [
+          "letter-003"
+        ],
+        "coordinates": {
+          "lat": 30.905,
+          "lng": 103.574
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Mount Qingcheng and the Dujiangyan Irrigation System",
+        "coordinate_review_note": "按青城山世界遗产/景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 10,
+        "place_name": "乐山大佛",
+        "letters": [
+          "letter-004"
+        ],
+        "coordinates": {
+          "lat": 29.547,
+          "lng": 103.772
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+        "coordinate_review_note": "按乐山大佛景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 11,
+        "place_name": "青衣亭",
+        "letters": [
+          "letter-004"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 12,
+        "place_name": "峨嵋山脚",
+        "letters": [
+          "letter-004"
+        ],
+        "coordinates": {
+          "lat": 29.602,
+          "lng": 103.484
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Mount Emei Scenic Area, including Leshan Giant Buddha Scenic Area",
+        "coordinate_review_note": "按峨眉山景区入口地带作近似阅读坐标，具体山脚位置待人工复核。"
+      },
+      {
+        "order": 13,
+        "place_name": "峨嵋车站",
+        "letters": [
+          "letter-005"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 14,
+        "place_name": "成昆线隧道",
+        "letters": [
+          "letter-005"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 15,
+        "place_name": "昆明车站",
+        "letters": [
+          "letter-005"
+        ],
+        "coordinates": {
+          "lat": 25.017,
+          "lng": 102.722
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Kunming",
+        "coordinate_review_note": "按昆明站城市交通节点作近似坐标。"
+      },
+      {
+        "order": 16,
+        "place_name": "昆明温泉",
+        "letters": [
+          "letter-006"
+        ],
+        "coordinates": {
+          "lat": 24.958,
+          "lng": 102.45
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Kunming",
+        "coordinate_review_note": "按昆明/安宁温泉方向作近似阅读坐标，具体温泉点位待复核。"
+      },
+      {
+        "order": 17,
+        "place_name": "西山",
+        "letters": [
+          "letter-006"
+        ],
+        "coordinates": {
+          "lat": 24.965,
+          "lng": 102.625
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Western Hills",
+        "coordinate_review_note": "按昆明西山/滇池西岸山地作近似坐标。"
+      },
+      {
+        "order": 18,
+        "place_name": "石林",
+        "letters": [
+          "letter-006"
+        ],
+        "coordinates": {
+          "lat": 24.817,
+          "lng": 103.324
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - South China Karst",
+        "coordinate_review_note": "按石林喀斯特景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 19,
+        "place_name": "贵阳花溪",
+        "letters": [
+          "letter-006"
+        ],
+        "coordinates": {
+          "lat": 26.409,
+          "lng": 106.67
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Huaxi District",
+        "coordinate_review_note": "按贵阳花溪区作近似坐标，具体书中地点待复核。"
+      },
+      {
+        "order": 20,
+        "place_name": "贵阳流山",
+        "letters": [
+          "letter-007"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 21,
+        "place_name": "桂林伏波山",
+        "letters": [
+          "letter-007"
+        ],
+        "coordinates": {
+          "lat": 25.284,
+          "lng": 110.3
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Fubo Hill",
+        "coordinate_review_note": "按桂林伏波山景点区域作阅读地图坐标。"
+      },
+      {
+        "order": 22,
+        "place_name": "七星山",
+        "letters": [
+          "letter-007"
+        ],
+        "coordinates": {
+          "lat": 25.276,
+          "lng": 110.318
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Seven Star Park",
+        "coordinate_review_note": "按桂林七星景区区域作近似坐标。"
+      },
+      {
+        "order": 23,
+        "place_name": "象鼻山",
+        "letters": [
+          "letter-007"
+        ],
+        "coordinates": {
+          "lat": 25.273,
+          "lng": 110.292
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Elephant Trunk Hill",
+        "coordinate_review_note": "按桂林象鼻山景点区域作阅读地图坐标。"
+      },
+      {
+        "order": 24,
+        "place_name": "漓江",
+        "letters": [
+          "letter-007",
+          "letter-009"
+        ],
+        "coordinates": {
+          "lat": 25.167,
+          "lng": 110.417
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Li River",
+        "coordinate_review_note": "漓江为线性水系，按桂林至阳朔游览段作近似阅读坐标。"
+      },
+      {
+        "order": 25,
+        "place_name": "桂林南溪山",
+        "letters": [
+          "letter-008"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 26,
+        "place_name": "叠彩峰",
+        "letters": [
+          "letter-008"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 27,
+        "place_name": "隐山",
+        "letters": [
+          "letter-008"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 28,
+        "place_name": "阳朔",
+        "letters": [
+          "letter-008",
+          "letter-009"
+        ],
+        "coordinates": {
+          "lat": 24.778,
+          "lng": 110.497
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Yangshuo County",
+        "coordinate_review_note": "按阳朔县城/漓江游览节点作阅读地图坐标。"
+      },
+      {
+        "order": 29,
+        "place_name": "梧州",
+        "letters": [
+          "letter-009"
+        ],
+        "coordinates": {
+          "lat": 23.476,
+          "lng": 111.279
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Wuzhou",
+        "coordinate_review_note": "按梧州市城市节点作阅读地图坐标。"
+      },
+      {
+        "order": 30,
+        "place_name": "梧州西江种种",
+        "letters": [
+          "letter-010"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 31,
+        "place_name": "肇庆天柱阁",
+        "letters": [
+          "letter-011"
+        ],
+        "coordinates": {
+          "lat": 23.05,
+          "lng": 112.465
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Zhaoqing",
+        "coordinate_review_note": "当前公开来源只支撑肇庆城市背景，天柱阁精确点位待复核。"
+      },
+      {
+        "order": 32,
+        "place_name": "广州中山大学",
+        "letters": [
+          "letter-012"
+        ],
+        "coordinates": {
+          "lat": 23.096,
+          "lng": 113.293
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Sun Yat-sen University",
+        "coordinate_review_note": "按广州中山大学旧校园/海珠校区方向作近似坐标，具体校区待复核。"
+      },
+      {
+        "order": 33,
+        "place_name": "白云山",
+        "letters": [
+          "letter-012"
+        ],
+        "coordinates": {
+          "lat": 23.188,
+          "lng": 113.297
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Baiyun Mountain (Guangzhou)",
+        "coordinate_review_note": "按广州白云山景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 34,
+        "place_name": "汕头看海",
+        "letters": [
+          "letter-013"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 35,
+        "place_name": "云霄",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 36,
+        "place_name": "漳浦",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 37,
+        "place_name": "漳州",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": {
+          "lat": 24.513,
+          "lng": 117.647
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Zhangzhou",
+        "coordinate_review_note": "按漳州市城市节点作阅读地图坐标。"
+      },
+      {
+        "order": 38,
+        "place_name": "厦门",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": {
+          "lat": 24.4798,
+          "lng": 118.0894
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Xiamen",
+        "coordinate_review_note": "按厦门城市节点作阅读地图坐标。"
+      },
+      {
+        "order": 39,
+        "place_name": "福州",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": {
+          "lat": 26.0745,
+          "lng": 119.2965
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Fuzhou",
+        "coordinate_review_note": "按福州市城市节点作阅读地图坐标。"
+      },
+      {
+        "order": 40,
+        "place_name": "鼓浪屿",
+        "letters": [
+          "letter-014"
+        ],
+        "coordinates": {
+          "lat": 24.448,
+          "lng": 118.067
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Kulangsu, a Historic International Settlement",
+        "coordinate_review_note": "按鼓浪屿世界遗产岛屿区域作阅读地图坐标。"
+      },
+      {
+        "order": 41,
+        "place_name": "泉州",
+        "letters": [
+          "letter-015"
+        ],
+        "coordinates": {
+          "lat": 24.874,
+          "lng": 118.675
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Quanzhou: Emporium of the World in Song-Yuan China",
+        "coordinate_review_note": "按泉州世界遗产城市节点作阅读地图坐标。"
+      },
+      {
+        "order": 42,
+        "place_name": "福州西湖",
+        "letters": [
+          "letter-015"
+        ],
+        "coordinates": {
+          "lat": 26.089,
+          "lng": 119.291
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - West Lake Park, Fuzhou",
+        "coordinate_review_note": "按福州西湖公园区域作阅读地图坐标。"
+      },
+      {
+        "order": 43,
+        "place_name": "戚公祠",
+        "letters": [
+          "letter-015"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 44,
+        "place_name": "乌龙江大桥",
+        "letters": [
+          "letter-015"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 45,
+        "place_name": "涌泉寺",
+        "letters": [
+          "letter-015"
+        ],
+        "coordinates": {
+          "lat": 26.079,
+          "lng": 119.392
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Yongquan Temple",
+        "coordinate_review_note": "按福州鼓山涌泉寺区域作阅读地图坐标。"
+      },
+      {
+        "order": 46,
+        "place_name": "福安交溪",
+        "letters": [
+          "letter-016"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 47,
+        "place_name": "福鼎灵溪",
+        "letters": [
+          "letter-016"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 48,
+        "place_name": "南雁荡",
+        "letters": [
+          "letter-016"
+        ],
+        "coordinates": {
+          "lat": 27.655,
+          "lng": 120.123
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Yandang Mountains",
+        "coordinate_review_note": "按南雁荡山区域作近似坐标，具体景点范围待复核。"
+      },
+      {
+        "order": 49,
+        "place_name": "会文书院",
+        "letters": [
+          "letter-016"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 50,
+        "place_name": "北雁荡",
+        "letters": [
+          "letter-016"
+        ],
+        "coordinates": {
+          "lat": 28.373,
+          "lng": 121.061
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO Global Geoparks - Yandangshan",
+        "coordinate_review_note": "按雁荡山景区北部区域作近似坐标，具体书中路线待复核。"
+      },
+      {
+        "order": 51,
+        "place_name": "温州北雁荡由浅入深",
+        "letters": [
+          "letter-017"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 52,
+        "place_name": "朝辞雁荡暮至余杭",
+        "letters": [
+          "letter-018"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 53,
+        "place_name": "千古如斯的余杭",
+        "letters": [
+          "letter-019"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 54,
+        "place_name": "黄山天都峰排云亭",
+        "letters": [
+          "letter-020"
+        ],
+        "coordinates": {
+          "lat": 30.132,
+          "lng": 118.166
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Mount Huangshan",
+        "coordinate_review_note": "按黄山风景区核心区域作近似坐标，天都峰/排云亭需分点复核。"
+      },
+      {
+        "order": 55,
+        "place_name": "青阳九华山",
+        "letters": [
+          "letter-021"
+        ],
+        "coordinates": {
+          "lat": 30.478,
+          "lng": 117.81
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Mount Jiuhua",
+        "coordinate_review_note": "按九华山景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 56,
+        "place_name": "安庆小孤山",
+        "letters": [
+          "letter-021"
+        ],
+        "coordinates": {
+          "lat": 29.74,
+          "lng": 116.17
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Xiaogu Shan",
+        "coordinate_review_note": "按长江小孤山区域作近似坐标，具体点位待复核。"
+      },
+      {
+        "order": 57,
+        "place_name": "鄱阳五老峰",
+        "letters": [
+          "letter-022"
+        ],
+        "coordinates": {
+          "lat": 29.56,
+          "lng": 116.02
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Lushan National Park",
+        "coordinate_review_note": "按庐山五老峰区域作近似坐标，鄱阳语境待复核。"
+      },
+      {
+        "order": 58,
+        "place_name": "三叠瀑",
+        "letters": [
+          "letter-022"
+        ],
+        "coordinates": {
+          "lat": 29.55,
+          "lng": 115.99
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Lushan National Park",
+        "coordinate_review_note": "按庐山三叠泉瀑布区域作近似坐标。"
+      },
+      {
+        "order": 59,
+        "place_name": "南京中山陵",
+        "letters": [
+          "letter-023"
+        ],
+        "coordinates": {
+          "lat": 32.064,
+          "lng": 118.849
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Sun Yat-sen Mausoleum",
+        "coordinate_review_note": "按南京中山陵景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 60,
+        "place_name": "玄武湖",
+        "letters": [
+          "letter-023"
+        ],
+        "coordinates": {
+          "lat": 32.071,
+          "lng": 118.794
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Xuanwu Lake",
+        "coordinate_review_note": "按南京玄武湖公园区域作阅读地图坐标。"
+      },
+      {
+        "order": 61,
+        "place_name": "苏州园林",
+        "letters": [
+          "letter-023"
+        ],
+        "coordinates": {
+          "lat": 31.32,
+          "lng": 120.625
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+        "coordinate_review_note": "苏州园林为多点世界遗产，按苏州古城园林区域作近似阅读坐标。"
+      },
+      {
+        "order": 62,
+        "place_name": "苏州天平山沧浪亭",
+        "letters": [
+          "letter-024"
+        ],
+        "coordinates": {
+          "lat": 31.304,
+          "lng": 120.621
+        },
+        "coordinate_status": "approximate_coordinate",
+        "source_status": "public_source",
+        "source_name": "UNESCO World Heritage Centre - Classical Gardens of Suzhou",
+        "coordinate_review_note": "复合地点，暂按苏州古城园林节点作近似坐标，天平山需另核。"
+      },
+      {
+        "order": 63,
+        "place_name": "上海",
+        "letters": [
+          "letter-024"
+        ],
+        "coordinates": {
+          "lat": 31.2304,
+          "lng": 121.4737
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Shanghai",
+        "coordinate_review_note": "按上海城市中心作城市节点坐标。"
+      },
+      {
+        "order": 64,
+        "place_name": "沪青海航",
+        "letters": [
+          "letter-025"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      },
+      {
+        "order": 65,
+        "place_name": "青岛崂山",
+        "letters": [
+          "letter-025"
+        ],
+        "coordinates": {
+          "lat": 36.182,
+          "lng": 120.6
+        },
+        "coordinate_status": "public_coordinate",
+        "source_status": "public_source",
+        "source_name": "Wikipedia - Mount Lao",
+        "coordinate_review_note": "按青岛崂山景区区域作阅读地图坐标。"
+      },
+      {
+        "order": 66,
+        "place_name": "返京",
+        "letters": [
+          "letter-025"
+        ],
+        "coordinates": null,
+        "coordinate_status": "needs_coordinate_review",
+        "source_status": "needs_source_review",
+        "source_name": "待补充公开来源",
+        "coordinate_review_note": "待补充可核验坐标来源；暂不在路线地图中定位。"
+      }
+    ]
+  },
+  "coordinate_stats": {
+    "version": "v0.7-A14",
+    "total_place_count": 66,
+    "public_coordinate_count": 26,
+    "approximate_coordinate_count": 19,
+    "needs_coordinate_review_count": 21,
+    "coordinate_ready_count": 45,
+    "coordinate_source_type_counts": {
+      "encyclopedia": 31,
+      "museum": 2,
+      "official": 1,
+      "unesco": 11
+    },
+    "generated_at": "2026-07-01T02:18:38.686970+00:00"
   }
 }

@@ -469,6 +469,29 @@ code {
   background: #fbf5e6;
 }
 
+.reading-mode-toggle.is-active {
+  border-color: rgba(47, 111, 92, 0.35);
+  background: #e9f4ef;
+  color: #245846;
+}
+
+.mobile-section-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid rgba(95, 81, 51, 0.22);
+  border-radius: 8px;
+  background: #fff1d8;
+  color: #72501e;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .reading-flow-panel {
   margin: 16px 0;
   padding: 16px;
@@ -823,6 +846,10 @@ code {
   line-height: 1.7;
 }
 
+.collapsible-reading-panel {
+  scroll-margin-top: 86px;
+}
+
 .letter-scene-notes ul {
   margin: 0;
   padding-left: 20px;
@@ -970,6 +997,63 @@ code {
   position: relative;
 }
 
+.travel-map-section {
+  overflow: hidden;
+}
+
+.travel-map-canvas {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px dashed rgba(95, 81, 51, 0.32);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(95, 81, 51, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(95, 81, 51, 0.05) 1px, transparent 1px),
+    #fffdfa;
+  background-size: 28px 28px;
+}
+
+.travel-map-path {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  height: 2px;
+  border-top: 2px dashed rgba(95, 81, 51, 0.18);
+  pointer-events: none;
+}
+
+.travel-map-node {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  min-height: 86px;
+  padding: 10px;
+  border: 1px solid rgba(32, 39, 37, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.93);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.travel-map-node:hover,
+.travel-map-node:focus-visible {
+  border-color: rgba(47, 111, 92, 0.32);
+  background: #f8fbf7;
+}
+
+.travel-map-label {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
 .paper-map-route {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1019,6 +1103,34 @@ code {
 
 .place-route-index-item h3 {
   margin: 0;
+}
+
+.coordinate-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.coordinate-public {
+  border: 1px solid rgba(47, 111, 92, 0.25);
+  background: #e9f4ef;
+  color: #245846;
+}
+
+.coordinate-approximate {
+  border: 1px solid rgba(47, 96, 126, 0.24);
+  background: #e9f2f7;
+  color: #244d62;
+}
+
+.coordinate-pending {
+  border: 1px solid rgba(140, 97, 38, 0.25);
+  background: #fff1d8;
+  color: #72501e;
 }
 
 .place-now-source {
@@ -1093,6 +1205,24 @@ code {
   border: 1px solid rgba(140, 97, 38, 0.25);
   background: #fff1d8;
   color: #72501e;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 12;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid rgba(32, 39, 37, 0.16);
+  border-radius: 999px;
+  background: #2f3734;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(32, 39, 37, 0.18);
 }
 
 .app-shell {
@@ -1884,5 +2014,61 @@ blockquote footer {
     width: 32px;
     height: 32px;
     font-size: 13px;
+  }
+
+  .sticky-reading-nav {
+    top: 0;
+    margin: 0 -12px 14px;
+    padding: 10px 12px;
+  }
+
+  .section-anchor-list,
+  .filter-chip-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .reading-mode-toggle,
+  .mobile-section-toggle {
+    flex: 0 0 auto;
+  }
+
+  .route-timeline {
+    grid-auto-flow: row;
+    grid-auto-columns: unset;
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+  }
+
+  .route-timeline-node {
+    min-height: auto;
+  }
+
+  .travel-map-canvas,
+  .paper-map-route,
+  .place-route-index,
+  .compact-card-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-map-path {
+    left: 30px;
+    right: auto;
+    top: 18px;
+    bottom: 18px;
+    width: 2px;
+    height: auto;
+    border-top: 0;
+    border-left: 2px dashed rgba(95, 81, 51, 0.18);
+  }
+
+  .close-reading-panel {
+    padding: 12px;
+  }
+
+  .back-to-top {
+    right: 12px;
+    bottom: 12px;
   }
 }

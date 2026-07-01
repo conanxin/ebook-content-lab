@@ -63,6 +63,21 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
     total_place_count?: number;
     source_type_counts?: Record<string, number>;
   };
+  coordinate_stats?: {
+    version?: string;
+    total_place_count?: number;
+    public_coordinate_count?: number;
+    approximate_coordinate_count?: number;
+    needs_coordinate_review_count?: number;
+    coordinate_ready_count?: number;
+    coordinate_source_type_counts?: Record<string, number>;
+  };
+  travel_map?: {
+    version?: string;
+    map_mode?: string;
+    description?: string;
+    nodes?: TravelMapNode[];
+  };
   route_index?: RouteIndexEntry[];
   place_route_index?: PlaceRouteIndexItem[];
   close_reading_overview?: {
@@ -96,6 +111,15 @@ export interface PlaceThenNow {
   source_review_note?: string;
   review_status?: string;
   change_note?: string;
+  coordinates?: {
+    lat?: number;
+    lng?: number;
+  } | null;
+  coordinate_status?: string;
+  coordinate_source_name?: string | null;
+  coordinate_source_url?: string | null;
+  coordinate_source_type?: string;
+  coordinate_review_note?: string;
   priority?: string;
   is_key_place?: boolean;
   updated_in?: string;
@@ -142,7 +166,30 @@ export interface PlaceRouteIndexItem {
   today_reading?: string;
   then_context?: string[];
   source_review_note?: string;
+  coordinates?: {
+    lat?: number;
+    lng?: number;
+  } | null;
+  coordinate_status?: string;
+  coordinate_source_name?: string | null;
+  coordinate_source_url?: string | null;
+  coordinate_source_type?: string;
+  coordinate_review_note?: string;
   updated_in?: string;
+}
+
+export interface TravelMapNode {
+  order?: number;
+  place_name?: string;
+  letters?: string[];
+  coordinates?: {
+    lat?: number;
+    lng?: number;
+  } | null;
+  coordinate_status?: string;
+  source_status?: string;
+  source_name?: string;
+  coordinate_review_note?: string;
 }
 
 export interface ChapterReadingCard {

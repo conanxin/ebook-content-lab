@@ -115,6 +115,18 @@ function sourceTypeLabel(sourceType?: string): string {
   return labels[sourceType || "unknown"] || sourceType || "待复核";
 }
 
+function coordinateStatusLabel(status?: string): string {
+  if (status === "public_coordinate") return "已有坐标";
+  if (status === "approximate_coordinate") return "近似坐标";
+  return "待核坐标";
+}
+
+function coordinateStatusClass(status?: string): string {
+  if (status === "public_coordinate") return "coordinate-public";
+  if (status === "approximate_coordinate") return "coordinate-approximate";
+  return "coordinate-pending";
+}
+
 function scrollToChapter(chapterId?: string): void {
   if (!chapterId) return;
   const node = document.getElementById(chapterId);
@@ -136,6 +148,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [placeFilter, setPlaceFilter] = useState("all");
+  const [expandAllLetters, setExpandAllLetters] = useState(false);
 
   useEffect(() => {
     let alive = true;
@@ -271,6 +285,26 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       today_reading: place.now_context || place.today_reading,
       source_review_note: place.source_review_note,
     }));
+  const filteredPlaceRouteIndex = placeRouteIndex.filter((place) => {
+    if (placeFilter === "public-source") return place.source_status === "public_source";
+    if (placeFilter === "pending-source") return place.source_status !== "public_source";
+    if (placeFilter === "coordinate-ready") return ["public_coordinate", "approximate_coordinate"].includes(place.coordinate_status || "");
+    if (placeFilter === "coordinate-pending") return place.coordinate_status === "needs_coordinate_review";
+    return true;
+  });
+  const travelMapNodes = overview?.travel_map?.nodes || filteredPlaceRouteIndex.map((place, index) => ({
+    order: index + 1,
+    place_name: place.place_name,
+    letters: place.letters,
+    coordinates: place.coordinates,
+    coordinate_status: place.coordinate_status,
+    source_status: place.source_status,
+    source_name: place.source_name,
+    coordinate_review_note: place.coordinate_review_note,
+  }));
+  const visibleTravelMapNodes = travelMapNodes.filter((node) =>
+    filteredPlaceRouteIndex.some((place) => place.place_name === node.place_name),
+  );
   const projectTitle = overview?.display_title || project.title || "《旅行人信札》阅读导览";
   const bookTitle = overview?.book?.title || project.book?.title || project.book_title || "《旅行人信札》";
   const subtitle = overview?.subtitle || project.subtitle || "25 封旅行书信的路线、地点与主题导读";
@@ -342,11 +376,12 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         </div>
       </section>
 
-      <nav className="reading-guide-nav" aria-label="阅读导览导航">
+      <nav className="reading-guide-nav sticky-reading-nav" aria-label="阅读导览导航">
         <div className="section-anchor-list">
           {[
             ["overview", "概览"],
             ["route-timeline", "旅行路线时间线"],
+            ["travel-map", "路线地图"],
             ["then-now", "昔日旅程与今日景点"],
             ["letters", "25 封信"],
             ["quote-clues", "原文摘录与阅读线索"],
@@ -356,6 +391,9 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               {label}
             </button>
           ))}
+          <button className="mobile-section-toggle" type="button" onClick={() => setExpandAllLetters((value) => !value)}>
+            {expandAllLetters ? "收起全部信封" : "展开全部信封"}
+          </button>
         </div>
       </nav>
 
@@ -422,14 +460,56 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         </div>
       </section>
 
+      <section className="content-section travel-map-section" id="travel-map">
+        <h2>路线地图 / 纸面路线图</h2>
+        <p>{overview?.travel_map?.description || "轻量纸面路线图使用公开或近似坐标辅助阅读，不作为导航轨迹。"}</p>
+        <div className="filter-chip-row">
+          {[
+            ["all", "全部地点"],
+            ["public-source", "已有来源"],
+            ["pending-source", "待补来源"],
+            ["coordinate-ready", "已有坐标"],
+            ["coordinate-pending", "待核坐标"],
+          ].map(([value, label]) => (
+            <button
+              className={`reading-mode-toggle ${placeFilter === value ? "is-active" : ""}`}
+              key={value}
+              type="button"
+              onClick={() => setPlaceFilter(value)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+        <div className="travel-map-canvas" aria-label="纸面路线图节点">
+          <div className="travel-map-path" aria-hidden="true" />
+          {visibleTravelMapNodes.slice(0, 45).map((node) => (
+            <button
+              className={`travel-map-node ${coordinateStatusClass(node.coordinate_status)}`}
+              key={`${node.order}-${node.place_name}`}
+              type="button"
+              onClick={() => scrollToSection("then-now")}
+            >
+              <span className="travel-map-label">{node.order}. {node.place_name}</span>
+              <span className={`coordinate-badge ${coordinateStatusClass(node.coordinate_status)}`}>
+                {coordinateStatusLabel(node.coordinate_status)}
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
+
       <section className="content-section paper-map-section">
         <h2>地图式路线索引</h2>
         <p>这是纸面地图式的地点路线索引：先按书信顺序看地点节点，再区分已补公开来源和待补来源。</p>
         <div className="paper-map-route">
-          {placeRouteIndex.slice(0, 36).map((place, index) => (
+          {filteredPlaceRouteIndex.slice(0, 36).map((place, index) => (
             <article className="paper-map-node" key={`${place.place_name}-${index}`}>
               <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>
                 {sourceStatusLabel(place.source_status)}
+              </span>
+              <span className={`coordinate-badge ${coordinateStatusClass(place.coordinate_status)}`}>
+                {coordinateStatusLabel(place.coordinate_status)}
               </span>
               <strong>{place.place_name}</strong>
               <small>第{joinList((place.reading_order || []).map(String), "?")}封</small>
@@ -437,15 +517,17 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
           ))}
         </div>
         <div className="place-route-index">
-          {placeRouteIndex.map((place) => (
+          {filteredPlaceRouteIndex.map((place) => (
             <article className="place-route-index-item" key={place.place_name}>
               <h3>{place.place_name}</h3>
               <p>{displayText(place.today_reading, "今日读法待复核。")}</p>
               <div className="reading-guide-tags">
                 <span>{sourceStatusLabel(place.source_status)}</span>
+                <span>{coordinateStatusLabel(place.coordinate_status)}</span>
                 <span>{sourceTypeLabel(place.source_type)}</span>
                 <span>关联：{joinList(place.letters, "待复核")}</span>
               </div>
+              <p>{displayText(place.coordinate_review_note, "坐标状态待复核。")}</p>
               {place.source_url ? (
                 <a href={place.source_url} target="_blank" rel="noreferrer">
                   {place.source_name || "公开来源"}
@@ -578,7 +660,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
 
       <section className="content-section" id="letters">
         <h2>25 封旅行书信</h2>
-        <div className="letter-envelope-list">
+        <div className="letter-envelope-list compact-card-stack">
           {chapters.map((chapter: ChapterReadingCard) => (
             <article className="letter-envelope-card" id={chapter.chapter_id} key={chapter.chapter_id}>
               <div className="letter-flap" aria-hidden="true" />
@@ -600,7 +682,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 <p>{displayText(chapter.route_note, "路线说明待复核。")}</p>
                 <p>{displayText(chapter.reading_focus_expanded || chapter.reading_focus, "阅读重点待复核。")}</p>
               </div>
-              <details className="letter-answer">
+              <details className="letter-answer collapsible-reading-panel" open={expandAllLetters || undefined}>
                 <summary>展开阅读线索</summary>
                 <div className="letter-original-clues">
                   <h4>原文摘录与阅读线索</h4>
@@ -812,6 +894,10 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
           </dl>
         </details>
       </section>
+
+      <button className="back-to-top" type="button" onClick={() => scrollToSection("overview")}>
+        回到顶部
+      </button>
     </main>
   );
 }
