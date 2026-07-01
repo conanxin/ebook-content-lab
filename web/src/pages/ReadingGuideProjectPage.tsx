@@ -27,6 +27,7 @@ import type {
   RouteIndexEntry,
   RouteTimelineNode,
   SourceClue,
+  SourceExcerpt,
 } from "../types/readingGuide";
 import { projectDataPath } from "../utils/paths";
 
@@ -462,7 +463,16 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         <div className="letter-envelope-list compact-card-stack">
           {chapters.map((chapter: ChapterReadingCard) => {
             const unit = chapter.letter_reading_unit;
-            const sourceClues: SourceClue[] = unit?.source_clues || chapter.original_excerpt || [];
+            const sourceExcerpts: SourceExcerpt[] =
+              chapter.source_excerpts ||
+              unit?.source_excerpts ||
+              (unit?.source_clues || chapter.original_excerpt || []).map((item: SourceClue, index) => ({
+                anchor_id: `${chapter.letter_id || chapter.chapter_id}-source-anchor-${index + 1}`,
+                text: item.excerpt,
+                note: item.note,
+                reading_use: item.use,
+                mode: item.mode,
+              }));
             const linkedQuestionId = unit?.question_answer?.question_id || chapter.linked_questions?.[0];
             const linkedQuestion = linkedQuestionId ? questionsById.get(linkedQuestionId) : undefined;
             const questionText = unit?.question_answer?.question || linkedQuestion?.question || "本封信的阅读问题待人工复核。";
@@ -485,46 +495,31 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                   </div>
                 </header>
 
-                <div className="letter-info-strip">
-                  <div className="letter-route">
-                    <MapPinned size={15} />
-                    <span>{unit?.basic_info?.route || chapter.route_label || joinList(chapter.places)}</span>
-                  </div>
-                  <div>
-                    <span>核心地点</span>
-                    <strong>{joinList(unit?.basic_info?.core_places || chapter.places)}</strong>
-                  </div>
-                  <div>
-                    <span>阅读长度</span>
-                    <strong>{unit?.basic_info?.reading_length_hint || `${chapter.chunk_count ?? "待复核"} chunks`}</strong>
-                  </div>
-                  <div>
-                    <span>这一封主要看什么</span>
-                    <strong>{unit?.basic_info?.what_to_watch || chapter.reading_focus_expanded || chapter.reading_focus || "路线、场景和地点变化"}</strong>
-                  </div>
-                </div>
-
                 <div className="letter-theme-row">
                   {(unit?.themes || chapter.themes || []).map((theme) => (
                     <span key={`${chapter.chapter_id}-${theme}`}>{theme}</span>
                   ))}
                 </div>
 
-                <section className="letter-source-block letter-body">
-                  <h4>原文摘录与阅读线索</h4>
+                <section className="source-anchor letter-source-block letter-body">
+                  <h4>原文锚点</h4>
+                  <p className="source-anchor-intro">先从短摘或场景句进入文本，再看解释、路线和今昔对照。</p>
                   <div className="source-clue-list">
-                    {sourceClues.slice(0, 4).map((item, index) => (
-                      <article className="source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
-                        <p>{displayText(item.excerpt, "原文线索待复核。")}</p>
-                        <small>{displayText(item.note, "这条线索用于辅助阅读，不替代原书。")}</small>
-                        <span>{displayText(item.use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                    {sourceExcerpts.slice(0, 4).map((item, index) => (
+                      <article className="source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
+                        <p className="source-excerpt-text">{displayText(item.text, "原文锚点待复核。")}</p>
+                        <details className="source-excerpt-note">
+                          <summary>线索说明</summary>
+                          <small>{displayText(item.note, "这条短摘或线索用于辅助阅读，不替代原书。")}</small>
+                          <span>{displayText(item.reading_use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                        </details>
                       </article>
                     ))}
                   </div>
                 </section>
 
-                <section className="close-reading-panel letter-close-reading">
-                  <h4>原文精读</h4>
+                <section className="scene-explanation-panel close-reading-panel letter-close-reading">
+                  <h4>场景说明</h4>
                   <div className="close-reading-grid">
                     <div className="close-reading-excerpt">
                       <strong>这封信写了什么</strong>
@@ -535,21 +530,40 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                       <p>{displayText(unit?.close_reading_flow?.why_it_matters || chapter.close_reading?.why_it_matters, "精读说明待人工复核。")}</p>
                     </div>
                   </div>
-                  <div className="close-reading-steps">
-                    <strong>精读步骤</strong>
-                    <ol>
-                      {(unit?.close_reading_flow?.reading_steps || chapter.reading_steps || []).slice(0, 5).map((step) => (
-                        <li key={`${chapter.chapter_id}-step-${step}`}>{step}</li>
+                  <div className="letter-scene-notes">
+                    <strong>场景线索</strong>
+                    <ul>
+                      {(unit?.secondary_details?.scene_notes || chapter.original_scene_notes || ["场景线索待人工复核。"]).slice(0, 5).map((note) => (
+                        <li key={`${chapter.chapter_id}-scene-top-${note}`}>{note}</li>
                       ))}
-                    </ol>
+                    </ul>
                   </div>
-                  <p className="letter-change-note">
-                    可以留意的变化：{displayText(unit?.close_reading_flow?.changes_to_notice || chapter.then_now_comparison, "今昔变化待继续复核。")}
-                  </p>
                 </section>
 
-                <section className="letter-place-section">
-                  <h4>本封涉及景点：昔日旅程与今日景点</h4>
+                <section className="route-structure-panel">
+                  <h4>路线结构</h4>
+                  <div className="letter-info-strip">
+                    <div className="letter-route">
+                      <MapPinned size={15} />
+                      <span>{unit?.basic_info?.route || chapter.route_label || joinList(chapter.places)}</span>
+                    </div>
+                    <div>
+                      <span>核心地点</span>
+                      <strong>{joinList(unit?.basic_info?.core_places || chapter.places)}</strong>
+                    </div>
+                    <div>
+                      <span>阅读长度</span>
+                      <strong>{unit?.basic_info?.reading_length_hint || `${chapter.chunk_count ?? "待复核"} chunks`}</strong>
+                    </div>
+                    <div>
+                      <span>这一封主要看什么</span>
+                      <strong>{unit?.basic_info?.what_to_watch || chapter.reading_focus_expanded || chapter.reading_focus || "路线、场景和地点变化"}</strong>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="then-now-panel letter-place-section">
+                  <h4>今昔对照：本封涉及景点</h4>
                   <div className="embedded-place-list">
                     {embeddedPlaces.map((place) => (
                       <article className="embedded-place-card" key={`${chapter.chapter_id}-${place.place_name}`}>
@@ -577,10 +591,11 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 </section>
 
                 <section className="question-answer-panel letter-answer">
-                  <h4>阅读问题与参考回答</h4>
+                  <h4>阅读问题</h4>
                   <div className="close-reading-question">
                     <strong>{questionText}</strong>
                   </div>
+                  <h4>参考答案</h4>
                   <div className="close-reading-answer">
                     <p>{answerText}</p>
                   </div>

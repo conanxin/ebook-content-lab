@@ -104,6 +104,14 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
     anchors?: string[];
     note?: string;
   };
+  source_anchor_layer?: {
+    version?: string;
+    letters_with_source_excerpts?: number;
+    min_excerpts_per_letter?: number;
+    question_source_anchor_count?: number;
+    reading_order?: string[];
+    updated_in?: string;
+  };
   then_now_summary?: string;
   place_then_now?: PlaceThenNow[];
 }
@@ -122,6 +130,15 @@ export interface SourceClue {
   excerpt?: string;
   note?: string;
   use?: string;
+}
+
+export interface SourceExcerpt {
+  anchor_id?: string;
+  text?: string;
+  note?: string;
+  reading_use?: string;
+  mode?: string;
+  review_status?: string;
 }
 
 export interface EmbeddedLetterPlace {
@@ -156,6 +173,8 @@ export interface LetterReadingUnit {
     what_to_watch?: string;
   };
   source_clues?: SourceClue[];
+  source_excerpts?: SourceExcerpt[];
+  reading_order?: string[];
   close_reading_flow?: {
     what_it_says?: string;
     why_it_matters?: string;
@@ -309,6 +328,8 @@ export interface ChapterReadingCard {
   then_now_comparison?: string;
   reading_focus_expanded?: string;
   answer_hint_expanded?: string;
+  source_excerpts?: SourceExcerpt[];
+  source_anchor_layer_ready?: boolean;
   letter_reading_unit?: LetterReadingUnit;
   letter_reading_flow_ready?: boolean;
   embedded_place_count?: number;
@@ -394,6 +415,19 @@ export interface ReadingQuestion {
   answer_steps?: string[];
   place_context?: string;
   then_now_context?: string;
+  source_anchor?: {
+    anchor_type?: string;
+    letter_id?: string;
+    chapter_id?: string;
+    anchor_id?: string;
+    place_or_scene?: string;
+    note?: string;
+    anchors?: Array<{
+      letter_id?: string;
+      chapter_id?: string;
+      anchor_id?: string;
+    }>;
+  };
   review_notice?: string;
   review_status?: string;
 }

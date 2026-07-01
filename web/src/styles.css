@@ -296,6 +296,86 @@
   line-height: 1.55;
 }
 
+.source-anchor {
+  border-color: rgba(76, 64, 38, 0.18);
+  background:
+    linear-gradient(180deg, rgba(255, 251, 239, 0.96), rgba(255, 255, 255, 0.8)),
+    #fffaf0;
+}
+
+.source-anchor-intro {
+  margin: 0;
+  color: #5e675f;
+  line-height: 1.68;
+}
+
+.source-excerpt-card {
+  position: relative;
+  min-height: 150px;
+  padding: 16px 16px 14px 20px;
+  border-left: 4px solid #7a6a42;
+  background: #fffdf7;
+}
+
+.source-excerpt-text {
+  color: #202725;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.source-excerpt-note {
+  display: grid;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.source-excerpt-note summary {
+  width: fit-content;
+  cursor: pointer;
+  color: #6a5d3b;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.source-excerpt-note small,
+.source-excerpt-note span {
+  display: block;
+  color: #68746f;
+  line-height: 1.65;
+}
+
+.scene-explanation-panel,
+.route-structure-panel,
+.then-now-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid rgba(32, 39, 37, 0.11);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.scene-explanation-panel {
+  background: #f8fbf8;
+}
+
+.route-structure-panel {
+  background: #f7f9fb;
+}
+
+.then-now-panel {
+  background: #fffdf7;
+}
+
+.scene-explanation-panel h4,
+.route-structure-panel h4,
+.then-now-panel h4 {
+  margin: 0;
+  color: #22312d;
+  font-size: 17px;
+}
+
 .close-reading-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

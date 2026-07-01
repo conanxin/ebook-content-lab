@@ -1,7 +1,7 @@
 {
   "schema_version": "reading-guide.v0.2",
   "status": "draft",
-  "generated_at": "2026-07-01T02:57:13.325874+00:00",
+  "generated_at": "2026-07-01T04:42:23.965042+00:00",
   "book": {
     "title": "《旅行人信札》",
     "author": "陈嘉映",
@@ -6431,5 +6431,20 @@
       "阅读问题"
     ],
     "note": "附属模块后置，主阅读流按 letter-001 到 letter-025 顺读。"
+  },
+  "source_anchor_layer": {
+    "version": "v0.7-A16",
+    "letters_with_source_excerpts": 25,
+    "min_excerpts_per_letter": 4,
+    "question_source_anchor_count": 26,
+    "reading_order": [
+      "原文锚点",
+      "场景说明",
+      "路线结构",
+      "今昔对照",
+      "阅读问题",
+      "参考答案"
+    ],
+    "updated_in": "v0.7-A16"
   }
 }
