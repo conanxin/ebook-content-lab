@@ -46,6 +46,13 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
   limitations?: string[];
   evidence_refs?: StructuralEvidenceRef[];
   source_enrichment?: Record<string, unknown>;
+  route_overview?: {
+    summary?: string;
+    reading_method?: string;
+    then_now_note?: string;
+    updated_in?: string;
+  };
+  route_timeline?: RouteTimelineNode[];
   place_source_stats?: {
     version?: string;
     a11_public_source_count?: number;
@@ -57,6 +64,12 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
     source_type_counts?: Record<string, number>;
   };
   route_index?: RouteIndexEntry[];
+  place_route_index?: PlaceRouteIndexItem[];
+  close_reading_overview?: {
+    method?: string;
+    scope?: string;
+    updated_in?: string;
+  };
   then_now_summary?: string;
   place_then_now?: PlaceThenNow[];
 }
@@ -99,6 +112,39 @@ export interface RouteIndexEntry {
   updated_in?: string;
 }
 
+export interface RouteTimelineNode {
+  letter_id?: string;
+  letter_number?: number;
+  chapter_id?: string;
+  title?: string;
+  route_label?: string;
+  primary_places?: string[];
+  then_context?: string;
+  now_context?: string;
+  reading_mood?: string;
+  source_status_summary?: {
+    public_source_count?: number;
+    needs_source_review_count?: number;
+  };
+  linked_question_ids?: string[];
+  updated_in?: string;
+}
+
+export interface PlaceRouteIndexItem {
+  place_name?: string;
+  letters?: string[];
+  letter_titles?: string[];
+  reading_order?: number[];
+  source_status?: string;
+  source_type?: string;
+  source_name?: string;
+  source_url?: string | null;
+  today_reading?: string;
+  then_context?: string[];
+  source_review_note?: string;
+  updated_in?: string;
+}
+
 export interface ChapterReadingCard {
   chapter_id: string;
   letter_id?: string;
@@ -132,6 +178,19 @@ export interface ChapterReadingCard {
   then_now_comparison?: string;
   reading_focus_expanded?: string;
   answer_hint_expanded?: string;
+  timeline_node?: RouteTimelineNode;
+  close_reading?: {
+    excerpt_focus?: string;
+    why_it_matters?: string;
+    scene_to_notice?: string[];
+    place_to_notice?: string[];
+    then_now_prompt?: string;
+    question_bridge?: string;
+    answer_bridge?: string;
+    updated_in?: string;
+  };
+  reading_steps?: string[];
+  linked_questions?: string[];
   places?: string[];
   themes?: string[];
   char_count?: number;
@@ -194,6 +253,12 @@ export interface ReadingQuestion {
   source_clues?: string[];
   place_clues?: string[];
   then_now_hint?: string;
+  linked_letters?: string[];
+  route_context?: string;
+  close_reading_answer?: string;
+  answer_steps?: string[];
+  place_context?: string;
+  then_now_context?: string;
   review_notice?: string;
   review_status?: string;
 }
