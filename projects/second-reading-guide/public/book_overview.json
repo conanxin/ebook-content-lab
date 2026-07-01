@@ -6433,19 +6433,20 @@
     "note": "附属模块后置，主阅读流按 letter-001 到 letter-025 顺读。"
   },
   "source_anchor_layer": {
-    "version": "v0.7-A16",
+    "version": "v0.7-A18",
+    "mode": "real_source_excerpt",
     "letters_with_source_excerpts": 25,
     "min_excerpts_per_letter": 4,
     "question_source_anchor_count": 26,
     "reading_order": [
-      "原文锚点",
+      "原文选段",
       "场景说明",
       "路线结构",
       "今昔对照",
       "阅读问题",
       "参考答案"
     ],
-    "updated_in": "v0.7-A16"
+    "updated_in": "v0.7-A18"
   },
   "immersive_reading": {
     "version": "v0.7-A17",
@@ -6457,5 +6458,14 @@
     "source_anchor_policy": "2 core excerpts by default, extra excerpts folded",
     "updated_in": "v0.7-A17"
   },
-  "reading_flow_summary": "建议先用快速浏览读完 25 封信的路线推进，再对感兴趣的信切换到精读模式。快速浏览只显示核心摘要、1-2 条原文锚点、路线和答案摘要；精读模式展开全部原文线索、场景、今昔对照和完整回答。"
+  "reading_flow_summary": "建议先用快速浏览读完 25 封信的路线推进，再对感兴趣的信切换到精读模式。快速浏览只显示核心摘要、1-2 条原文锚点、路线和答案摘要；精读模式展开全部原文线索、场景、今昔对照和完整回答。",
+  "real_source_excerpt_summary": {
+    "version": "v0.7-A18",
+    "source_excerpts_total": 100,
+    "core_source_excerpts_total": 50,
+    "extra_source_excerpts_total": 50,
+    "display_label": "原文选段",
+    "review_status": "source-excerpt-draft"
+  },
+  "updated_in": "v0.7-A18"
 }

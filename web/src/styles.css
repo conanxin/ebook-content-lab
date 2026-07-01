@@ -303,6 +303,13 @@
     #fffaf0;
 }
 
+.real-source-excerpts {
+  border-color: rgba(94, 76, 38, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 230, 0.98), rgba(255, 253, 247, 0.9)),
+    #fff8e8;
+}
+
 .source-anchor-intro {
   margin: 0;
   color: #5e675f;
@@ -317,11 +324,49 @@
   background: #fffdf7;
 }
 
+.real-source-excerpt-card {
+  display: grid;
+  gap: 8px;
+  min-height: auto;
+  border: 1px solid rgba(99, 82, 45, 0.16);
+  border-left: 5px solid #7a5f2f;
+  box-shadow: 0 10px 24px rgba(64, 51, 24, 0.08);
+}
+
+.source-excerpt-type {
+  width: fit-content;
+  padding: 3px 8px;
+  border: 1px solid rgba(122, 95, 47, 0.22);
+  border-radius: 999px;
+  color: #725b2f;
+  background: rgba(255, 244, 208, 0.82);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .source-excerpt-text {
   color: #202725;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.8;
+}
+
+.real-source-excerpt-text {
+  position: relative;
+  padding-left: 12px;
+  color: #1f2924;
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.real-source-excerpt-text::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #9b7a3c;
 }
 
 .source-excerpt-note {
@@ -343,6 +388,14 @@
   display: block;
   color: #68746f;
   line-height: 1.65;
+}
+
+.real-source-excerpt-note {
+  color: #56615b;
+}
+
+.more-source-excerpts {
+  padding-top: 4px;
 }
 
 .immersive-mode-bar {

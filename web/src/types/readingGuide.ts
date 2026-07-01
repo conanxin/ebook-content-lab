@@ -149,6 +149,9 @@ export interface SourceExcerpt {
   note?: string;
   reading_use?: string;
   mode?: string;
+  excerpt_type?: string;
+  section_id?: string;
+  source_mode?: string;
   review_status?: string;
 }
 

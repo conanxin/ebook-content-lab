@@ -194,9 +194,17 @@ def check_page(paths, findings: list[Finding]) -> None:
     elif positions != sorted(positions):
         add_error(findings, "ReadingGuideProjectPage.tsx", f"UI order is not anchor-first: {dict(zip(order_markers, positions))}")
 
-    for marker in ["原文锚点", "场景说明", "路线结构", "今昔对照", "阅读问题", "参考答案"]:
-        if marker not in page_text:
-            add_error(findings, "ReadingGuideProjectPage.tsx", f"Missing visible marker: {marker}")
+    visible_marker_groups = [
+        ["原文锚点", "原文选段", "原文摘录"],
+        ["场景说明"],
+        ["路线结构"],
+        ["今昔对照"],
+        ["阅读问题"],
+        ["参考答案"],
+    ]
+    for marker_group in visible_marker_groups:
+        if not any(marker in page_text for marker in marker_group):
+            add_error(findings, "ReadingGuideProjectPage.tsx", f"Missing visible marker group: {marker_group}")
     scan_text(page_text, "ReadingGuideProjectPage.tsx", findings)
 
 
