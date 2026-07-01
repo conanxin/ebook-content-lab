@@ -1,0 +1,24 @@
+{
+  "version": "v0.7-A19",
+  "status": "review-packet-only",
+  "generatedAt": "2026-07-01T13:33:14.720028+00:00",
+  "totalExcerptTasks": 100,
+  "lettersCovered": 25,
+  "coreExcerptTasks": 50,
+  "extraExcerptTasks": 50,
+  "sourceOnlyExcerptTasks": 0,
+  "p0Tasks": 25,
+  "p1Tasks": 25,
+  "p2Tasks": 50,
+  "blankReviewResults": 100,
+  "readyForExcerptApply": false,
+  "allowedReviewResults": [
+    "keep",
+    "replace",
+    "move_to_extra",
+    "move_to_core",
+    "needs_context",
+    "remove",
+    "defer"
+  ]
+}
