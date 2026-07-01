@@ -345,6 +345,114 @@
   line-height: 1.65;
 }
 
+.immersive-mode-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid rgba(32, 39, 37, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.reading-mode-quick,
+.reading-mode-deep {
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.mode-chip {
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid rgba(32, 39, 37, 0.13);
+  border-radius: 999px;
+  background: #f6f7f3;
+  color: #34413c;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.mode-chip-active {
+  border-color: rgba(47, 111, 92, 0.32);
+  background: #263b35;
+  color: #fff;
+}
+
+.immersive-mode-bar > span {
+  color: #61706a;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.core-source-excerpts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.extra-source-excerpts {
+  display: grid;
+  gap: 10px;
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px dashed rgba(95, 81, 51, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.extra-source-excerpts summary {
+  cursor: pointer;
+  color: #6a5d3b;
+  font-weight: 900;
+}
+
+.letter-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.letter-navigation > span {
+  color: #66736e;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.letter-prev-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.letter-nav-button {
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid rgba(32, 39, 37, 0.13);
+  border-radius: 999px;
+  background: #fffdfa;
+  color: #263b35;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.letter-nav-button:hover:not(:disabled),
+.letter-nav-button:focus-visible:not(:disabled) {
+  border-color: rgba(47, 111, 92, 0.32);
+  background: #eef6f1;
+}
+
+.letter-nav-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .scene-explanation-panel,
 .route-structure-panel,
 .then-now-panel {
@@ -504,6 +612,33 @@
 
   .letter-reading-unit {
     padding: 18px 14px;
+  }
+
+  .immersive-mode-bar,
+  .letter-navigation {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .reading-mode-quick,
+  .reading-mode-deep,
+  .letter-prev-next {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .mode-chip,
+  .letter-nav-button {
+    flex: 0 0 auto;
+  }
+
+  .source-excerpt-card {
+    min-height: auto;
+    padding: 12px 12px 12px 14px;
+  }
+
+  .source-excerpt-text {
+    font-size: 15px;
   }
 
   .letter-flow-facts,

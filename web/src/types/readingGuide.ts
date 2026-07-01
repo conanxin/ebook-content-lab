@@ -112,6 +112,17 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
     reading_order?: string[];
     updated_in?: string;
   };
+  immersive_reading?: {
+    version?: string;
+    mode?: string;
+    default_mode?: string;
+    supports_deep_mode?: boolean;
+    letter_count?: number;
+    navigation?: string;
+    source_anchor_policy?: string;
+    updated_in?: string;
+  };
+  reading_flow_summary?: string;
   then_now_summary?: string;
   place_then_now?: PlaceThenNow[];
 }
@@ -175,6 +186,19 @@ export interface LetterReadingUnit {
   source_clues?: SourceClue[];
   source_excerpts?: SourceExcerpt[];
   reading_order?: string[];
+  core_source_excerpts?: SourceExcerpt[];
+  extra_source_excerpts?: SourceExcerpt[];
+  reading_mode?: {
+    quick_summary?: string;
+    deep_reading_prompt?: string;
+    mobile_hint?: string;
+  };
+  navigation?: {
+    previous_letter_id?: string | null;
+    next_letter_id?: string | null;
+    position_label?: string;
+    segment?: string;
+  };
   close_reading_flow?: {
     what_it_says?: string;
     why_it_matters?: string;
@@ -330,6 +354,30 @@ export interface ChapterReadingCard {
   answer_hint_expanded?: string;
   source_excerpts?: SourceExcerpt[];
   source_anchor_layer_ready?: boolean;
+  core_source_excerpts?: SourceExcerpt[];
+  extra_source_excerpts?: SourceExcerpt[];
+  reading_segment?: string;
+  reading_flow?: {
+    version?: string;
+    default_mode?: string;
+    available_modes?: string[];
+    default_visible_excerpt_count?: number;
+    extra_excerpt_count?: number;
+    recommended_reading_order?: string[];
+    previous_letter_id?: string | null;
+    next_letter_id?: string | null;
+  };
+  navigation?: {
+    previous_letter_id?: string | null;
+    next_letter_id?: string | null;
+    position_label?: string;
+    segment?: string;
+  };
+  reading_modes?: {
+    quick_summary?: string;
+    deep_reading_prompt?: string;
+    mobile_hint?: string;
+  };
   letter_reading_unit?: LetterReadingUnit;
   letter_reading_flow_ready?: boolean;
   embedded_place_count?: number;
@@ -428,6 +476,15 @@ export interface ReadingQuestion {
       anchor_id?: string;
     }>;
   };
+  linked_letter_navigation?: {
+    letter_id?: string | null;
+    chapter_id?: string | null;
+    previous_letter_id?: string | null;
+    next_letter_id?: string | null;
+    position_label?: string;
+  };
+  quick_answer?: string;
+  deep_answer?: string;
   review_notice?: string;
   review_status?: string;
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "reading-guide.v0.2",
   "status": "draft",
-  "generated_at": "2026-07-01T04:42:23.965042+00:00",
+  "generated_at": "2026-07-01T04:54:39.897352+00:00",
   "book": {
     "title": "《旅行人信札》",
     "author": "陈嘉映",
@@ -6446,5 +6446,16 @@
       "参考答案"
     ],
     "updated_in": "v0.7-A16"
-  }
+  },
+  "immersive_reading": {
+    "version": "v0.7-A17",
+    "mode": "letter-flow",
+    "default_mode": "quick",
+    "supports_deep_mode": true,
+    "letter_count": 25,
+    "navigation": "previous-next",
+    "source_anchor_policy": "2 core excerpts by default, extra excerpts folded",
+    "updated_in": "v0.7-A17"
+  },
+  "reading_flow_summary": "建议先用快速浏览读完 25 封信的路线推进，再对感兴趣的信切换到精读模式。快速浏览只显示核心摘要、1-2 条原文锚点、路线和答案摘要；精读模式展开全部原文线索、场景、今昔对照和完整回答。"
 }

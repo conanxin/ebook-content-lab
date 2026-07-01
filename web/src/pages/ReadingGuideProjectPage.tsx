@@ -164,6 +164,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
   const [error, setError] = useState<string | null>(null);
   const [placeFilter, setPlaceFilter] = useState("all");
   const [expandAllLetters, setExpandAllLetters] = useState(false);
+  const [readingMode, setReadingMode] = useState<"quick" | "deep">("quick");
 
   useEffect(() => {
     let alive = true;
@@ -457,8 +458,27 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
             <p className="section-eyebrow">main reading flow</p>
             <h2>25封书信连续阅读</h2>
           </div>
-          <p>每一封信都是一个完整阅读单元：标题、路线、原文摘录与阅读线索、原文精读、景点今昔对照、阅读问题与参考回答都放回同一处。</p>
+          <p>建议先用快速浏览走完整条路线，再对感兴趣的信切换到精读模式。快速浏览只显示核心原文锚点和答案摘要，精读模式展开更多原文线索和完整说明。</p>
         </header>
+
+        <div className="immersive-mode-bar" aria-label="阅读模式切换">
+          <div className="reading-mode-quick reading-mode-deep">
+            {[
+              ["quick", "快速浏览"],
+              ["deep", "精读模式"],
+            ].map(([mode, label]) => (
+              <button
+                className={`mode-chip ${readingMode === mode ? "mode-chip-active" : ""}`}
+                key={mode}
+                type="button"
+                onClick={() => setReadingMode(mode as "quick" | "deep")}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <span>{readingMode === "quick" ? "默认只显示核心 1-2 条原文锚点。" : "精读模式会展开更多原文线索、场景、今昔对照和完整答案。"}</span>
+        </div>
 
         <div className="letter-envelope-list compact-card-stack">
           {chapters.map((chapter: ChapterReadingCard) => {
@@ -473,11 +493,19 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 reading_use: item.use,
                 mode: item.mode,
               }));
+            const coreSourceExcerpts = chapter.core_source_excerpts || unit?.core_source_excerpts || sourceExcerpts.slice(0, 2);
+            const extraSourceExcerpts = chapter.extra_source_excerpts || unit?.extra_source_excerpts || sourceExcerpts.slice(2);
+            const visibleSourceExcerpts = coreSourceExcerpts;
             const linkedQuestionId = unit?.question_answer?.question_id || chapter.linked_questions?.[0];
             const linkedQuestion = linkedQuestionId ? questionsById.get(linkedQuestionId) : undefined;
             const questionText = unit?.question_answer?.question || linkedQuestion?.question || "本封信的阅读问题待人工复核。";
-            const answerText = unit?.question_answer?.reference_answer || readingQuestionAnswer(linkedQuestion);
+            const quickAnswer = linkedQuestion?.quick_answer || chapter.reading_modes?.quick_summary || unit?.question_answer?.reference_answer || readingQuestionAnswer(linkedQuestion);
+            const deepAnswer = linkedQuestion?.deep_answer || unit?.question_answer?.reference_answer || readingQuestionAnswer(linkedQuestion);
+            const answerText = readingMode === "deep" ? deepAnswer : quickAnswer;
             const embeddedPlaces = unit?.embedded_places || [];
+            const previousChapter = chapters.find((item) => item.letter_id === chapter.navigation?.previous_letter_id);
+            const nextChapter = chapters.find((item) => item.letter_id === chapter.navigation?.next_letter_id);
+            const deepOpen = readingMode === "deep" || expandAllLetters;
 
             return (
               <article className="letter-reading-unit letter-envelope-card" id={chapter.chapter_id} key={chapter.chapter_id}>
@@ -503,9 +531,13 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
 
                 <section className="source-anchor letter-source-block letter-body">
                   <h4>原文锚点</h4>
-                  <p className="source-anchor-intro">先从短摘或场景句进入文本，再看解释、路线和今昔对照。</p>
-                  <div className="source-clue-list">
-                    {sourceExcerpts.slice(0, 4).map((item, index) => (
+                  <p className="source-anchor-intro">
+                    {readingMode === "quick"
+                      ? "快速浏览：先看核心 1-2 条原文锚点，再继续路线和答案摘要。"
+                      : "精读模式：显示本封信全部原文锚点，再看场景、路线和今昔对照。"}
+                  </p>
+                  <div className="source-clue-list core-source-excerpts">
+                    {visibleSourceExcerpts.slice(0, 4).map((item, index) => (
                       <article className="source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
                         <p className="source-excerpt-text">{displayText(item.text, "原文锚点待复核。")}</p>
                         <details className="source-excerpt-note">
@@ -516,6 +548,23 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                       </article>
                     ))}
                   </div>
+                  {extraSourceExcerpts.length > 0 ? (
+                    <details className="extra-source-excerpts collapsible-reading-panel" open={readingMode === "deep"}>
+                      <summary>更多原文线索（{extraSourceExcerpts.length}）</summary>
+                      <div className="source-clue-list">
+                        {extraSourceExcerpts.map((item, index) => (
+                          <article className="source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-extra-source-${index}`}>
+                            <p className="source-excerpt-text">{displayText(item.text, "原文锚点待复核。")}</p>
+                            <details className="source-excerpt-note">
+                              <summary>线索说明</summary>
+                              <small>{displayText(item.note, "这条短摘或线索用于辅助阅读，不替代原书。")}</small>
+                              <span>{displayText(item.reading_use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                            </details>
+                          </article>
+                        ))}
+                      </div>
+                    </details>
+                  ) : null}
                 </section>
 
                 <section className="scene-explanation-panel close-reading-panel letter-close-reading">
@@ -607,8 +656,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                   <small>{unit?.question_answer?.basis || "基于原书线索、地点说明、结构化导读与公开来源状态整理，待人工复核。"}</small>
                 </section>
 
-                <details className="secondary-reading-details collapsible-reading-panel" open={expandAllLetters || (chapter.order ?? 0) <= 2}>
-                  <summary>更多场景、路线与复核信息</summary>
+                <details className="secondary-reading-details collapsible-reading-panel" open={deepOpen}>
+                  <summary>{readingMode === "deep" ? "精读内容已展开" : "展开精读"}</summary>
                   <div className="secondary-reading-grid">
                     <div className="letter-scene-notes">
                       <h4>原书场景线索</h4>
@@ -630,6 +679,31 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                     </div>
                   </div>
                 </details>
+
+                <nav className="letter-navigation" aria-label={`${chapter.title || chapter.letter_id} 连续阅读导航`}>
+                  <span>{chapter.navigation?.position_label || `第 ${chapter.order ?? "?"} 封`}</span>
+                  <div className="letter-prev-next">
+                    <button
+                      className="letter-nav-button"
+                      type="button"
+                      disabled={!previousChapter}
+                      onClick={() => scrollToChapter(previousChapter?.chapter_id)}
+                    >
+                      上一封
+                    </button>
+                    <button className="letter-nav-button" type="button" onClick={() => scrollToSection("letters")}>
+                      回到 25 封信顶部
+                    </button>
+                    <button
+                      className="letter-nav-button"
+                      type="button"
+                      disabled={!nextChapter}
+                      onClick={() => scrollToChapter(nextChapter?.chapter_id)}
+                    >
+                      下一封
+                    </button>
+                  </div>
+                </nav>
               </article>
             );
           })}
@@ -829,7 +903,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               <h3>{displayText(question.question, "阅读问题待复核")}</h3>
               <div className="question-answer">
                 <strong>参考回答 / 导读提示</strong>
-                <p>{readingQuestionAnswer(question)}</p>
+                <p>{readingMode === "deep" ? question.deep_answer || readingQuestionAnswer(question) : question.quick_answer || readingQuestionAnswer(question)}</p>
               </div>
               <div className="close-reading-steps">
                 <strong>回答步骤</strong>

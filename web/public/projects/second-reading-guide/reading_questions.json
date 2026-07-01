@@ -64,7 +64,7 @@
         "再观察哪些地点已有公开来源，哪些仍待复核。",
         "最后用章节卡中的摘录、场景和今日对照组织回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "source_anchor": {
         "anchor_type": "book_route_sample",
         "anchors": [
@@ -85,6 +85,15 @@
           }
         ],
         "note": "全书问题先连接前三封信的原文锚点，再回到 25 封书信整体路线。"
+      },
+      "quick_answer": "参考回答：这本书可以看作一组按行程推进的旅行书信。",
+      "deep_answer": "参考回答：这本书可以看作一组按行程推进的旅行书信。读者可以先看地点从北方关隘、关中城市、西南山水、东南沿海一路展开，再看作者如何在不同景观中调整观看方式。这个回答仍是导读提示。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-001",
+        "chapter_id": "chapter-001",
+        "previous_letter_id": null,
+        "next_letter_id": "letter-002",
+        "position_label": "第 1 / 25 封"
       }
     },
     {
@@ -122,7 +131,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-001",
       "answer_summary": "参考回答：本封信可以从娘子关 → 骊山 → 西安进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -132,6 +141,15 @@
         "anchor_id": "letter-001-source-anchor-01",
         "place_or_scene": "娘子关、骊山、西安",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从娘子关 → 骊山 → 西安进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从娘子关 → 骊山 → 西安进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-001",
+        "chapter_id": "chapter-001",
+        "previous_letter_id": null,
+        "next_letter_id": "letter-002",
+        "position_label": "第 1 / 25 封"
       }
     },
     {
@@ -169,7 +187,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-002",
       "answer_summary": "参考回答：本封信可以从半坡 → 碑林 → 成都进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -179,6 +197,15 @@
         "anchor_id": "letter-002-source-anchor-01",
         "place_or_scene": "半坡、碑林、成都",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从半坡 → 碑林 → 成都进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从半坡 → 碑林 → 成都进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-002",
+        "chapter_id": "chapter-002",
+        "previous_letter_id": "letter-001",
+        "next_letter_id": "letter-003",
+        "position_label": "第 2 / 25 封"
       }
     },
     {
@@ -216,7 +243,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-003",
       "answer_summary": "参考回答：本封信可以从杜甫草堂 → 武侯祠 → 青城山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -226,6 +253,15 @@
         "anchor_id": "letter-003-source-anchor-01",
         "place_or_scene": "杜甫草堂、武侯祠、青城山",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从杜甫草堂 → 武侯祠 → 青城山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从杜甫草堂 → 武侯祠 → 青城山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-003",
+        "chapter_id": "chapter-003",
+        "previous_letter_id": "letter-002",
+        "next_letter_id": "letter-004",
+        "position_label": "第 3 / 25 封"
       }
     },
     {
@@ -263,7 +299,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-004",
       "answer_summary": "参考回答：本封信可以从乐山大佛 → 青衣亭 → 峨嵋山脚进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -273,6 +309,15 @@
         "anchor_id": "letter-004-source-anchor-01",
         "place_or_scene": "乐山大佛、青衣亭、峨嵋山脚",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从乐山大佛 → 青衣亭 → 峨嵋山脚进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从乐山大佛 → 青衣亭 → 峨嵋山脚进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-004",
+        "chapter_id": "chapter-004",
+        "previous_letter_id": "letter-003",
+        "next_letter_id": "letter-005",
+        "position_label": "第 4 / 25 封"
       }
     },
     {
@@ -310,7 +355,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-005",
       "answer_summary": "参考回答：本封信可以从峨嵋车站 → 成昆线隧道 → 昆明车站进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -320,6 +365,15 @@
         "anchor_id": "letter-005-source-anchor-01",
         "place_or_scene": "峨嵋车站、成昆线隧道、昆明车站",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从峨嵋车站 → 成昆线隧道 → 昆明车站进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从峨嵋车站 → 成昆线隧道 → 昆明车站进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-005",
+        "chapter_id": "chapter-005",
+        "previous_letter_id": "letter-004",
+        "next_letter_id": "letter-006",
+        "position_label": "第 5 / 25 封"
       }
     },
     {
@@ -358,7 +412,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-006",
       "answer_summary": "参考回答：本封信可以从昆明温泉 → 西山 → 石林 → 贵阳花溪进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -368,6 +422,15 @@
         "anchor_id": "letter-006-source-anchor-01",
         "place_or_scene": "昆明温泉、西山、石林",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从昆明温泉 → 西山 → 石林 → 贵阳花溪进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从昆明温泉 → 西山 → 石林 → 贵阳花溪进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-006",
+        "chapter_id": "chapter-006",
+        "previous_letter_id": "letter-005",
+        "next_letter_id": "letter-007",
+        "position_label": "第 6 / 25 封"
       }
     },
     {
@@ -407,7 +470,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-007",
       "answer_summary": "参考回答：本封信可以从贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -417,6 +480,15 @@
         "anchor_id": "letter-007-source-anchor-01",
         "place_or_scene": "贵阳流山、桂林伏波山、七星山",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-007",
+        "chapter_id": "chapter-007",
+        "previous_letter_id": "letter-006",
+        "next_letter_id": "letter-008",
+        "position_label": "第 7 / 25 封"
       }
     },
     {
@@ -455,7 +527,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-008",
       "answer_summary": "参考回答：本封信可以从桂林南溪山 → 叠彩峰 → 隐山 → 阳朔进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -465,6 +537,15 @@
         "anchor_id": "letter-008-source-anchor-01",
         "place_or_scene": "桂林南溪山、叠彩峰、隐山",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从桂林南溪山 → 叠彩峰 → 隐山 → 阳朔进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从桂林南溪山 → 叠彩峰 → 隐山 → 阳朔进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-008",
+        "chapter_id": "chapter-008",
+        "previous_letter_id": "letter-007",
+        "next_letter_id": "letter-009",
+        "position_label": "第 8 / 25 封"
       }
     },
     {
@@ -502,7 +583,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-009",
       "answer_summary": "参考回答：本封信可以从漓江 → 阳朔 → 梧州进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -512,6 +593,15 @@
         "anchor_id": "letter-009-source-anchor-01",
         "place_or_scene": "漓江、阳朔、梧州",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从漓江 → 阳朔 → 梧州进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从漓江 → 阳朔 → 梧州进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-009",
+        "chapter_id": "chapter-009",
+        "previous_letter_id": "letter-008",
+        "next_letter_id": "letter-010",
+        "position_label": "第 9 / 25 封"
       }
     },
     {
@@ -547,7 +637,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-010",
       "answer_summary": "参考回答：本封信可以从梧州西江种种进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -557,6 +647,15 @@
         "anchor_id": "letter-010-source-anchor-01",
         "place_or_scene": "梧州西江种种",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从梧州西江种种进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从梧州西江种种进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-010",
+        "chapter_id": "chapter-010",
+        "previous_letter_id": "letter-009",
+        "next_letter_id": "letter-011",
+        "position_label": "第 10 / 25 封"
       }
     },
     {
@@ -592,7 +691,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-011",
       "answer_summary": "参考回答：本封信可以从肇庆天柱阁进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -602,6 +701,15 @@
         "anchor_id": "letter-011-source-anchor-01",
         "place_or_scene": "肇庆天柱阁",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从肇庆天柱阁进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从肇庆天柱阁进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-011",
+        "chapter_id": "chapter-011",
+        "previous_letter_id": "letter-010",
+        "next_letter_id": "letter-012",
+        "position_label": "第 11 / 25 封"
       }
     },
     {
@@ -638,7 +746,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-012",
       "answer_summary": "参考回答：本封信可以从广州中山大学 → 白云山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -648,6 +756,15 @@
         "anchor_id": "letter-012-source-anchor-01",
         "place_or_scene": "广州中山大学、白云山",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从广州中山大学 → 白云山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从广州中山大学 → 白云山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-012",
+        "chapter_id": "chapter-012",
+        "previous_letter_id": "letter-011",
+        "next_letter_id": "letter-013",
+        "position_label": "第 12 / 25 封"
       }
     },
     {
@@ -683,7 +800,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-013",
       "answer_summary": "参考回答：本封信可以从汕头看海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -693,6 +810,15 @@
         "anchor_id": "letter-013-source-anchor-01",
         "place_or_scene": "汕头看海",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从汕头看海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从汕头看海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-013",
+        "chapter_id": "chapter-013",
+        "previous_letter_id": "letter-012",
+        "next_letter_id": "letter-014",
+        "position_label": "第 13 / 25 封"
       }
     },
     {
@@ -733,7 +859,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-014",
       "answer_summary": "参考回答：本封信可以从云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -743,6 +869,15 @@
         "anchor_id": "letter-014-source-anchor-01",
         "place_or_scene": "云霄、漳浦、漳州",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-014",
+        "chapter_id": "chapter-014",
+        "previous_letter_id": "letter-013",
+        "next_letter_id": "letter-015",
+        "position_label": "第 14 / 25 封"
       }
     },
     {
@@ -782,7 +917,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-015",
       "answer_summary": "参考回答：本封信可以从泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -792,6 +927,15 @@
         "anchor_id": "letter-015-source-anchor-01",
         "place_or_scene": "泉州、福州西湖、戚公祠",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-015",
+        "chapter_id": "chapter-015",
+        "previous_letter_id": "letter-014",
+        "next_letter_id": "letter-016",
+        "position_label": "第 15 / 25 封"
       }
     },
     {
@@ -831,7 +975,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-016",
       "answer_summary": "参考回答：本封信可以从福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -841,6 +985,15 @@
         "anchor_id": "letter-016-source-anchor-01",
         "place_or_scene": "福安交溪、福鼎灵溪、南雁荡",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-016",
+        "chapter_id": "chapter-016",
+        "previous_letter_id": "letter-015",
+        "next_letter_id": "letter-017",
+        "position_label": "第 16 / 25 封"
       }
     },
     {
@@ -876,7 +1029,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-017",
       "answer_summary": "参考回答：本封信可以从温州北雁荡由浅入深进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -886,6 +1039,15 @@
         "anchor_id": "letter-017-source-anchor-01",
         "place_or_scene": "温州北雁荡由浅入深",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从温州北雁荡由浅入深进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从温州北雁荡由浅入深进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-017",
+        "chapter_id": "chapter-017",
+        "previous_letter_id": "letter-016",
+        "next_letter_id": "letter-018",
+        "position_label": "第 17 / 25 封"
       }
     },
     {
@@ -921,7 +1083,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-018",
       "answer_summary": "参考回答：本封信可以从朝辞雁荡暮至余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -931,6 +1093,15 @@
         "anchor_id": "letter-018-source-anchor-01",
         "place_or_scene": "朝辞雁荡暮至余杭",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从朝辞雁荡暮至余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从朝辞雁荡暮至余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-018",
+        "chapter_id": "chapter-018",
+        "previous_letter_id": "letter-017",
+        "next_letter_id": "letter-019",
+        "position_label": "第 18 / 25 封"
       }
     },
     {
@@ -966,7 +1137,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-019",
       "answer_summary": "参考回答：本封信可以从千古如斯的余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -976,6 +1147,15 @@
         "anchor_id": "letter-019-source-anchor-01",
         "place_or_scene": "千古如斯的余杭",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从千古如斯的余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从千古如斯的余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-019",
+        "chapter_id": "chapter-019",
+        "previous_letter_id": "letter-018",
+        "next_letter_id": "letter-020",
+        "position_label": "第 19 / 25 封"
       }
     },
     {
@@ -1011,7 +1191,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-020",
       "answer_summary": "参考回答：本封信可以从黄山天都峰排云亭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1021,6 +1201,15 @@
         "anchor_id": "letter-020-source-anchor-01",
         "place_or_scene": "黄山天都峰排云亭",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从黄山天都峰排云亭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从黄山天都峰排云亭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-020",
+        "chapter_id": "chapter-020",
+        "previous_letter_id": "letter-019",
+        "next_letter_id": "letter-021",
+        "position_label": "第 20 / 25 封"
       }
     },
     {
@@ -1057,7 +1246,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-021",
       "answer_summary": "参考回答：本封信可以从青阳九华山 → 安庆小孤山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1067,6 +1256,15 @@
         "anchor_id": "letter-021-source-anchor-01",
         "place_or_scene": "青阳九华山、安庆小孤山",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从青阳九华山 → 安庆小孤山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从青阳九华山 → 安庆小孤山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-021",
+        "chapter_id": "chapter-021",
+        "previous_letter_id": "letter-020",
+        "next_letter_id": "letter-022",
+        "position_label": "第 21 / 25 封"
       }
     },
     {
@@ -1103,7 +1301,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-022",
       "answer_summary": "参考回答：本封信可以从鄱阳五老峰 → 三叠瀑进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1113,6 +1311,15 @@
         "anchor_id": "letter-022-source-anchor-01",
         "place_or_scene": "鄱阳五老峰、三叠瀑",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从鄱阳五老峰 → 三叠瀑进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从鄱阳五老峰 → 三叠瀑进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-022",
+        "chapter_id": "chapter-022",
+        "previous_letter_id": "letter-021",
+        "next_letter_id": "letter-023",
+        "position_label": "第 22 / 25 封"
       }
     },
     {
@@ -1150,7 +1357,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-023",
       "answer_summary": "参考回答：本封信可以从南京中山陵 → 玄武湖 → 苏州园林进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1160,6 +1367,15 @@
         "anchor_id": "letter-023-source-anchor-01",
         "place_or_scene": "南京中山陵、玄武湖、苏州园林",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从南京中山陵 → 玄武湖 → 苏州园林进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从南京中山陵 → 玄武湖 → 苏州园林进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-023",
+        "chapter_id": "chapter-023",
+        "previous_letter_id": "letter-022",
+        "next_letter_id": "letter-024",
+        "position_label": "第 23 / 25 封"
       }
     },
     {
@@ -1196,7 +1412,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-024",
       "answer_summary": "参考回答：本封信可以从苏州天平山沧浪亭 → 上海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1206,6 +1422,15 @@
         "anchor_id": "letter-024-source-anchor-01",
         "place_or_scene": "苏州天平山沧浪亭、上海",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从苏州天平山沧浪亭 → 上海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从苏州天平山沧浪亭 → 上海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-024",
+        "chapter_id": "chapter-024",
+        "previous_letter_id": "letter-023",
+        "next_letter_id": "letter-025",
+        "position_label": "第 24 / 25 封"
       }
     },
     {
@@ -1243,7 +1468,7 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A16",
+      "updated_in": "v0.7-A17",
       "letter_anchor": "chapter-025",
       "answer_summary": "参考回答：本封信可以从沪青海航 → 青岛崂山 → 返京进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
@@ -1253,6 +1478,15 @@
         "anchor_id": "letter-025-source-anchor-01",
         "place_or_scene": "沪青海航、青岛崂山、返京",
         "note": "问题回答应先回到这封信的原文锚点，再展开场景、路线和今昔对照。"
+      },
+      "quick_answer": "参考回答：本封信可以从沪青海航 → 青岛崂山 → 返京进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "deep_answer": "参考回答：本封信可以从沪青海航 → 青岛崂山 → 返京进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
+      "linked_letter_navigation": {
+        "letter_id": "letter-025",
+        "chapter_id": "chapter-025",
+        "previous_letter_id": "letter-024",
+        "next_letter_id": null,
+        "position_label": "第 25 / 25 封"
       }
     }
   ],
