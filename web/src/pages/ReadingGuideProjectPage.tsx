@@ -26,6 +26,7 @@ import type {
   ReadingQuestionsData,
   RouteIndexEntry,
   RouteTimelineNode,
+  SourceClue,
 } from "../types/readingGuide";
 import { projectDataPath } from "../utils/paths";
 
@@ -66,7 +67,7 @@ function moduleDataStatus(data: ReadingGuideDataBundle, key: keyof ReadingGuideD
 
 function joinList(values?: string[], fallback = "待人工复核"): string {
   if (!values || values.length === 0) return fallback;
-  return values.join("、");
+  return values.filter(Boolean).join("、") || fallback;
 }
 
 function displayText(value: string | null | undefined, fallback = "待人工复核"): string {
@@ -89,8 +90,9 @@ function allPlaces(chapters: ChapterReadingCard[]): string[] {
   return Array.from(new Set(chapters.flatMap((chapter) => chapter.places || [])));
 }
 
-function placeName(place: PlaceThenNow): string {
-  return place.place || place.place_name || place.name || "地点待复核";
+function placeName(place: PlaceThenNow | PlaceRouteIndexItem): string {
+  const value = place as Record<string, unknown>;
+  return String(value.place || value.place_name || value.name || "地点待复核");
 }
 
 function sourceStatusLabel(status?: string): string {
@@ -125,6 +127,17 @@ function coordinateStatusClass(status?: string): string {
   if (status === "public_coordinate") return "coordinate-public";
   if (status === "approximate_coordinate") return "coordinate-approximate";
   return "coordinate-pending";
+}
+
+function readingQuestionAnswer(question?: ReadingQuestion): string {
+  return displayText(
+    question?.close_reading_answer ||
+      question?.answer_hint_expanded ||
+      question?.answer_hint ||
+      question?.reference_answer ||
+      question?.guide_answer,
+    "参考回答待人工复核。",
+  );
 }
 
 function scrollToChapter(chapterId?: string): void {
@@ -193,15 +206,15 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "book_overview.json",
         status: moduleDataStatus(data, "bookOverview"),
         count: null,
-        description: "书籍定位、阅读目的、结构概览、使用方式和限制说明。",
+        description: "书籍定位、路线总览、地点索引、页面结构和公开预览边界。",
       },
       {
         key: "chapterReadingCards",
-        title: "书信导读",
+        title: "25封书信",
         file: "chapter_reading_cards.json",
         status: moduleDataStatus(data, "chapterReadingCards"),
         count: countItems(data, "chapterReadingCards"),
-        description: "25 封书信的信封卡片，展示地点、路线、主题和导读摘要。",
+        description: "每封信的路线、原文线索、精读步骤、景点对照和问题答案。",
       },
       {
         key: "keyConcepts",
@@ -209,15 +222,15 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "key_concepts.json",
         status: moduleDataStatus(data, "keyConcepts"),
         count: countItems(data, "keyConcepts"),
-        description: "由结构化主题聚合出的概念草案，等待人工细读修订。",
+        description: "由结构化主题聚合出的概念草稿，等待人工细读修订。",
       },
       {
         key: "quoteIndex",
-        title: "引文状态",
+        title: "原文线索",
         file: "quote_index.json",
         status: moduleDataStatus(data, "quoteIndex"),
         count: countItems(data, "quoteIndex"),
-        description: "暂不公开原文摘录，只保留后续人工复核用的结构定位槽位。",
+        description: "以短摘、线索和定位说明服务导读，不作为整章全文替代。",
       },
       {
         key: "readingQuestions",
@@ -225,7 +238,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         file: "reading_questions.json",
         status: moduleDataStatus(data, "readingQuestions"),
         count: countItems(data, "readingQuestions"),
-        description: "每个问题附参考回答，基于标题、地点和结构化主题生成。",
+        description: "每个问题包含参考回答，并能回到对应书信。",
       },
     ],
     [data],
@@ -243,6 +256,15 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
   const publicSourceCount = placeStats?.public_source_count ?? placeThenNow.filter((place) => place.source_status === "public_source").length;
   const pendingSourceCount =
     placeStats?.needs_source_review_count ?? placeThenNow.filter((place) => place.source_status !== "public_source").length;
+  const coordinateStats = overview?.coordinate_stats;
+  const projectTitle = overview?.display_title || "《旅行人信札》阅读导览";
+  const bookTitle = overview?.book?.title || project.book?.title || project.book_title || "《旅行人信札》";
+  const subtitle = overview?.subtitle || project.subtitle || "25封旅行书信的路线、地点、场景与阅读线索";
+  const schemaVersion = overview?.schema_version || data.chapterReadingCards?.schema_version || "reading-guide.v0.2";
+  const publicStatus = overview?.status || project.status || "draft";
+  const releasePhase = overview?.release_phase || "public-preview";
+  const reviewStatus = typeof overview?.review_status === "string" ? overview.review_status : "manual-review-pending";
+
   const routeIndex: RouteIndexEntry[] =
     overview?.route_index ||
     chapters.map((chapter) => ({
@@ -254,8 +276,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       source_covered_places: (chapter.places || []).filter((name) =>
         placeThenNow.some((place) => placeName(place) === name && place.source_status === "public_source"),
       ),
-      pending_places: (chapter.places || []).filter((name) =>
-        !placeThenNow.some((place) => placeName(place) === name && place.source_status === "public_source"),
+      pending_places: (chapter.places || []).filter(
+        (name) => !placeThenNow.some((place) => placeName(place) === name && place.source_status === "public_source"),
       ),
     }));
   const routeTimeline: RouteTimelineNode[] =
@@ -284,6 +306,9 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       source_url: place.source_url,
       today_reading: place.now_context || place.today_reading,
       source_review_note: place.source_review_note,
+      coordinates: place.coordinates,
+      coordinate_status: place.coordinate_status,
+      coordinate_review_note: place.coordinate_review_note,
     }));
   const filteredPlaceRouteIndex = placeRouteIndex.filter((place) => {
     if (placeFilter === "public-source") return place.source_status === "public_source";
@@ -292,44 +317,38 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
     if (placeFilter === "coordinate-pending") return place.coordinate_status === "needs_coordinate_review";
     return true;
   });
-  const travelMapNodes = overview?.travel_map?.nodes || filteredPlaceRouteIndex.map((place, index) => ({
-    order: index + 1,
-    place_name: place.place_name,
-    letters: place.letters,
-    coordinates: place.coordinates,
-    coordinate_status: place.coordinate_status,
-    source_status: place.source_status,
-    source_name: place.source_name,
-    coordinate_review_note: place.coordinate_review_note,
-  }));
+  const travelMapNodes =
+    overview?.travel_map?.nodes ||
+    filteredPlaceRouteIndex.map((place, index) => ({
+      order: index + 1,
+      place_name: place.place_name,
+      letters: place.letters,
+      coordinates: place.coordinates,
+      coordinate_status: place.coordinate_status,
+      source_status: place.source_status,
+      source_name: place.source_name,
+      coordinate_review_note: place.coordinate_review_note,
+    }));
   const visibleTravelMapNodes = travelMapNodes.filter((node) =>
     filteredPlaceRouteIndex.some((place) => place.place_name === node.place_name),
   );
-  const projectTitle = overview?.display_title || project.title || "《旅行人信札》阅读导览";
-  const bookTitle = overview?.book?.title || project.book?.title || project.book_title || "《旅行人信札》";
-  const subtitle = overview?.subtitle || project.subtitle || "25 封旅行书信的路线、地点与主题导读";
-  const schemaVersion = overview?.schema_version || data.chapterReadingCards?.schema_version || "reading-guide.v0.2";
-  const publicStatus = overview?.status || project.status || "draft";
-  const releasePhase = overview?.release_phase || "public-preview";
-  const reviewStatus = overview?.review_status || "manual-review-pending";
 
   return (
-    <main className="portal-shell reading-guide-page">
+    <main className="portal-shell reading-guide-page letter-flow-page">
       <a className="back-link" href="#/">
         <ArrowLeft size={16} />
         返回首页
       </a>
 
-      <section className="reading-guide-hero letter-hero">
+      <section className="reading-guide-hero letter-flow-hero">
         <div className="reading-guide-kicker">
           <BookOpen size={18} />
           旅行书信阅读导览
         </div>
         <h1>{projectTitle}</h1>
         <p className="reading-guide-subtitle">{subtitle}</p>
-        <p>
-          这是一份公开预览版导读：先把《旅行人信札》的 25 封旅行书信整理成路线、地点、主题和问题线索，
-          方便读者进入文本。内容仍在人工复核中，不是最终审定版。
+        <p className="hero-reading-note">
+          这页按 25 封书信顺序阅读：每封信集中呈现路线、核心地点、原文摘录与阅读线索、原文精读、昔日旅程与今日景点，以及对应阅读问题的参考回答。
         </p>
 
         <div className="reading-guide-status-strip" aria-label="public preview status">
@@ -338,40 +357,42 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
           <span className="preview-badge is-pending">Manual review pending</span>
         </div>
 
-        <div className="reading-guide-stat-grid hero-stat-grid">
+        <div className="letter-flow-facts">
           <div>
-            <strong>{chapters.length || 25}</strong>
-            <span>封旅行书信</span>
+            <span>书名</span>
+            <strong>{bookTitle}</strong>
           </div>
           <div>
-            <strong>{places.length || "待复核"}</strong>
-            <span>个地点线索</span>
+            <span>作者</span>
+            <strong>{overview?.book?.author || project.book?.author || "陈嘉映"}</strong>
           </div>
           <div>
-            <strong>{concepts.length || 5}</strong>
-            <span>个主题概念</span>
+            <span>文体 / 题材</span>
+            <strong>旅行书信 / 个人阅读导览</strong>
           </div>
           <div>
-            <strong>{questions.length || 26}</strong>
-            <span>个阅读问题</span>
+            <span>书信数量</span>
+            <strong>{chapters.length || 25} 封</strong>
           </div>
-        </div>
-
-        <div className="reading-guide-route-summary">
-          <MapPinned size={18} />
-          <span>主要地点线索：{joinList(places.slice(0, 12), "待人工复核")}</span>
+          <div>
+            <span>地点线索</span>
+            <strong>{placeRouteIndex.length || places.length} 个</strong>
+          </div>
+          <div>
+            <span>当前状态</span>
+            <strong>公开预览，人工复核中</strong>
+          </div>
         </div>
       </section>
 
       {error ? <section className="state-box error">reading-guide 数据加载失败：{error}</section> : null}
 
-      <section className="content-section reading-guide-warning">
+      <section className="content-section reading-guide-warning compact-warning">
         <AlertTriangle size={20} />
         <div>
           <h2>公开预览说明</h2>
           <p>
-            本页面发布的是原创导读草案和结构化线索，不发布电子书正文、长段摘录或本地来源路径。
-            当前 95 条人工复核任务尚未完成，所有导读摘要和参考回答都需要后续人工确认。
+            当前版本用于个人阅读导览。页面补充短摘、场景线索、地点说明和参考回答，但仍不是 reviewed / final 版本；95 条人工复核任务尚未填写结果。
           </p>
         </div>
       </section>
@@ -380,11 +401,9 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         <div className="section-anchor-list">
           {[
             ["overview", "概览"],
-            ["route-timeline", "旅行路线时间线"],
-            ["travel-map", "路线地图"],
-            ["then-now", "昔日旅程与今日景点"],
-            ["letters", "25 封信"],
-            ["quote-clues", "原文摘录与阅读线索"],
+            ["letters", "25封书信"],
+            ["route-timeline", "路线时间线"],
+            ["place-index", "地点索引"],
             ["questions", "阅读问题"],
           ].map(([sectionId, label]) => (
             <button className="reading-mode-toggle" key={sectionId} type="button" onClick={() => scrollToSection(sectionId)}>
@@ -392,46 +411,213 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
             </button>
           ))}
           <button className="mobile-section-toggle" type="button" onClick={() => setExpandAllLetters((value) => !value)}>
-            {expandAllLetters ? "收起全部信封" : "展开全部信封"}
+            {expandAllLetters ? "收起全部书信" : "展开全部书信"}
           </button>
         </div>
       </nav>
 
-      <section className="content-section reading-guide-overview" id="overview">
-        <h2>全书导读</h2>
-        <p>{displayText(overview?.one_sentence_summary, "公开导读草案已生成，概览仍待人工复核。")}</p>
-        <p>{displayText(overview?.reading_purpose, "阅读目的仍待人工复核。")}</p>
+      <section className="content-section reading-guide-overview letter-flow-overview" id="overview">
+        <h2>概览</h2>
+        <p>{displayText(overview?.one_sentence_summary, "公开导读草稿已生成，概览仍待人工复核。")}</p>
         <div className="reading-flow-panel">
-          <h3>原文精读怎么走</h3>
+          <h3>25封书信连续阅读</h3>
           <p>
-            {displayText(
-              overview?.close_reading_overview?.method,
-              "按“摘录或原文线索 → 场景 → 地点 → 昔日/今日对照 → 问题 → 回答”的顺序精读。",
-            )}
+            本轮重设计把页面主线收束为 letter-001 到 letter-025。路线时间线、地点索引和阅读问题都作为辅助模块，先服务每封信本身，再服务全局查找。
           </p>
           <div className="filter-chip-row">
-            <span>先顺读时间线</span>
-            <span>再看地点路线索引</span>
-            <span>最后展开信封做精读</span>
+            <span>先看一封信写了什么</span>
+            <span>再看原文线索和场景</span>
+            <span>最后看地点今昔对照与参考回答</span>
           </div>
         </div>
-        <div className="reading-guide-two-column">
+        <div className="letter-flow-summary-strip">
           <div>
-            <h3>如何使用</h3>
-            <ul>
-              {(overview?.how_to_use || ["先按书信顺序浏览信封卡片，再查看概念和问题。"]).map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <strong>{overview?.letter_reading_flow_summary?.letter_units ?? chapters.length}</strong>
+            <span>书信阅读单元</span>
           </div>
           <div>
-            <h3>限制说明</h3>
-            <ul>
-              {(overview?.limitations || ["当前版本仍是 draft，需人工复核。"]).map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            <strong>{overview?.letter_reading_flow_summary?.source_clue_ready ?? chapters.length}</strong>
+            <span>原文线索覆盖</span>
           </div>
+          <div>
+            <strong>{overview?.letter_reading_flow_summary?.embedded_places_ready ?? chapters.length}</strong>
+            <span>景点嵌入覆盖</span>
+          </div>
+          <div>
+            <strong>{overview?.letter_reading_flow_summary?.question_answer_ready ?? chapters.length}</strong>
+            <span>问题答案覆盖</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section letter-reading-flow" id="letters">
+        <header className="letter-flow-section-header">
+          <div>
+            <p className="section-eyebrow">main reading flow</p>
+            <h2>25封书信连续阅读</h2>
+          </div>
+          <p>每一封信都是一个完整阅读单元：标题、路线、原文摘录与阅读线索、原文精读、景点今昔对照、阅读问题与参考回答都放回同一处。</p>
+        </header>
+
+        <div className="letter-envelope-list compact-card-stack">
+          {chapters.map((chapter: ChapterReadingCard) => {
+            const unit = chapter.letter_reading_unit;
+            const sourceClues: SourceClue[] = unit?.source_clues || chapter.original_excerpt || [];
+            const linkedQuestionId = unit?.question_answer?.question_id || chapter.linked_questions?.[0];
+            const linkedQuestion = linkedQuestionId ? questionsById.get(linkedQuestionId) : undefined;
+            const questionText = unit?.question_answer?.question || linkedQuestion?.question || "本封信的阅读问题待人工复核。";
+            const answerText = unit?.question_answer?.reference_answer || readingQuestionAnswer(linkedQuestion);
+            const embeddedPlaces = unit?.embedded_places || [];
+
+            return (
+              <article className="letter-reading-unit letter-envelope-card" id={chapter.chapter_id} key={chapter.chapter_id}>
+                <div className="letter-flap" aria-hidden="true" />
+                <header className="letter-unit-header">
+                  <div className="letter-number">{unit?.letter_number ?? chapter.order ?? "?"}</div>
+                  <div>
+                    <p className="letter-meta-line">
+                      <span className="letter-stamp">{unit?.date_or_stamp || chapter.letter_stamp || "日期待复核"}</span>
+                      <span>{chapter.section_id}</span>
+                      <span>{chapter.letter_id}</span>
+                    </p>
+                    <h3>{displayText(unit?.route_title || chapter.title, "章节标题待复核")}</h3>
+                    <p className="letter-one-line">{displayText(unit?.one_sentence_guide || chapter.source_informed_summary, "本封信导读摘要待复核。")}</p>
+                  </div>
+                </header>
+
+                <div className="letter-info-strip">
+                  <div className="letter-route">
+                    <MapPinned size={15} />
+                    <span>{unit?.basic_info?.route || chapter.route_label || joinList(chapter.places)}</span>
+                  </div>
+                  <div>
+                    <span>核心地点</span>
+                    <strong>{joinList(unit?.basic_info?.core_places || chapter.places)}</strong>
+                  </div>
+                  <div>
+                    <span>阅读长度</span>
+                    <strong>{unit?.basic_info?.reading_length_hint || `${chapter.chunk_count ?? "待复核"} chunks`}</strong>
+                  </div>
+                  <div>
+                    <span>这一封主要看什么</span>
+                    <strong>{unit?.basic_info?.what_to_watch || chapter.reading_focus_expanded || chapter.reading_focus || "路线、场景和地点变化"}</strong>
+                  </div>
+                </div>
+
+                <div className="letter-theme-row">
+                  {(unit?.themes || chapter.themes || []).map((theme) => (
+                    <span key={`${chapter.chapter_id}-${theme}`}>{theme}</span>
+                  ))}
+                </div>
+
+                <section className="letter-source-block letter-body">
+                  <h4>原文摘录与阅读线索</h4>
+                  <div className="source-clue-list">
+                    {sourceClues.slice(0, 4).map((item, index) => (
+                      <article className="source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
+                        <p>{displayText(item.excerpt, "原文线索待复核。")}</p>
+                        <small>{displayText(item.note, "这条线索用于辅助阅读，不替代原书。")}</small>
+                        <span>{displayText(item.use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="close-reading-panel letter-close-reading">
+                  <h4>原文精读</h4>
+                  <div className="close-reading-grid">
+                    <div className="close-reading-excerpt">
+                      <strong>这封信写了什么</strong>
+                      <p>{displayText(unit?.close_reading_flow?.what_it_says || chapter.source_informed_summary, "本封信内容摘要待复核。")}</p>
+                    </div>
+                    <div className="close-reading-explanation">
+                      <strong>为什么值得注意</strong>
+                      <p>{displayText(unit?.close_reading_flow?.why_it_matters || chapter.close_reading?.why_it_matters, "精读说明待人工复核。")}</p>
+                    </div>
+                  </div>
+                  <div className="close-reading-steps">
+                    <strong>精读步骤</strong>
+                    <ol>
+                      {(unit?.close_reading_flow?.reading_steps || chapter.reading_steps || []).slice(0, 5).map((step) => (
+                        <li key={`${chapter.chapter_id}-step-${step}`}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                  <p className="letter-change-note">
+                    可以留意的变化：{displayText(unit?.close_reading_flow?.changes_to_notice || chapter.then_now_comparison, "今昔变化待继续复核。")}
+                  </p>
+                </section>
+
+                <section className="letter-place-section">
+                  <h4>本封涉及景点：昔日旅程与今日景点</h4>
+                  <div className="embedded-place-list">
+                    {embeddedPlaces.map((place) => (
+                      <article className="embedded-place-card" key={`${chapter.chapter_id}-${place.place_name}`}>
+                        <header>
+                          <h5>{place.place_name}</h5>
+                          <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>{place.source_label}</span>
+                        </header>
+                        <p>
+                          <strong>{place.role}</strong>：{displayText(place.then_perspective, "书信中的旅行语境待复核。")}
+                        </p>
+                        <p>{displayText(place.today_perspective, "今日景点信息待公开来源复核。")}</p>
+                        <div className="reading-guide-tags">
+                          <span className={`coordinate-badge ${coordinateStatusClass(place.coordinate_status)}`}>{place.coordinate_label}</span>
+                          {place.source_url ? (
+                            <a href={place.source_url} target="_blank" rel="noreferrer">
+                              {place.source_name || "公开来源"}
+                            </a>
+                          ) : (
+                            <span>{place.review_note || "待补充公开来源"}</span>
+                          )}
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
+                <section className="question-answer-panel letter-answer">
+                  <h4>阅读问题与参考回答</h4>
+                  <div className="close-reading-question">
+                    <strong>{questionText}</strong>
+                  </div>
+                  <div className="close-reading-answer">
+                    <p>{answerText}</p>
+                  </div>
+                  <ol>
+                    {(unit?.question_answer?.answer_steps || linkedQuestion?.answer_steps || []).slice(0, 4).map((step) => (
+                      <li key={`${chapter.chapter_id}-answer-step-${step}`}>{step}</li>
+                    ))}
+                  </ol>
+                  <small>{unit?.question_answer?.basis || "基于原书线索、地点说明、结构化导读与公开来源状态整理，待人工复核。"}</small>
+                </section>
+
+                <details className="secondary-reading-details collapsible-reading-panel" open={expandAllLetters || (chapter.order ?? 0) <= 2}>
+                  <summary>更多场景、路线与复核信息</summary>
+                  <div className="secondary-reading-grid">
+                    <div className="letter-scene-notes">
+                      <h4>原书场景线索</h4>
+                      <ul>
+                        {(unit?.secondary_details?.scene_notes || chapter.original_scene_notes || ["场景线索待人工复核。"]).map((note) => (
+                          <li key={`${chapter.chapter_id}-scene-${note}`}>{note}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="letter-then-now">
+                      <h4>当年路线 / 今日对照</h4>
+                      <p>{displayText(unit?.secondary_details?.then_route_note || chapter.route_then?.note, "当年路线说明待复核。")}</p>
+                      <p>{displayText(unit?.secondary_details?.then_now_comparison || chapter.then_now_comparison, "昔日旅程与今日景点对照待补充。")}</p>
+                    </div>
+                    <div>
+                      <h4>结构证据与复核</h4>
+                      <p>{evidenceLabel(chapter.evidence_refs)}</p>
+                      <p>{displayText(unit?.secondary_details?.review_notice || chapter.review_notice, "Public preview：本卡片仍待人工复核。")}</p>
+                    </div>
+                  </div>
+                </details>
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -445,14 +631,13 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               <div>
                 <h3>{displayText(node.title, "书信标题待复核")}</h3>
                 <p>{displayText(node.then_context, "当年旅程说明待复核。")}</p>
-                <p>{displayText(node.now_context, "今日对照待复核。")}</p>
                 <div className="route-timeline-places">
                   {(node.primary_places || []).map((place) => (
                     <span key={`${node.chapter_id}-${place}`}>{place}</span>
                   ))}
                 </div>
                 <button className="route-timeline-link" type="button" onClick={() => scrollToChapter(node.chapter_id)}>
-                  跳到本封信
+                  回到本封信
                 </button>
               </div>
             </article>
@@ -460,16 +645,34 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         </div>
       </section>
 
-      <section className="content-section travel-map-section" id="travel-map">
-        <h2>路线地图 / 纸面路线图</h2>
+      <section className="content-section travel-map-section" id="place-index">
+        <h2>地点路线索引 / 路线地图 / 纸面路线图</h2>
         <p>{overview?.travel_map?.description || "轻量纸面路线图使用公开或近似坐标辅助阅读，不作为导航轨迹。"}</p>
+        <div className="place-overview-panel">
+          <div>
+            <strong>{placeStats?.total_place_count ?? placeRouteIndex.length}</strong>
+            <span>地点总览</span>
+          </div>
+          <div>
+            <strong>{publicSourceCount}</strong>
+            <span>已补公开来源</span>
+          </div>
+          <div>
+            <strong>{pendingSourceCount}</strong>
+            <span>待补来源</span>
+          </div>
+          <div>
+            <strong>{(coordinateStats?.public_coordinate_count ?? 0) + (coordinateStats?.approximate_coordinate_count ?? 0)}</strong>
+            <span>已有或近似坐标</span>
+          </div>
+        </div>
         <div className="filter-chip-row">
           {[
             ["all", "全部地点"],
             ["public-source", "已有来源"],
             ["pending-source", "待补来源"],
             ["coordinate-ready", "已有坐标"],
-            ["coordinate-pending", "待核坐标"],
+            ["coordinate-pending", "待补坐标"],
           ].map(([value, label]) => (
             <button
               className={`reading-mode-toggle ${placeFilter === value ? "is-active" : ""}`}
@@ -488,46 +691,51 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               className={`travel-map-node ${coordinateStatusClass(node.coordinate_status)}`}
               key={`${node.order}-${node.place_name}`}
               type="button"
-              onClick={() => scrollToSection("then-now")}
+              onClick={() => scrollToSection("place-card-list")}
             >
-              <span className="travel-map-label">{node.order}. {node.place_name}</span>
+              <span className="travel-map-label">
+                {node.order}. {node.place_name}
+              </span>
               <span className={`coordinate-badge ${coordinateStatusClass(node.coordinate_status)}`}>
                 {coordinateStatusLabel(node.coordinate_status)}
               </span>
             </button>
           ))}
         </div>
-      </section>
 
-      <section className="content-section paper-map-section">
-        <h2>地图式路线索引</h2>
-        <p>这是纸面地图式的地点路线索引：先按书信顺序看地点节点，再区分已补公开来源和待补来源。</p>
-        <div className="paper-map-route">
-          {filteredPlaceRouteIndex.slice(0, 36).map((place, index) => (
-            <article className="paper-map-node" key={`${place.place_name}-${index}`}>
-              <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>
-                {sourceStatusLabel(place.source_status)}
-              </span>
-              <span className={`coordinate-badge ${coordinateStatusClass(place.coordinate_status)}`}>
-                {coordinateStatusLabel(place.coordinate_status)}
-              </span>
-              <strong>{place.place_name}</strong>
-              <small>第{joinList((place.reading_order || []).map(String), "?")}封</small>
-            </article>
-          ))}
+        <div className="paper-map-section">
+          <h3>地图式路线索引</h3>
+          <div className="paper-map-route">
+            {filteredPlaceRouteIndex.slice(0, 36).map((place, index) => (
+              <article className="paper-map-node" key={`${place.place_name}-${index}`}>
+                <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>
+                  {sourceStatusLabel(place.source_status)}
+                </span>
+                <span className={`coordinate-badge ${coordinateStatusClass(place.coordinate_status)}`}>
+                  {coordinateStatusLabel(place.coordinate_status)}
+                </span>
+                <strong>{place.place_name}</strong>
+                <small>第 {joinList((place.reading_order || []).map(String), "?")} 封</small>
+              </article>
+            ))}
+          </div>
         </div>
-        <div className="place-route-index">
+
+        <div className="place-route-index" id="place-card-list">
           {filteredPlaceRouteIndex.map((place) => (
             <article className="place-route-index-item" key={place.place_name}>
               <h3>{place.place_name}</h3>
               <p>{displayText(place.today_reading, "今日读法待复核。")}</p>
               <div className="reading-guide-tags">
-                <span>{sourceStatusLabel(place.source_status)}</span>
-                <span>{coordinateStatusLabel(place.coordinate_status)}</span>
+                <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`}>
+                  {sourceStatusLabel(place.source_status)}
+                </span>
+                <span className={`coordinate-badge ${coordinateStatusClass(place.coordinate_status)}`}>
+                  {coordinateStatusLabel(place.coordinate_status)}
+                </span>
                 <span>{sourceTypeLabel(place.source_type)}</span>
                 <span>关联：{joinList(place.letters, "待复核")}</span>
               </div>
-              <p>{displayText(place.coordinate_review_note, "坐标状态待复核。")}</p>
               {place.source_url ? (
                 <a href={place.source_url} target="_blank" rel="noreferrer">
                   {place.source_name || "公开来源"}
@@ -543,26 +751,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
       <section className="content-section" id="then-now">
         <h2>昔日旅程与今日景点</h2>
         <p>{displayText(overview?.then_now_summary, "今日景点对照仍待补充公开来源。")}</p>
-        <div className="place-overview-panel">
-          <div>
-            <strong>{placeStats?.total_place_count ?? placeThenNow.length}</strong>
-            <span>地点总览</span>
-          </div>
-          <div>
-            <strong>{publicSourceCount}</strong>
-            <span>已补公开来源</span>
-          </div>
-          <div>
-            <strong>{pendingSourceCount}</strong>
-            <span>待补来源</span>
-          </div>
-          <div>
-            <strong>{routeIndex.length}</strong>
-            <span>书信路线索引</span>
-          </div>
-        </div>
-
-        <div className="route-index" aria-label="25 封书信路线索引">
+        <div className="route-index" aria-label="25封书信路线索引">
           {routeIndex.map((item) => (
             <button
               className="route-index-item"
@@ -570,7 +759,7 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               type="button"
               onClick={() => scrollToChapter(item.chapter_id)}
             >
-              <strong>第{item.order ?? "?"}封</strong>
+              <strong>第 {item.order ?? "?"} 封</strong>
               <span>{displayText(item.title, "书信标题待复核")}</span>
               <small>
                 {joinList(item.source_covered_places, "暂无已补来源")} / {joinList(item.pending_places, "无待补来源")}
@@ -578,9 +767,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
             </button>
           ))}
         </div>
-
         <div className="place-comparison-grid">
-          {placeThenNow.map((place) => (
+          {placeThenNow.slice(0, 18).map((place) => (
             <article className="place-now-source place-comparison-card" key={placeName(place)}>
               <header>
                 <h3>{placeName(place)}</h3>
@@ -590,44 +778,77 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               </header>
               <p>{displayText(place.now_context || place.today_reading, "今日景点信息待公开来源复核。")}</p>
               <p>{displayText(place.change_note, "当年旅行经验与今日景点状态的差异仍待补充。")}</p>
-              <dl>
-                <div>
-                  <dt>书信位置</dt>
-                  <dd>{joinList(place.appears_in_letters || place.letters, "待复核")}</dd>
-                </div>
-                <div>
-                  <dt>当年语境</dt>
-                  <dd>{joinList(place.then_context, "书中语境待人工复核")}</dd>
-                </div>
-                <div>
-                  <dt>来源类型</dt>
-                  <dd>{sourceTypeLabel(place.source_type)}</dd>
-                </div>
-                <div>
-                  <dt>今日来源</dt>
-                  <dd>
-                    {place.source_url ? (
-                      <a href={place.source_url} target="_blank" rel="noreferrer">
-                        {place.source_name || "公开来源"}
-                      </a>
-                    ) : (
-                      place.source_name || "待补充公开来源"
-                    )}
-                  </dd>
-                </div>
-                <div>
-                  <dt>复核状态</dt>
-                  <dd>{displayText(place.source_review_note || place.review_status || place.source_status, "待补充公开来源")}</dd>
-                </div>
-              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="content-section quote-policy" id="quote-clues" data-quote-mode={data.quoteIndex?.quote_mode || "structural_no_quote"}>
+        <header>
+          <ShieldCheck size={22} />
+          <div>
+            <h2>原文摘录与阅读线索</h2>
+            <p>
+              当前页面把原文线索放回每封信内部：短摘用于定位场景，说明用于解释为什么值得读。这里保留全局索引，方便后续人工校订摘录、页码和地点说明。
+            </p>
+          </div>
+        </header>
+        <div className="reading-guide-stat-grid">
+          <div>
+            <strong>{quotes.length}</strong>
+            <span>结构化线索槽位</span>
+          </div>
+          <div>
+            <strong>{chapters.reduce((sum, chapter) => sum + (chapter.letter_reading_unit?.source_clues?.length || 0), 0)}</strong>
+            <span>书信内原文线索</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section" id="questions">
+        <h2>阅读问题总览</h2>
+        <p>每个问题都显示参考回答，并可回到相关书信。问题不是标准答案，而是个人阅读导览的复核前提示。</p>
+        <div className="question-list">
+          {questions.map((question: ReadingQuestion) => (
+            <article className="question-card" key={question.question_id}>
+              <h3>{displayText(question.question, "阅读问题待复核")}</h3>
+              <div className="question-answer">
+                <strong>参考回答 / 导读提示</strong>
+                <p>{readingQuestionAnswer(question)}</p>
+              </div>
+              <div className="close-reading-steps">
+                <strong>回答步骤</strong>
+                <ol>
+                  {(question.answer_steps || ["回到对应书信。", "看地点和场景。", "再组织回答。"]).map((step) => (
+                    <li key={`${question.question_id}-${step}`}>{step}</li>
+                  ))}
+                </ol>
+              </div>
+              <div className="reading-guide-tags">
+                {(question.linked_letters || []).slice(0, 4).map((letterId) => (
+                  <button
+                    className="route-timeline-link"
+                    key={`${question.question_id}-${letterId}`}
+                    type="button"
+                    onClick={() => scrollToChapter(chapters.find((chapter) => chapter.letter_id === letterId)?.chapter_id)}
+                  >
+                    回到 {letterId}
+                  </button>
+                ))}
+                {(question.place_clues || []).slice(0, 4).map((place) => (
+                  <span key={`${question.question_id}-${place}`}>地点：{place}</span>
+                ))}
+              </div>
+              <p>{displayText(question.route_context, "路线语境待人工复核。")}</p>
+              <p>{displayText(question.place_context, "地点语境待人工复核。")}</p>
             </article>
           ))}
         </div>
       </section>
 
       <section className="content-section">
-        <h2>内容模块</h2>
-        <div className="reading-guide-module-grid">
+        <h2>辅助数据模块</h2>
+        <div className="reading-guide-module-grid compact-module-grid">
           {moduleStatuses.map((item) => (
             <article className="reading-guide-module" key={item.key}>
               <header>
@@ -658,115 +879,8 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
         </div>
       </section>
 
-      <section className="content-section" id="letters">
-        <h2>25 封旅行书信</h2>
-        <div className="letter-envelope-list compact-card-stack">
-          {chapters.map((chapter: ChapterReadingCard) => (
-            <article className="letter-envelope-card" id={chapter.chapter_id} key={chapter.chapter_id}>
-              <div className="letter-flap" aria-hidden="true" />
-              <header>
-                <span className="letter-number">{chapter.order ?? "?"}</span>
-                <div>
-                  <p className="letter-stamp">{chapter.letter_stamp || "日期待复核"}</p>
-                  <h3>{displayText(chapter.title, "章节标题待复核")}</h3>
-                </div>
-              </header>
-              <div className="letter-route">
-                <MapPinned size={15} />
-                <span>{chapter.route_label || joinList(chapter.places)}</span>
-              </div>
-              <div className="letter-body">
-                <p className="letter-source-summary">
-                  {displayText(chapter.source_informed_summary || chapter.letter_summary || chapter.summary, "本封信导读摘要待复核。")}
-                </p>
-                <p>{displayText(chapter.route_note, "路线说明待复核。")}</p>
-                <p>{displayText(chapter.reading_focus_expanded || chapter.reading_focus, "阅读重点待复核。")}</p>
-              </div>
-              <details className="letter-answer collapsible-reading-panel" open={expandAllLetters || undefined}>
-                <summary>展开阅读线索</summary>
-                <div className="letter-original-clues">
-                  <h4>原文摘录与阅读线索</h4>
-                  {(chapter.original_excerpt || []).map((item, index) => (
-                    <blockquote className="letter-original-excerpt" key={`${chapter.chapter_id}-excerpt-${index}`}>
-                      <p>{displayText(item.excerpt, "原文线索待复核。")}</p>
-                      <cite>{displayText(item.note, "这条线索用于辅助阅读，不替代原书。")}</cite>
-                    </blockquote>
-                  ))}
-                </div>
-                <div className="close-reading-panel">
-                  <h4>原文精读</h4>
-                  <div className="close-reading-excerpt">
-                    <strong>摘录焦点</strong>
-                    <p>{displayText(chapter.close_reading?.excerpt_focus, "摘录焦点待人工复核。")}</p>
-                  </div>
-                  <div className="close-reading-explanation">
-                    <strong>为什么值得注意</strong>
-                    <p>{displayText(chapter.close_reading?.why_it_matters, "精读说明待人工复核。")}</p>
-                  </div>
-                  <div className="close-reading-steps">
-                    <strong>精读步骤</strong>
-                    <ol>
-                      {(chapter.reading_steps || ["先看路线。", "再读线索。", "最后回答问题。"]).map((step) => (
-                        <li key={step}>{step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                  <div className="close-reading-question">
-                    <strong>关联问题</strong>
-                    {(chapter.linked_questions || []).map((questionId) => {
-                      const question = questionsById.get(questionId);
-                      return (
-                        <button className="route-timeline-link" key={questionId} type="button" onClick={() => scrollToSection("questions")}>
-                          {question?.question || questionId}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  <div className="close-reading-answer">
-                    <strong>参考回答</strong>
-                    <p>{displayText(chapter.close_reading?.answer_bridge || chapter.answer_hint_expanded, "参考回答待人工复核。")}</p>
-                  </div>
-                </div>
-                <div className="letter-scene-notes">
-                  <h4>原书场景线索</h4>
-                  <ul>
-                    {(chapter.original_scene_notes || ["场景线索待人工复核。"]).map((note) => (
-                      <li key={note}>{note}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="letter-then-now">
-                  <h4>当年路线 / 今日对照</h4>
-                  <p>{displayText(chapter.route_then?.note, "当年路线说明待复核。")}</p>
-                  <p>{displayText(chapter.then_now_comparison, "昔日旅程与今日景点对照待补充。")}</p>
-                  <div className="reading-guide-tags">
-                    {(chapter.route_now || []).map((place) => (
-                      <span className={`place-source-badge ${sourceStatusClass(place.source_status)}`} key={`${chapter.chapter_id}-${placeName(place)}`}>
-                        {placeName(place)}：{sourceStatusLabel(place.source_status)}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="letter-answer-expanded">
-                  <h4>对应问题与参考回答</h4>
-                  <p>{displayText(chapter.answer_hint_expanded, "参考回答待人工复核。")}</p>
-                </div>
-                <div className="reading-guide-tags">
-                  <span>地点：{joinList(chapter.places)}</span>
-                  <span>主题：{joinList(chapter.themes)}</span>
-                  <span>chunk：{chapter.chunk_count ?? "待复核"}</span>
-                  <span>复核：{chapter.review_status || "pending"}</span>
-                </div>
-                <small>结构证据：{evidenceLabel(chapter.evidence_refs)}</small>
-                <p>{displayText(chapter.review_notice, "Public preview：本卡片仍待人工复核。")}</p>
-              </details>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="content-section">
-        <h2>5 个核心概念</h2>
+        <h2>5个核心概念</h2>
         <div className="concept-grid">
           {concepts.map((concept: KeyConcept) => (
             <article className="concept-card" key={concept.concept_id}>
@@ -775,86 +889,6 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
               <p className="muted-line">
                 关联书信：{concept.related_letters?.length ?? 0}；复核状态：{concept.review_status || "pending"}
               </p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="content-section quote-policy" id="quote-clues" data-quote-mode={data.quoteIndex?.quote_mode || "structural_no_quote"}>
-        <header>
-          <ShieldCheck size={22} />
-          <div>
-            <h2>原文摘录与阅读线索</h2>
-            <p>
-              {data.quoteIndex?.reader_note ||
-                "当前页面作为个人阅读导览，补充来自原书的摘录、场景摘要、地点线索和阅读提示。页面仍处于公开预览与人工复核阶段。"}
-            </p>
-          </div>
-        </header>
-        <div className="reading-guide-stat-grid">
-          <div>
-            <strong>{quotes.length}</strong>
-            <span>结构化槽位</span>
-          </div>
-          <div>
-            <strong>0</strong>
-            <span>公开原文引文</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="content-section" id="questions">
-        <h2>26 个阅读问题与参考回答</h2>
-        <div className="question-list">
-          {questions.map((question: ReadingQuestion) => (
-            <article className="question-card" key={question.question_id}>
-              <h3>{displayText(question.question, "阅读问题待复核")}</h3>
-              <div className="question-answer">
-                <strong>参考回答 / 导读提示</strong>
-                <p>
-                  {displayText(
-                    question.close_reading_answer ||
-                      question.answer_hint_expanded ||
-                      question.answer_hint ||
-                      question.reference_answer ||
-                      question.guide_answer,
-                    "参考回答待人工复核。",
-                  )}
-                </p>
-              </div>
-              <div className="close-reading-steps">
-                <strong>回答步骤</strong>
-                <ol>
-                  {(question.answer_steps || ["回到对应书信。", "看地点和场景。", "再组织回答。"]).map((step) => (
-                    <li key={`${question.question_id}-${step}`}>{step}</li>
-                  ))}
-                </ol>
-              </div>
-              <div className="reading-guide-tags">
-                {(question.linked_letters || []).slice(0, 4).map((letterId) => (
-                  <button
-                    className="route-timeline-link"
-                    key={`${question.question_id}-${letterId}`}
-                    type="button"
-                    onClick={() => scrollToChapter(chapters.find((chapter) => chapter.letter_id === letterId)?.chapter_id)}
-                  >
-                    回到 {letterId}
-                  </button>
-                ))}
-                {(question.place_clues || []).slice(0, 4).map((place) => (
-                  <span key={`${question.question_id}-${place}`}>地点：{place}</span>
-                ))}
-                {(question.source_clues || []).slice(0, 2).map((clue, index) => (
-                  <span key={`${question.question_id}-clue-${index}`}>线索：{clue}</span>
-                ))}
-              </div>
-              <p>{displayText(question.route_context, "路线语境待人工复核。")}</p>
-              <p>{displayText(question.place_context, "地点语境待人工复核。")}</p>
-              <p>{displayText(question.then_now_hint, "今日对照待补充公开来源。")}</p>
-              <p>{displayText(question.basis, "基于标题、地点线索与结构化主题生成，待人工复核。")}</p>
-              <span>
-                {question.scope || "scope pending"} {question.section_id ? ` / ${question.section_id}` : ""}
-              </span>
             </article>
           ))}
         </div>

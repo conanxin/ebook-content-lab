@@ -1,7 +1,7 @@
 {
   "schema_version": "reading-guide.v0.2",
   "status": "draft",
-  "generated_at": "2026-06-30T06:02:38.677636+00:00",
+  "generated_at": "2026-07-01T02:57:13.325874+00:00",
   "book": {
     "title": "《旅行人信札》",
     "author": "陈嘉映",
@@ -6406,5 +6406,30 @@
       "unesco": 11
     },
     "generated_at": "2026-07-01T02:18:38.686970+00:00"
+  },
+  "page_redesign": {
+    "version": "v0.7-A15",
+    "mode": "letter-reading-flow",
+    "main_axis": "25封书信",
+    "layout": "single-column-reading-flow",
+    "goal": "把原文线索、精读步骤、地点今昔对照和阅读问题集中回每封信内部。"
+  },
+  "letter_reading_flow_summary": {
+    "letter_units": 25,
+    "source_clue_ready": 25,
+    "embedded_places_ready": 25,
+    "question_answer_ready": 25,
+    "updated_in": "v0.7-A15"
+  },
+  "navigation_model": {
+    "version": "v0.7-A15",
+    "anchors": [
+      "概览",
+      "25封书信",
+      "路线时间线",
+      "地点索引",
+      "阅读问题"
+    ],
+    "note": "附属模块后置，主阅读流按 letter-001 到 letter-025 顺读。"
   }
 }

@@ -85,6 +85,25 @@ export interface BookOverviewData extends ReadingGuidePublicMeta {
     scope?: string;
     updated_in?: string;
   };
+  page_redesign?: {
+    version?: string;
+    mode?: string;
+    main_axis?: string;
+    layout?: string;
+    goal?: string;
+  };
+  letter_reading_flow_summary?: {
+    letter_units?: number;
+    source_clue_ready?: number;
+    embedded_places_ready?: number;
+    question_answer_ready?: number;
+    updated_in?: string;
+  };
+  navigation_model?: {
+    version?: string;
+    anchors?: string[];
+    note?: string;
+  };
   then_now_summary?: string;
   place_then_now?: PlaceThenNow[];
 }
@@ -93,6 +112,71 @@ export interface OriginalExcerpt {
   excerpt?: string;
   note?: string;
   mode?: string;
+  clue_id?: string;
+  use?: string;
+}
+
+export interface SourceClue {
+  clue_id?: string;
+  mode?: string;
+  excerpt?: string;
+  note?: string;
+  use?: string;
+}
+
+export interface EmbeddedLetterPlace {
+  place_name?: string;
+  role?: string;
+  then_perspective?: string;
+  today_perspective?: string;
+  source_status?: string;
+  source_label?: string;
+  source_name?: string | null;
+  source_url?: string | null;
+  coordinate_status?: string;
+  coordinate_label?: string;
+  review_note?: string;
+}
+
+export interface LetterReadingUnit {
+  version?: string;
+  letter_number?: number;
+  letter_id?: string;
+  section_id?: string;
+  date_or_stamp?: string;
+  route_title?: string;
+  one_sentence_guide?: string;
+  themes?: string[];
+  basic_info?: {
+    route?: string;
+    core_places?: string[];
+    chunk_count?: number;
+    char_count?: number;
+    reading_length_hint?: string;
+    what_to_watch?: string;
+  };
+  source_clues?: SourceClue[];
+  close_reading_flow?: {
+    what_it_says?: string;
+    why_it_matters?: string;
+    reading_steps?: string[];
+    changes_to_notice?: string;
+  };
+  embedded_places?: EmbeddedLetterPlace[];
+  question_answer?: {
+    question_id?: string | null;
+    question?: string | null;
+    reference_answer?: string | null;
+    answer_steps?: string[];
+    basis?: string;
+  };
+  secondary_details?: {
+    scene_notes?: string[];
+    then_route_note?: string;
+    then_now_comparison?: string;
+    evidence_refs?: StructuralEvidenceRef[];
+    review_notice?: string;
+  };
 }
 
 export interface PlaceThenNow {
@@ -225,6 +309,10 @@ export interface ChapterReadingCard {
   then_now_comparison?: string;
   reading_focus_expanded?: string;
   answer_hint_expanded?: string;
+  letter_reading_unit?: LetterReadingUnit;
+  letter_reading_flow_ready?: boolean;
+  embedded_place_count?: number;
+  updated_in?: string;
   timeline_node?: RouteTimelineNode;
   close_reading?: {
     excerpt_focus?: string;
