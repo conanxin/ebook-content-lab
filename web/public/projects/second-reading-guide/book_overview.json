@@ -6467,5 +6467,15 @@
     "display_label": "原文选段",
     "review_status": "source-excerpt-draft"
   },
-  "updated_in": "v0.7-A18"
+  "updated_in": "v0.7-A20",
+  "source_reading_blocks": {
+    "version": "v0.7-A20",
+    "mode": "paragraph_reading_blocks",
+    "letters_with_blocks": 25,
+    "min_blocks_per_letter": 5,
+    "total_blocks": 125,
+    "average_block_length": 170.3,
+    "display_label": "原文节选",
+    "review_status": "source-reading-block-draft"
+  }
 }

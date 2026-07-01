@@ -155,6 +155,16 @@ export interface SourceExcerpt {
   review_status?: string;
 }
 
+export interface SourceReadingBlock {
+  block_id?: string;
+  text?: string;
+  guide_note?: string;
+  reading_role?: string;
+  source_scope?: string;
+  section_id?: string;
+  review_status?: string;
+}
+
 export interface EmbeddedLetterPlace {
   place_name?: string;
   role?: string;
@@ -188,9 +198,12 @@ export interface LetterReadingUnit {
   };
   source_clues?: SourceClue[];
   source_excerpts?: SourceExcerpt[];
+  source_reading_blocks?: SourceReadingBlock[];
   reading_order?: string[];
   core_source_excerpts?: SourceExcerpt[];
   extra_source_excerpts?: SourceExcerpt[];
+  core_source_reading_blocks?: SourceReadingBlock[];
+  extra_source_reading_blocks?: SourceReadingBlock[];
   reading_mode?: {
     quick_summary?: string;
     deep_reading_prompt?: string;
@@ -359,6 +372,10 @@ export interface ChapterReadingCard {
   source_anchor_layer_ready?: boolean;
   core_source_excerpts?: SourceExcerpt[];
   extra_source_excerpts?: SourceExcerpt[];
+  source_reading_blocks?: SourceReadingBlock[];
+  core_source_reading_blocks?: SourceReadingBlock[];
+  extra_source_reading_blocks?: SourceReadingBlock[];
+  source_reading_blocks_ready?: boolean;
   reading_segment?: string;
   reading_flow?: {
     version?: string;
@@ -470,13 +487,17 @@ export interface ReadingQuestion {
     anchor_type?: string;
     letter_id?: string;
     chapter_id?: string;
+    section_id?: string;
     anchor_id?: string;
+    block_id?: string;
+    reading_role?: string;
     place_or_scene?: string;
     note?: string;
     anchors?: Array<{
       letter_id?: string;
       chapter_id?: string;
       anchor_id?: string;
+      block_id?: string;
     }>;
   };
   linked_letter_navigation?: {

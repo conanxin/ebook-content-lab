@@ -64,36 +64,18 @@
         "再观察哪些地点已有公开来源，哪些仍待复核。",
         "最后用章节卡中的摘录、场景和今日对照组织回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt_route_sample",
-        "anchors": [
-          {
-            "letter_id": "letter-001",
-            "chapter_id": "chapter-001",
-            "section_id": "sec-006",
-            "anchor_id": "letter-001-real-source-01",
-            "excerpt_type": "opening_scene"
-          },
-          {
-            "letter_id": "letter-002",
-            "chapter_id": "chapter-002",
-            "section_id": "sec-007",
-            "anchor_id": "letter-002-real-source-01",
-            "excerpt_type": "opening_scene"
-          },
-          {
-            "letter_id": "letter-003",
-            "chapter_id": "chapter-003",
-            "section_id": "sec-008",
-            "anchor_id": "letter-003-real-source-01",
-            "excerpt_type": "opening_scene"
-          }
-        ],
-        "note": "全书问题先连接前三封信的真实原文选段，再回到 25 封书信整体路线。"
+        "anchor_type": "source_reading_block",
+        "letter_id": "letter-001",
+        "chapter_id": "chapter-001",
+        "section_id": "sec-006",
+        "block_id": "letter-001-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：可以先读前三封信的真实原文选段，看到路线如何从具体交通、地点和观察中展开。",
-      "deep_answer": "参考回答：这 25 封信不是抽象路线表，而是由一段段具体行旅文字推进。先读前三封信的原文选段，再顺着时间线看地点、交通、风景和感受如何逐步连成旅行经验。",
+      "quick_answer": "参考回答：先读这段原文节选“华北平原真单调。今天倒是沐浴在一片春阳里。到处种着冬小麦，所以大地还透着青色；树梢也有回春之意。石家庄向西，这条路我...”，再回到《第1封 3月17日~18日 娘子关→骊山→西安》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-001",
         "chapter_id": "chapter-001",
@@ -137,20 +119,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-001",
       "answer_summary": "参考回答：本封信可以从娘子关 → 骊山 → 西安进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-001",
         "chapter_id": "chapter-001",
         "section_id": "sec-006",
-        "anchor_id": "letter-001-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-001-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“保定有人下车，移到窗边小桌前坐，可以铺开信纸给您们写几个字了。”，再把《第1封 3月17日~18日 娘子关→骊山→西安》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 娘子关、骊山、西安 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“华北平原真单调。今天倒是沐浴在一片春阳里。到处种着冬小麦，所以大地还透着青色；树梢也有回春之意。石家庄向西，这条路我...”，再回到《第1封 3月17日~18日 娘子关→骊山→西安》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-001",
         "chapter_id": "chapter-001",
@@ -194,20 +176,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-002",
       "answer_summary": "参考回答：本封信可以从半坡 → 碑林 → 成都进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-002",
         "chapter_id": "chapter-002",
         "section_id": "sec-007",
-        "anchor_id": "letter-002-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-002-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“昨晚又与曹君说了一阵话，读了一本福尔摩斯探案。”，再把《第2封 3月19日~20日 半坡/碑林→成都》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 半坡、碑林、成都 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“今早去拜访王先生，地方不好找，幸亏张君事先为我借了一辆自行车。谈到文章，对鲁迅推崇备至。我说，鲁迅的文章自然是好的，...”，再回到《第2封 3月19日~20日 半坡/碑林→成都》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-002",
         "chapter_id": "chapter-002",
@@ -251,20 +233,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-003",
       "answer_summary": "参考回答：本封信可以从杜甫草堂 → 武侯祠 → 青城山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-003",
         "chapter_id": "chapter-003",
         "section_id": "sec-008",
-        "anchor_id": "letter-003-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-003-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“成都远近郊区覆盖着油菜花，列车飞速冲进一望无际的金灿灿之中。”，再把《第3封 3月21日~23日 杜甫草堂/武侯祠→青城山》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 杜甫草堂、武侯祠、青城山 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“到成都。五路车到成都军区。办公楼上等到小哥小嫂［笔者的远亲］。初，觉得他们不太热情，想大概是军人的关系。到他们家里后...”，再回到《第3封 3月21日~23日 杜甫草堂/武侯祠→青城山》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-003",
         "chapter_id": "chapter-003",
@@ -308,20 +290,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-004",
       "answer_summary": "参考回答：本封信可以从乐山大佛 → 青衣亭 → 峨嵋山脚进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-004",
         "chapter_id": "chapter-004",
         "section_id": "sec-009",
-        "anchor_id": "letter-004-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-004-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“农家/峨嵋山腰息心所/华严顶/峨嵋绝顶云雾里”，再把《第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 乐山大佛、青衣亭、峨嵋山脚 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“昨天中午回到成都，从军区取了自行车，就到川大查书。这次旅行的正式目的是为写论文寻访名师搜集资料。在西安访问了名师王先...”，再回到《第4封 3月24日~26日 乐山大佛/青衣亭→峨嵋山脚》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-004",
         "chapter_id": "chapter-004",
@@ -365,20 +347,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-005",
       "answer_summary": "参考回答：本封信可以从峨嵋车站 → 成昆线隧道 → 昆明车站进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-005",
         "chapter_id": "chapter-005",
         "section_id": "sec-010",
-        "anchor_id": "letter-005-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-005-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“昨天日行90里，登高2400米到万佛顶。”，再把《第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 峨嵋车站、成昆线隧道、昆明车站 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“昨天日行90里，登高2400米到万佛顶。今天日行110里（外加30里搭车）下山，看来还未老朽，一过磅，135斤，还长...”，再回到《第5封 3月26日~29日 峨嵋车站→成昆线隧道→昆明车站》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-005",
         "chapter_id": "chapter-005",
@@ -423,20 +405,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-006",
       "answer_summary": "参考回答：本封信可以从昆明温泉 → 西山 → 石林 → 贵阳花溪进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-006",
         "chapter_id": "chapter-006",
         "section_id": "sec-011",
-        "anchor_id": "letter-006-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-006-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“寄给我家的信想来都读到了，就不重复，接着写下去吧。”，再把《第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 昆明温泉、西山、石林、贵阳花溪 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“前天晚上回到布珠巷，饭后看看相册，听姑父姑姑聊家常。我姑父一向在敌营工作，是国民党少将。解放军定军衔时也封为少将。由...”，再回到《第6封 3月31日~4月1日 昆明温泉/西山/石林→贵阳花溪》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-006",
         "chapter_id": "chapter-006",
@@ -482,20 +464,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-007",
       "answer_summary": "参考回答：本封信可以从贵阳流山 → 桂林伏波山 → 七星山 → 象鼻山 → 漓江进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-007",
         "chapter_id": "chapter-007",
         "section_id": "sec-012",
-        "anchor_id": "letter-007-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-007-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“一直无所用心地向窗外了望，总是回首乱山横的景象。”，再把《第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 贵阳流山、桂林伏波山、七星山、象鼻山 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“天黑到都匀，对面换上两个小伙，脚臭不减老兄，直是耐不住，只好跑到别的车厢去混了几个钟头，入夜弄到一条长椅，美美睡了一...”，再回到《第7封 4月2日~3日 贵阳流山→桂林伏波山/七星山/象鼻山/漓江》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-007",
         "chapter_id": "chapter-007",
@@ -540,20 +522,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-008",
       "answer_summary": "参考回答：本封信可以从桂林南溪山 → 叠彩峰 → 隐山 → 阳朔进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-008",
         "chapter_id": "chapter-008",
         "section_id": "sec-013",
-        "anchor_id": "letter-008-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-008-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“先到码头买到阳朔的船票，吃了午饭，重到七星公园来。”，再把《第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段直接触及阳朔，适合作为理解本封信地点经验的文本入口。 再结合 桂林南溪山、叠彩峰、隐山、阳朔 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“下了一夜雨，还不见晴。先到码头买到阳朔的船票，吃了午饭，重到七星公园来。先上月牙山，到半月亭，路断了，便折回来。遇见...”，再回到《第8封 4月3日~5日 桂林南溪山月岸/叠彩峰/隐山→阳朔》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段把阳朔放进具体行旅语境中，适合先读原文再看地点对照。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-008",
         "chapter_id": "chapter-008",
@@ -597,20 +579,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-009",
       "answer_summary": "参考回答：本封信可以从漓江 → 阳朔 → 梧州进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-009",
         "chapter_id": "chapter-009",
         "section_id": "sec-014",
-        "anchor_id": "letter-009-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-009-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“我乘的当然是次等游艇，买的是到阳朔的单程，其他游客买联票，下午乘汽车返回桂林。”，再把《第9封 4月5日~7日 漓江→阳朔→梧州》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段直接触及阳朔，适合作为理解本封信地点经验的文本入口。 再结合 漓江、阳朔、梧州 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“漓江上不通纯粹客航只通游艇。我乘的当然是次等游艇，买的是到阳朔的单程，其他游客买联票，下午乘汽车返回桂林。一个统舱，...”，再回到《第9封 4月5日~7日 漓江→阳朔→梧州》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段把漓江、阳朔放进具体行旅语境中，适合先读原文再看地点对照。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-009",
         "chapter_id": "chapter-009",
@@ -652,20 +634,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-010",
       "answer_summary": "参考回答：本封信可以从梧州西江种种进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-010",
         "chapter_id": "chapter-010",
         "section_id": "sec-015",
-        "anchor_id": "letter-010-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-010-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“由于旅店对着汽车站，一早就听到车次广播，先用“白话”说一遍，再用同白话差不多的普通话说一遍。”，再把《第10封 4月7日~8日 梧州西江种种》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 梧州西江种种 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“后来终于睡着。由于旅店对着汽车站，一早就听到车次广播，先用“白话”说一遍，再用同白话差不多的普通话说一遍。一面挣扎着...”，再回到《第10封 4月7日~8日 梧州西江种种》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-010",
         "chapter_id": "chapter-010",
@@ -707,20 +689,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-011",
       "answer_summary": "参考回答：本封信可以从肇庆天柱阁进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-011",
         "chapter_id": "chapter-011",
         "section_id": "sec-016",
-        "anchor_id": "letter-011-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-011-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“到河口只早上七点有船，不知一天时间逛肇庆和佛山够不够。”，再把《第11封 4月8日~9日 肇庆天柱阁》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 肇庆天柱阁 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“原来舱里只让睡到四点半。真是个怪时间。洗漱，买一碗肉丝粥喝。到河口只早上七点有船，不知一天时间逛肇庆和佛山够不够。一...”，再回到《第11封 4月8日~9日 肇庆天柱阁》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-011",
         "chapter_id": "chapter-011",
@@ -763,20 +745,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-012",
       "answer_summary": "参考回答：本封信可以从广州中山大学 → 白云山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-012",
         "chapter_id": "chapter-012",
         "section_id": "sec-017",
-        "anchor_id": "letter-012-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-012-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“坐下来就招蚊子，只好像个幽灵似的荡来荡去。”，再把《第12封 4月9日~11日 广州中山大学/白云山》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 广州中山大学、白云山 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“坐下来就招蚊子，只好像个幽灵似的荡来荡去。肇庆这地方，夜里不少人荡，还有女的。一个丈夫教夫人学骑车，光着身子追着车子...”，再回到《第12封 4月9日~11日 广州中山大学/白云山》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-012",
         "chapter_id": "chapter-012",
@@ -818,20 +800,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-013",
       "answer_summary": "参考回答：本封信可以从汕头看海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-013",
         "chapter_id": "chapter-013",
         "section_id": "sec-018",
-        "anchor_id": "letter-013-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-013-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“13日下午一点，汽笛长鸣数声，红卫15号起锚开航。”，再把《第13封 4月13日~14日 汕头看海》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 汕头看海 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“昨天一早6点，就由舅舅领着出去吃早餐，这是为了让我领略广州人的风俗之一。果然，已经太晚了。广州人情愿星期天早上不睡懒...”，再回到《第13封 4月13日~14日 汕头看海》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-013",
         "chapter_id": "chapter-013",
@@ -878,20 +860,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-014",
       "answer_summary": "参考回答：本封信可以从云霄 → 漳浦 → 漳州 → 厦门 → 福州 → 鼓浪屿进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-014",
         "chapter_id": "chapter-014",
         "section_id": "sec-019",
-        "anchor_id": "letter-014-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-014-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“请潮阳的伙伴早上唤我，他们实在，不到5点就把我叫起来。”，再把《第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 云霄、漳浦、漳州、厦门 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“车在澄海和东陇都站下，放上十几个站票乘客。座上乘客愤怒起来，怨司机为拿奖金，任意停车，违章超载，司机则争辩说他不停车...”，再回到《第14封 4月15日~16日 云霄→漳浦→漳州→厦门→福州→鼓浪屿》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-014",
         "chapter_id": "chapter-014",
@@ -937,20 +919,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-015",
       "answer_summary": "参考回答：本封信可以从泉州 → 福州西湖 → 戚公祠 → 乌龙江大桥 → 涌泉寺进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-015",
         "chapter_id": "chapter-015",
         "section_id": "sec-020",
-        "anchor_id": "letter-015-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-015-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“小弟笔拙，不过沾了一点峨嵋山漓江的风光，哪儿比得了老兄天生那挥洒自如的风采？”，再把《第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 泉州、福州西湖、戚公祠、乌龙江大桥 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“已到福州。家樾［嘉明的姻亲］把你的信转给我了。小弟笔拙，不过沾了一点峨嵋山漓江的风光，哪儿比得了老兄天生那挥洒自如的...”，再回到《第15封 4月17日~19日 泉州→福州西湖/戚公祠/乌龙江大桥/涌泉寺》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-015",
         "chapter_id": "chapter-015",
@@ -996,20 +978,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-016",
       "answer_summary": "参考回答：本封信可以从福安交溪 → 福鼎灵溪 → 南雁荡 → 会文书院 → 北雁荡进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-016",
         "chapter_id": "chapter-016",
         "section_id": "sec-021",
-        "anchor_id": "letter-016-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-016-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“凌晨三点四十，伯母（嘉明的妻子的父亲的弟弟的妻子）已经准备了早餐，把各种虾蟹笋再尝一遍，行李...”，再把《第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 福安交溪、福鼎灵溪、南雁荡、会文书院 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“凌晨三点四十，伯母（嘉明的妻子的父亲的弟弟的妻子）已经准备了早餐，把各种虾蟹笋再尝一遍，行李收好，作最后的告辞。二老...”，再回到《第16封 4月20日~22日 福安交溪→福鼎灵溪→南雁荡/会文书院→北雁荡》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-016",
         "chapter_id": "chapter-016",
@@ -1051,20 +1033,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-017",
       "answer_summary": "参考回答：本封信可以从温州北雁荡由浅入深进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-017",
         "chapter_id": "chapter-017",
         "section_id": "sec-022",
-        "anchor_id": "letter-017-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-017-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“到温州的外地人多，温州人对外地人也很和气，而且很多会讲普通话。”，再把《第17封 4月23日~25日 温州北雁荡由浅入深》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 温州北雁荡由浅入深 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“到温州的外地人多，温州人对外地人也很和气，而且很多会讲普通话。可是连温州人自己也说，此地盗匪成群，无法管制；夜有二三...”，再回到《第17封 4月23日~25日 温州北雁荡由浅入深》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-017",
         "chapter_id": "chapter-017",
@@ -1106,20 +1088,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-018",
       "answer_summary": "参考回答：本封信可以从朝辞雁荡暮至余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-018",
         "chapter_id": "chapter-018",
         "section_id": "sec-023",
-        "anchor_id": "letter-018-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-018-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“东面还有百岗尖，高出100米，但无路可登。”，再把《第18封 4月28日 朝辞雁荡暮至余杭》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 朝辞雁荡暮至余杭 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“雁湖上所能望到的东海，只是两个海湾；东面还有百岗尖，高出100米，但无路可登。经过一夜艰险，多少有点疲乏，慢慢地走，...”，再回到《第18封 4月28日 朝辞雁荡暮至余杭》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-018",
         "chapter_id": "chapter-018",
@@ -1161,20 +1143,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-019",
       "answer_summary": "参考回答：本封信可以从千古如斯的余杭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-019",
         "chapter_id": "chapter-019",
         "section_id": "sec-024",
-        "anchor_id": "letter-019-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-019-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“姑姑待我很亲切，拿出一份徐家的族谱给我看。”，再把《第19封 4月28日~5月2日 千古如斯的余杭》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 千古如斯的余杭 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“昨晚回到昭庆寺横街已八点半。姑父是个大忙人，伏案工作；姑姑待我很亲切，拿出一份徐家的族谱给我看。给我安排了一间大屋一...”，再回到《第19封 4月28日~5月2日 千古如斯的余杭》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-019",
         "chapter_id": "chapter-019",
@@ -1216,20 +1198,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-020",
       "answer_summary": "参考回答：本封信可以从黄山天都峰排云亭进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-020",
         "chapter_id": "chapter-020",
         "section_id": "sec-025",
-        "anchor_id": "letter-020-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-020-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“六点一刻发车，近临安时，车右一湖，大若西湖，青山四箍，甚美。”，再把《第20封 5月4日~5日 黄山天都峰排云亭》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 黄山天都峰排云亭 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“六点一刻发车，近临安时，车右一湖，大若西湖，青山四箍，甚美。多丘陵，路面尚好，会车不多，四小时后至顺溪（172公里）...”，再回到《第20封 5月4日~5日 黄山天都峰排云亭》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-020",
         "chapter_id": "chapter-020",
@@ -1272,20 +1254,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-021",
       "answer_summary": "参考回答：本封信可以从青阳九华山 → 安庆小孤山进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-021",
         "chapter_id": "chapter-021",
         "section_id": "sec-026",
-        "anchor_id": "letter-021-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-021-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“在黄山宾馆大厅里，同北京的、常州的、上海的伙伴都碰到了，聚在大厅围绕着服务台的通铺上，显得热...”，再把《第21封 5月6日~8日 青阳九华山/安庆小孤山》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 青阳九华山、安庆小孤山 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“在黄山宾馆大厅里，同北京的、常州的、上海的伙伴都碰到了，聚在大厅围绕着服务台的通铺上，显得热闹非常。出门看看，可知天...”，再回到《第21封 5月6日~8日 青阳九华山/安庆小孤山》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-021",
         "chapter_id": "chapter-021",
@@ -1328,20 +1310,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-022",
       "answer_summary": "参考回答：本封信可以从鄱阳五老峰 → 三叠瀑进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-022",
         "chapter_id": "chapter-022",
         "section_id": "sec-027",
-        "anchor_id": "letter-022-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-022-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“回到码头边的九江旅社要了一个铺位（8角），然后随便走走看看。”，再把《第22封 5月8日~11日 鄱阳五老峰/三叠瀑》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 鄱阳五老峰、三叠瀑 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“回到码头边的九江旅社要了一个铺位（8角），然后随便走走看看。市面似乎不大，样子也比较朴素。就这样走走车站广场和自由市...”，再回到《第22封 5月8日~11日 鄱阳五老峰/三叠瀑》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-022",
         "chapter_id": "chapter-022",
@@ -1385,20 +1367,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-023",
       "answer_summary": "参考回答：本封信可以从南京中山陵 → 玄武湖 → 苏州园林进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-023",
         "chapter_id": "chapter-023",
         "section_id": "sec-028",
-        "anchor_id": "letter-023-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-023-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“走到中山码头乘31路到大行宫，步行东向半小时，一问便找到“向阳院”。”，再把《第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 南京中山陵、玄武湖、苏州园林 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“走到中山码头乘31路到大行宫，步行东向半小时，一问便找到“向阳院”。附近无饭馆，否则会遵母命先用餐然后登门的，不过看...”，再回到《第23封 5月11日~14日 南京中山陵/玄武湖→苏州园林》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-023",
         "chapter_id": "chapter-023",
@@ -1441,20 +1423,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-024",
       "answer_summary": "参考回答：本封信可以从苏州天平山沧浪亭 → 上海进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-024",
         "chapter_id": "chapter-024",
         "section_id": "sec-029",
-        "anchor_id": "letter-024-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-024-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“今六时起，不久同小琳出门，到南门坐市郊车往西南到木渎，登灵县风景之一灵岩。”，再把《第24封 5月15日~17日 苏州天平山沧浪亭→上海》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 苏州天平山沧浪亭、上海 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“不是独处，难能随时记录。今六时起，不久同小琳出门，到南门坐市郊车往西南到木渎，登灵县风景之一灵岩。一座不足200米的...”，再回到《第24封 5月15日~17日 苏州天平山沧浪亭→上海》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-024",
         "chapter_id": "chapter-024",
@@ -1498,20 +1480,20 @@
         "对照今日地点来源状态，区分可确认和待复核内容。",
         "用这些线索补充或修正自己的参考回答。"
       ],
-      "updated_in": "v0.7-A18",
+      "updated_in": "v0.7-A20",
       "letter_anchor": "chapter-025",
       "answer_summary": "参考回答：本封信可以从沪青海航 → 青岛崂山 → 返京进入，结合原书中的交通、山水、古迹线索，把地点理解为旅行经验的组织方式，而不是孤立景点清单。",
       "source_anchor": {
-        "anchor_type": "real_source_excerpt",
+        "anchor_type": "source_reading_block",
         "letter_id": "letter-025",
         "chapter_id": "chapter-025",
         "section_id": "sec-030",
-        "anchor_id": "letter-025-real-source-01",
-        "excerpt_type": "opening_scene",
-        "note": "这个问题先回到对应信封卡的原文选段，再展开场景、路线和今昔对照。"
+        "block_id": "letter-025-reading-block-01",
+        "reading_role": "opening_scene",
+        "note": "这个问题优先回到对应书信的原文节选阅读块，再展开场景、路线和今昔对照。"
       },
-      "quick_answer": "参考回答：先读“这将是一封没有地址的信，无论如何，还是按习惯把这篇游记继续下去，直到这次旅行终止。”，再把《第25封 5月18日~23日 沪青海航→青岛崂山→返京》中的地点和移动线索连起来看。",
-      "deep_answer": "参考回答：这封信可从核心原文选段进入。开篇场景：这段把本封信的行旅现场打开，适合作为快速浏览的第一处文本锚。 再结合 沪青海航、青岛崂山、返京 的路线顺序，就能把原文中的现场感、移动过程和今日对照放在同一条阅读线上。",
+      "quick_answer": "参考回答：先读这段原文节选“躺在铺位上，觉得轻松，从这两天的奔忙中喘定一口气。但不知为什么，当站在甲板上等待发动，当江风吹进舷窗，却有一种忧郁感...”，再回到《第25封 5月18日~23日 沪青海航→青岛崂山→返京》的路线和地点关系。",
+      "deep_answer": "参考回答：这封信现在可以先从一个较完整的原文阅读块进入。开篇场景：这段比短摘更完整地打开本封信的时间、状态或出发处境。 读完这段后，再把下方场景说明、今昔对照和问题回答连起来看，会比只看一句短摘更接近原书的阅读节奏。",
       "linked_letter_navigation": {
         "letter_id": "letter-025",
         "chapter_id": "chapter-025",

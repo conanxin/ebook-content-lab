@@ -398,6 +398,65 @@
   padding-top: 4px;
 }
 
+.source-reading-blocks {
+  gap: 18px;
+}
+
+.source-reading-block-list {
+  display: grid;
+  gap: 14px;
+}
+
+.source-reading-block {
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+  border: 1px solid rgba(99, 82, 45, 0.16);
+  border-left: 5px solid #6d5b35;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 246, 0.98), rgba(255, 250, 236, 0.9)),
+    #fffaf0;
+  box-shadow: 0 14px 30px rgba(54, 43, 22, 0.08);
+}
+
+.source-reading-text {
+  margin: 0;
+  color: #1d2622;
+  font-family: "Noto Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 2;
+  text-align: justify;
+}
+
+.source-reading-note {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid rgba(99, 82, 45, 0.12);
+  color: #5f6a64;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.more-source-reading-blocks {
+  padding-top: 4px;
+}
+
+.question-source-anchor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0 2px;
+  color: #5d665f;
+  font-size: 13px;
+}
+
+.question-source-anchor strong {
+  color: #28312c;
+}
+
 .immersive-mode-bar {
   display: flex;
   align-items: center;
@@ -692,6 +751,16 @@
 
   .source-excerpt-text {
     font-size: 15px;
+  }
+
+  .source-reading-block {
+    padding: 14px 13px;
+  }
+
+  .source-reading-text {
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: left;
   }
 
   .letter-flow-facts,

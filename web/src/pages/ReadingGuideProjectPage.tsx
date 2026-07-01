@@ -28,6 +28,7 @@ import type {
   RouteTimelineNode,
   SourceClue,
   SourceExcerpt,
+  SourceReadingBlock,
 } from "../types/readingGuide";
 import { projectDataPath } from "../utils/paths";
 
@@ -87,6 +88,20 @@ function excerptTypeLabel(type: string | undefined): string {
     other: "阅读线索",
   };
   return labels[type || ""] || "原文选段";
+}
+
+function readingRoleLabel(role: string | undefined): string {
+  const labels: Record<string, string> = {
+    opening_scene: "开篇场景",
+    route_movement: "路线移动",
+    place_observation: "地点观察",
+    travel_detail: "旅途细节",
+    reflection: "感受反思",
+    turning_point: "旅程转折",
+    closing_moment: "收束时刻",
+    other: "阅读片段",
+  };
+  return labels[role || ""] || "原文节选";
 }
 
 function evidenceLabel(refs: Array<{ section_id?: string; letter_id?: string }> | undefined): string {
@@ -509,6 +524,9 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
             const coreSourceExcerpts = chapter.core_source_excerpts || unit?.core_source_excerpts || sourceExcerpts.slice(0, 2);
             const extraSourceExcerpts = chapter.extra_source_excerpts || unit?.extra_source_excerpts || sourceExcerpts.slice(2);
             const visibleSourceExcerpts = coreSourceExcerpts;
+            const sourceReadingBlocks: SourceReadingBlock[] = chapter.source_reading_blocks || unit?.source_reading_blocks || [];
+            const coreSourceReadingBlocks = chapter.core_source_reading_blocks || unit?.core_source_reading_blocks || sourceReadingBlocks.slice(0, 2);
+            const extraSourceReadingBlocks = chapter.extra_source_reading_blocks || unit?.extra_source_reading_blocks || sourceReadingBlocks.slice(2);
             const linkedQuestionId = unit?.question_answer?.question_id || chapter.linked_questions?.[0];
             const linkedQuestion = linkedQuestionId ? questionsById.get(linkedQuestionId) : undefined;
             const questionText = unit?.question_answer?.question || linkedQuestion?.question || "本封信的阅读问题待人工复核。";
@@ -542,32 +560,44 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                   ))}
                 </div>
 
-                <section className="source-anchor real-source-excerpts letter-source-block letter-body">
-                  <h4>原文选段</h4>
+                <section className="source-anchor real-source-excerpts source-reading-blocks letter-source-block letter-body">
+                  <h4>原文节选</h4>
                   <p className="source-anchor-intro">
                     {readingMode === "quick"
-                      ? "快速浏览：先读核心 1-2 条真实原文，再继续路线和答案摘要。"
-                      : "精读模式：显示本封信全部原文片段，再看场景、路线和今昔对照。"}
+                      ? "快速浏览：先读 1-2 个连续原文节选，再继续路线和答案摘要。"
+                      : "精读模式：显示本封信全部原文阅读片段，再看场景、路线和今昔对照。"}
                   </p>
-                  <div className="source-clue-list core-source-excerpts">
-                    {visibleSourceExcerpts.slice(0, 4).map((item, index) => (
-                      <article className="source-excerpt-card real-source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
-                        <span className="source-excerpt-type">{excerptTypeLabel(item.excerpt_type)}</span>
-                        <p className="source-excerpt-text real-source-excerpt-text">{displayText(item.text, "原文选段待复核。")}</p>
-                        <details className="source-excerpt-note">
-                          <summary>选段说明</summary>
-                          <small className="real-source-excerpt-note">{displayText(item.note, "这条原文选段用于辅助阅读。")}</small>
-                          <span>{displayText(item.reading_use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                  {sourceReadingBlocks.length > 0 ? (
+                    <>
+                      <div className="source-reading-block-list core-source-reading">
+                        {coreSourceReadingBlocks.slice(0, 2).map((block, index) => (
+                          <article className="source-reading-block" key={`${chapter.chapter_id}-reading-block-${block.block_id || index}`}>
+                            <span className="source-excerpt-type">{readingRoleLabel(block.reading_role)}</span>
+                            <p className="source-reading-text">{displayText(block.text, "原文节选待复核。")}</p>
+                            <p className="source-reading-note">{displayText(block.guide_note, "这段原文节选用于辅助个人阅读。")}</p>
+                          </article>
+                        ))}
+                      </div>
+                      {extraSourceReadingBlocks.length > 0 ? (
+                        <details className="extra-source-reading more-source-reading-blocks collapsible-reading-panel" open={readingMode === "deep"}>
+                          <summary>更多原文阅读片段（{extraSourceReadingBlocks.length}）</summary>
+                          <div className="source-reading-block-list">
+                            {extraSourceReadingBlocks.map((block, index) => (
+                              <article className="source-reading-block" key={`${chapter.chapter_id}-extra-reading-block-${block.block_id || index}`}>
+                                <span className="source-excerpt-type">{readingRoleLabel(block.reading_role)}</span>
+                                <p className="source-reading-text">{displayText(block.text, "原文节选待复核。")}</p>
+                                <p className="source-reading-note">{displayText(block.guide_note, "这段原文节选用于辅助个人阅读。")}</p>
+                              </article>
+                            ))}
+                          </div>
                         </details>
-                      </article>
-                    ))}
-                  </div>
-                  {extraSourceExcerpts.length > 0 ? (
-                    <details className="extra-source-excerpts more-source-excerpts collapsible-reading-panel" open={readingMode === "deep"}>
-                      <summary>更多原文片段（{extraSourceExcerpts.length}）</summary>
-                      <div className="source-clue-list">
-                        {extraSourceExcerpts.map((item, index) => (
-                          <article className="source-excerpt-card real-source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-extra-source-${index}`}>
+                      ) : null}
+                    </>
+                  ) : (
+                    <>
+                      <div className="source-clue-list core-source-excerpts">
+                        {visibleSourceExcerpts.slice(0, 4).map((item, index) => (
+                          <article className="source-excerpt-card real-source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-source-${index}`}>
                             <span className="source-excerpt-type">{excerptTypeLabel(item.excerpt_type)}</span>
                             <p className="source-excerpt-text real-source-excerpt-text">{displayText(item.text, "原文选段待复核。")}</p>
                             <details className="source-excerpt-note">
@@ -578,8 +608,26 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                           </article>
                         ))}
                       </div>
-                    </details>
-                  ) : null}
+                      {extraSourceExcerpts.length > 0 ? (
+                        <details className="extra-source-excerpts more-source-excerpts collapsible-reading-panel" open={readingMode === "deep"}>
+                          <summary>更多原文片段（{extraSourceExcerpts.length}）</summary>
+                          <div className="source-clue-list">
+                            {extraSourceExcerpts.map((item, index) => (
+                              <article className="source-excerpt-card real-source-excerpt-card source-clue-card letter-original-excerpt" key={`${chapter.chapter_id}-extra-source-${index}`}>
+                                <span className="source-excerpt-type">{excerptTypeLabel(item.excerpt_type)}</span>
+                                <p className="source-excerpt-text real-source-excerpt-text">{displayText(item.text, "原文选段待复核。")}</p>
+                                <details className="source-excerpt-note">
+                                  <summary>选段说明</summary>
+                                  <small className="real-source-excerpt-note">{displayText(item.note, "这条原文选段用于辅助阅读。")}</small>
+                                  <span>{displayText(item.reading_use, "用于看风景、交通、城市感受或空间转换。")}</span>
+                                </details>
+                              </article>
+                            ))}
+                          </div>
+                        </details>
+                      ) : null}
+                    </>
+                  )}
                 </section>
 
                 <section className="scene-explanation-panel close-reading-panel letter-close-reading">
@@ -920,6 +968,25 @@ export function ReadingGuideProjectPage({ project, projectSlug }: ReadingGuidePr
                 <strong>参考回答 / 导读提示</strong>
                 <p>{readingMode === "deep" ? question.deep_answer || readingQuestionAnswer(question) : question.quick_answer || readingQuestionAnswer(question)}</p>
               </div>
+              {question.source_anchor ? (
+                <div className="question-source-anchor">
+                  <strong>对应原文节选</strong>
+                  <span>
+                    {[
+                      question.source_anchor.letter_id,
+                      question.source_anchor.block_id || question.source_anchor.anchor_id,
+                      readingRoleLabel(question.source_anchor.reading_role),
+                    ]
+                      .filter(Boolean)
+                      .join(" / ")}
+                  </span>
+                  {question.source_anchor.chapter_id ? (
+                    <button className="route-timeline-link" type="button" onClick={() => scrollToChapter(question.source_anchor?.chapter_id)}>
+                      回到原文节选
+                    </button>
+                  ) : null}
+                </div>
+              ) : null}
               <div className="close-reading-steps">
                 <strong>回答步骤</strong>
                 <ol>
