@@ -1,0 +1,36 @@
+{
+  "version": "v0.7-A21",
+  "status": "review-workbench-only",
+  "generatedAt": "2026-07-01T15:40:37.461436+00:00",
+  "totalBlockTasks": 125,
+  "lettersCovered": 25,
+  "coreBlockTasks": 50,
+  "extraBlockTasks": 75,
+  "sourceOnlyBlockTasks": 0,
+  "p0Tasks": 25,
+  "p1Tasks": 25,
+  "p2Tasks": 75,
+  "blankReviewResults": 125,
+  "readyForBlockApply": false,
+  "allowedReviewResults": [
+    "keep",
+    "replace",
+    "shorten",
+    "expand",
+    "move_to_extra",
+    "move_to_core",
+    "needs_context",
+    "rewrite_note",
+    "remove",
+    "defer"
+  ],
+  "allowedReplacementStrategies": [
+    "use_adjacent_paragraph",
+    "use_more_specific_scene",
+    "use_route_movement",
+    "use_place_description",
+    "use_reflection",
+    "manual_pick",
+    "not_needed"
+  ]
+}
